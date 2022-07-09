@@ -20,7 +20,7 @@
 		$file = $_GET['file'];
 	}
 
-	mail("admin@wdmo.pl", "Wiadomość z formularza", "Od: ".$user."(".$mail.")\r\n Dotyczy: rodział ".$chapter." plik ".$file."\r\n  Wiadomość:\r\n\r\n ".$bug);
+	mail("pawelgadzinski@gmail.com", "Wiadomość z formularza", "Od: ".$user."(".$mail.")\r\n Dotyczy: rodział ".$chapter." plik ".$file."\r\n  Wiadomość:\r\n\r\n ".$bug);
 
 	echo "Wysłano...";
 ?>
