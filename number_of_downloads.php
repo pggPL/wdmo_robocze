@@ -21,5 +21,5 @@
 
 
 
-	echo $result->num_rows;
+	echo pg_num_rows($result);
 ?>
