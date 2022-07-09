@@ -8,13 +8,13 @@
 	// Create connection
 	$conn = pg_connect("host=localhost:/tmp/postgres.sock dbname=wdmo user=wdmo password=1234");
 	// Check connection
-	if ($conn->connect_error) {
+	if (!$conn) {
 	  die("Connection failed: " . $conn->connect_error);
 	  header("Location: contents.html");
 	} 
 
 	$sql = "SELECT * FROM IPs WHERE 1";
-	$result = $conn->query($sql);
+	$result = pg_exec($conn, $sql);
 
 
 	pg_close($conn);
