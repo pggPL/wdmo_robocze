@@ -6,7 +6,7 @@
 	$dbname = "serwer61148_wdmo";
 
 	// Create connection
-	$conn = pg_connect("host=localhost:/tmp/postgres.sock dbname=wdmo user=wdmo password=1234");
+	$conn = pg_connect("host=/var/run/postgresql dbname=wdmo user=wdmo password=1234");
 	// Check connection
 	if (!$conn) {
 	  die("Connection failed: " . $conn->connect_error);
