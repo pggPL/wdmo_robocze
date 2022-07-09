@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Niech $1 = d_0 < d_1 < d_2 < ... < d_k = 4n$ będą kolejnymi dzielnikami liczby $4n$. Wykazać, że istnieje taka liczba $i$, dla której zachodzi równość $d_{i + 1} - d_i = 2$.

@@ -1,0 +1,15 @@
+% Rozdział 4 – liczby pierwsze i reszty z dzielenia
+
+
+
+\theory{Liczby pierwsze i reszty z dzielenia}
+
+\noindent
+Ten rozdział będzie nieco bardziej teoretyczny niż poprzednie. Zadania także będą trudniejsze -- zachęcamy do skorzystania ze wskazówek i głębokiego przestudiowania rozwiązań. Chcemy wyrobić u czytelnika intuicję dotyczącą działań na resztach z dzielenia przez pewną liczbę pierwszą. Od czytelniczki/czytelnika wymaga się, aby znał własności kongruencji -- opisano je chociażby w  \href{https://omj.edu.pl/uploads/attachments/kwadrat-07-kolor.pdf}{Gazetce OMJ ,,Kwadrat'' nr 7}. 
+
+\vspace{5px}
+
+\noindent
+We wszystkich poniższych zadaniach przez $a$, $b$ będziemy oznaczać liczby całkowite, zaś przez $p$ dowolną liczbę pierwszą. Przez $x \big| y$ będziemy oznaczać fakt, że liczba $x$ jest dzielnikiem liczby $y$.
+
+\vspace{5px}

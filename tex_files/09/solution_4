@@ -1,0 +1,38 @@
+
+
+\noindent
+Zadanie rozwiążemy indukując się po $n$. Jeśli $n = 2$, to teza jest trywialna -- trzeba wykazać, że istnieją co najwyżej 4 kliki, a są 4 możliwe podzbiory zbiorów gości. W dalszej części rozwiązania zakładamy, że $n \geqslant 3$.
+
+\vspace{10px}
+
+\noindent
+Na mocy założenia zadania zastosowanego dla zbioru wszystkich $n$ osób, istnieje pewna osoba $X$, która ma co najwyżej $k$ zajomych. Usuwając osobę $X$, założenie z zadania nadal będzie zachodzić dla pozostałych osób. Na mocy założenia indukcyjnego liczba klik, które nie zawierają $X$ wynosi $2^k \cdot (n - 1)$. 
+
+Klika, która zawiera $X$, nie może zawierać osoby, której $X$ nie zna. Musi więc składać się z $X$ oraz pewnego podzbioru znajomych $X$. Skoro $X$ ma co najwyżej $k$ znajomych, to tych podzbiorów jest co najwyżej $2^k$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale = 0.5]
+&nbsp;&nbsp;    \tkzDefPoint(2.5,4){v}
+&nbsp;&nbsp;    \tkzDefPoint(-2,1){x_0}
+&nbsp;&nbsp;    \tkzDefPoint(-1,0){x_1}
+&nbsp;&nbsp;    \tkzDefPoint(0,0){x_2}
+&nbsp;&nbsp;    \tkzDefPoint(-2,2.5){x_3}
+&nbsp;&nbsp;    \tkzDefPoint(1,1){v_2}
+&nbsp;&nbsp;    \tkzDefPoint(2,0){v_3}
+&nbsp;&nbsp;    \tkzDefPoint(3,0){v_4}
+&nbsp;&nbsp;    \tkzDefPoint(4,1){v_5}
+&nbsp;&nbsp;    \tkzDefPoint(2,0){a}
+&nbsp;&nbsp;    \tkzDefPoint(4,0){b}
+&nbsp;&nbsp;    \tkzDrawPoints(v, x_0, x_1, x_2, x_3, v_2, v_3, v_4, v_5)
+&nbsp;&nbsp;    \tkzDrawSegments(v_2,v_4 v_4,v_5 x_1,x_2 x_2,x_3 x_3,x_0 x_1,x_3 x_2,v_2)
+&nbsp;&nbsp;    \tkzDrawSegments[dashed](v,v_2 v,v_3 v,v_4 v,v_5)
+&nbsp;&nbsp;    \tkzLabelSegment[below](a,b){$\leqslant k$ znajomych}
+&nbsp;&nbsp;    \tkzLabelPoint[above](v){$X$}
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{5px}
+
+\noindent
+Łącząc powyższe wnioski otrzymujemy, że klik jest co najmniej $2^k \cdot (n - 1) + 2^k = 2^k \cdot n$. Z zasady indukcji matematycznej wynika teza.
+

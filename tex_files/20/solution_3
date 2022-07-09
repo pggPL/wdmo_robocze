@@ -1,0 +1,33 @@
+
+
+\vspace{10px}
+\noindent
+Zauważmy, że wyrażenie $(a + b + c)^{13}$ po wymnożeniu składa się z wyrażeń postaci $a^kb^lc^{13 - k - l}$ pomnożonych przez pewne całkowite współczynniki. Wykażemy, że każde z wyrażeń postaci $a^kb^lc^{13 - k - l}$ jest podzielne przez liczbę $abc$. 
+
+
+\vspace{10px}
+\noindent
+Zauważmy, że z założeń zadania wynikają podzielności
+\begin{align*}
+&nbsp;&nbsp;abc &\mid a \cdot a^3 \cdot b^3 \mid a \cdot a^3 \cdot (a^3)^3 = a^{13}, \\
+&nbsp;&nbsp;abc &\mid c^3 \cdot b \cdot b^3 \mid (b^3)^3 \cdot c \cdot b^3 = b^{13}, \\
+&nbsp;&nbsp;abc &\mid c^3 \cdot a^3 \cdot c \mid c^3 \cdot (c^3)^3 \cdot c = c^{13}.
+\end{align*}
+Stąd
+\begin{align*}
+&nbsp;&nbsp;(abc)^k &\mid  a^{13k}, \\
+&nbsp;&nbsp;(abc)^l &\mid  b^{13l}, \\
+&nbsp;&nbsp;(abc)^{13(13 - k - l)} &\mid  c^{13(13 - k - l)}.
+\end{align*}
+Mnożąc powyższe podzielności stronami otrzymamy
+\[
+&nbsp;&nbsp;(abc)^{13} \mid a^{13k}b^{13k}c^{13(13 - k - l)} = (a^kb^lc^{13 - k - l})^{13},
+\]
+czyli
+\[
+&nbsp;&nbsp;abc \mid a^kb^lc^{13 - k - l}.
+\]
+Skoro $abc$ dzieli każde z tych wyrażeń, to w szczególności dzieli $(a + b + c)^{13}$.
+
+\vspace{5px}
+

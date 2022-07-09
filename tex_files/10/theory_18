@@ -1,0 +1,26 @@
+\heading{Rozwiązanie}
+
+\noindent
+Chcemy pokazać, że dla dowolnej liczby pierwszej $p$ zachodzi nierówność
+\[
+&nbsp;&nbsp;v_p\left({2n}\choose{n} \right) \geqslant v_p(n + 1).
+\]
+Niech $n + 1 = p^{\alpha}m$, gdzie $p \nmid m$.
+Ze wzoru Legendre'a mamy
+\[
+&nbsp;&nbsp;v_p\left({2n}\choose{n} \right) = v_p\left(\frac{2n!}{n! \cdot n!} \right) = v_p\left(2n! \right) - 2v_p\left(n! \right) =  \sum_{i = 1} \left(\left\lfloor \frac{2n}{p^i} \right\rfloor - 2\left\lfloor \frac{n}{p^i} \right\rfloor \right).
+\]
+Wystarczy więc pokazać, że
+\[
+&nbsp;&nbsp;\sum_{i = 1} \left(\left\lfloor \frac{2(p^{\alpha}m - 1)}{p^i} \right\rfloor - 2\left\lfloor \frac{p^{\alpha}m - 1}{p^i} \right\rfloor \right) \geqslant \alpha,
+\]
+Dla $i \leqslant \alpha$ mamy
+\begin{align*}
+&nbsp;&nbsp;\left\lfloor \frac{2(p^{\alpha}m - 1)}{p^i} \right\rfloor - 2\left\lfloor \frac{p^{\alpha}m - 1}{p^i} \right\rfloor &= 2p^{\alpha - 1}m + \left\lfloor \frac{-2}{p^i} \right\rfloor - 2\left(p^{\alpha - 1}m \right) -2\left\lfloor \frac{- 1}{p^i} \right\rfloor = \\
+&nbsp;&nbsp;&= \left\lfloor \frac{-2}{p^i} \right\rfloor - 2\left\lfloor \frac{- 1}{p^i} \right\rfloor = -1 + 2 = 1.
+\end{align*}
+Stąd pierwsze $\alpha$ czynników jest równe $1$. Wykazując, że kolejne są nieujemne, udowodnimy tezę. Jeśli $n = p^i\cdot a + r$, $r < p^i$, to zachodzi nierówność
+\[
+&nbsp;&nbsp;\left\lfloor \frac{2n}{p^i} \right\rfloor - 2\left\lfloor \frac{n}{p^i} \right\rfloor = 2a + \left\lfloor  \frac{2r}{p^i} \right\rfloor - 2a - 2\left\lfloor \frac{r}{p^i} \right\rfloor = \left\lfloor  \frac{2r}{p^i} \right\rfloor \geqslant 0,
+\]
+co kończy dowód.

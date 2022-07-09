@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Dany jest ciąg
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a_0 = 1, \quad a_{n + 1} = a_n + \frac{1}{a_n}.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Rozstrzygnąć, czy $a_{5000} > 100$.

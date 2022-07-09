@@ -1,0 +1,8 @@
+\heading{Przykład 1}
+
+\noindent
+Na płaszczyźnie danych jest zbiór $Z$ $10002$ punktów $A_1,\; A_2, \; ..., A_{10002}$. Niech zbiór $S$ będzie zbiorem wszystkich długości odcinków $A_iA_j$ dla dowolnych parami różnych $i$ oraz~$j$. Wykazać, że
+\[
+&nbsp;&nbsp;|S| \geqslant 100.
+\]
+

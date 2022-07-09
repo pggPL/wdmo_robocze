@@ -1,0 +1,64 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że Ania -- która rozpoczyna grę, ma strategię wygrywającą. Składa się ona z dwóch kroków.
+
+\begin{itemize}
+&nbsp;&nbsp;\item W pierwszym ruchu Ania kładzie monetę tak, aby środek stołu pokrywał się ze środkiem monety. Może tak zrobić, gdyż średnica stołu jest większa niż średnica monety.
+&nbsp;&nbsp;\item W kolejnych ruchach Ania kładzie monetę tak, aby była ona symetryczna do monety położonej poprzednio przez Bartka względem środka stołu.
+\end{itemize}
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale = 0.4]
+&nbsp;&nbsp;    \tkzDefPoint(0,0){O}
+&nbsp;&nbsp;    \tkzDefPoint(4,0){X}
+&nbsp;&nbsp;    \tkzDrawCircle(O,X)
+&nbsp;&nbsp;    \tkzDefPoint(0,0){O_1}
+&nbsp;&nbsp;    \tkzDefPoint(1,0){X_1}
+&nbsp;&nbsp;    \tkzDrawCircle(O_1,X_1)
+
+&nbsp;&nbsp;    \tkzDrawPoint(O)
+
+&nbsp;&nbsp;    % 1st move
+
+&nbsp;&nbsp;    \tkzDefPoint(2.3,1.3){OA_1}
+&nbsp;&nbsp;    \tkzDefPoint(2.3,2.3){A_1}
+&nbsp;&nbsp;    \tkzDrawCircle(OA_1,A_1)
+&nbsp;&nbsp;    \tkzDefPoint(-2.3,-1.3){O_1}
+&nbsp;&nbsp;    \tkzDefPoint(-2.3,-2.3){A_1}
+&nbsp;&nbsp;    \tkzDrawCircle[dashed](O_1,A_1)
+
+&nbsp;&nbsp;    % 2nd move
+
+&nbsp;&nbsp;    \tkzDefPoint(-1.2,2.6){OA_1}
+&nbsp;&nbsp;    \tkzDefPoint(-1.2,3.6){A_1}
+&nbsp;&nbsp;    \tkzDrawCircle(OA_1,A_1)
+&nbsp;&nbsp;    \tkzDefPoint(1.2,-2.6){O_1}
+&nbsp;&nbsp;    \tkzDefPoint(1.2,-3.6){A_1}
+&nbsp;&nbsp;    \tkzDrawCircle[dashed](O_1,A_1)
+&nbsp;&nbsp;\end{tikzpicture}
+
+&nbsp;&nbsp;\vspace{10px}
+
+&nbsp;&nbsp;\begin{minipage}{0.6\textwidth}
+&nbsp;&nbsp;Przykład gry. Okręgi z linii ciągłej zostały położone przez Anię, a te z linii przerywanej przez Bartka.
+&nbsp;&nbsp;\end{minipage}
+\end{center}
+
+\noindent
+Pozostaje tylko zauważyć, że po ruchu Ani sytuacja na stole jest symetryczna względem środka. Jeśli więc Bartek jest w stanie w pewnym miejscu ułożyć monetę, to oznacza, że jest to możliwe również w miejscu do niego symetrycznym. Łatwo zauważyć, że skoro moneta Bartka nie może zostać położona na środku stołu -- bo już tam leży moneta Ani -- to ruch Bartka nie wpłynie na możliwość położenia monety w miejscu symetrycznym. Stąd też jeśli Bartek jest w stanie wykonać ruch, to jest go w stanie później wykonać Ania. Dowodzi to faktu, że strategia Ani jest wygrywająca.
+
+\qed
+
+\vspace{10px}
+
+\noindent
+Warto zauważyć, że Bartek w drugim ruchu nie jest w stanie położyć monety symetrycznej do monety Ani, gdyż te monety się pokrywają. Pomysłowe ułożenie jej na środku pozwala jednak zastosować Ani pomysł z symetrią. Zapobiega ona w ten sposób sytuacji, w której dwie symetryczne do siebie monety będą na siebie nachodziły.
+
+\vspace{10px}
+
+\noindent
+Motyw gry symetrycznej jest bardzo częsty w grach, stąd też zawsze należy go rozważyć. Warto także spróbować gry w szczególnych przypadkach, gdyż one często pozwalają nam zgadnąć kto ma strategię wygrywającą i nasuwają pomysł na nią. Przykładowo, jeśli dla powyższego zadania rozważymy stół o bardzo niewiele większy niż jedna moneta, to po pierwszym ruchu Ani, Bartek nie będzie w stanie położyć kolejnej monety. Nasuwa to pomysł, że Ania ma strategię wygrywającą.
+
+\vspace{10px}
+

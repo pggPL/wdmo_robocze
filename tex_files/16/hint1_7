@@ -1,0 +1,2 @@
+\noindent 
+ Wykaż również, że jeśli dla pewnej liczby całkowitej~$n$ zachodzi nierówność $\mathrm{NWD}(n, a_{n - 1}) > 1$, to $a_n = 3n$.

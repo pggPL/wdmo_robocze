@@ -1,0 +1,13 @@
+
+
+\noindent
+Załóżmy nie wprost, że taka liczba nie istnieje. Wówczas dla dowolnej liczby rzeczywistej $x$ mamy
+\[
+&nbsp;&nbsp;W(x) = W(-x).
+\]
+Niech
+\[
+&nbsp;&nbsp;W(x) = a_nx^n + a_{n - 1}x^{n - 1} + ... + a_1x + a_0.
+\]
+Z założenia wiemy, że $a_1 \neq 0$. Zauważmy, że $W(-x)$ ma przy $x^1$ współczynnik $-a_1$. Czyli różnica $W(x) - W(-x)$ ma ten współczynnik równy $2a_1 \neq 0$. Założyliśmy, że ten wielomian dla każdej liczby rzeczywistej przyjmuje wartość $0$. To oznacza, że jest to wielomian zerowy, co przeczy niezerowości współczynnika przy $x^1$.
+

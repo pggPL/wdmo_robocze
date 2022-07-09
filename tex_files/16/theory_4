@@ -1,0 +1,11 @@
+\heading{Przykład 2}
+
+\noindent
+Znajdź wszystkie liczby całkowite $n \geq 3$, dla których istnieją liczby rzeczywiste $a_1, a_2, \dots a_{n + 2}$ spełniające $a_{n + 1} = a_1$, $a_{n + 2} = a_2$ oraz
+\[
+&nbsp;&nbsp;a_ia_{i + 1} + 1 = a_{i + 2},
+\]
+dla $i = 1, 2, \dots, n$.
+
+
+\newpage

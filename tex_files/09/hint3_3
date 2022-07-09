@@ -1,0 +1,3 @@
+\noindent 
+ Powiemy, że liczba naturalna $x$ jest \textit{dobra}, jeśli ma dokładnie $n$ cyfr, z których każda jest jedynką lub dwójką, oraz $x$ jest podzielna przez liczbę $2^n$. Wykaż, że dla dowolnej dodatniej liczby całkowitej istnieje liczba dobra, która ma $n$ cyfr.
+&nbsp;&nbsp;

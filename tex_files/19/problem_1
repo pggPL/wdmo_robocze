@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Niech $a$, $b$ będą liczbami rzeczywistymi. Załóżmy, że dla wszystkich liczb rzeczywistych $x$, $y$ zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;|(ax + by)(ay + bx)| \leqslant x^2 + y^2.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Udowodnić, że $a^2 + b^2 \leqslant 2$.

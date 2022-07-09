@@ -1,0 +1,49 @@
+
+
+\noindent
+Przeprowadźmy rozumowanie nie wprost -- zakładamy, że żaden trójkąt nie jest różnokolorowy. Rozpatrzmy taki kolor $c$ i taki zbiór wierzchołków $A$, że pomiędzy każdymi dwoma wierzchołkami w $A$ istnieje ścieżka złożona z krawędzi koloru $c$. Przyjmijmy dodatkowo, że $A$ jest maksymalnym zbiorem o tej własności.
+
+\vspace{10px}
+\noindent
+Załóżmy, że istnieje pewien wierzchołek $v$ w tym grafie, który nie należy do zbioru $A$. Niech $a$ oznacza pewien wierzchołek z $A$, zaś $b \in A$ niech będzie sąsiadem $a$, o ile takowy istnieje. Zauważmy, że krawędzie $va$ i $vb$ nie mogą być koloru $c$, bo wówczas moglibyśmy dorzucić wierzchołek $v$ do $A$. Tak być nie może, bo $A$ jest maksymalnym zbiorem o~postulowanej własności. 
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$v$] (A) at (0,4) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$a$] (B_1) at (-1,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$b$] (B_2) at (0,-1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_3) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_4) at (3,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_5) at (0.5,2) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A)--(B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A)--(B_5);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(B_4);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Niech krawędź $va$ ma kolor $c_1$. Skoro trójkąt $vab$ nie może być różnokolorowy, krawędź $vb$ ma również kolor $c_1$. Stąd wszystkie krawędzie z $v$ do sąsiadów $a$ są koloru $c_1$. Analogicznie wszystkie krawędzie z $v$ do sąsiadów sąsiadów wierzchołka $a$ są koloru $c_1$. Przeprowadzając to rozumowanie dalej otrzymujemy, że wszystkie wierzchołki ze zbioru $A$ są połączone z~wierzchołkiem~$v$ krawędzią koloru~$c_1$. Zbiór wierzchołków $A \cup v$ oraz kolor $c_1$ mają własność, co do której zakładaliśmy, że maksymalnym zbiorem ją posiadającym jest $A$. Ta sprzeczność dowodzi tego, że nie może istnieć wierzchołek $v$, czyli zbiór $A$ jest pełnym zbiorem wierzchołków.
+
+\vspace{10px}
+\noindent
+Rozpatrzmy graf składający się tylko z krawędzi koloru $c$. Jest to graf spójny o $n$ wierzchołkach. Musi mieć on więc co najmniej $n - 1$ krawędzi. Przeczy to założeniu zadania, że jest ich co najmniej $n - 2$.
+\vspace{10px}
+
+\begin{remark}
+&nbsp;&nbsp;Dowód faktu, że graf spójny o $n$ wierzchołkach musi mieć co najmniej $n - 1$ krawędzi pozostawiamy czytelniczce/czytelnikowi jako ćwiczenie.
+\end{remark}

@@ -1,0 +1,8 @@
+\heading{Przykład 1}
+
+\noindent
+Wykazać, że dla każdej liczby dodatniej całkowitej $n$ zachodzi nierówność
+\[
+&nbsp;&nbsp;2^n \geqslant n + 1.
+\]
+

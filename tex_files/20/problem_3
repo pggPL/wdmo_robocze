@@ -1,0 +1,9 @@
+\noindent
+&nbsp;&nbsp;Dane są dodatnie liczby całkowite $a$, $b$ i $c$, takie że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;b \mid a^3, \quad c \mid b^3, \quad a \mid c^3.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wykazać, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;abc \mid (a + b + c)^{13}.
+&nbsp;&nbsp;\]

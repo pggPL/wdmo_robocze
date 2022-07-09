@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Dany jest turniej o $n$ uczestnikach oraz pewna dodatnia liczba całkowita $k$. Każdy z uczestników uzyskał jednakową liczbę zwycięstw oraz dla dowolnych dwóch różnych uczestników tego turnieju $a$, $b$, liczba uczestników, którzy przegrali zarówno z $a$, jak i z $b$ wynosi $k$. Wykazać, że liczba $n + 1$ jest podzielna przez 4.

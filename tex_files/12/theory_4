@@ -1,0 +1,25 @@
+\heading{Dowód}
+
+\noindent
+Zauważmy, że na mocy nierówności Cauchego-Schwarza prawdą jest, że
+\begin{gather*}
+&nbsp;&nbsp;\left(\sum^{n}_{i = 1} \left(\sqrt{\frac{a_i}{b_i}}\right)^2 \right) \left(\sum^{n}_{i = 1} \left(\sqrt{a_ib_i}\right)^2 \right) \geqslant \left(\sum^{n}_{i = 1} \sqrt{a_ib_i} \cdot \sqrt{\frac{a_i}{b_i}} \right).
+\end{gather*}
+Jest to równoważnie nierówności
+\[
+&nbsp;&nbsp;\left(\sum^{n}_{i = 1} \frac{a_i}{b_i} \right) \left(\sum^{n}_{i = 1} a_ib_i \right) \geqslant \left(\sum^{n}_{i = 1} a_i^2 \right),
+\]
+z której w oczywisty sposób wynika teza.
+
+\qed
+\newpage
+
+\noindent
+
+% ciągi jednomonotoniczne
+
+\noindent
+Przejdziemy teraz do nierówności między ciągami jednomonotonicznymi. Ma ona bardzo ciekawy dowód, do którego będzie potrzebny nam następujący lemat.
+
+\vspace{10px}
+

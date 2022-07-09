@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Dany jest wielomian $W(x)$ o współczynnikach rzeczywistych, który ma niezerowy współczynnik przy $x^1$. Wykazać, że istnieje taka liczba rzeczywista $a$, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;W(a) \neq W(-a).
+&nbsp;&nbsp;\]

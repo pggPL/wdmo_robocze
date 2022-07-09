@@ -1,0 +1,11 @@
+\heading{Twierdzenie 3}
+
+\noindent
+Jeśli wielomian $W(x)$ ma $n$ pierwiastków rzeczywistych $\alpha_1, \alpha_2, ..., \alpha_n$ to wówczas można go zapisać w postaci
+\[
+    W(x) = (x - \alpha_1)(x - \alpha_2) \cdot ... \cdot (x - \alpha_n) Q(x),
+\]
+dla pewnego wielomianu $Q(x)$, takiego, że $deg\; Q + n = deg\; W$. W szczególności jeśli $W$ jest stopnia $n$ to $Q(x)$ jest stałą.
+
+\vspace{5px}
+

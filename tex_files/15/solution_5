@@ -1,0 +1,52 @@
+
+
+\noindent
+Zauważmy, że łączna liczba zwycięstw w turnieju była równa liczbie pojedynków, czyli ${{n}\choose{2}} = n \cdot \frac{n - 1}{2}$. Skoro każdy gracz uzyskał taką samą liczbę zwycięstw, to liczba zwycięstw odniesionych przez każdego z graczy wynosi $\frac{n - 1}{2}$.
+Rozpatrzmy jednego gracza~$x$. Podzielmy pozostałych graczy na dwa zbiory -- zbiór~$A$, który zawiera $\frac{n - 1}{2}$ graczy, którzy wygrali~z~$x$ oraz zbiór~$B$, który zawiera $\frac{n - 1}{2}$ graczy, którzy przegrali~z~$x$. 
+Jeśli gracz~$y$ należy do zbioru~$B$, to liczba graczy pokonanych przez obu~$x$ oraz $y$ wynosi~$k$. Stąd też $y$ pokonał dokładnie~$k$ osób ze zbioru~$B$. Pokonał też~$x$, a skoro pokonał łącznie $\frac{n - 1}{2}$ osób, to pokonał dokładnie $\frac{n - 1}{2} - 1 - k$ osób w zbiorze $A$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$x$] (x) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$y$] (y) at (3.1,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (a_1) at (3.6,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (a_2) at (4.1,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (a_3) at (4.5,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (a_4) at (4.9,1.5) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[circle, draw=black, inner sep=0pt, minimum size=60pt] (1) at (4,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[circle, draw=black, inner sep=0pt, minimum size=60pt] (1) at (4,-1.5) {};
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (b_1) at (3.1,-1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (b_2) at (3.6,-1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (b_3) at (4.1,-1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (b_4) at (4.5,-1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (b_5) at (4.9,-1.5) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[label=right:A] (a) at (5, 1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[label=right:B] (b) at (5, -1.5) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x) to (b_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x) to (b_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (y) to (b_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (y) to (b_2);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (y) to[bend left] (a_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (y) to[bend right] (a_4);
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Skoro zbiór $A$ zawiera $\frac{n - 1}{2}$ osób i każdy pokonał w nim dokładnie $\frac{n - 1}{2} - 1 - k$, czyli stałą liczbę osób, to rozumując analogicznie jak na początku zadania mamy, że każdy pokonał ich dokładnie $\frac{\frac{n - 1}{2}}{2} - 1 = \frac{n - 3}{4}$. Skoro liczba osób jest całkowita, to wynika z tego, że liczba~$n - 3$ jest podzielna przez $4$. Jest to w oczywisty sposób równoważne tezie.
+

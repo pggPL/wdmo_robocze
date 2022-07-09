@@ -1,0 +1,30 @@
+
+
+\noindent
+Tezę wykażemy indukując się po stopniu wielomianu $P$. Jeśli jego stopień wynosi $0$, to znaczy $P(x) = c$ dla pewnej stałej $c$, to biorąc $Q(x) = cx$ otrzymujemy
+\[
+    Q(x + 1) - Q(x) = c(x + 1) - cx = c.
+\]
+Załóżmy, że dla wielomianów o stopniu nie większym niż $n - 1$ zachodzi teza. Wykażemy, że jeśli ${deg\; P = n}$ to szukane $Q$ istnieje.
+Zauważmy, że wielomian 
+\[
+    (x + 1)^{n + 1} - x^{n + 1} = \sum^{n}_{i = 0} {{n + 1}\choose{i}}x^i
+\]
+jest wielomianem stopnia $n$. Taki sam stopień ma $P$, więc istnieje taka liczba rzeczywista~$a$, że
+\[
+    a\left((x + 1)^{n + 1} - x^{n + 1} \right) \quad \text{oraz} \quad P(x)
+\]
+mają równy współczynnik wiodący. Stąd
+\[
+    P(x) - a\left((x + 1)^{n + 1} - x^{n + 1} \right)
+\]
+ma stopień mniejszy od $n$, czyli na mocy założenia indukcyjnego istnieje takie $Q_1(x)$, że
+\[
+    Q_1(x + 1) - Q_1(x) = P(x) - a\left((x + 1)^{n + 1} - x^{n + 1} \right),
+\]
+równoważnie
+\[
+    (Q_1(x + 1) + a(x + 1)^{n + 1}) - (Q_1(x) + ax^{n + 1}) = P(x).
+\]
+Biorąc $Q(x) = Q_1(x) + ax^{n + 1}$ otrzymujemy tezę.
+

@@ -1,0 +1,38 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że szukaną liczbą jest $32$.\\
+Najpierw pokażemy, że istotnie można postawić tyle skoczków na szachownicy. Zauważmy, że rozpatrując standardowe kolorowanie szachownicy i stawiając skoczki na każdym z 32 pól jednego koloru, żadne dwa z nich nie będą się biły.
+
+\begin{center}
+    \begin{tikzpicture}[x=1cm, scale=0.5]
+    \foreach \y in {0,2,...,6}{
+        \foreach \x in {0,2,...,6}{
+            \fill[black!50] (\x,\y) rectangle (1+\x,1+\y) rectangle (2+\x,2+\y);}}
+    \node at (0.5,0.5) {1};
+    \node at (2.5,1.5) {1};
+    \node at (0.5,1.5) {2};
+    \node at (2.5,0.5) {2};
+    \node at (1.5,1.5) {3};
+    \node at (3.5,0.5) {3};
+    \node at (1.5,0.5) {4};
+    \node at (3.5,1.5) {4};
+    \draw (0,0)--(8,0)--(8,8)--(0,8)--cycle;
+    \draw[line width=1] (0,0)--(4,0)--(4,2)--(0,2)--cycle;
+    \end{tikzpicture}
+\end{center}
+
+\noindent
+Podzielmy szachownice na $8$ prostokątów o wymiarach $4\times2$ -- takich jak na rysunku. Wykażemy, że wewnątrz każdego prostokąta mogą stanąć co najwyżej cztery skoczki. Istotnie – numerując pola tak jak na rysunku, nie jest możliwe aby na obu polach z tym samym numerem stały skoczki. Więc na całej szachownicy mogą stanąć co najwyżej $8 \cdot 4 = 32$ skoczki.
+
+\qed
+
+\vspace{5px}
+
+\noindent
+W powyższym zadaniu konieczne było zarówno udowodnienie, że nie da się postawić więcej niż $32$ skoczków, jak i wykazanie, że istnieje szukane ustawienie $32$ skoczków. W tego typu problemach warto uważnie poszukać maksymalnego ustawienia, gdyż w przypadku jego przeoczenia, nasze próby dowodzenia, że znaleziona konfiguracja jest maksymalna będą bezsensowne. 
+
+\vspace{10px}
+
+% to zadanie ma pokazać analizę małych przypadków
+%Source: https://om.mimuw.edu.pl/static/app_main/camps/oboz2018.pdf zadanie 1

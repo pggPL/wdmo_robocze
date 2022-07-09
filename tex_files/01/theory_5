@@ -1,0 +1,66 @@
+\heading{Przykład 2}
+
+\noindent
+Zdefiniujmy ciąg grafów $(G_n)_{n\geqslant1}$ w następujący sposób.
+\begin{itemize}
+&nbsp;&nbsp;\item Graf $G_1$ jest grafem złożonym z dwóch połączonych ze sobą wierzchołków,
+&nbsp;&nbsp;\item Graf $G_{i + 1}$ dla $i \geqslant 2$ otrzymujemy poprzez połączenie dwóch grafów $G_i$, aby każdy wierzchołek z jednego z tych grafów był połączony z dokładnie jednym wierzchołkiem z drugiego z tych grafów.
+\end{itemize}
+
+\noindent
+Wykazać, że graf $G_{2020}$ ma ścieżkę Hamiltona.
+
+\vspace{5px}
+
+\begin{remark}
+Można zauważyć, że $G_n$ to w istocie $n$-wymiarowy hipersześcian.
+\end{remark}
+
+
+\vspace{20px}
+
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(2,0){v_2}
+    \tkzDrawPoints(v_1,v_2)
+    \tkzDrawSegments(v_1,v_2)
+&nbsp;&nbsp;\end{tikzpicture}\\
+&nbsp;&nbsp;$G_1$
+\end{center}
+\end{minipage}
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(2,0){v_2}
+    \tkzDefPoint(2,2){v_3}
+    \tkzDefPoint(0,2){v_4}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_3,v_4 v_1,v_4)
+&nbsp;&nbsp;\end{tikzpicture}\\
+&nbsp;&nbsp;$G_2$
+\end{center}
+\end{minipage}
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(2,0){v_2}
+    \tkzDefPoint(2,2){v_3}
+    \tkzDefPoint(0,2){v_4}
+    \tkzDefPoint(0.5,0.5){v_5}
+    \tkzDefPoint(1.5,0.5){v_6}
+    \tkzDefPoint(1.5,1.5){v_7}
+    \tkzDefPoint(0.5,1.5){v_8}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_3,v_4 v_1,v_4)
+    \tkzDrawPoints(v_5,v_6, v_7, v_8)
+    \tkzDrawSegments(v_5,v_6 v_6,v_7 v_7,v_8 v_5,v_8)
+    \tkzDrawSegments(v_5,v_1 v_6,v_2 v_7,v_3 v_8,v_4)
+&nbsp;&nbsp;\end{tikzpicture}\\
+&nbsp;&nbsp;$G_3$
+\end{center}
+\end{minipage}
+

@@ -1,0 +1,21 @@
+
+
+\vspace{5px}
+
+\noindent
+Przekształcamy tezę równoważnie dodając $3$ do obu stron
+\begin{align*}
+&nbsp;&nbsp;\frac{a}{b + c} + 1 + \frac{b}{a + c} + 1 + \frac{c}{a + b} + 1 &\geqslant \frac{9}{2}, \\
+&nbsp;&nbsp;\frac{a + b + c}{b + c} + \frac{a + b + c}{a + c} + \frac{a + b + c}{a + b} &\geqslant \frac{9}{2}, \\
+&nbsp;&nbsp;\left(a + b + c\right)\left(\frac{1}{b + c} + \frac{1}{a + c} + \frac{1}{a + b}\right) &\geqslant \frac{9}{2}.
+\end{align*}
+
+\noindent
+Zauważmy, że z nierówności miedzy średnią arytmetyczną i harmoniczną wynika
+\[
+&nbsp;&nbsp;\frac{\frac{1}{b + c} + \frac{1}{a + c} + \frac{1}{a + b}}{3} \geqslant \frac{3}{(b + c) + (a + c) + (a + b)} = \frac{3}{2(a + b + c)},
+\]
+co jest równoważne nierówności, którą chcieliśmy wykazać.
+
+\vspace{5px}
+

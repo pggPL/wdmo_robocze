@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Dany jest pewien wielomian $P(x)$. Wykazać, że istnieje wielomian $Q(x)$, że zachodzi równość
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;Q(x + 1) - Q(x) = P(x).
+&nbsp;&nbsp;\]

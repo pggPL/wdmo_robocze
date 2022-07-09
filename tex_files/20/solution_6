@@ -1,0 +1,24 @@
+
+
+\noindent
+Wykażemy, że dla dowolnej liczby całkowitej $1 \leqslant k \leqslant n$ zachodzi nierówność
+\begin{align*}
+&nbsp;&nbsp;\left \lfloor \frac{n}{k} \right \rfloor \geqslant \frac{n - k + 1}{k}.
+\end{align*}
+Weźmy $n = \left \lfloor \frac{n}{k} \right \rfloor \cdot k + r$, gdzie $r$ jest resztą z dzielenia $n$ przez $k$. Wówczas $r \leqslant k - 1$ oraz 
+\[
+&nbsp;&nbsp;\frac{n - k + 1}{k} = \frac{\left (\left \lfloor \frac{n}{k} \right \rfloor \cdot k + r\right ) - k + 1}{k} = \left \lfloor \frac{n}{k} \right \rfloor + \frac{r - (k - 1)}{k} \leqslant \left \lfloor \frac{n}{k} \right \rfloor,
+\]
+przy czym równość w powyższej nierówności zachodzi wtedy i tylko wtedy, gdy $r = k - 1$, czyli gdy liczba $n + 1$ jest podzielna przez $k$. Mamy więc
+\[
+\left \lfloor \frac{n}{1} \right \rfloor \cdot \left \lfloor \frac{n}{2} \right \rfloor \cdots \left \lfloor \frac{n}{m} \right \rfloor \geqslant \frac{n}{1} \cdot \frac{n - 1}{2} \cdot ... \cdot \frac{n - m + 1}{m} = {{n}\choose{m}}.
+\]
+Równość w powyższej równości zachodzi wtedy i tylko wtedy, gdy $n + 1$ jest podzielna przez każdą z liczb $1$, $2$, ..., $m$. Stąd łatwo wynika $(a)$. Najmniejszą liczbą, dla której wszystkie te równości zachodzą jest liczba
+\[
+&nbsp;&nbsp;p(m) = \mathrm{NWW}(1, 2, 3, ..., m) - 1.
+\]
+Zauważmy, że $2019 = 3 \cdot 673$. Skoro obie z liczb $3$ i $673$  dzielą liczbę $\mathrm{NWW}(1, 2, 3, ..., 2018)$, to jest ona również podzielna przez $2019$. Stąd
+\[
+&nbsp;&nbsp;p(2018) = \mathrm{NWW}(1, 2, 3, ..., 2018) - 1 = \mathrm{NWW}(1, 2, 3, ..., 2019) - 1 = p(2019). 
+\]
+

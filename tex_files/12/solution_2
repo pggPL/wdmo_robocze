@@ -1,0 +1,21 @@
+
+
+\noindent
+Łatwo zauważyć, że ciągi
+\[
+&nbsp;&nbsp;(bc, ac, ab), \quad \left(\frac{abc}{a}, \frac{abc}{b}, \frac{abc}{c}\right), \quad \left(\frac{1}{a}, \frac{1}{b}, \frac{1}{c}\right)
+\]
+są parami jednakowo monotoniczne. Zaś ciągi
+\[
+&nbsp;&nbsp;\left(\frac{1}{a}, \frac{1}{b}, \frac{1}{c}\right) \quad \text{oraz} \quad (a^2, b^2, c^2).
+\]
+będą odwrotnie monotoniczne.
+Rozpatrzmy ciągi
+\[
+&nbsp;&nbsp;(a^2, b^2, c^2) \quad \text{oraz} \quad (bc, ac, ab).
+\]
+Na mocy wyżej poczynionych rozważań są one odwrotnie monotoniczne. Toteż
+\[
+&nbsp;&nbsp;a^2 \cdot ab  + b^2 \cdot bc  + c^2 \cdot ca  \geqslant a^2 \cdot bc  + b^2 \cdot ca  + c^2 \cdot ab.
+\]
+

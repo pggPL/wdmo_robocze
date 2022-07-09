@@ -1,0 +1,8 @@
+\heading{Twierdzenie 3}
+
+\noindent
+Dana jest liczba pierwsza $p$ oraz liczby całkowite $a$, $b$. Wówczas zachodzi równość
+\[
+&nbsp;&nbsp;\left(\frac{a}{p}\right)\left(\frac{b}{p}\right) = \left(\frac{ab}{p}\right).
+\]
+

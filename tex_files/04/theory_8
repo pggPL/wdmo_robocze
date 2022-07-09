@@ -1,0 +1,23 @@
+\heading{Dowód}
+
+\noindent
+Pokażmy, że jeśli $i \not\equiv j \pmod{p}$, to $ai \not\equiv aj \pmod{p}$. 
+Załóżmy, że 
+\[
+    ai \equiv aj \pmod{p}
+\] 
+dla pewnych $i,\; j$. Skoro $p$ nie dzieli $a$, to istnieje odwrotność $a$ modulo $p$. Mnożąc obie strony przez $a^{-1}$ -- lub równoważnie dzieląc przez $a$ otrzymujemy
+\[
+    i \equiv j \pmod{p},
+\]
+co dowodzi postulowanej implikacji.
+
+\vspace{10px}
+\noindent
+Rozpatrzmy liczby $a, \; 2a,\; (p - 1)a$. Oczywiście żadna z nich nie jest podzielna przez~$p$. Z tego, że tych liczb jest $p - 1$, niezerowych reszt z dzielenia przez $p$ również jest $p - 1$, oraz te liczby dają parami różne reszty niezerowe z dzielenia przez $p$, wynika teza.
+
+\qed
+
+
+\newpage
+

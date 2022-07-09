@@ -1,0 +1,39 @@
+\heading{Nierówności między średnimi}
+
+\noindent
+Dane są dodatnie liczby rzeczywiste $a_1,\; a_2, \; a_3, \; ..., \; a_n$.
+
+\noindent
+Średnią kwadratową nazywamy wartość
+\[
+    QM = \sqrt{\frac{a_1^2 + a_2^2 + ... + a_n^2}{n}}.
+\]
+Średnią arytmetyczną nazywamy wartość
+\[
+    AM = \frac{a_1 + a_2 + ... + a_n}{n}.
+\]
+Średnią geometryczną nazywamy wartość
+\[
+    GM = \sqrt[n]{a_1a_2...a_n}.
+\]
+Średnią harmoniczną nazywamy wartość
+\[
+   HM = \frac{n}{\frac{1}{a_1} + \frac{1}{a_2} + ... + \frac{1}{a_n}}.
+\]
+
+\noindent
+Wówczas zachodzą nierówności
+\[
+    QM \geqslant AM \geqslant GM \geqslant HM,
+\]
+przy czym równość w którymkolwiek przypadku zachodzi wtedy i tylko wtedy, gdy
+\[
+    a_1 = a_2 = ... = a_n.
+\]
+
+\vspace{10px}
+\noindent
+Skróty $QM$, $AM$, $GM$, $HM$ pochodzą z języka angielskiego i oznaczają odpowiednio \textit{quadratic mean}, \textit{arithmetic mean}, \textit{geometric mean}, \textit{harmonic mean}. Zaprezentujemy dowód jednej z podanych nierówności. Pozostałe są nieco bardziej złożone, więc nie będziemy ich przytaczać.
+
+\vspace{10px}
+

@@ -1,0 +1,7 @@
+\heading{Przykład 1}
+
+\noindent
+Ania i Bartek grają w następującą grę. Mają do dyspozycji stół w kształcie koła oraz dowolnie wiele monet o jednakowej średnicy, mniejszej od średnicy stołu. W każdym ruchu gracz kładzie monetę na stole tak, aby nie przykrywała żadnej innej monety. Gdy wykonanie ruchu nie jest możliwe, gracz którego jest kolej przegrywa. Rozstrzygnąć który z graczy ma strategię wygrywającą, jeśli Ania wykonuje pierwszy ruch.
+
+\vspace{5px}
+

@@ -1,0 +1,10 @@
+\heading{Przykład 2}
+
+\noindent
+Dane są parami różne liczby całkowite $a_1, a_2, ..., a_n$, gdzie $n \geqslant 1$. Wykazać, że wielomian 
+\[
+&nbsp;&nbsp;P(x)=((x − a_1)(x − a_2)\cdot ...\cdot (x − a_n))^2 + 1
+\]
+nie jest iloczynem dwóch wielomianów dodatnich stopni o współczynnikach całkowitych.
+\vspace{5px}
+

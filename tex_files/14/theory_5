@@ -1,0 +1,36 @@
+\heading{Twierdzenie 2}
+
+\noindent
+Dana jest liczba pierwsza $p$. Wówczas istnieje taka liczba $g \in \{1, 2, 3, ..., p - 1\}$, że liczby 
+\[
+&nbsp;&nbsp;g,\; g^2,\; g^3,\; ...,\; g^{p - 1}
+\]
+dają parami różne reszty modulo $p$.
+
+\vspace{20px}
+
+\noindent
+Innymi słowy reszty z dzielenia powyższych liczb są pewną permutacją reszt
+\[
+&nbsp;&nbsp;1,\; 2,\; 3,\; ...,\;  p - 1.
+\]
+Czyli dla dowolniej niezerowej reszty $a$, istnieje taka liczba naturalna $k$, że 
+\[
+&nbsp;&nbsp;a \equiv g^k \pmod{p}.
+\]
+Liczbę $g$ nazwiemy \textit{generatorem} lub \textit{pierwiastkiem pierwotnym} modulo $p$. Dowód powyższego twierdzenia pominiemy.
+
+\vspace{10px}
+
+\noindent
+Przykładem generatora dla $p = 11$ jest $g = 6$. Istotnie
+\begin{gather*}
+&nbsp;&nbsp;6^1 \equiv 6, \;\; 6^2 \equiv 3, \;\; 6^3 \equiv 7, \;\;
+&nbsp;&nbsp;6^4 \equiv 9, \;\; 6^5 \equiv 10, \pmod{11} \\
+&nbsp;&nbsp; 6^6 \equiv 5, \;\;
+&nbsp;&nbsp;6^7 \equiv 8, \;\; 6^8 \equiv 4, \;\; 6^9 \equiv 2, \;\; 6^{10} \equiv 1 \pmod{11},
+\end{gather*}
+liczba $6$ wygenerowała wszystkie niezerowe reszty modulo $11$.
+
+\newpage
+

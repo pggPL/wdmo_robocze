@@ -1,0 +1,13 @@
+\heading{Dowód}
+
+\noindent
+Zauważamy, że zapis $x^2\equiv 1 \pmod{p}$ jest równoważny zapisowi 
+\[
+    p \mid x^2-1=(x-1)(x+1).
+\]
+ Skoro $p$ jest liczbą pierwszą, to na mocy Twierdzenia 1 zachodzi $p\mid x-1$ lub $p\mid x+1$, a to jest równoważne temu, co było do wykazania.
+ 
+\qed
+
+\vspace{10px}
+

@@ -1,0 +1,21 @@
+\heading{Rozwiązanie}
+
+\noindent
+Rozpatrzmy wielomiany
+\[
+    P_1(x) = (x - a)(x - b) = x^2 - (a + b)x + ab,
+\]
+\[
+    P_2(x) = (x - c)(x - d) = x^2 - (c + d)x + cd.
+\]
+Zauważmy, że na mocy założeń mają one równe współczynniki. Stąd te wielomiany są sobie równe, toteż mają równe multizbiory pierwiastków.
+
+\qed
+
+\vspace{5px}
+
+\noindent
+Dla unormowanego wielomianu drugiego stopnia o pierwiastkach $a$ i $b$ współczynniki wyniosą kolejno $1$, $-(a + b)$ oraz $ab$. Tę obserwacje można uogólnić do Wzorów Viete'a. Poniżej wyprowadzamy je dla wielomianów trzeciego stopnia. Dla większych stopnie wyprowadzenie jest analogiczne. 
+
+\newpage
+

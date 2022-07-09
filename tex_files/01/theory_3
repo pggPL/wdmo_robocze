@@ -1,0 +1,16 @@
+\heading{Zasada indukcji matematycznej}
+
+\noindent
+Metodę dowodzenia zastosowaną w ostatnim akapicie powyższego rozwiązania nazywamy \textit{zasadą indukcji matematycznej}.
+Formalizując, dowód indukcyjny zdania logicznego $Z(n)$ dla dowolnej dodatniej liczby całkowitej $n$ składa się z dwóch części:
+\begin{enumerate}
+&nbsp;&nbsp;\item Baza indukcji -- sprawdzenie prawdziwości zdania $Z(1)$.
+&nbsp;&nbsp;\item Krok indukcyjny -- udowodnienie, że jeśli zachodzi zdanie $Z(k)$, to zachodzi $Z(k + 1)$.
+\end{enumerate}
+
+
+\noindent
+Indukcję matematyczną da się wykorzystać poza algebrą. Pokażemy jedno jego zastosowanie kombinatoryczne. Ale najpierw musimy zdefiniować kilka pojęć z teorii grafów.
+
+\vspace{20px}
+

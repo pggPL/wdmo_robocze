@@ -1,0 +1,7 @@
+\heading{Przykład 1}
+
+\noindent
+W pewnym turnieju gra $2m$ drużyn. W ciągu każdego z $2m - 1$ dni każda z drużyn rozgrywała po jednej partii. Każda drużyna zagrała z każdą drużyną dokładnie raz. W żadnym meczu nie było remisów. Wykazać, że można dla każdego dnia wybrać jedną drużynę, która w danym dniu wygrała swój mecz, tak, aby żadna drużyna nie została wybrana więcej niż raz.
+
+\vspace{5px}
+

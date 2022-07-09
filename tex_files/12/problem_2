@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Udowodnić, że dla dowolnych liczb dodatnich $a$, $b$, $c$ zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a^3b + b^3c + c^3a \geqslant a^2bc + ab^2c + abc^2.
+&nbsp;&nbsp;\]

@@ -1,0 +1,8 @@
+\noindent
+&nbsp;&nbsp;Czy można wypełnić szachownicę o wymiarach $8 \times 8$ przy pomocy jednego $Z$-klocka oraz dowolnej liczby prostokątów $1 \times 4$.
+&nbsp;&nbsp;\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.5]
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,0) -- (2,0) -- (2,1) -- (3,1) -- (3,2) -- (2,2) -- (2,1) -- (0,1) -- cycle;
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (1,0) -- (1,2) -- (2,2);
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}

@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Rozstrzygnąć, czy dla dowolnych liczb dodatnich $a$, $b$, $c$ zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a^2b^3 + b^2c^3 + c^2a^3 \leqslant ab^4 + bc^4 + ca^4.
+&nbsp;&nbsp;\]

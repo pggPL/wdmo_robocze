@@ -1,0 +1,37 @@
+\heading{Rozwiązanie}
+
+\noindent
+Zauważmy, że skoro dane równanie jest spełnione dla wszystkich liczb rzeczywistych $x$~i~$y$ to jest spełnione w szczególności dla $x = y = 0$. Wówczas
+\begin{gather*}
+    f(0) = f(0) - f(0) = 0.
+\end{gather*}
+
+\noindent
+Podstawiając do wyjściowej równości $x = 0$ otrzymujemy
+\[
+    f(y) = f(0) - f(y).
+\]
+Na mocy wyżej wykazanej zależności $f(y) = 0$ mamy
+\begin{gather*}
+    f(y) = - f(y) \\
+    f(y) = 0.
+\end{gather*}
+Wykazaliśmy, że $f(x) = 0$ dla wszystkich liczb rzeczywistych $x$. Pozostaje sprawdzić, że istotnie taka funkcja spełnia warunki zadania. Zauważmy, że wówczas
+\[
+    f(x + y) = 0 = f(x) - f(y).
+\]
+
+\qed
+
+\vspace{10px}
+
+\noindent
+Metoda polegająca na podstawianiu szczególnych wartości do danego równania jest najważniejszym narzędziem w walce z równaniami funkcyjnymi. Często, aby zadania rozwiązać, należy użyć jej kilka lub nawet kilkanaście razy.
+
+\vspace{10px}
+
+\noindent
+Należy zaznaczyć, że bardzo często rozwiązując równanie funkcyjne, wyznacza się zbiór funkcji, które mogą spełniać dane równanie. Jednak często nie oznacza to, że muszą one go spełniać, gdyż podstawianie zazwyczaj nie jest przejściem równoważnym. Dlatego należy zawsze w swoim rozwiązaniu zawrzeć sprawdzenie tego, czy otrzymane funkcje istotnie działają. Brak takiego sprawdzenie w większości przypadków skutkuje obniżeniem oceny za dane zadanie.
+
+\vspace{20px}
+

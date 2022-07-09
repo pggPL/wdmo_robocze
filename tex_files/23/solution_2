@@ -1,0 +1,48 @@
+
+
+\noindent
+Rozpatrzmy punkty $A_1$, $A_2$, ..., $A_n$ na płaszczyźnie kartezjańskiej, przy czym 
+\[
+&nbsp;&nbsp;A_i = (x_i, \; y_i).
+\]
+Zauważmy, że punkty te leżą na okręgu o środku w punkcie $(0,\; 0)$ i promieniu $1$. Chcemy wykazać, że dla pewnych $i$ oraz $j$ zachodzi nierówność
+\[
+&nbsp;&nbsp;(A_iA_{j})^2 = (x_i - x_j)^2 + (y_i - y_j)^2 \leqslant \frac{4\pi^2}{n^2},
+\]
+czyli równoważnie
+\[
+&nbsp;&nbsp;A_iA_{j} \leqslant \frac{2\pi}{n}.
+\]
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){O}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,2){A}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawCircle(O,A)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(1.96, 0.31){X}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0.7, 1.87){Y}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(-0.7, 1.87){P}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(-2, 0){Q}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(-0.7, -1.87){R}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(X, Y, P, Q, R)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[below right](X){$A_i$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above](Y){$A_{i + 1}$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(X,Y Y,P P,Q Q,R R,X)
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Załóżmy bez straty ogólności, że punkty leża na danym okręgu w takiej kolejności, w jakiej są one ponumerowane.
+
+\vspace{10px}
+\noindent
+Zauważmy, że skoro każdy odcinek $A_iA_{i + 1}$ jest krótszy od odpowiadającego mu łukowi, to suma
+\[
+&nbsp;&nbsp;A_1A_2 + A_2A_3 + ... + A_nA_1
+\]
+jest nie większa niż obwód danego okręgu, który wynosi $2\pi$. Stąd wynika, że pewnien z~$n$~składników tej sumy jest nie większy niż $\frac{2\pi}{n}$.
+

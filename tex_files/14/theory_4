@@ -1,0 +1,33 @@
+\heading{Dowód}
+
+\noindent
+Dla liczb $m_1$, ..., $m_k$ rozpatrzmy krotki
+\[
+&nbsp;&nbsp;G(0),\; G(1),\; G(2),\; ...,\; G(m_1 \cdot ...\cdot m_k - 1).
+\]
+Powyższych liczb jest $m_1 \cdot ...\cdot m_k$. Wiemy, że $G(n)$ może przyjmować $m_1 \cdot ...\cdot m_k$ parami różnych wartości. Skoro na mocy Lematu 1 powyższe krotki są parami różne, to występuje tam po jednej krotce każdego z dostępnych rodzajów. Stąd też w szczególności istnieje krotka, która spełnia warunki narzucone przez liczby $a_1$, ..., $a_k$.
+
+\qed
+\vspace{5px}
+
+\noindent
+Powyższe twierdzenie innymi słowami znaczy to, że jeśli narzucimy na pewną liczbę warunki przystawania modulo, które nie są ze sobą sprzeczne, to istnieje liczba, która je spełnia. Dla przykładu warunki
+\begin{align*}
+&nbsp;&nbsp;x &\equiv 2 \pmod{3}, \\
+&nbsp;&nbsp;x &\equiv 1 \pmod{5}, \\
+&nbsp;&nbsp;x &\equiv 5 \pmod{14}.
+\end{align*}
+są spełniane przez liczbę $131$.
+
+\vspace{10px}
+
+\noindent
+Względna pierwszość liczb $m_1$, $m_2$, ..., $m_k$ zapewnia nas o tym, że nie zajdzie żadna sprzeczność w przystawaniach. Aby się przekonać, że bez powyższego założenia teza twierdzenia nie zajdzie, zauważmy, że nie istnieje liczba, która spełnia warunki
+\begin{gather*}
+&nbsp;&nbsp;x \equiv 1 \pmod{2}, \\
+&nbsp;&nbsp;x \equiv 4 \pmod{6}.
+\end{gather*}
+Z pierwszego przystawania wynika jej parzystość, a z drugiego jej nieparzystość.
+
+\vspace{10px}
+

@@ -1,0 +1,11 @@
+\heading{Przykład 1}
+
+\noindent
+Niech $S(n)$ oznacza sumę cyfr liczby $n$ w zapisie dziesiętnym.
+Rozstrzygnąć, czy istnieje taka liczba naturalna $n$, że 
+\[
+&nbsp;&nbsp;S(2^n) = S(2^{n + 1}).
+\]
+
+\vspace{5px}
+

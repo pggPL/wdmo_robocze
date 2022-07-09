@@ -1,0 +1,5 @@
+\noindent 
+&nbsp;&nbsp;Udowodnić, że dla wszystkich dodatnich liczb całkowitych $n$ zachodzi równość
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;    \sum^{n}_{k=0} {{n}\choose{k}}^2 = {{2n}\choose{n}}.
+&nbsp;&nbsp;\]

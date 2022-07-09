@@ -1,0 +1,31 @@
+
+
+\noindent
+Załóżmy nie wprost, że każdy odcinek ma końce różnych kolorów. Oznaczmy te kolory numerami $1$, $2$ i $3$. Załóżmy bez straty ogólności, że istnieje pewien punkt $X$ koloru $1$.
+
+\vspace{10px}
+\noindent
+Rozpatrzmy takie punkty $A$, $B$, że trójkąt $XAB$ jest trójkątem równobocznym o boku długości $1$. Na mocy założenia ten trójkąt ma wierzchołki różnych kolorów, czyli $A$ i~$B$ mają odpowiednio kolory $3$ i $2$ lub $2$ i $3$. Weźmy taki punkt~$B'$, różny od $X$, że trójkąt~$X'AB$ jest równoboczny. Mamy wtedy, że punkt~$X'$ musi mieć różny kolor od punktów~$A$ i~$B$, czyli jest koloru $1$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.5]
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){A}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,2){B}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefEquilateral(A,B)\tkzGetPoint{X};
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefEquilateral(B,A)\tkzGetPoint{X'};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(A,B,X,X');
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(A,B A,X B,X A,X' B,X');
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawCircle[dashed](X,X');
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[left](X){$X$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[right](X'){$X'$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[below](A){$A$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above](B){$B$}
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Analogicznie można wykazać, że każdy punkt oddalony od $X$ o długość odcinka $XX'$ jest koloru $1$. Biorąc dwa punkty, oddalone o $1$, leżące na okręgu o środku w $X$ i promieniu $XX'$, otrzymujemy sprzeczność.
+
+

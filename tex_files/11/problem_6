@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;$20$ dziewczyn usiadło w kółku. Na początku jedna z nich trzyma $N < 19$ kamieni. W każdym ruchu jedna z dziewczyn, która posiada co najmniej dwa kamienie daje po jednym każdej ze swoich sąsiadek. Gra kończy się, gdy każda z dziewczyn trzyma co najwyżej jeden kamień. Wykazać, że gra musi się skończyć po skończonej liczbie ruchów.

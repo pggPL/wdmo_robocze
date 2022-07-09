@@ -1,0 +1,17 @@
+
+
+\noindent
+Zauważmy, że jeśli $a$, $b$ są liczbami całkowitymi większymi od $1$, to
+\[
+&nbsp;&nbsp;2^{ab} - 1 \equiv (2^a)^b - 1 \equiv 1^b - 1 \equiv 0 \pmod{2^a - 1}.
+\]
+Stąd $2^{ab} - 1$ jest podzielna przez $2^a - 1 > 1$, czyli nie jest liczbą pierwszą. Wynika stąd, że jeśli $2^k - 1$ jest liczbą pierwszą dla pewnej liczby naturalnej $k$, to $k$ nie może być liczbą złożoną. Czyli musi być liczbą pierwszą. 
+
+\vspace{10px}
+\noindent
+Stosując tę obserwację do danej liczby pierwszej $2^{2^n - 1} - 1$ otrzymujemy, że liczba $2^n - 1$ również musi być pierwsza. Stosując tę obserwację po raz drugi otrzymujemy, że skoro liczba $2^n - 1$ jest pierwsza, to liczba $n$ też musi być pierwsza.
+
+\vspace{10px}
+
+\newpage
+

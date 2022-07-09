@@ -1,0 +1,6 @@
+\noindent
+Na tablicy zapisano pewną liczbę naturalną. W każdym ruchu możemy zastąpić aktualnie zapisaną liczbę $x$ jedną z liczb 
+\[
+    2x + 1 \quad  \text{lub} \quad \dfrac{x}{x + 2}.
+\]
+Wykazać, że jeśli na tablicy pojawiła się liczba 2000, to była tam ona od samego początku.

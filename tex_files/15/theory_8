@@ -1,0 +1,108 @@
+\heading{Dowód}
+
+\noindent
+Zauważmy, że jeśli turniej jest redukowalny, to nie może on zawierać żadnego cyklu. Graf ten wówczas da się podzielić na dwie części $A$ oraz $B$, takie, że każdy uczestnik z $A$ wygrał z każdym uczestnikiem z $B$. Załóżmy, że istnieje pewien cykl $v_1, \; v_2, \;, ..., \; v_k$. Wówczas część jego wierzchołków należy do $A$, a reszta do $B$. Stąd istnieje takie $i$, że $v_i$ należy do~$B$, a $v_{i + 1}$ należy do $A$. Jednak wówczas $v_{i + 1}$ wygrałby z $v_i$, co daje sprzeczność.
+
+\vspace{10px}
+\noindent
+Przejdźmy teraz do trudniejszej części -- tj. wykazania, że jeśli graf nie jest cykliczny, to jest redukowalny. Rozpatrzmy największy cykl
+\[
+&nbsp;&nbsp;v_1, \; v_{2}, \; v_{3}, \; ..., \; v_k
+\]
+w danym grafie. Skoro graf ten nie jest cykliczny, to istnieje pewien wierzchołek $x$ spoza cyklu.
+
+\vspace{10px}
+\noindent
+\underline{Obserwacja 1.} Jeśli $x$ jest wierzchołkiem spoza cyklu, to albo $x$ przegrał z~wszystkimi \phantom{Obserwacja 1.  }~wierzchołkami z cyklu, albo $x$ wygrał z wszystkimi wierzchołkami z cyklu.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:x] (X) at (0.75,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0.5,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (1,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (1.5,0) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_4) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (A_1) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (X) to (A_1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (X) to (A_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (X) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (X) {};
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Załóżmy, że $x$ przegrał z niektórymi wierzchołkami z cyklu, a z niektórymi wygrał. Wówczas istnieje takie $i$, że $x$ wygrał z $v_{i + 1}$, a przegrał z $v_{i}$ -- oczywiście przyjmujemy $v_{k + 1} = v_{1}$. Wówczas wierzchołki
+\[
+&nbsp;&nbsp;v_1, \; v_{2}, \; ..., \; v_i, \; x, \;, v_{i + 1}, \; ..., \; v_k
+\]
+tworzyłyby cykl, co przeczy założonej maksymalności cyklu wyjściowego.
+
+
+
+\vspace{10px}
+\noindent
+Możemy więc podzielić wierzchołki na trzy grupy:
+\begin{itemize}
+&nbsp;&nbsp;\item grupę $A$ -- wierzchołków spoza rozpatrywanego cyklu, które wygrały z każdym z wierzchołków z cyklu,
+&nbsp;&nbsp;\item grupę $B$ -- wierzchołków spoza rozpatrywanego cyklu, które przegrały z każdym z wierzchołków z cyklu,
+&nbsp;&nbsp;\item grupę $C$ -- wierzchołki z rozpatrywanego cyklu.
+\end{itemize}
+
+\vspace{10px}
+\noindent
+\underline{Obserwacja 2.} Jeśli $x$ należy do grupy $A$, a $y$ do grupy $B$, to $x$ wygrał z $y$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:x] (X) at (0.75,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:y] (Y) at (0.75,-1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0.5,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (1,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (1.5,0) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_4) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (A_1) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (Y) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (Y) to (X) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (X) to (A_2) {};
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+
+\vspace{10px}
+\noindent
+Załóżmy nie wprost, że $y$ wygrał z $x$. Wówczas wierzchołki
+\[
+&nbsp;&nbsp;v_1, \; y, \; x, \; v_{2}, \; ..., \; v_k, 
+\]
+tworzyłyby większy cykl -- sprzeczność.
+
+\vspace{10px}
+\noindent
+Skoro nie wszystkie wierzchołki należą do do grupy $C$, to istnieje inna grupa, która jest niepusta -- przyjmijmy bez straty ogólności, że jest to grupa $A$. Wówczas podział na zbiory $A \cup C$ oraz $B$ dowodzi redukowalności grafu.
+
+\qed
+
+

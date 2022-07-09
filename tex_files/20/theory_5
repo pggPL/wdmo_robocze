@@ -1,0 +1,11 @@
+\heading{Przykład 3}
+
+\noindent
+Ułamek $\frac{a}{b}$ nazwiemy \textit{zbilansowanym}, jeśli liczby $a$ oraz $b$ są iloczynem tej samej liczby liczb pierwszych -- niekoniecznie różnych. Dla przykładu ułamki $\frac{2 \cdot 3}{5 \cdot 7}$ oraz $\frac{3 \cdot 11}{5^2}$ są zbilansowane, a ułamek $\frac{3}{2 \cdot 5}$ nie. Wykazać, że dla dowolnej dodatniej liczby całkowitej~$k$, istnieją takie dodatnie liczby całkowite $x$, $y$, że każda z liczb
+\[
+&nbsp;&nbsp;\frac{x}{y}, \; \frac{x + 1}{y + 1}, \; \frac{x + 2}{y + 2}, \; ..., \; \frac{x + k}{y + k}
+\]  
+jest zbilansowana.
+
+\vspace{5px}
+

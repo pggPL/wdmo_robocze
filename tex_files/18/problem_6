@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Krawędzi grafu pełnego o $n \geqslant 3$ wierzchołkach zostały pokolorowane w taki sposób, że każdy kolor został użyty do pokolorowania co najwyżej $n - 2$ krawędzi. Wykazać, że istnieje podgraf tego grafu, będący trójkątem, o krawędziach parami różnych kolorów.

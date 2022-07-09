@@ -1,0 +1,9 @@
+\heading{Przykład 3}
+
+\noindent
+Znajdź wszystkie funkcje $ f:\mathbb{R}\to\mathbb{R} $ dla których 
+\[
+&nbsp;&nbsp;f(f(x)^2 + f(y)) = xf(x) + y,
+\]
+dla dowolnych liczb rzeczywistych $x, y$.
+

@@ -1,0 +1,7 @@
+\heading{Przykład 1}
+
+\noindent
+Szachownicę o wymiarach $2018\times 2018$ przykryto przy pomocy jednej kwadratowej płytki o wymiarach $2 \times 2$ oraz $\frac{2018^2 − 4}{5}$ prostokątnych płytek o wymiarach $1 \times 5$ w taki sposób, że każde pole szachownicy jest przykryte przez dokładnie jedną płytkę (płytki można obracać). Wykazać, że płytka 2 × 2 nie przykrywa żadnego pola o krawędzi zawartej w brzegu szachownicy.
+
+\vspace{5px}
+

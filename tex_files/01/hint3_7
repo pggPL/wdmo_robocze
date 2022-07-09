@@ -1,0 +1,9 @@
+\noindent 
+ Zauważ, że suma liczb
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;{x_{2k+3}-x_{2k+1}, \; x_{2k+3}-x_{2k},\; \cdots, \; x_{2k+3}-x_{k+2}} \quad \text{i} \quad {x_{2k+2}-x_{k+1},\; \cdots, \; x_{2k+2}-x_1},
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;jest równa sumie liczb
+\begin{gather*}
+&nbsp;&nbsp;x_{2k+3} - x_{2k+2} \quad \text{i} \quad x_{2k+2} - x_{2k+1},\; x_{2k+2} - x_{2k},\; \cdots,\; x_{2k+3} - x_{k+2}  \\ \text{oraz} \quad {x_{2k+3} - x_{k+1},\; \cdots, \; x_{2k+3}-x_1}.
+\end{gather*}

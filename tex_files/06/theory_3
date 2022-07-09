@@ -1,0 +1,7 @@
+\heading{Przykład 2}
+
+\noindent
+Niech $S(k)$ oznacza sumę cyfr liczby $k$ w zapisie dziesiętnym. Dodatnią liczbę całkowitą~$n$ nazwiemy \textit{piękną} jeśli zachodzi równość $S(n) = S(n^2)$. Wyznaczyć wszystkie wartości jakie przyjmuje $S(n)$ dla liczb pięknych n.
+
+\newpage
+

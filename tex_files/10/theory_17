@@ -1,0 +1,11 @@
+\heading{Przykład 4}
+
+\noindent
+Udowodnić, że dla wszystkich liczb całkowitych $n$ liczba 
+\[
+&nbsp;&nbsp;\frac{1}{n+1}{{2n}\choose{n}}
+\]
+jest całkowita.
+
+\vspace{5px}
+

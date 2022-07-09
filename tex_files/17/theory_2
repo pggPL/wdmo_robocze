@@ -1,0 +1,59 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że istnieje ciąg ruchów spełniający warunki zadania. Przyjmiemy, że 
+\[
+&nbsp;&nbsp;(a_1, a_2, ....) \rightarrow (b_1, b_2, ...)
+\] 
+jeśli można wykonać pewną liczbę ruchów, że z ciągu kolejnych pudełek w których jest $a_1, a_2, ....$ monet otrzymamy ciąg $b_1, b_2, ....$ monet.
+
+\vspace{10px}
+
+\noindent
+\underline{Obserwacja.} $(a, 0, 0) \rightarrow (0, 2^a, 0)$ dla każdego $a \geqslant 1.$
+
+\vspace{5px}
+\noindent
+Zauważmy,~że
+\[
+&nbsp;&nbsp;(a, 0, 0) \rightarrow (a - 1, 2, 0)
+\]
+oraz
+\[
+&nbsp;&nbsp;(x, 2^y, 0) \rightarrow (x, 2^y - 1, 2) \rightarrow ... \rightarrow (x, 0, 2^{y + 1}) \rightarrow (x - 1, 2^{y + 1}, 0).
+\]
+Wykonując najpierw pierwsze~z powyższych przekształceń,~a następnie wykonując ${a - 1}$ razy drugie~z nich otrzymamy tezę.
+
+\vspace{10px}
+\noindent
+Najpierw wykonany takie ruchy, aby otrzymać w ostatnim pudełku bardzo dużą liczbę, a następnie cofniemy ją prawie na początek.
+\begin{align*}
+&nbsp;&nbsp;&(1, 1, 1, 1, 1, 1) \rightarrow (0, 3, 1, 1, 1, 1) \rightarrow (0, 1, 5, 1, 1, 1)  \rightarrow \\
+&nbsp;&nbsp;\rightarrow &(0, 1, 1, 9, 1, 1)  \rightarrow (0, 1, 1, 1, 17, 1)  \rightarrow (0, 1, 1, 1, 0, 35) \rightarrow \\
+&nbsp;&nbsp;\rightarrow  &(0, 1, 1, 0, 35, 0)  \rightarrow (0, 1, 0, 35, 0, 0)  \rightarrow (0, 0, 35, 0, 0, 0).
+\end{align*}
+
+\noindent
+Na mocy obserwacji wykonujemy ruchy
+\[
+&nbsp;&nbsp; (0, 0, 35, 0, 0, 0) \rightarrow  (0, 0, 1, 2^{34}, 0, 0) \rightarrow  (0, 0, 1, 0, 2^{2^{34}}, 0) \rightarrow  (0, 0, 0, 2^{2^{34}}, 0 , 0).
+\]
+Zauważmy, że 
+\[
+&nbsp;&nbsp;2^{2^{34}} > 2^{1000^3} > \left(2^{2000}\right)^{11} > 2000^{2000}.
+\] 
+Przyjmijmy $A = 2000^{2000}$. Wykonując drugi ruch dla $k = 4$ tak właściwie jedynie zabieramy monetę z czwartego pudełka, gdyż pudełka: piąte i szóste są puste. Możemy więc zabrać ich tyle, by w czwartym pudełku zostało $\frac{1}{4}A$ monet. Wówczas wykonując ruchy pierwszego rodzaju otrzymujemy
+\[
+&nbsp;&nbsp;(0, 0, 0, \tfrac{1}{4}A, 0, 0) \rightarrow (0, 0, 0, 0, \tfrac{1}{2}A, 0) \rightarrow (0, 0, 0, 0, 0, A).
+\]
+
+\qed
+
+\noindent
+Kluczowym elementem rozwiązywania tego typu zadań jest pobawienie się danymi operacjami~i zobaczenie jakie liczby da się uzyskać. Jeśli zrobimy to dobrze, to unikniemy sytuacji, w której przez dłuższy czas bezskutecznie próbujemy dowodzić, że odpowiedzią na postawione pytanie jest ,,Nie''.
+
+\vspace{5px}
+
+% trzeba się pobawić i zobaczyć, jakie liczby da się uzyskać
+
+%Source: 20^2 Problems in Number Theory Dominika Burka

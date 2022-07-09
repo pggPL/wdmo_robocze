@@ -1,0 +1,14 @@
+
+
+\vspace{5px}
+
+\noindent
+Przyjmijmy $p_1 = 2,\; p_2 = 3, \; ...$ jako kolejne liczby pierwsze. Liczbę $1$ kolorujemy dowolnym kolorem. Niech $p_i$ to będzie najmniejszy dzielnik pierwszy pewnej liczby $n$. Wówczas jeśli $i \leqslant 1000$ kolorujemy $n$ kolorem o numerze $i$. W przeciwnym wypadku kolorujemy go kolorem o numerze $1000$.
+
+\vspace{5px}
+
+\noindent
+Wykażemy, że podane kolorowanie spełnia warunki zadania. Łatwo zauważyć, że każdy z kolorów będzie użyty nieskończenie wiele razy. Załóżmy więc, że $ab = c$. Jeśli jedna z liczb $a$, $b$ jest równa jeden, to pozostałe są równe, więc w szczególności są tego samego koloru. Niech $p$ będzie najmniejszym dzielnikiem liczby $abc$. Wówczas, skoro $ab = c$ liczba~$p$ musi dzielić co najmniej dwie spośród $a$, $b$, $c$. Z minimalności $p$ mamy, że wyznaczy ona jednakowy kolor obu tym liczbom.
+
+\vspace{10px}
+

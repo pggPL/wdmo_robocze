@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Dany jest ciąg $a_1, a_2, ..., a_{2n + 1}$ liczb rzeczywistych, że dla dowolnych liczb całkowitych ${2n + 1 \geqslant i, j \geqslant 1}$ zachodzi równość
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a_i + a_j \geqslant |i - j|.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wyznaczyć najmniejszą możliwą sumę elementów tego ciągu.

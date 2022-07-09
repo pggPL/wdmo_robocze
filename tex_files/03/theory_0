@@ -1,0 +1,94 @@
+% Rozdział 3 – Bijekcje i bajki kombinatoryczne
+
+\theory{Bijekcje i bajki kombinatoryczne}
+
+\noindent
+W tym rozdziale będziemy analizować różne zbiory i relacje między nimi. W części zadań trzeba będzie pokazać, że pewne dwa zbiory mają tyle samo elementów. Jedną z metod dowodzenia tego typu stwierdzeń jest połączenie elementów danych zbiorów w pary. Takie przyporządkowanie nazywamy \textit{bijekcją}.
+
+\begin{center}
+    \begin{tikzpicture}
+        \tkzDefPoint(-1,3){P_0}
+        \tkzDefPoint(0,3){P_1}
+        \tkzDefPoint(1,3){P_2}
+        \tkzDefPoint(2,3){P_3}
+        \tkzDefPoint(3,3){P_4}
+        \tkzDefPoint(4,3){P_5}
+        \tkzDefPoint(5,3){P_6}
+
+
+        \tkzDefPoint(-1,1){Q_0}
+        \tkzDefPoint(0,1){Q_1}
+        \tkzDefPoint(1,1){Q_2}
+        \tkzDefPoint(2,1){Q_3}
+        \tkzDefPoint(3,1){Q_4}
+        \tkzDefPoint(4,1){Q_5}
+        \tkzDefPoint(5,1){Q_6}
+
+        \tkzDrawSegments[dashed](P_1,Q_1 P_2,Q_2 P_3,Q_3 P_4,Q_4 P_5,Q_5 P_6,Q_6)
+
+        \tkzDrawPoints(P_1, P_2, P_3, P_4, Q_1, Q_2, Q_3, Q_4, P_5, P_6, Q_5, Q_6)
+
+        \tkzLabelPoint[left](P_0){Zbiór $A$}
+        \tkzLabelPoint[left](Q_0){Zbiór $B$}
+    \end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+
+\noindent
+Aby stwierdzić czy przyporządkowanie jest bijekcją, wystarczy sprawdzić czy każdy element jednego zbioru jest przyporządkowany do \textit{dokładnie} jednego elementu drugiego zbioru. Poniżej dwa przykłady przyporządkowań, które nie są bijekcjami.
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \tkzDefPoint(-1,3){P_0}
+        \tkzDefPoint(0,3){P_1}
+        \tkzDefPoint(1,3){P_2}
+        \tkzDefPoint(2,3){P_3}
+        \tkzDefPoint(3,3){P_4}
+        \tkzDefPoint(4,3){P_5}
+        \tkzDefPoint(5,3){P_6}
+
+
+        \tkzDefPoint(-1,1){Q_0}
+        \tkzDefPoint(0,1){Q_1}
+        \tkzDefPoint(1,1){Q_2}
+        \tkzDefPoint(2,1){Q_3}
+        \tkzDefPoint(3,1){Q_4}
+        \tkzDefPoint(4,1){Q_5}
+        \tkzDefPoint(5,1){Q_6}
+
+        \tkzDrawSegments[dashed](P_1,Q_1 P_2,Q_2 P_3,Q_3 P_4,Q_4 P_5,Q_5 P_6,Q_5 P_1,Q_2)
+
+        \tkzDrawPoints(P_1, P_2, P_3, P_4, Q_1, Q_2, Q_3, Q_4, P_5, P_6, Q_5)
+
+        \tkzLabelPoint[left](P_0){Zbiór $A$}
+        \tkzLabelPoint[left](Q_0){Zbiór $B$}
+    \end{tikzpicture}
+    \hspace{20px}
+    \begin{tikzpicture}[scale=0.5]
+        \tkzDefPoint(-1,3){P_0}
+        \tkzDefPoint(0,3){P_1}
+        \tkzDefPoint(1,3){P_2}
+        \tkzDefPoint(2,3){P_3}
+        \tkzDefPoint(3,3){P_4}
+        \tkzDefPoint(4,3){P_5}
+        \tkzDefPoint(5,3){P_6}
+
+
+        \tkzDefPoint(-1,1){Q_0}
+        \tkzDefPoint(0,1){Q_1}
+        \tkzDefPoint(1,1){Q_2}
+        \tkzDefPoint(2,1){Q_3}
+        \tkzDefPoint(3,1){Q_4}
+        \tkzDefPoint(4,1){Q_5}
+        \tkzDefPoint(5,1){Q_6}
+
+        \tkzDrawSegments[dashed](P_1,Q_1 P_2,Q_2 P_3,Q_3 P_4,Q_4 P_5,Q_5)
+
+        \tkzDrawPoints(P_1, P_2, P_3, P_4, Q_1, Q_2, Q_3, Q_4, P_5, Q_5, Q_6)
+
+        \tkzLabelPoint[left](P_0){Zbiór $A$}
+        \tkzLabelPoint[left](Q_0){Zbiór $B$}
+    \end{tikzpicture}
+\end{center}
+

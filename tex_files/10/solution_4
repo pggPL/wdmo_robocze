@@ -1,0 +1,27 @@
+
+
+\answer{
+&nbsp;&nbsp;Szukanymi parami liczb są $a = 2$ i $b = 2$, $a = 1$ i $b = 3$, oraz $a = 3$ i $b = 3$.
+}
+
+\noindent
+Zauważmy, że 
+\[
+&nbsp;&nbsp;\frac{a^3b - 1}{a + 1} = a^2b - \frac{a^2b + 1}{a + 1} = a^2b - ab + \frac{ab - 1}{a + 1} = a^2b - ab + b - \frac{b + 1}{a + 1}.
+\]
+Wynika stąd, że liczba $b + 1$ jest podzielna przez liczbę $a + 1$. Mamy również
+\[
+&nbsp;&nbsp;\frac{b^3a + 1}{b - 1} = b^2a + \frac{b^2a + 1}{b - 1} = b^2a + ab + \frac{ab + 1}{b - 1} = b^2a - ab + a + \frac{a + 1}{b - 1},
+\]
+czyli $a + 1$ jest podzielna przez liczbę $b - 1$. 
+
+\vspace{10px}
+
+\noindent
+Liczba $a + 1$ jest dzielnikiem liczby $b + 1$ oraz wielokrotnością liczby $b - 1$. Stąd liczba $b + 1$ jest podzielna przez liczbę $b - 1$. Zauważmy, że jeśli $b \geqslant 4$, to
+\[
+&nbsp;&nbsp;b + 1 > b - 1 > \frac{b + 1}{2},
+\]
+co przeczy wspomnianej podzielności.
+Więc $b = 2$ lub $b = 3$. Jeśli $b = 2$, to $a + 1$ jest dzielnikiem $3$. Skoro jest większe od 1, to musi być równe 3, skąd $a = 2$. Dla $b = 3$ mamy, że $a + 1$ musi być dzielnikiem $4$ i musi być podzielne przez $2$. Stąd $a = 1$ lub $a = 3$. 
+

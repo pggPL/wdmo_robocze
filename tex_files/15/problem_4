@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;W pewnym turnieju brało udział $1000$ osób -- nazwijmy ich $A_1$, $A_2$, ..., $A_{1000}$. Parę uczestników tego turnieju $(A_i, A_j)$ nazwiemy \textit{zwycięską}, gdy nie istnieje inny uczestnik tego turnieju $A_k$, który pokonał obu uczestników z tej pary. Rozstrzygnąć, czy może się tak zdarzyć, aby każda z par $(A_1, A_2)$, $(A_2, A_3)$, ..., $(A_{999}, A_{1000})$, $(A_{1000}, A_{1})$ była zwycięska.

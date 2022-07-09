@@ -1,0 +1,23 @@
+\heading{Rozwiązanie}
+
+\noindent
+Stosując nierówność miedzy średnimi: arytmetyczną i kwadratową otrzymujemy
+\[
+    \sqrt{\frac{\left(\sqrt{2a + 1}\right)^2 + \left(\sqrt{2b + 1}\right)^2 + \left(\sqrt{2c + 1}\right)^2}{3}}
+    \geqslant \frac{\sqrt{2a + 1} + \sqrt{2b + 1} + \sqrt{2c + 1}}{3}.
+\]
+
+\noindent
+Lewa strona powyższej równości jest równa
+\[
+    \sqrt{\frac{\left(\sqrt{2a + 1}\right)^2 + \left(\sqrt{2b + 1}\right)^2 + \left(\sqrt{2c + 1}\right)^2}{3}} = \sqrt{\frac{2a + 1 + 2b + 1 + 2c + 1}{3}} = \sqrt{\frac{5}{3}}.
+\]
+Łącząc powyższe nierówności otrzymujemy
+\[
+    \sqrt{2a + 1} + \sqrt{2b + 1} + \sqrt{2c + 1} \leqslant \sqrt{\frac{5}{3}} \cdot 3 = \sqrt{15}.
+\]
+
+\qed
+
+% przykład na szacowania przejściowe
+%Source: https://om.mimuw.edu.pl/static/app_main/camps/oboz2017.pdf problem 4

@@ -1,0 +1,11 @@
+\heading{Przykład 2}
+
+\noindent
+Dane są takie niezerowe liczby całkowite, że liczba
+\[
+&nbsp;&nbsp;\frac{a}{b} + \frac{b}{c} + \frac{c}{a}
+\]
+jest całkowita. Wykazać, że iloczyn $abc$ jest sześcianem liczby całkowitej.
+
+\vspace{5px}
+

@@ -1,0 +1,39 @@
+
+
+\noindent
+Wykażemy, że taka funkcja istnieje. Rozpatrzmy funkcję $f$ daną jako
+\[
+&nbsp;&nbsp;f(x) = &nbsp;&nbsp;\begin{cases} 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x &\mbox{jeśli } x \notin \mathbb{Z}_{\geqslant 0} \\ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x + 1 & \mbox{jeśli } x \in \mathbb{Z}_{\geqslant 0}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{cases}.
+\]
+Ta funkcja ma następujące cechy
+\begin{itemize}
+&nbsp;&nbsp;\item jest różnowartościowa,
+&nbsp;&nbsp;\item przyjmuje wszystkie wartości rzeczywiste poza zerem.
+\end{itemize}
+Wykażemy, że $g$ jest różnowartościowa. Jeśli $g(a) = g(b)$, to
+\[
+&nbsp;&nbsp;f(a) = g(g(a)) = g(g(b)) = f(b).
+\]
+Skoro zaś $f$ jest różnowartościowa, to mamy $a = b$.
+
+\vspace{10px}
+
+\noindent
+Jeśli $g(x)$ przyjmuje wszystkie wartości rzeczywiste, to $g(g(x))$ również. Zaś funkcja $f(x)$ nie ma takiej własności -- sprzeczność.
+
+\vspace{10px}
+
+\noindent
+Jeśli $g(x)$ ma co najmniej dwie ,,dziury'' -- tj. istnieją takie liczby $a$, $b$, które nie są przyjmowane przez $g$, to w szczególności nie są przyjmowane przez $g(g(x))$. Zaś funkcja $f$ ma jedną wartość, której nie przyjmuje. Toteż również w tym przypadku równość zajść nie może.
+
+\vspace{10px}
+
+\noindent
+Załóżmy więc, że $g$ przyjmuje wszystkie wartości rzeczywiste poza pewną liczbą rzeczywistą $a$. Oczywiście $g(g(x))$ również nie przyjmie $a$. Skoro $f$ nie przyjmuje jedynie wartości zero, to $a = 0$. Zauważmy, że $g(g(x))$ nie przyjmuje wartości $g(0)$. Jeśli $g(g(t)) =  g(0)$ dla pewnego $t$, to na mocy różnowartościowości $g(t) = 0$. Jest to sprzeczność. Skoro $g(g(x))$ nie przyjmuje $g(0)$, a $f(x)$ nie przyjmuje jedynie $0$, to jeśli te funkcje mają być sobie równe, to $g(0) = 0$. Ale wówczas
+\[
+&nbsp;&nbsp;1 = f(0) = g(g(0)) = g(0) = 0,
+\]
+co kończy dowód.

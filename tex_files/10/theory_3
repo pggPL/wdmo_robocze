@@ -1,0 +1,13 @@
+\heading{Dowód}
+
+\noindent
+Zauważmy, że jeśli $a = p^{v_p(a)} \cdot x$ oraz $b = p^{v_p(b)} \cdot y$, dla pewnych liczb całkowitych $x$, $y$, które nie są podzielne przez $p$, to mamy
+\[
+&nbsp;&nbsp;ab = p^{v_p(a)} \cdot x \cdot p^{v_p(b)} \cdot y = p^{v_p(a) + v_p(b)} \cdot xy.
+\] 
+Liczby $x$ oraz $y$ nie dzielą się przez $p$, więc $xy$ również. Z powyższej równości wynika teza. 
+
+\qed
+
+\vspace{10px}
+

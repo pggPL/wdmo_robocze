@@ -1,0 +1,5 @@
+\noindent 
+&nbsp;&nbsp;Dana jest liczba pierwsza $p$. Udowodnić, że istnieje taka liczba całkowita $n$, że 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;2^n \equiv n \pmod{p}.
+&nbsp;&nbsp;\]

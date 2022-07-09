@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;W pewnym grafie o $n$ wierzchołkach ich stopnie wynoszą odpowiednio $d_1$, $d_2$, ..., $d_n$. Udowodnić, że istnieje taki podzbiór co najmniej $\sum^{n}_{i = 1} \frac{1}{1 + d_i}$ jego wierzchołków, że żadne dwa z nich nie są połączone krawędzią.

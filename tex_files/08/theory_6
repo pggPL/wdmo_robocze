@@ -1,0 +1,7 @@
+\heading{Twierdzenie 2}
+
+\noindent
+Dany jest graf spójny o $n \geqslant 2$ wierzchołkach. Wówczas cykl Eulera istnieje, wtedy i tylko wtedy, gdy stopień każdego z wierzchołków jest liczbą parzystą.
+
+\vspace{5px}
+

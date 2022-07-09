@@ -1,0 +1,33 @@
+
+
+\noindent
+Strategia nauczyciela jest następująca. Rysuje on obwód kwadratu $n \times n$ w pierwszych $4n$ ruchach, w międzyczasie uczniowie zamalują $4n \cdot 30$ odcinków. Wówczas wewnątrz kwadratu znajduje się $2n(n - 1)$ odcinków. Jeśli $2n(n - 1) > 4n \cdot 30$, do czego wystarczy wziąć odpowiednio duże $n$, to liczba odcinków wewnątrz kwadratu będzie większa niż liczba odcinków pomalowana przez uczniów. Toteż będzie co najmniej jeden odcinek wewnątrz tego kwadratu, który nie jest pomalowany.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+&nbsp;&nbsp;\draw[line width = 0.6mm] (0,0)--(4,0)--(4,4)--(0,4)--cycle;
+&nbsp;&nbsp;\draw (0,1)--(4,1);
+&nbsp;&nbsp;\draw (0,2)--(4,2);
+&nbsp;&nbsp;\draw (0,3)--(4,3);
+&nbsp;&nbsp;\draw (1,0)--(1,4);
+&nbsp;&nbsp;\draw (2,0)--(2,4);
+&nbsp;&nbsp;\draw (3,0)--(3,4);
+\end{tikzpicture}
+\hspace{40px}
+\begin{tikzpicture}[scale=0.5]
+&nbsp;&nbsp;\draw[line width = 0.6mm] (0,0)--(4,0)--(4,4)--(0,4)--cycle;
+&nbsp;&nbsp;\draw[line width = 0.6mm] (0,1)--(4,1);
+&nbsp;&nbsp;\draw[line width = 0.6mm] (0,2)--(1,2);
+&nbsp;&nbsp;\draw (0,2)--(4,2);
+&nbsp;&nbsp;\draw[line width = 0.6mm] (2,2)--(4,2);
+&nbsp;&nbsp;\draw[line width = 0.6mm] (0,3)--(4,3);
+&nbsp;&nbsp;\draw[line width = 0.6mm] (1,0)--(1,4);
+&nbsp;&nbsp;\draw[line width = 0.6mm] (2,0)--(2,4);
+&nbsp;&nbsp;\draw[line width = 0.6mm] (3,0)--(3,4);
+\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Następnie nauczyciel w każdym ze swoich ruchów maluje pewien odcinek wewnątrz narysowanego kwadratu. Jako że liczba odcinków wewnątrz rozpatrywanego kwadratu jest skończona, to w końcu zarówno obwód, jak i wszystkie odcinki wewnątrz niego będą pokolorowane. Więc w pewnym momencie dokładnie jeden z odcinków wewnętrznych nie był pokolorowany -- wówczas musiał istnieć szukany prostokąt bez środkowego odcinka.
+

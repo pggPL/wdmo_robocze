@@ -1,0 +1,35 @@
+
+
+\noindent
+Powiemy, że liczba naturalna $x$ jest \textit{dobra}, jeśli ma dokładnie $n$ cyfr, z których każda jest jedynką lub dwójką, oraz $x$ jest podzielna przez liczbę $2^n$. 
+
+\vspace{5px}
+\noindent
+Wykażemy indukcyjnie, że dla dowolnej dodatniej liczby całkowitej $n$, istnieje $n$ cyfrowa liczba dobra. Zauważmy, że liczba $2$ jest liczbą dobrą. Załóżmy, że dla pewnego $n$ istnieje $n$-cyfrowa liczba dobra -- nazwijmy ją $2^n \cdot a_n$. Wykażemy wówczas, że istnieje $n + 1$-cyfrowa liczba dobra.
+
+\vspace{5px}
+\noindent
+Rozpatrzmy dwa przypadki
+\begin{enumerate}
+&nbsp;&nbsp;\item Jeśli liczba $a_n$ jest nieparzysta, to weźmy liczbę 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;10^{n} + 2^n \cdot a_n = 2^n\left(5^n + a_n\right).
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Powstaje ona przez doklejenie do $2^n \cdot a_n$ cyfry $1$ z lewej strony.
+&nbsp;&nbsp;W nawiasie jest suma dwóch liczb nieparzystych, a więc jest ona parzysta. Stąd $10^{n} + 2^n \cdot a_n $ jest podzielna przez $2^{n + 1}$.
+&nbsp;&nbsp;\item Gdy liczba $a_n$ jest parzysta, to rozpatrzmy liczbę 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;2 \cdot 10^{n} + 2^n \cdot a_n = 2^n\left(2 \cdot 5^n + a_n\right).
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Powstaje ona przez doklejenie do $2^n \cdot a_n$ cyfry $2$ z lewej strony.
+&nbsp;&nbsp;W nawiasie jest suma dwóch liczb parzystych, a więc jest ona parzysta. Więc $2 \cdot 10^{n} + 2^n \cdot a_n $ jest podzielna przez $2^{n + 1}$.
+\end{enumerate}
+W każdym z przypadków rozpatrywana liczba jest $n + 1$-cyfrową liczbą dobrą. Kończy to dowód indukcyjny. Biorąc liczbę dobrą, która ma $1000$ cyfr. Jest ona podzielna przez $2^{1000}$ oraz składa się wyłącznie z cyfr $1$ i $2$.
+
+\begin{remark}
+&nbsp;&nbsp;Liczby dobre wygenerowane za pomocą powyższego rozumowania to
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;2, \; 12, \; 112, \; 2112, \; 22112, \; ...
+&nbsp;&nbsp;\]
+\end{remark}
+

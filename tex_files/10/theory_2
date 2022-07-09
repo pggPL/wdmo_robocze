@@ -1,0 +1,8 @@
+\heading{Lemat 1}
+
+\noindent
+Niech $a$, $b$ będą niezerowymi liczbami całkowitymi. Wówczas
+\[
+&nbsp;&nbsp;v_p(ab) = v_p(a) + v_p(b).
+\]
+

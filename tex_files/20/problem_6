@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;(a) Wykazać, że dla dowolnej liczby całkowitej $m$ istnieje taka liczba całkowita $n\geqslant m$, że
+\[
+&nbsp;&nbsp;\left \lfloor \frac{n}{1} \right \rfloor \cdot \left \lfloor \frac{n}{2} \right \rfloor \cdots \left \lfloor \frac{n}{m} \right \rfloor = \binom{n}{m} \\\\\\\\\\\\\\\        (*)
+\]
+(b) Niech $p(m)$ będzie najmniejszą liczbą $n \geqslant m$, że zachodzi równanie  $(*)$. Udowodnić, że $p(2018) = p(2019).$

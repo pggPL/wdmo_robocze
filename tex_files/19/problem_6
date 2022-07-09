@@ -1,0 +1,5 @@
+\noindent
+Niech  $ a_1,\cdots , a_{25}$ będą nieujemnymi liczbami całkowitymi oraz niech $ k$ będzie najmniejszą z nich. Wykazać, że
+\[
+&nbsp;&nbsp;\left\lfloor\sqrt{a_1}\right\rfloor + \left\lfloor\sqrt{a_2}\right\rfloor + \cdots + \left\lfloor\sqrt{a_{25}}\right\rfloor \geqslant \left\lfloor\sqrt{a_1 + a_2 + \cdots + a_{25} + 200k}\right\rfloor.
+\]

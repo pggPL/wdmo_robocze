@@ -1,0 +1,16 @@
+
+
+\vspace{5px}
+
+\noindent
+Korzystając z nierówności miedzy średnią arytmetyczną a geometryczną mamy
+\[
+&nbsp;&nbsp;a_i + a_{i + 1} \geqslant 2\sqrt{a_ia_{i + 1}}.
+\]
+Robiąc tak dla każdego nawiasu otrzymujemy, że
+\begin{multline*}
+&nbsp;&nbsp;(a_1 + a_2)(a_2 + a_3)\cdot ... \cdot (a_{n-1} + a_n)(a_n + a_1) \geqslant \\
+&nbsp;&nbsp;\geqslant 2\sqrt{a_1a_{2}} \cdot 2\sqrt{a_2a_{3}} \cdot ... \cdot 2\sqrt{a_{n-1}a_{n}}\cdot 2\sqrt{a_na_{1}}  = \\
+&nbsp;&nbsp;= 2^n a_1a_2\cdot ... \cdot a_n = 2^n.
+\end{multline*}
+

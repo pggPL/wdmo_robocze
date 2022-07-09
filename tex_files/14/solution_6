@@ -1,0 +1,13 @@
+
+
+\noindent
+Oznaczmy $M = b_1b_2\cdot ... \cdot b_n$. Rozpatrzmy liczby
+\[
+&nbsp;&nbsp;1, \; 2, \; ..., \; M.
+\]
+Dla każdej liczby $1 \leqslant i \leqslant n$ wykreślmy te spośród nich, które dają resztę $a_i$ z dzielenia przez $b_i$. Tych liczb będzie dokładnie $\frac{M}{b_i}$, gdyż liczba $M$ jest podzielna przez $b_i$.  Rozumujemy tak dla każdego $i$ -- liczba może zostać wykreślona więcej niż raz. Wykreślimy tak co najwyżej
+\[
+&nbsp;&nbsp;\frac{M}{b_1} + \frac{M}{b_2} + ... + \frac{M}{b_n} \leqslant \frac{M}{2} + \frac{M}{4} + ... + \frac{M}{2^n} < M 
+\]
+liczb. Więc pewna liczba nie zostanie wykreślona -- wówczas nie spełnia ona żadnego z danych przystawań. Wystarczy zauważyć, że jeśli liczba $k$ spełnia warunki zadania, to liczba $k + b_1b_2\cdot ... \cdot b_n$ również -- daje ona takie same reszty w każdym z przystawań.
+

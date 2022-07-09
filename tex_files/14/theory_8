@@ -1,0 +1,24 @@
+\heading{Dowód}
+
+\noindent
+Załóżmy, że zachodzą przystawania
+\[
+&nbsp;&nbsp;n \equiv a^2 \pmod{p}, \quad a \equiv g^l \pmod{p}.
+\]
+Wówczas
+\[
+&nbsp;&nbsp;n \equiv g^{2l} \pmod{p},
+\]
+czyli $k \equiv 2l \pmod{p - 1}$. Skoro zarówno $2l$, jak i $p - 1$ są parzyste, to $k$ również jest liczbą parzystą.
+
+\vspace{10px}
+\noindent
+W drugą stronę, jeśli
+\[
+&nbsp;&nbsp;n \equiv g^{2l} \pmod{p},
+\]
+to biorąc $a \equiv g^k \pmod{p}$ otrzymamy tezę.
+
+\qed
+\vspace{10px}
+

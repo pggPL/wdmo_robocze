@@ -1,0 +1,25 @@
+\heading{Rozwiązanie}
+
+\vspace{5px}
+
+\noindent
+Na imprezę przyszło $n$ matematyczek. Każda z nich wzięła kapelusz, czapkę lub przyszła bez okrycia głowy. Obliczmy ile różnych wariantów nakryć głowy mogło się zdarzyć na dwa sposoby.
+\begin{enumerate}
+    \item Każda z dziewczyn mogła wybrać jedną z trzech opcji ubioru, było ich $n$, więc liczba możliwości wynosi $3^n$.
+    \item Przyjmijmy, że $n - k$ dziewczyn nie przyniosło żadnego nakrycia głowy. 
+    Wówczas możemy wybrać te dziewczyny na ${{n}\choose{n - k}} = {{n}\choose{k}}$ sposobów. 
+    Następnie każda z pozostałych $k$ dziewczyn wybrała jedno z dwóch dostępnych nakryć głowy. 
+    Więc mogą to zrobić na $2^k$ sposobów. Z reguły mnożenia wynika, że dla ustalonej liczby $k$ jest dokładnie ${{n}\choose{k}} 2^k$ wariantów. Sumując po wszystkich $k$ otrzymujemy $\sum^{n}_{k=0} {{n}\choose{k}} 2^k$.
+\end{enumerate}
+
+\noindent
+Obliczając jedną rzecz na dwa sposoby otrzymaliśmy liczby, które muszą być równe.
+
+\qed
+
+\vspace{10px}
+
+\noindent
+Rozumowania podobne do powyższego nazywane są bajkami kombinatorycznymi.
+
+\vspace{10px}

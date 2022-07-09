@@ -1,0 +1,9 @@
+\noindent
+&nbsp;&nbsp;Niech $p_1, p_2, p_3, \ldots$ będą kolejnymi liczbami pierwszymi, zaś $x_0$ niech będzie liczbą rzeczywista pomiędzy 0 i 1. Dla każdej dodatniej liczby całkowitej $k$, przyjmijmy
+\[
+&nbsp;&nbsp;x_k = \begin{cases} 
+&nbsp;&nbsp;0 & \text{jeśli} \; x_{k-1} = 0, \\
+&nbsp;&nbsp;\left\{ \dfrac{p_k}{x_{k-1}} \right\} & \text{jeśli} \; x_{k-1} \neq 0, 
+&nbsp;&nbsp;\end{cases}  
+\]
+gdzie $\{x\}$ oznacza część ułamkową $x$. (Część ułamkowa $x$ jest równa $x - \lfloor x \rfloor$) Znajdź wszystkie liczby $x_0$ spełniające $0 < x_0 < 1$, dla których ciąg $x_0, x_1, x_2, \ldots$ od pewnego momentu jest równy 0.

@@ -1,0 +1,19 @@
+\noindent 
+&nbsp;&nbsp;Wykazać, że planszę o wymiarach $2^n \times 2^n$ dla pewnego $n \geqslant 1$ z usuniętym jednym z rogów da się przykryć pewną liczbą L-klocków (takich jak na rysunku). Klocki można obracać.
+
+&nbsp;&nbsp;\begin{center}
+&nbsp;&nbsp;&nbsp;&nbsp;\begin{tikzpicture}[scale=0.5]
+&nbsp;&nbsp;    \tkzDefPoint(0,0){v_1}
+&nbsp;&nbsp;    \tkzDefPoint(2,0){v_2}
+&nbsp;&nbsp;    \tkzDefPoint(2,2){v_3}
+&nbsp;&nbsp;    \tkzDefPoint(1,2){v_4}
+&nbsp;&nbsp;    \tkzDefPoint(1,1){v_5}
+&nbsp;&nbsp;    \tkzDefPoint(0,1){v_6}
+&nbsp;&nbsp;    \tkzDefPoint(1,0){A}
+&nbsp;&nbsp;    \tkzDefPoint(2,1){B}
+
+&nbsp;&nbsp;    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_3,v_4 v_4,v_5 v_5,v_6  v_6,v_1)
+&nbsp;&nbsp;    \tkzDrawSegments(v_5,A)
+&nbsp;&nbsp;    \tkzDrawSegments(v_5,B)
+&nbsp;&nbsp;&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\end{center}

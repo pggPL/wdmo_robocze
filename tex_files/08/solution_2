@@ -1,0 +1,50 @@
+
+
+\noindent
+Przełóżmy zadanie na język teorii grafów. Miasta będą wierzchołkami, połączenie kolejowe niebieską krawędzią, a połączenie drogowe czerwoną.
+
+\vspace{5px}
+
+\noindent
+Wykażemy tezę indukcyjnie. Zauważmy, że dla $n = 3$ jest ona trywialna. Gdy wszystkie krawędzie są tego samego koloru, to dowolne przejście spełnia warunki zadania. Gdy tak nie jest, to zaczynamy w wierzchołku, w którym schodzą się dwie krawędzie różnych kolorów i przechodzimy przez wszystkie krawędzie.
+
+\vspace{5px}
+
+\noindent
+Wyróżnijmy pewien wierzchołek $v$. Wszystkie inne wierzchołki tworzą graf, który ma $n - 1$ wierzchołków, a więc możemy skorzystać z założenia indukcyjnego. Załóżmy, że krawędzie $d_1d_2$, $d_2d_3$, ..., $d_{k-1}d_1$ tworzą cykl spełniający warunki zadania. Gdy cykl ten jest jednokolorowy, to jeśli wstawimy $v$ między $d_1$ i $d_2$, to tak otrzymany cykl będzie spełniał założenia. 
+
+\vspace{5px}
+
+\noindent
+Rozpatrzmy przypadek, w którym istnieje kolor $\mathcal{K}$, że tylko jedna krawędź jest koloru $x$. Załóżmy, bez straty ogólności, że $d_1d_2$ jest koloru $\mathcal{K}$, a inne krawędzie są innego koloru. Wtedy cykl $d_1v$, $vd_2$, $d_2d_3$, ..., $d_{n - 1}d_1$ spełnia warunki zadania. 
+
+\vspace{5px}
+
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(2,0){v_2}
+    \tkzDefPoint(2,1){v_4}
+    \tkzDefPoint(3,0.5){v_3}
+    \tkzDefPoint(0,1){v_5}
+    \tkzDefPoint(-1,0.5){v_6}
+    \tkzDefPoint(1,2){v}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5, v_6, v)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_1,v_6 v_5,v_6 v,v_5)
+    \tkzDrawSegments[dashed](v_4,v_5 v_3,v_4 v,v_4)
+    \tkzLabelPoint[below](v_1){$d_1$}
+    \tkzLabelPoint[left](v_6){$d_2$}
+    \tkzLabelPoint[below](v_5){$d_3$}
+    \tkzLabelPoint[below](v_4){$d_4$}
+    \tkzLabelPoint[right](v_3){$d_5$}
+    \tkzLabelPoint[above](v){$v$}
+    \end{tikzpicture}
+\end{center}
+
+
+\noindent
+Teraz przyjrzyjmy się przypadkowi, w którym każdy z kolorów występuje co najmniej dwukrotnie na rozpatrywanym cyklu.
+Załóżmy więc bez straty ogólności, że $d_1d_2$ i $d_2d_3$ są czerwone, a $d_3d_4$ i $d_4d_5$ są niebieskie. Przyjmijmy, również bez straty ogólności, że $vd_3$ jest czerwona. Wtedy cykl $d_1d_2$, $d_2d_3$, $d_3v$, $vd_4$, $d_4d_5$, ..., $d_{n - 2}d_{n - 1}$, $d_{n - 1}d_1$ spełnia warunki zadania.
+
+\vspace{5px}
+

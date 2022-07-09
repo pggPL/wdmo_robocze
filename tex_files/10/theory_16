@@ -1,0 +1,16 @@
+\heading{Wzór Legendre'a}
+
+\noindent
+Jeśli $n$ jest dodatnią liczbą całkowitą, a $p$ jest liczbą pierwszą, to
+\[
+&nbsp;&nbsp;v_p(n!) = \left\lfloor \frac{n}{p} \right\rfloor + \left\lfloor \frac{n}{p^2} \right\rfloor + \left\lfloor \frac{n}{p^3} \right\rfloor + ...
+\]
+Mimo że powyższa suma ma nieskończenie wiele składników, będą one od pewnego momentu -- a dokładniej, gdy $p^k > n$ -- równe zero. Powyższa tożsamość zwana jest \textit{wzorem Legendre'a}.
+
+\vspace{10px}
+
+\noindent
+Powyższa równość ma bardzo intuicyjne uzasadnienie. Rozpatrzmy liczby $1, \; 2, ...,  \; n$. Spośród nich dokładnie $\left\lfloor \frac{n}{p} \right\rfloor$ jest podzielnych przez $p$, dokładnie $\left\lfloor \frac{n}{p^2} \right\rfloor$ jest podzielnych przez $p^2$ itd. Każda z liczb, dla których wykładnik peadyczny wynosi $k$ zostanie policzona dokładnie $k$ razy, gdyż dzieli się przez każdą z liczb $1$, $p$, ..., $p^k$, ale nie przez żadną wyższą potęgę.
+
+\vspace{10px}
+

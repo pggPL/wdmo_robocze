@@ -1,0 +1,17 @@
+
+
+\answer{$f(x) = x - 1$ jest jedynym rozwiązaniem danego równania.}
+
+\noindent
+Podstawmy $x = 0$: 
+\[
+ f(y) = f(f(0)) + 1 + y, 
+\] 
+czyli $f(x) = x + a$ dla pewnego stałego $a$. Podstawmy tę funkcję do wyjściowego równania
+\[
+&nbsp;&nbsp;x+y+a=x+2a+y+1.
+\] 
+Mamy $a = -1$. Łatwo sprawdzić, że funkcja $f(x) = x - 1$ spełnia warunki zadania. 
+
+\vspace{5px}
+

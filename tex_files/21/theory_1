@@ -1,0 +1,6 @@
+\heading{Przykład 1}
+
+\noindent
+Na stole leży $999$ monet w jednym stosie. W każdym ruchu można wziąć jedną monetę z pewnego stosu, który zawiera co najmniej dwie monety, a następnie dowolnie podzielić pozostałe monety na dwa niepuste stosy. Rozstrzygnąć, czy można tak wykonywać ruchy, aby na końcu zostały jedynie stosy, w których jest $5$ monet.
+
+\vspace{5px}

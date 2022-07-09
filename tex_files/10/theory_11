@@ -1,0 +1,12 @@
+\heading{Dowód}
+
+\noindent
+Przyjmijmy $a_i = p^{v_p(a_i)} \cdot b_i$. Wówczas
+\begin{align*}
+&nbsp;&nbsp;a_1 + a_2 + ... + a_n &= p^{v_p(a_1)}b_1 + p^{v_p(a_2)}a_2 + ... + p^{v_p(a_n)}a_n = \\
+&nbsp;&nbsp;&= p^{v_p(m)}\left(p^{v_p(a_1) - v_p(m)}b_1 + p^{v_p(a_2) - v_p(m)}a_2 + ... + p^{v_p(a_n) - v_p(m)}a_n\right).
+\end{align*}
+Każda z liczb w nawiasie poza jedną jest podzielna przez $p$, toteż ich suma nie jest podzielna przez $p$, skąd wynika teza.
+
+\qed
+

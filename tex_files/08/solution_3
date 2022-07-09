@@ -1,0 +1,44 @@
+
+
+\noindent
+Rozpatrzmy graf, w którym wierzchołkami będą drużyny. Krawędź będzie istnieć wtedy i tylko wtedy, gdy drużyny odpowiadające jej końcowi rozegrały ze sobą mecz. Zauważmy, że warunek z zadania jest równoważny faktowi, że stopień każdego wierzchołka jest równy~2. 
+
+\vspace{10px}
+\noindent
+Wybierzmy pewien wierzchołek i rozpocznijmy w nim spacer po grafie. Będziemy przechodzić do następnych wierzchołków krawędziami, którymi jeszcze nie szliśmy. Łatwo zauważyć, że musimy w ten sposób otrzymać cykl, w którym każdy wierzchołek odwiedzamy co najwyżej raz. Skoro stopień każdego z wierzchołków wynosi $2$, to żaden z wierzchołków tego cyklu nie ma krawędzi łączącej go z jakimkolwiek wierzchołkiem spoza tego cyklu. Wykonując analogiczne spacery startując z nieodwiedzonych jeszcze wierzchołków - o ile takowe istnieją - otrzymamy, że graf jest sumą rozłącznych cykli.
+
+\vspace{10px}
+\noindent
+Pokolorujmy każdą z krawędzi na czerwono, jeśli mecz odbył się pierwszego dnia, lub na zielono, jeśli odbył się drugiego dnia. Zauważmy, że z każdego wierzchołka wychodzi jedna zielona i jedna czerwona krawędź. Stąd w każdym cyklu krawędzie na przemian: zielona, czerwona, zielona, czerwona, ... itd. Stąd każdy z cykli jest parzystej długości. 
+
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(2,0){v_2}
+    \tkzDefPoint(2,2){v_4}
+    \tkzDefPoint(3,1){v_3}
+    \tkzDefPoint(0,2){v_5}
+    \tkzDefPoint(-1,1){v_6}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5, v_6)
+    \tkzDrawSegments(v_1,v_2 v_3,v_4 v_5,v_6)
+    \tkzDrawSegments[dashed](v_2,v_3 v_4,v_5 v_1,v_6)
+
+    \tkzDefPoint(4,0){v_1}
+    \tkzDefPoint(6,0){v_2}
+    \tkzDefPoint(6,2){v_3}
+    \tkzDefPoint(4,2){v_4}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4)
+    \tkzDrawSegments(v_1,v_2 v_3,v_4)
+    \tkzDrawSegments[dashed](v_2,v_3 v_4,v_1)
+
+    \end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+W każdym z cykli długości parzystej możemy wybrać połowę jego wierzchołków, aby żadne dwa z nich nie grały ze sobą meczu. Wybierając takie wierzchołki dla każdego z cykli otrzymamy połowę wierzchołków z całego grafu, które nie są połączone ze sobą. Odpowiadające im $20$ drużyn spełniają warunki zadania.
+
+\vspace{5px}
+
+\newpage
+

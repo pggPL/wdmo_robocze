@@ -1,0 +1,16 @@
+
+
+\vspace{5px}
+
+\answer{Szukana liczba podzbiorów wynosi $2^9 = 512$.}
+
+\noindent
+Zauważmy, że suma wszystkich elementów tego zbioru wynosi $55$. Dla każdego podzbioru $A$ zdefiniujmy jego dopełnienie jako podzbiór $\{1, 2, 3, ..., 10\} - A$. Składa się on z wszystkich elementów nie występujących w $A$. Dla przykładu dopełnieniem zbioru $\{1, 2, 4, 7, 8, 9\}$ będzie zbiór $\{3, 5, 6, 10\}$.
+\vspace{10px}
+
+\noindent
+Zauważmy, że suma elementów dowolnego podzbioru i jego dopełnienia wynosi $55$. Więc dokładnie jeden z tych zbiorów ma sumę elementów większą lub równą $28$. Podzielmy wszystkie rozpatrywane podzbiory na pary zawierające dwa zbiory będące swoim dopełnieniem. Z powyższej obserwacji wynika, że dokładnie połowa podzbiorów -- po jednym z każdej pary -- będzie spełniać warunki zadania. Jest więc ich $\frac{1}{2} \cdot 2^{10} = 2^9 = 512$.
+
+
+\newpage
+

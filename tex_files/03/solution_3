@@ -1,0 +1,11 @@
+
+
+\vspace{5px}
+
+\noindent
+Prawa strona równości jest równa liczbie sposobów wyboru $n$ spośród $2n$ osób.
+\vspace{10px}
+
+\noindent
+Podzielmy te $2n$ osób na dwie grupy po $n$ osób. Załóżmy, że z pierwszej grupy wybieramy $k$ osób. Możemy tego dokonać na ${n}\choose{k}$ sposobów. Z drugiej grupy wybieramy $n - k$ osób -- mamy ${{n}\choose{n - k}} = {{n}\choose{k}}$ możliwości. Dla ustalonego $k$ możemy dokonać wyboru na ${{n}\choose{k}}^2$ sposobów. Sumując po wszystkich $k$ otrzymujemy lewą stronę równości.
+

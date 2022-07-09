@@ -1,0 +1,16 @@
+\heading{Indukcja zupełna}
+
+\noindent
+W powyższym rozumowaniu skorzystaliśmy z założenia nie tylko dla liczby $k$, ale także dla wszystkich liczb od niej mniejszych. Tę metodę dowodzenia  nazywamy \textit{indukcją zupełną}. 
+
+\vspace{10px}
+
+\noindent
+Formalizując, analogicznie do standardowego dowodu indukcyjnego, dowód indukcyjny zupełny zdania logicznego $Z(n)$ dla dowolnej dodatniej liczby całkowitej $n$ składa się z dwóch części:
+\begin{enumerate}
+&nbsp;&nbsp;\item Baza indukcji -- sprawdzenie prawdziwości zdania $Z(1)$.
+&nbsp;&nbsp;\item Krok indukcyjny -- udowodnienie, że jeśli zachodzą zdania $Z(1)$, $Z(2)$, $Z(3)$, ..., $Z(k)$ to zachodzi zdanie $Z(k + 1)$.
+\end{enumerate}
+
+\vspace{10px}
+

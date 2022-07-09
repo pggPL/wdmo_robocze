@@ -1,0 +1,29 @@
+
+
+\noindent
+Zauważmy, że dla $n = 3$ teza jest znanym faktem -- mianowicie suma kątów w trójkącie wynosi $180\degree$.
+
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.6]
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){A}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(4,0){B}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(6,1){C}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(5,3){D}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(3,3){E}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(-1,2){F}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(A,B B,C C,D D,E E,F F,A)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments[dashed](B,D)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(A,B,C,D,E,F)
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Załóżmy, że dla każdego $n$-kąta wypukłego suma jego kątów wynosi ${(n - 2) \cdot 180\degree}$. Rozpatrzmy dowolny $(n+1)$-kąt wypukły. Zauważmy, że ma on więcej niż trzy wierzchołki, więc możemy ,,odciąć'' trójkąt złożony z trzech kolejnych wierzchołków. Podzielimy w ten sposób $(n + 1)$-kąt na $n$-kąt i trójkąt. Korzystając z wypukłości rozpatrywanego wielokąta możemy zauważyć, że suma miar jego kątów wewnętrznych jest sumą miar kątów obu tych wielokątów. Wynosi więc ona
+\[
+&nbsp;&nbsp;(n - 2) \cdot 180\degree + 180\degree = (n - 1) \cdot 180\degree,
+\]
+czego należało dowieść.
+
+\vspace{5px}
+

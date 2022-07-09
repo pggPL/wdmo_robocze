@@ -1,0 +1,32 @@
+\heading{Odwrotności modulo p}
+
+\noindent
+Z Lematu 2 można wywnioskować, że dla każdej liczby $a$, która nie jest podzielna przez $p$ istnieje pewna liczba $b \in \{1, 2, ..., p-1\}$, że
+\[
+    ab \equiv 1 \pmod{p}.
+\]
+Wystarczy wziąć $b = a^{k - 1} \text{ mod } p$. 
+
+\vspace{10px}
+\noindent
+Wykażemy teraz, że w zbiorze $\{1, 2, ..., p-1\}$ jest dokładnie jedna taka liczba $b$. Załóżmy, że dla pewnych $b, c \in \{1, 2, ..., p-1\}$
+\[
+    ab \equiv  ac \equiv 1 \pmod{p}.
+\]
+Wówczas
+\[
+    p \big| ab - ac = a(b - c) \implies p \big|b - c,
+\]
+gdyż liczba $a$ nie jest podzielna przez $p$. Skoro $b, c \in \{1, 2, ..., p-1\}$, to 
+\[
+    - p < b - c < p.
+\]
+Skoro $p \big| b - c$, to $b - c = 0$, czyli $b = c$.
+
+\vspace{10px}
+
+\noindent
+Przyjmiemy, że liczba $b$ jest \textit{odwrotnością} liczby $a$ modulo $p$. Zapiszemy $b = a^{-1} \pmod{p}$.
+
+\vspace{10px}
+

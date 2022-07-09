@@ -1,0 +1,7 @@
+\noindent
+Niech $n$ będzie dodatnią liczbą całkowitą. Syzyf wykonuje ruchu na planszy, która zawiera $n + 1$ pól, ponumerowanych $0$ do $n$ od lewej do prawej. Początkowo $n$ kamieni znajduje się nie polu o numerze $0$, zaś inne pola są puste. W każdym ruchu, Syzyf wybiera niepuste pole, niech ono zawiera $k$ kamieni, bierze jeden kamień i przesuwa go w prawo o co najwyżej $k$ pól (kamień musi pozostać na planszy). Celem Syzyfa jest przeniesienie wszystkich kamieni z pola o numerze $0$ na pole o numerze $n$.
+Wykazać, że Syzyf nie może osiągnąć swojego celu w mniej niż
+\[ 
+&nbsp;&nbsp;\left \lceil \frac{n}{1} \right \rceil + \left \lceil \frac{n}{2} \right \rceil + \left \lceil \frac{n}{3} \right \rceil + \dots + \left \lceil \frac{n}{n} \right \rceil 
+\]
+ruchach.

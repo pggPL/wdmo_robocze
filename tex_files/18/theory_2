@@ -1,0 +1,70 @@
+\heading{Dowód}
+
+\vspace{5px}
+\noindent
+Wynikanie drugiego warunku z pierwszego jest oczywiste. Wykażemy, że jeśli zachodzi warunek drugi, to musi istniej postulowane skojarzenie.
+
+\vspace{10px}
+\noindent
+Skorzystamy z indukcji matematycznej po liczbie dziewczyn. Jeśli jest tylko jedna dziewczyna, to teza jest trywialna. Załóżmy, że teza zachodzi dla każdej liczby $d \leqslant n$ dziewczyn -- wykażemy, że jest prawdziwa również dla $n + 1$ dziewczyn.
+
+\vspace{10px}
+\noindent
+Rozpatrzmy dwa przypadki w zależności od tego, czy istnieje taki podzbiór $k \leqslant n$ dziewczyn, który zna \textit{dokładnie} $k$ chłopców. Załóżmy najpierw, że on istnieje -- nazwijmy go $A$. Zbiór pozostałych dziewczyn nazwijmy $B$. Zbiór chłopaków, którzy są znani przez co najmniej jedną z dziewczyn z $A$ nazwiemy $C_a$, a zbiór pozostałych nazwiemy $C_b$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (1,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (1, 1.5) {$C_a$};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (4,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (5,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_6) at (6,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (5, 1.5) {$C_b$};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (1,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (1.5, -0.5) {$A$};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_3) at (4,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_4) at (5,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (4.5, -0.5) {$B$};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(A_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(A_3);
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_4)--(A_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_4)--(A_6);
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Podzielmy wszystkie osoby na dwa zbiory: $A \cup C_a$ oraz $B \cup C_b$. Wykażemy, że dla każdego z tych zbiorów można zaaplikować założenie indukcyjne. Kojarząc dziewczyny z $A$ z chłopcami z~$C_a$, a dziewczyny z~$B$ z chłopcami z $C_b$ otrzymamy tezę.
+
+\vspace{10px}
+\noindent
+Żadna dziewczyna z $A$ nie zna nikogo ze zbioru $C_b$. Stąd też warunek $2$ dla zbioru $A \cup C_a$ jest spełniony. Rozpatrzmy dowolny podzbiór $B_1$ zbioru $B$. Wówczas zbiór dziewczyn $A \cup B_1$ zna co najmniej $|A| + |B_1|$ chłopców. Skoro łącznie dziewczyny z $A$ znają dokładnie $|A|$ chłopców, to dziewczyny z $B_1$ muszą łącznie znać ich co najmniej $|B_1|$, czyli warunek~2 jest spełniony.
+
+\vspace{10px}
+\noindent
+Rozpatrzmy teraz przypadek, w którym każdy zbiór $k \leqslant n$ dziewczyn zna co najmniej $k + 1$ chłopców. Wówczas wybierzmy dowolną dziewczynę. Na mocy założenia zna ona co najmniej jednego chłopaka -- przypiszmy ich sobie. ,,Usuńmy'' ich -- zauważmy, że wówczas warunek 2 będzie spełniony. Istotnie, każdy zbiór $k$ dziewczyn znał $k + 1$ chłopców, więc po usunięciu jednego z nich, znają one ich co najmniej $k + 1 - 1 = k$. Możemy więc na mocy założenia indukcyjnego skojarzyć resztę dziewczyn.
+
+\qed
+
+\newpage
+
+% Source: https://luckytoilet.wordpress.com/2013/12/21/halls-marriage-theorem-explained-intuitively/

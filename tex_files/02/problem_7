@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie funkcje 
+&nbsp;&nbsp;$\mathbb{R} \rightarrow \mathbb{R} $ spełniające dla wszystkich $x, y \in \mathbb{R} $ nierówność 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(x^2+y) + f(y) \geqslant f(x^2) + f(x).
+&nbsp;&nbsp;\] 

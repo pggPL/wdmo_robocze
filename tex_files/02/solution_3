@@ -1,0 +1,14 @@
+
+
+\answer{Funkcja $f(x) = 0$ jest jedynym rozwiązaniem.}
+
+\noindent
+Podstawmy $x = 0$ i $y = -f(0)$. Otrzymamy $f(0)^{2}=0$, czyli $f(0)=0$. Podstawmy $x=0$: 
+\[ 
+&nbsp;&nbsp;0 = yf(f(0) + y) = yf(y)
+\] 
+Dla niezerowego $y$ mamy $f(y) = 0$.
+Sprawdzamy, że funkcja $f(x) = 0$ spełnia warunki zadania. Łącząc powyższe wnioski otrzymujemy, że jedynie funkcja $f(x)=0$ spełnia warunki zadania. 
+
+\newpage
+

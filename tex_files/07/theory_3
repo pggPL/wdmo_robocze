@@ -1,0 +1,35 @@
+\heading{Rozwiązanie}
+
+\noindent
+Zauważmy, że zachodzą równości
+\begin{align*}
+    \frac{n^5 + 3n^2 + 1}{n^2 + 1} &= 
+    \frac{n^3(n^2 + 1) - n^3 + 3n^2 + 1}{n^2 + 1} 
+    = n^3 + \frac{- n^3 + 3n^2 + 1}{n^2 + 1} = \\
+    &= n^3 + \frac{-n(n^2 + 1) + 3n^2 + n + 1}{n^2 + 1} 
+    = n^3 - n + \frac{3n^2 + n + 1}{n^2 + 1} = \\
+    &= n^3 - n + \frac{3(n^2 + 1) + n - 2}{n^2 + 1}
+    =  n^3 - n + 3 + \frac{n - 2}{n^2 + 1}, 
+\end{align*} 
+z czego wynika, że liczba $\frac{n^5 + 3n^2 + 1}{n^2 + 1}$ będzie całkowita wtedy i tylko wtedy, gdy liczba $\frac{n - 2}{n^2 + 1}$ będzie całkowita. Gdy $n = 0$ to rozpatrywana liczba jest całkowita. Łatwo wykazać, że dla $n \neq 0$ zachodzi nierówność $n^2 + 1 > |n - 2|$. Stąd moduł liczby $\frac{n - 2}{n^2 + 1}$ jest mniejszy od~$1$. Jeśli więc ma on być całkowity, to musi być on równy zeru. Jest to prawdą jedynie dla $n = 2$.
+
+\vspace{5px}
+
+\noindent
+Otrzymaliśmy więc, że szukana podzielność zachodzi jedynie dla $n = 0$ i $n = 2$.
+
+\qed
+
+\noindent 
+To co w istocie dokonało się w powyższym rozwiązaniu to jest podzielenie wielomianu $n^5 + 3n^2 + 1$ przez wielomian $n^2 + 1$. Ideą było wyciąganie takich liczb przed ułamek, aby stopień wielomianu w mianowniku spadał. Istotnie -- najpierw w mianowniku był wielomian $n^5 + 3n^2 + 1$, następnie $3n^2 + n + 1$, aż w końcu $n - 2$. Zauważmy, że nie jesteśmy w stanie otrzymać w podobny sposób wielomianu o niższym stopniu.
+
+\vspace{5px}
+\noindent
+Otrzymaliśmy zależność
+\[
+    n^5 + 3n^2 + 1 = (n^3 - n + 3)(n^2 + 1) + (n - 2).
+\]
+Wielomian $n - 2$ nazwiemy resztą z dzielenia wielomianu $n^5 + 3n^2 + 1$ przez $n^2 + 1$. Teraz sformalizujemy nasze intuicje.
+
+\vspace{5px}
+

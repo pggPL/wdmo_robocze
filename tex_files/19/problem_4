@@ -1,0 +1,5 @@
+\noindent
+Wykazać, że dla parami różnych liczb nieujemnych $a,b,c$ zachodzi nierówność
+\[
+&nbsp;&nbsp;\frac{a^2}{(b - c)^2} + \frac{b^2}{(c - a)^2} + \frac{c^2}{(b - a)^2} > 2.
+\]

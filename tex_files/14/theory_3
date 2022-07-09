@@ -1,0 +1,11 @@
+\heading{Chińskie twierdzenie o resztach}
+
+\noindent
+Dane są parami względnie pierwsze liczby $m_1$, ..., $m_k$ oraz  liczby całkowite $a_1$, ..., $a_k$. Wówczas istnieje taka liczba całkowita $x$, że zachodzą przystawania
+\begin{gather*}
+&nbsp;&nbsp;x \equiv a_1 \pmod{m_1}, \\
+&nbsp;&nbsp;x \equiv a_2 \pmod{m_2}, \\
+&nbsp;&nbsp;..., \\
+&nbsp;&nbsp;x \equiv a_k \pmod{m_k}.
+\end{gather*}
+

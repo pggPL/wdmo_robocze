@@ -1,0 +1,27 @@
+
+
+\answer{Zbiorem szukanych liczb jest zbiór liczb wymiernych.}
+
+\noindent
+Najpierw wykażemy, że dla $x_0$ niewymiernego w danym ciągu nigdy nie pojawi się liczba~$0$. Co więcej, wykażemy, że jeśli liczba $x_i$ jest niewymierna, to liczba $x_{i + 1}$ również będzie niewymierna. Skoro $x_i$ jest niewymierna, to liczba $\frac{p_i}{x_i}$ również. Wiemy, że liczba
+\[
+&nbsp;&nbsp;\left\{ \dfrac{p_k}{x_{k-1}} \right\} - \dfrac{p_k}{x_{k-1}}
+\]
+jest całkowita, toteż skoro liczb $\frac{p_i}{x_i}$ jest niewymierna, to liczba $x_{i + 1} = \left\{ \dfrac{p_k}{x_{k-1}} \right\}$ będzie niewymierna.
+
+\vspace{10px}
+\noindent
+Wykażemy teraz, że jeśli $x_0$ jest liczbą wymierną, to w pewnym momencie w ciągu $x_i$ pojawi się $0$. Najpierw zauważmy, że dla każdego nieujemnego całkowitego $i$ zachodzi 
+\[
+&nbsp;&nbsp;1 \geqslant x_i \geqslant 0.
+\] 
+Wynika to z analogicznej własności części ułamkowej. Załóżmy, że $x_i$ jest liczbą wymierną, różną od 0. Niech $x_i = \frac{p}{q}$ -- oczywiście $p < q$. Wówczas
+\[
+&nbsp;&nbsp;x_{i + 1} = \left\{ \dfrac{p_k}{x_{k-1}} \right\} = \left\{ \dfrac{qp_k}{p} \right\} = \frac{qp_k \text{ mod } p}{p},
+\]
+gdzie $qp_k \text{ mod } p$ oznacza resztę z dzielenia $qp_k$ przez $p$. Zauważmy, że
+\[
+&nbsp;&nbsp;0 \leqslant qp_k \text{ mod } p < p,
+\]
+czyli $x_{i + 1}$ ma mniejszy licznik niż $x_i$. Jako że licznik jest nieujemną liczbą całkowitą, to nie może on się zmniejszać w nieskończoność. Toteż dla pewnego $i$ otrzymamy $x_i = 0$.
+

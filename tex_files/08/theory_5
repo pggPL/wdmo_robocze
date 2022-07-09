@@ -1,0 +1,13 @@
+\heading{Rozwiązanie}
+
+\noindent
+Rozpatrzmy graf, w którym wierzchołkami będą wiersze i kolumny. Jeśli pole zostało pokolorowane, to połączymy przyporządkowane mu wiersz i kolumnę. Otrzymany graf ma $m + n$ wierzchołków i $m + n$ krawędzi, czyli musi zawierać cykl. Wybierając przyporządkowane jego krawędziom pola otrzymujemy zbiór spełniający warunki zadania.
+\qed
+
+\vspace{10px}
+
+\noindent
+Ścieżkę, która przechodzi każdą z krawędzi dokładnie raz nazywamy \textit{ścieżką Eulera} na cześć szwajcarskiego matematyka Leonharda Eulera. Okazuje się, że stwierdzenie, czy w danym grafie istnieje ścieżka Eulera jest dość łatwe dzięki poniższemu twierdzeniu.
+
+\vspace{10px}
+

@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Dana jest liczba całkowita $n$. Niech $T_n$ oznacza liczbę takich podzbiorów zbioru $\{1, 2, 3, ..., n\}$, że ich średnia arytmetyczna jest liczbą całkowitą. Wykazać, że liczba $T_n - n$ jest parzysta.

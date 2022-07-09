@@ -1,0 +1,31 @@
+\heading{Rozwiązanie}
+
+\noindent
+Zauważmy, że
+\[
+&nbsp;&nbsp;1 + \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n} = \frac{n! + \frac{n!}{2} + \frac{n!}{3} + ... + \frac{n!}{n}}{n!}.
+\]
+Niech $k$ będzie największą liczbą całkowitą, że
+\[
+&nbsp;&nbsp;2^{k + 1} > n \geqslant 2^k.
+\]
+Wówczas wśród liczb $1,\; 2,\; 3,\; ..., \; n$ jest dokładnie jedna podzielna przez $2^{k}$ -- mianowicie $2^{k}$. Stąd dla każdej liczby $i$ spośród nich, która nie jest równa $2^k$ zachodzi
+\[
+&nbsp;&nbsp;v_2\left(\frac{n!}{i}\right) = v_2(n!) - v_2(i) > v_2(n!) - k.
+\]
+Zaś mamy
+\[
+&nbsp;&nbsp;v_2\left(\frac{n!}{2^k}\right) = v_2(n!) - v_2(2^k) = v_2(n!) - k.
+\]
+Stąd w sumie $n! + \frac{n!}{2} + \frac{n!}{3} + ... + \frac{n!}{n}$ wszystkie liczby dzielą się przez $2^{v_2(n!) - k + 1}$, poza jedną, której $v_2$ wynosi $v_2(n!) - k$ stąd
+\[
+&nbsp;&nbsp;v_2\left(n! + \frac{n!}{2} + \frac{n!}{3} + ... + \frac{n!}{n}\right) = v_2(n!) - k < v_2(n!).
+\]
+Czyli liczba
+\[
+&nbsp;&nbsp;\frac{n! + \frac{n!}{2} + \frac{n!}{3} + ... + \frac{n!}{n}}{n!}
+\]
+na mocy Lematu 2 nie może być całkowita, co dowodzi tezy.
+
+\qed
+

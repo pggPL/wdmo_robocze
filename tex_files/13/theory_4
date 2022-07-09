@@ -1,0 +1,35 @@
+\heading{Dowód}
+
+\noindent
+Przyjmijmy $a = f(1)$. Na mocy Przykładu 1 mamy, że 
+\[
+&nbsp;&nbsp;f(q) = aq \quad \text{ dla dowolnej liczby wymiernej } q.
+\]
+Skoro $f$ jest funkcją niemalejącą, to oczywiście $a \geqslant 0$.
+Załóżmy nie wprost, że dla pewnej liczby rzeczywistej $t$ zachodzi równość
+\[
+&nbsp;&nbsp;f(t) = a(t + t_0), \; t_0 \neq 0.
+\]
+Przyjmijmy, że $t_0 > 0$. Drugi przypadek będzie analogiczny.
+Znanym faktem jest, że w przedziale $(t, \; t + t_0)$ jest pewna liczba wymierna $q_0$. Mamy wówczas
+\[
+&nbsp;&nbsp;f(q_0) = aq_0 < a(t + t_0) = f(t).
+\]
+Wiedząc, że $q_0 > t$ otrzymujemy sprzeczność z tym, że $f$ jest niemalejąca.
+
+\qed
+
+\newpage
+\noindent
+Analogiczne twierdzenia można udowodnić, gdy fakt, że $f$ jest niemalejąca, zastąpić tym, że 
+\begin{itemize}
+&nbsp;&nbsp;\item $f(x) > 0$, dla dowolnego $x > 0$,
+&nbsp;&nbsp;\item $f(x) < 0$, dla dowolnego $x < 0$,
+&nbsp;&nbsp;\item $f$ jest ograniczona na przedziale -- $f(x) < M$, dla dowolnego $a < x < b$, dla pewnych liczb rzeczywistych $a < b$ oraz $M$,
+&nbsp;&nbsp;\item $f$ jest ciągła.
+\end{itemize}
+Warto zaznaczyć, że różnowartościowość funkcji $f$ nie wystarcza, aby była ona liniowa. 
+
+
+\vspace{10px}
+

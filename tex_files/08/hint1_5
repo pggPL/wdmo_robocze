@@ -1,0 +1,3 @@
+\noindent 
+ Wybierz jeden wierzchołek, następnie usuń wszystkich jego sąsiadów. Powtarzaj taki krok z otrzymanym grafem, aż wszystkie wierzchołki zostaną usunięte. Wybierając mądrze wierzchołki możemy zrobić to tak, że wybierzemy ich odpowiednio dużo.
+&nbsp;&nbsp;

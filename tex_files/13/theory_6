@@ -1,0 +1,34 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wstawiając do drugiego równania $x = y$ otrzymujemy
+\[
+&nbsp;&nbsp;f(x^2) = f(x)f(x) = f(x)^2 \geqslant 0.
+\]
+Niech $t$ będzie liczbą nieujemną. Wstawiając $x = \sqrt{t}$ do powyższego równania otrzymujemy $f(t) \geqslant 0$. Czyli $f$ przyjmuje wartości nieujemne dla argumentów nieujemnych.
+
+\vspace{10px}
+\noindent
+Wykażemy, że $f$ jest niemalejąca. W tym celu rozpatrzmy dwie liczby rzeczywiste $a > b$. Mamy
+\[
+&nbsp;&nbsp;f(a) = f(a - b) + f(b) \geqslant f(b),
+\]
+co dowodzi postulowanej własności.
+
+\vspace{10px}
+\noindent
+Na mocy Twierdzenia 1 mamy, że $f(x) = ax$ dla pewnej liczby rzeczywistej $a$. Podstawiając to do drugiego równania otrzymamy
+\begin{align*}
+&nbsp;&nbsp;ax \cdot ay &= axy, \\
+&nbsp;&nbsp;a^2 &= a.
+\end{align*}
+Stąd $a = 0$ lub $a = 1$. Łatwo sprawdzić, że obie funkcje $f(x) = 0$ i $f(x) = x$ spełniają warunki zadania.
+
+\qed
+
+\vspace{10px}
+\noindent 
+Warto zwrócić uwagę na sposób, w jaki wykazano, że funkcja $f$ jest niemalejąca. Da się go spotkać w wielu zadaniach tego rodzaju. 
+
+\vspace{10px}
+

@@ -1,0 +1,17 @@
+% Rozdział 16 – ciągi
+
+\theory{Ciągi}
+
+\noindent
+Ciągiem $(a_n)_{n \geqslant 0}$ nazywamy funkcję ze zbioru liczb nieujemnych całkowitych w zbiór liczb rzeczywistych. Innymi słowy każdemu indeksowi $i$ jest przyporządkowana pewna liczba rzeczywista $a_i$. Najbardziej znanym przykładem ciągu jest \textit{ciąg Fibonacciego}. Jest on dany wzorem
+\[
+&nbsp;&nbsp;F_0 = 0, \quad F_1 = 1, \quad F_{n + 2} = F_{n + 1} + F_{n} \text{ dla } n \geqslant 0.
+\]
+Można obliczyć, że
+\[
+&nbsp;&nbsp;F_2 = 1, \; F_3 = 2, \; F_4 = 3, \; F_5 = 5, \; F_6 = 8, \; F_7 = 13, \; F_8 = 21, \; F_9 = 34, \; ...
+\]
+Zauważmy, że każdy kolejny wyraz tego ciągu jest zależny od poprzedzających go elementów. Ciągi tak zdefiniowane nazywamy \textit{ciągami rekurencyjnymi}. Można jednak wyznaczyć wzór na każdy element ciągu Fibonacciego, który nie jest rekurencyjny -- zależy tylko od indeksu danego elementu ciągu. Wyprowadzenie tego wzoru jest bardzo pomysłowe i zastosowanie podobnego postępowania pozwala na wyprowadzenie wzoru ogólnego wielu innych ciągów rekurencyjnych.
+
+\vspace{10px}
+

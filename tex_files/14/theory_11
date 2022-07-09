@@ -1,0 +1,10 @@
+\heading{Przykład 1}
+
+\noindent
+Wykazać, że dla dodatniej liczby całkowitej $k$, która nie jest podzielna przez $p - 1$ zachodzi przystawanie
+\[
+&nbsp;&nbsp;1^k + 2^k + 3^k + ... + p^k \equiv 0 \pmod{p}.
+\]
+
+\vspace{10px}
+

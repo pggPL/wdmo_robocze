@@ -1,0 +1,13 @@
+% Rozdział 13 – Równania funkcyjne 2
+
+\theory{Równania funkcyjne 2}
+
+\noindent
+W niniejszym rozdziale poszerzymy naszą wiedzę na temat równań funkcyjnych. Nie będą to już jedynie sztampowe zadania na podstawienia i wykazywanie różnowartościowości/surjektywności funkcji. Na początku zastanówmy się nad funkcjami, które spełniają równanie
+\[
+&nbsp;&nbsp;f(x) + f(y) = f(x + y).
+\]
+Powyższa zależność jest zwana \textit{równaniem Cauchego}.
+
+\vspace{10px}
+

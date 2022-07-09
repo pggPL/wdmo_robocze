@@ -1,0 +1,29 @@
+\heading{Rozwiązanie}
+
+\noindent
+Daną równość można przekształcić do postaci
+\[
+&nbsp;&nbsp;a^2 = 2b^2 - 2a^2 + (b - a) = (b - a)(2a + 2b + 1).
+\]
+Wykażemy, że
+\[
+&nbsp;&nbsp;\mathrm{NWD}(b - a, 2a + 2b + 1) = 1.
+\]
+Załóżmy, że pewna liczba pierwsza $p$ dzieli zarówno $b - a$, jak i $2a + 2b + 1$. Wówczas w szczególności dzieli ich iloczyn, czyli liczbę $a^2$. Stąd, skoro $p$ jest liczbą pierwszą, to $p \mid a$. Rozumując dalej mamy
+\[
+&nbsp;&nbsp; p | b - a \;\; \text{i} \;\; p | a \implies \;\; p | b \implies p|2a + 2b
+\]
+Stąd $p$ nie może dzielić liczby $2a + 2b + 1$, co daje sprzeczność.
+
+\vspace{10px}
+\noindent
+Zauważmy, że skoro $b - a$ i $2a + 2b + 1$ są dodatnie i względnie pierwsze oraz ich iloczyn jest kwadratem liczby całkowitej, to obie muszą być kwadratami liczb całkowitych. Istotnie, rozpatrzmy dowolną liczbę pierwszą $p$ -- może on dzielić co najwyżej jedną z liczb $b - a$ i $2a + 2b + 1$. Skoro wykładnik $p$ w rozkładzie $a^2$ na czynniki pierwsze jest parzysty, to mamy że dla jednej z liczb $b - a$ i $2a + 2b + 1$ jest on parzysty, a dla drugiej równy zeru, czyli także parzysty. Dowodzi to postulowanej własności.
+
+\qed
+
+\noindent
+W powyższym zadaniu kluczowa była obserwacja, że pewne dwie liczby są względnie pierwsze. Warto zwracać na takie rzeczy uwagę przy podobnych zadaniach z teorii liczb. Teraz przejdziemy do zadania z bardzo ciekawym motywem.
+
+\vspace{10px}
+
+% Source: QQ MBL

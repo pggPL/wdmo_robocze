@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie funkcje $f:\mathbb{R}\longrightarrow\mathbb{R}$, że dla dowolnych liczb rzeczywistych $x$, $y$ zachodzi równość:
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(x^2+f(y))=y+f(x)^2.
+&nbsp;&nbsp;\]

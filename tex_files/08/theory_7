@@ -1,0 +1,86 @@
+\heading{Dowód}
+
+\noindent
+Najpierw wykażemy, że cykl może istnieć tylko w takim wypadku. Przechodząc tą ścieżką, do każdego wierzchołka wejdziemy tyle samo razy, ile z niego wyjdziemy. Stąd więc każdy wierzchołek ma parzysty stopień, gdyż krawędzi ,,wejściowych'' i ,,wyjściowych'' jest tyle samo.
+
+\vspace{10 px}
+
+\noindent
+Dowód, że gdy każdy ze stopni jest parzysty, to takowy cykl musi istnieć, jest nieco trudniejszy. Będziemy rozumować indukcyjnie po sumie liczby wierzchołków i krawędzi.
+
+\vspace{5px}
+
+\noindent
+Zauważmy, że skoro graf jest spójny, to stopień żadnego z wierzchołków nie wynosi $0$ -- jest to co najmniej $2$. Rozumując podobnie jak w dowodzie Twierdzenia $1$ wykazujemy, że w rozpatrywanym grafie istnieje cykl -- nazwijmy go $\mathcal{C}$.
+
+\vspace{5px}
+
+\noindent
+Usuńmy ten cykl z grafu. Nie musi pozostać spójny -- podzieli się on na pewne spójne składowe. Niemniej jednak każda ze składowych zawiera pewien wierzchołek $\mathcal{C}$. Na mocy założenia indukcyjnego w każdej z nich istnieje cykl Eulera. 
+
+\vspace{5px}
+
+\noindent
+Możemy połączyć te cykle w jeden duży cykl. Wykażemy, że dwa rozłączne krawędziowo cykle o wspólnym wierzchołku możemy połączyć w jeden większy cykl. Korzystając z tego faktu posklejamy cykle po kolei ze sobą.
+
+\vspace{5px}
+
+\noindent
+Załóżmy, że wspólnym wierzchołkiem cykli $\mathcal{A}$ i $\mathcal{B}$ jest pewien wierzchołek $c$. Wówczas startując z wierzchołka $c$, najpierw przechodzimy cykl $\mathcal{A}$. Wrócimy wtedy do wierzchołka~$c$. Wówczas przejdziemy cykl $\mathcal{B}$. W taki sposób otrzymamy jeden cykl.
+
+\vspace{5px}
+
+\noindent
+Poniżej przestawiono rysunki poglądowe. Aby były czytelne, cykle przechodzą przez każdy wierzchołek dokładnie raz. Niemniej jednak w dowodzie takiego założenia nie poczyniliśmy.
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){a_1}
+    \tkzDefPoint(1,1.4){a_2}
+    \tkzDefPoint(2,1){a_3}
+    \tkzDefPoint(1.5,0.5){a_4}
+    \tkzDrawPoints(a_1,a_2,a_3,a_4)
+    \tkzDrawSegments(a_1,a_2 a_2,a_3  a_3,a_4 a_4,a_1)
+    
+    \tkzDefPoint(2,2.5){b_1}
+    \tkzDefPoint(3,3){b_2}
+    \tkzDefPoint(4,3.2){b_3}
+    \tkzDefPoint(3.5,2.5){b_4}
+    \tkzDrawPoints(b_1,b_2,b_3,b_4)
+    \tkzDrawSegments(b_1,b_2 b_2,b_3  b_3,b_4 b_4,b_1)
+    
+    \tkzDefPoint(3,0){c_1}
+    \tkzDefPoint(4,1.4){c_2}
+    \tkzDefPoint(5,1){c_3}
+    \tkzDrawPoints(c_1,c_2,c_3)
+    \tkzDrawSegments(c_1,c_2 c_2,c_3 c_3,c_1)
+
+    \tkzDrawSegments[dashed](a_1,b_2 b_2,b_4 b_4,c_1 c_1,a_1)
+    \end{tikzpicture}\\
+    
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(1.7,0){v_2}
+    \tkzDefPoint(2.2,1){v_3}
+    \tkzDefPoint(2,2){v_4}
+    \tkzDefPoint(0,1.8){v_5}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5)
+    \tkzDrawSegments[arrowMe=stealth](v_1,v_2 v_2,v_3 v_3,v_4 v_4,v_5 v_5,v_1)
+
+
+    \tkzDefPoint(3,0){a_1}
+    \tkzDefPoint(4.7,0){a_2}
+    \tkzDefPoint(5.2,1){a_3}
+    \tkzDefPoint(5,2){a_4}
+    \tkzDrawPoints(a_1,a_2, a_3, a_4)
+    \tkzDrawSegments[arrowMe=stealth](a_1,a_2 a_2,a_3 a_3,a_4 a_4,v_3 v_3,a_1)
+    \end{tikzpicture}\\
+\end{center}
+\end{minipage}
+
+\vspace{5px}

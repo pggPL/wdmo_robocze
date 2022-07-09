@@ -1,0 +1,24 @@
+
+
+\noindent
+Załóżmy nie wprost, że takie liczby istnieją. 
+Na mocy Twierdzenia $1$ mamy
+\begin{align*}
+&nbsp;&nbsp;a - c &\big| P(a) - P(c) = b - a, \\ 
+&nbsp;&nbsp;a - b &\big| P(a) - P(b) = b - c, \\
+&nbsp;&nbsp;b - c &\big| P(b) - P(c) = c - a.
+\end{align*}
+W szczególności wynika, że każda z liczb
+\[
+&nbsp;&nbsp;|a - b|, \;|b - c|,\; |c - a|,\; |a - b|
+\]
+jest podzielna przez kolejną z nich. Skoro pierwsza jest równa ostatniej, to wszystkie one muszą być sobie równe, czyli
+\[
+&nbsp;&nbsp;|a - b| = |b - c| = |c - a|.
+\]
+Bez straty ogólności przyjmijmy, że $a$ jest największą spośród liczb $a$, $b$, $c$. Wówczas
+\[
+&nbsp;&nbsp;|a - b| = |c - a| \implies a - b = a - c \implies b = c.
+\]
+Jest to sprzeczność z założeniem, że liczby te są parami różne.
+

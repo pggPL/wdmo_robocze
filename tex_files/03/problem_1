@@ -1,0 +1,5 @@
+\noindent 
+&nbsp;&nbsp;Dane są liczby całkowite $n$ i $k$. Wykaż, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\sum^{n}_{k=0} k \cdot {{n}\choose{k}} = n \cdot 2^{n - 1}.
+&nbsp;&nbsp;\]

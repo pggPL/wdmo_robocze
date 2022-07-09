@@ -1,0 +1,31 @@
+
+
+\answer{Najmniejsza możliwa suma elementów tego ciągu wynosi $n(n + 1)$}
+
+\noindent
+Na mocy założenia zadania zachodzą równości
+\begin{align*}
+&nbsp;&nbsp;a_1 + a_{2n + 1} \geqslant 2n, \\
+&nbsp;&nbsp;a_2 + a_{2n} \geqslant 2n - 2, \\
+&nbsp;&nbsp;..., \\
+&nbsp;&nbsp;a_n + a_{n + 2} \geqslant 2. \\
+\end{align*}
+Wiemy również, że $a_{n + 1} + a_{n + 1} \geqslant 0$, czyli liczba $a_{n + 1}$ jest nieujemna. Dodając powyższe nierówności stronami otrzymujemy
+\[
+&nbsp;&nbsp;a_1 + a_2 + ... + a_{2n + 1} \geqslant 2 + 4 + ... + (2n - 2) + 2n = 2(1 + 2 + ... + n) = n(n + 1).
+\]
+Wykażemy, że ciąg dany wzorem
+\[
+&nbsp;&nbsp;a_k = |n + 1 - k|
+\]
+spełnia warunki zadania. Istotnie, na mocy nierówności trójkąta
+\[
+&nbsp;&nbsp;a_i + a_j = |n + 1 - i| + |n + 1 - j| \geqslant |(n + 1 - j) - (n + 1 - i)| = |i - j|.
+\]
+Zauważmy, że
+\[
+&nbsp;&nbsp;a_1 + a_2 + ... + a_{2n + 1} = n + (n - 1) + ... + 1 + 0 + 1 + ... + (n - 1) + n = n(n + 1),
+\]
+co dowodzi tego, że postulowane minimum jest osiągalne.
+
+

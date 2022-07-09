@@ -1,0 +1,17 @@
+\heading{Przykład 1}
+
+\noindent
+Każde z sześciu pudeł $B_1$, $B_2$, $B_3$, $B_4$, $B_5$, $B_6$ na początku zawiera po jednej monecie. Następujące operacje są dozwolone
+
+\begin{enumerate}
+&nbsp;&nbsp;\item Wybrać niepuste pudełko $B_j$, $1\leq j \leq 5$, usunąć jedną monetę z $B_j$ i dołożyć dwie monety do $B_{j + 1}$;
+
+&nbsp;&nbsp;\item  Wybrać niepuste pudełko $B_k$, $1\leq k \leq 4$, usunąć jedną monetę z $B_k$ i zamienić kolejność pudełek $B_{k+1}$ i $B_{k+2}$.
+
+\end{enumerate}
+
+\noindent
+Rozstrzygnąć, czy istnieje taki ciąg operacji, że każde z pudełek $B_1$, $B_2$, $B_3$, $B_4$, $B_5$ stanie się puste, zaś pudełko $B_6$ będzie zawierało $2000^{2000}$ monet.
+
+\vspace{5px}
+

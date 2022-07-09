@@ -1,0 +1,29 @@
+\heading{Wykładniki peadyczne}
+
+\noindent
+Niech $p$ będzie liczbę pierwszą, a $n$ pewną niezerową liczbą całkowitą. Wówczas przyjmiemy, że $v_p(n)$ oznacza potęgę, w której występuje liczba $p$ w rozkładzie liczby $n$ na czynniki pierwsze. Na przykład liczba $360$ może zostać zapisana jako
+\[
+&nbsp;&nbsp;360 = 2^3 \cdot 3^2 \cdot 5^1,
+\]
+więc
+\[
+&nbsp;&nbsp;v_2(360) = 3, \quad v_3(360) = 2, \quad v_3(360) = 1, \quad v_7(360) = 0.
+\]
+
+\vspace{10px}
+
+\noindent
+Inaczej, $v_p(n)$ jest taką nieujemną liczbą całkowita, że 
+\[
+&nbsp;&nbsp;p^{v_p(n)} \mid n, \quad \text{ale} \quad p^{v_p(n) + 1} \nmid n.
+\]
+Innymi słowy jest to największy wykładnik liczy $p$, przez który jest podzielna liczba $n$.
+
+
+\vspace{10px}
+
+\noindent
+Wartość $v_p(n)$ nazywamy wykładnikiem $p$-adycznym liczby $n$. Ma ona bardzo wiele własności, które są niezwykle przydatne w badaniu podzielności liczb.
+
+\vspace{10px}
+

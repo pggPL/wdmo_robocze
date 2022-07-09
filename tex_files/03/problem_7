@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Niech $n$, $k$, $r$ będą dodatnimi liczbami całkowitymi. Wykaż, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\sum^{r}_{k=0} {{n + k}\choose{k}} = {{n + r + 1}\choose{r}} .
+&nbsp;&nbsp;\]

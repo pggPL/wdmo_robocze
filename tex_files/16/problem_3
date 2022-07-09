@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Ciąg ${u_n}$ dany jest wzorem $u_0=1, u_{n+1}=\frac{u_n}{u_n+3}$. Wykaż, że $ u_1+u_2+...+u_{2021}<1$

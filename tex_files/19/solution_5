@@ -1,0 +1,29 @@
+
+
+\noindent
+Przekształćmy nierówność do postaci
+\[
+&nbsp;&nbsp;\left(a^3 - ka + \frac{1}{4}\right) + \left(b^3 - kb + \frac{1}{4}\right) + \left(c^3 - kc + \frac{1}{4}\right) + \left(d^3 - kd + \frac{1}{4}\right) \geqslant 0.
+\]
+Teza jest równoważna znalezieniu takich $k$, aby
+\[
+&nbsp;&nbsp;x^3 - kx + \frac{1}{4} \geqslant 0
+\]
+dla dowolnej liczby $x$ nie mniejszej od $-1$. Istotnie, jesli istniałaby liczba, że ta nierówność nie jest spełniona, to biorąc ją za każdą z liczb $a$, $b$, $c$ i $d$ otrzymalibyśmy sprzeczność.
+
+\noindent
+Zauważmy, że
+\[
+&nbsp;&nbsp;x^3 - \frac{3}{4}x + \frac{1}{4} = \frac{1}{4}(x + 1)(2x - 1)^2 \geqslant 0,
+\]
+stąd $k = \frac{3}{4}$ spełnia warunki zadania. Wstawiając najpierw $x = -1$, mamy
+\[
+&nbsp;&nbsp;-1 + k + \frac{1}{4} \geqslant 0 \implies k \geqslant \frac{3}{4}.
+\]
+Następnie $k = \frac12$, aby otrzymać
+\[
+&nbsp;&nbsp;\frac{1}{8} - \frac12k + \frac14 \geqslant 0 \implies \frac34 \leqslant k.
+\]
+Stąd mamy, że $k = \frac{3}{4}$ jest jedyną liczbą spełniającą warunki zadania.
+\vspace{5px}
+

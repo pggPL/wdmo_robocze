@@ -1,0 +1,41 @@
+
+
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){O};
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,2){A};
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[rotation=center O angle 60](A){B}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[rotation=center O angle 60](B){C}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[rotation=center O angle 60](C){D}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[rotation=center O angle 60](D){E}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[rotation=center O angle 60](E){F}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzFillPolygon[color=gray](A,B,C)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzFillPolygon[color=gray](C,D,E)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzFillPolygon[color=gray](E,F,A)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(A,B B,C C,D D,E E,F F,A A,C C,E E,A)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(A,B,C,D,E,F)
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Łatwo wykazać za pomocą indukcji, że dane przekątne dzielą dany wielokąt na trójkąty. Skierujmy każdą przekątną w pewną stronę. Jeśli pewien obszar jest po lewej stronie nieparzyście wielu prostych zawierających przekątne, to pokolorujemy go na czarno. W przeciwnym wypadku pokolorujemy go na biało. Zauważmy, że każde dwa obszary, które ze sobą sąsiadują, są innego koloru.
+
+\vspace{10px}
+\noindent
+Zauważmy, że skoro z każdego wierzchołka wychodzi nieparzyście wiele przekątnych, to dla każdego wierzchołka dwa skrajne trójkąty, dla których jednym bokiem jest brzeg danego wielokąta, są jednakowego koloru. Stąd też wszystkie trójkąty, które mają bok wspólny z danym wielokątem są jednakowego koloru. Załóżmy bez straty ogólności, że są one czarne.
+
+\vspace{10px}
+\noindent
+Załóżmy, że jest $b$ białych trójkątów. Wówczas każda przekątna jest bokiem dokładnie jednego białego trójkąta, a każdy biały trójkąt ma dokładnie $3$ boki będące przekątnymi. Stąd liczba narysowanych przekątnych wynosi $3b$. Jest ona na mocy założeń równa $n - 3$, czyli
+\[
+&nbsp;&nbsp;3b = n - 3 \implies n = 3(b + 1),
+\]
+z czego wynika teza.
+

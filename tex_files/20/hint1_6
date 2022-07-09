@@ -1,0 +1,5 @@
+\noindent 
+ Wykaż, że 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\left \lfloor \frac{n}{1} \right \rfloor \cdot \left \lfloor \frac{n}{2} \right \rfloor \cdots \left \lfloor \frac{n}{m} \right \rfloor \geqslant \frac{n}{1} \cdot \frac{n - 1}{2} \cdot ... \cdot \frac{n - m + 1}{m} = {{n}\choose{m}}.
+&nbsp;&nbsp;\]

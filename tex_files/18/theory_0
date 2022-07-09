@@ -1,0 +1,135 @@
+% Rozdział 18 - Grafy 2
+
+\theory{Grafy 2}
+
+\noindent
+Rozpatrzmy graf, w którym wierzchołki są podzielone na dwie grupy. Można sobie wyobrazić, że jedna z tych grup to są ,,chłopcy'', a druga ,,dziewczyny''. Przykład takiego grafu z dwoma grupami wierzchołków znajduje się na poniższym rysunku.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (-2, 0) {dziewczyny};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (1,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (3,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (4,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_6) at (5,1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (-2, 1) {chłopcy};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (1,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_3) at (3,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_4) at (4,0) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_6)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_4)--(B_2);
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_5)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_6)--(B_1);
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Zastanówmy się, czy w powyższej sytuacji, da się przyporządkować każdej z dziewczyn pewnego chłopaka, tak, aby jeden chłopak był z co najwyżej jedną dziewczyną. Jest to możliwe, co zademonstrowano na poniższym rysunku.
+
+\begin{center}
+\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (1,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (3,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (4,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_6) at (5,1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (1,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_3) at (3,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_4) at (4,0) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A_1)--(B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A_6)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A_3)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A_4)--(B_2);
+
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+
+
+\vspace{10px}
+\noindent
+Takie przyporządkowanie nazwiemy \textit{skojarzeniem}. Warto zwrócić uwagę, że nie zawsze szukane skojarzenie musi istnieć. W sytuacji zilustrowanej na poniższym rysunku nie da się przyporządkować każdej z dziewczyn innego chłopca.
+
+\begin{center}
+\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (-2, 0) {dziewczyny};
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (-2, 1) {chłopcy};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$c_1$] (A_1) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$c_2$] (A_2) at (1,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$c_3$] (A_3) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$c_4$] (A_4) at (3,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$c_5$] (A_5) at (4,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$c_6$] (A_6) at (5,1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$d_1$] (B_1) at (1,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$d_2$] (B_2) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$d_3$] (B_3) at (3,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$d_4$] (B_4) at (4,0) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(A_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(A_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_4)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_3);
+
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Zauważmy, że dziewczyny $d_1$, $d_3$ i $d_4$ znają jedynie chłopaków $c_1$ i $c_2$. Łatwo wynika stąd, że nie da się każdej z dziewczyn przyporządkować innego chłopaka. Uogólniając tę obserwację mamy
+\begin{center}
+&nbsp;&nbsp;jeśli skojarzenie istnieje, to każdy zbiór $k$ dziewczyn zna co najmniej $k$ różnych chłopaków.
+\end{center}
+
+\vspace{10px}
+\noindent
+Czy istnieje taka konfiguracja znajomości, w której dla każdego zbioru dziewczyn zachodzi powyższy warunek, ale skojarzenie nie istnieje? Odpowiedź na powyższe pytanie jest przecząca, o czym mówi twierdzenie Halla o kojarzeniu małżeństw.
+
+
+\newpage
+

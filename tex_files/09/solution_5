@@ -1,0 +1,30 @@
+
+
+\noindent
+Podstawiając do wyjściowego równania $n = 1$ otrzymamy
+\[
+&nbsp;&nbsp;0 < f(1)f(f(1)) < 2,
+\]
+skąd $f(1) = f(f(1)) = 1$.
+Wykażemy indukcyjnie, że $f(n) = n$. Załóżmy, że równość $f(k) = k$ zachodzi dla wszystkich dodatnich liczb całkowitych $k$ mniejszych od $n$. 
+
+\begin{enumerate}
+&nbsp;&nbsp;\item Jeśli $f(n) \leqslant n - 1$, to z założenia indukcyjnego $f(f(n)) = f(n)$. Wówczas
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(n)f(f(n)) = f(n)^2 \leqslant (n - 1)^2,
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;co daje sprzeczność.
+&nbsp;&nbsp;\item Gdy $f(n) \geqslant n + 1$, to skoro
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(n)f(f(n)) < n^2 + n,
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;to $f(f(n)) < n$, czyli $f(f(n)) \leqslant n - 1$. Stąd na mocy założenia indukcyjnego $f(f(f(n))) = f(f(n))$. Wstawiając $f(n)$ zamiast $n$ do danej nierówności otrzymamy
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;(f(n) - 1)^2 < f(f(f(n)))f(f(n)) = f(f(n))^2 \leqslant (n - 1)^2,
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;co przeczy temu, że $f(n) \geqslant n + 1$.
+\end{enumerate}
+
+\noindent
+Stąd musi zajść $f(n) = n$, co kończy rozumowanie indukcyjne.
+

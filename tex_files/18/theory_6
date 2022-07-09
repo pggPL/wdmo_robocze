@@ -1,0 +1,8 @@
+\heading{Twierdzenie 2 (Eulera)}
+
+\noindent
+Dany jest graf planarny, w którym jest $e$ krawędzi, $v$ wierzchołków, $f$ ścian oraz $c$ spójnych składowych. Wówczas zachodzi równość
+\[
+&nbsp;&nbsp;v - e + f - c = 1.
+\]
+

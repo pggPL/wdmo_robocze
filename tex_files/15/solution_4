@@ -1,0 +1,78 @@
+
+
+\answer{Taka sytuacja nie może się zdarzyć.}
+
+\noindent
+Załóżmy nie wprost, że szukany turniej istnieje. Obliczmy ile zwycięstw odnieśli łącznie gracz $A_{k}$ i $A_{k + 1}$. To, że gracz $A_i$ wygrał z graczem $A_j$ będziemy oznaczać jako $A_i > A_j$. Przyjmiemy też, że $A_{1000 + i} = A_i$. W pojedynku $A_{k}$ i $A_{k + 1}$ jedna osoba wygrała i jedna przegrała. Ponadto na mocy założeń zadania, każdy z graczy spoza tej dwójki musiał przegrać z co najmniej jedną osobą z tej pary. Skoro pozostałych osób jest $998$, to łącznie $A_{k}$ i $A_{k + 1}$ wygrały co najmniej $998 + 1 = 999$ meczów. Rozumując analogicznie dla trójek $(A_1, A_2), \; (A_3, A_4), \; ...,\; (A_{999}, A_{1000})$ otrzymamy, że łączna liczba zwycięstw w turnieju to co najmniej 
+\[
+&nbsp;&nbsp;500 \cdot 999 = \frac{1000 \cdot 998}{2} = {{1000}\choose{2}}.
+\] 
+Zauważmy, że ta liczba jest równa łącznej liczbie zwycięstw wszystkich drużyn, która zawsze wynosi ${{1000}\choose{2}}$. Toteż we wszystkich powyższych szacowaniach zachodzą równości, czyli w szczególności każdy z graczy wygrał z dokładnie jednym z $A_{2k}$ i $A_{2k + 1}$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$A_k$] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$A_{k+1}$] (A_2) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$A_{k+2}$] (A_3) at (4,1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_1);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Załóżmy, bez straty ogólności, że gracz $A_1$ wygrał z graczem $A_2$. 
+Przyjmijmy, że dla pewnego $k$ mamy $A_k > A_{k + 1}$. Wówczas $A_{k + 2} > A_k$, aby $(A_{k + 1}, A_{k + 2})$ była zwycięska. Analogicznie więc $A_{k + 1} > A_{k + 2}$, bo $(A_k, A_{k + 1})$ jest zwycięska. Mamy więc implikację 
+\[
+&nbsp;&nbsp;A_k > A_{k + 1} \implies A_{k + 1} > A_{k + 2}.
+\]
+Skoro $A_1 > A_2$, to możemy wyciągnąć wniosek, że $A_k > A_{k + 1}$ dla każdego $k$.
+
+\vspace{10px}
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$A_k$] (A_1) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$A_{k+t}$] (A_2) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=right:$A_{k+t+1}$] (A_3) at (4,1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_1);
+
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$A_k$] (A_1) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$A_{k+t}$] (A_2) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=right:$A_{k+t+1}$] (A_3) at (4,1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_3);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Zauważmy, że jeśli $A_k > A_{k + t}$, to na mocy tego co wykazaliśmy w pierwszym akapicie musi zajść $A_{k + t + 1} > A_k$. I analogicznie jeśli $A_{k + t} > A_k$, to $A_k > A_{k + t + 1}$. Skoro ${A_k > A_{k + 1}}$, to wynika z tego, że
+\[
+&nbsp;&nbsp;A_k > A_{k + i}, \text{ gdy } 2 \mid i \quad \text{oraz} \quad A_k < A_{k + i}, \text{ gdy } 2 \nmid i.
+\]
+Otrzymujemy stąd, że
+\[
+&nbsp;&nbsp;A_1 > A_{3}, \text{ bo } 3 = 1 + 2 \quad \text{ oraz } A_3 > A_{1001} = A_{1}  \text{ bo } 1001 = 3 + 998.
+\]
+Powyższa sprzeczność kończy rozwiązanie zadania.
+

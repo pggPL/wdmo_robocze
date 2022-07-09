@@ -1,0 +1,35 @@
+\heading{Rozwiązanie}
+
+\noindent
+Niech $\Omega(n)$ oznacza liczbę niekoniecznie różnych dzielników pierwszych liczby $n$.
+Zdefiniujmy dla każdej liczby $n$ jako $f(n)$ ciąg 
+\[
+&nbsp;&nbsp;f(n) = (\Omega(n),\;\; \Omega(n + 1),\;\; ...,\;\; \Omega(n + k)).
+\]
+Zauważmy, że jeśli $f(x) = f(y)$, to ułamki
+\[
+&nbsp;&nbsp;\frac{x}{y}, \; \frac{x + 1}{y + 1}, \; \frac{x + 2}{y + 2}, \; ..., \; \frac{x + k}{y + k}
+\]
+spełniają warunki zadania, bo dla każdego z rozpatrywanych $i$ mamy
+\[
+&nbsp;&nbsp;\Omega(x + i) = \Omega(y + i) \implies \frac{x + i}{y + i} \;\; \text{jest zbilansowany}.
+\]
+Wykażemy, że takie $x$ i $y$ istnieją za pomocą argumentu ilościowego. Rozpatrzmy liczby od $1$ do $2^n$ dla pewnego $n$. Jeśli $a$ jest jedną z nich, to może mieć ona co najwyżej $n$ dzielników pierwszych. W przeciwnym przypadku byłaby równa co najmniej niż $2^{n + 1}$. 
+
+\noindent
+Rozpatrzmy teraz liczby z przedziału od $1$ do $2^n - k$ dla pewnego $n$. Jak wykazaliśmy wyżej, jeśli $1 \leqslant a \leqslant 2^n - k$, to $f(a)$ zawiera $k$ liczb z przedziału od $0$ do $n$, stąd $f$ może przyjąć jedną z $k(n + 1)$ wartości. Jeśli wszystkie 
+\[
+&nbsp;&nbsp;f(1), \;\; f(2), \;\; ..., \;\; f(2^n - k)
+\]
+miałyby być parami różne, to ich liczba musiałaby być nie większa niż liczba możliwych wartości $f$ na tym przedziale, skąd
+\begin{align*}
+&nbsp;&nbsp;2^n - k &\leqslant k(n + 1), \\
+&nbsp;&nbsp;2^n &\leqslant k(n + 2).
+\end{align*}
+Lewa strona tej równości rośnie wykładniczo, a prawa liniowo, stąd dla odpowiednio dużej liczby $n$ taka równość nie będzie zachodzić. Ta sprzeczność dowodzi, że istnieją pewne $x$ i $y$, że $f(x) = f(y)$, z czego jak już pokazaliśmy wynika teza.
+
+\qed
+
+\noindent
+Powyższy motyw jest dość ciekawy. Nie konstruujemy $x$ i $y$ bezpośrednio -- w tym przypadku tego raczej nie da się zrobić. Zamiast tego używamy argumentu, który opiera się na tym, że możliwości wyboru $x$ i $y$ jest dużo w porównaniu do możliwości wyboru konfiguracji liczb dzielników pierwszych liczb $x + i$ oraz $y + i$. Jeśli chcemy wykazać istnienie czegoś, to czasami przydaje się podobne myślenie -- argumenty tego typu rozwiązywały już zadania na finale OM.
+\vspace{10px} 

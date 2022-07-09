@@ -1,0 +1,3 @@
+\noindent 
+ Zauważ, że jeśli $f(n) \leqslant n - 1$, to z założenia indukcyjnego można stwierdzić, że $f(f(n)) = f(n)$.
+&nbsp;&nbsp;

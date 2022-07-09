@@ -1,0 +1,22 @@
+
+\noindent
+Przez multizbiór rozumiemy zbiór w którym jeden element może występować kilka razy.
+Załóżmy, że $x_1 \geqslant x_2 \geqslant ... \geqslant x_n$. 
+\vspace{10px}
+
+\noindent
+Wykażemy tezę dla $n = 3$. Podział na zbiory $\{x_1 - x_2, x_2 - x_3\}$ oraz $\{x_1 - x_3\}$ spełnia warunki zadania.
+\vspace{10px}
+
+\noindent
+Załóżmy, że teza zachodzi dla $2n + 1$, wykażemy ją dla $2n + 3$.
+Rozpatrzmy szukany podział multizbioru różnic zbioru $\{x_1, x_2, ..., x_{2n + 1}\}$ na multizbiory $A$ i $B$ o równej sumie elementów.
+Dorzucamy do multizbioru $A$ liczby
+\[
+&nbsp;&nbsp;{x_{2k+3}-x_{2k+1}, \; x_{2k+3}-x_{2k},\; \cdots, \; x_{2k+3}-x_{k+2}} \quad \text{i} \quad {x_{2k+2}-x_{k+1},\; \cdots, \; x_{2k+2}-x_1},
+\]
+a do multizbioru $B$ liczby
+\begin{gather*}
+&nbsp;&nbsp;x_{2k+3} - x_{2k+2} \quad \text{i} \quad x_{2k+2} - x_{2k+1},\; x_{2k+2} - x_{2k},\; \cdots,\; x_{2k+3} - x_{k+2}  \\ \text{oraz} \quad {x_{2k+3} - x_{k+1},\; \cdots, \; x_{2k+3}-x_1}.
+\end{gather*}
+Łatwo sprawdzić, że suma dorzuconych elementów jest równa. Stąd wynika, że otrzymane zbiory również mają równą sumę elementów, co jest równoważne tezie.

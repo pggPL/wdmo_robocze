@@ -1,0 +1,19 @@
+
+
+\noindent
+Tezę wykażemy indukcją po $n$. Zauważmy, że dla $n = 1$ teza jest oczywista -- wystarczy po prostu przełożyć dysk na trzecią igłę.
+
+\vspace{10px}
+
+\noindent
+Załóżmy, że jesteśmy w stanie przełożyć $n - 1$ dysków z pierwszej igły na trzecią. Możemy oczywiście zauważyć, że jest to równoważne chociażby możliwości przełożenia ich z igły pierwszej na drugą.
+Przełożenia $n$ dysków dokonujemy w następujący sposób:
+
+\begin{enumerate}
+&nbsp;&nbsp;\item Przekładamy $n - 1$ dysków z góry pierwszej igły na drugą igłę. Zauważmy, że dysk o największym rozmiarze nie przeszkadza nam skorzystać z założenia indukcyjnego, gdyż nie uniemożliwi on wykonania żadnego ruchu.
+
+&nbsp;&nbsp;\item Dysk pozostawiony na pierwszej igle przekładamy na igłę ostatnią.
+
+&nbsp;&nbsp;\item Przekładamy $n - 1$ dysków z drugiej igły na trzecią. Analogicznie zauważamy, że obecność jednego dysku na trzeciej igle nie jest problemem.
+\end{enumerate}
+

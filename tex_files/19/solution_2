@@ -1,0 +1,8 @@
+
+
+\noindent
+Zauważmy, że skoro liczby $y$, $z$, $t$ należą do przedziału $(0, 1)$, to liczby $1 - y$, $1 - z$ i $1 - t$ również. Mnożenie liczby dodatniej przez liczbę w tym przedziale ją zmniejsza, stąd
+\[
+&nbsp;&nbsp;xyzt + (1 - x)(1 - y)(1 - z)(1 - t) < x + (1 - x) = 1.
+\]
+

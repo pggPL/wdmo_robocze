@@ -1,0 +1,46 @@
+\heading{Grafy planarne}
+
+\noindent
+Grafy, które można narysować na płaszczyźnie tak, aby żadne dwie krawędzie się nie przecinały, nazywamy \textit{grafami planarnymi}. Przykład takiego grafu znajduje się na poniższym rysunku.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (1,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (2,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (4,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_6) at (3,3.5) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (5,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (7,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_3) at (6,2) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_3);
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_5)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_4)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[bend right] (A_3) to (A_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[bend left] (A_2) to (A_4);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Powyższy graf ma $5$ ścian, $9$ wierzchołków, $11$ krawędzi i $2$ spójne składowe. Pojęcia ścian i spójnych składowych są nowe -- ściany oznaczają liczbę obszarów wyznaczanych przez krawędzie, a spójne składowe liczbę ,,części'' z których składa się graf. Warto zwrócić uwagę, że jedna ściana jest ścianą nieograniczoną -- chodzi o obszar, który jest na zewnątrz każdej ze spójnych składowych.
+
+\vspace{10px}
+

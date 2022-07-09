@@ -1,0 +1,14 @@
+\heading{Przykład 1}
+
+\noindent
+Dla pewnej liczby całkowitej $n$ jej \textit{podziałem} nazwiemy takie dodatnie liczby całkowite $(a_1, ..., a_t)$, że
+\begin{gather*}
+    n = a_1 + a_2 + ... + a_t \\
+    a_1 \geqslant a_2 \geqslant a_3 \geqslant ... \geqslant a_t \geqslant 0.
+\end{gather*}
+
+\noindent
+Niech $n$, $k$ będą dodatnimi liczbami całkowitymi. Wykazać, że liczba podziałów $n$, które składają się dokładnie z $k$ liczb jest równa liczbie podziałów $n$, takich, że największy składnik każdego z nich jest równy dokładnie $k$.
+
+\vspace{5px}
+

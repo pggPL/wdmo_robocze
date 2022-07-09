@@ -1,0 +1,37 @@
+
+
+\noindent
+Podzielmy planszę na prostokąty $1 \times 2$ ułożone jak na rysunku -- boki wszystkich prostokątów o długości dwa są do siebie równoległe, ale żadne dwa z nich, które sąsiadują dłuższym bokiem, nie mają wspólnego wierzchołka.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+
+&nbsp;&nbsp;\draw[line width=0.7mm] (0,0) -- (1,0) -- (1,2) -- (0,2) -- cycle;
+&nbsp;&nbsp;\draw (0,1) -- (1,1);
+&nbsp;&nbsp;\draw[line width=0.7mm] (0,2) -- (1,2) -- (1,4) -- (0,4) -- cycle;
+&nbsp;&nbsp;\draw (0,3) -- (1,3);
+
+&nbsp;&nbsp;\draw[line width=0.7mm] (1,3) -- (2,3) -- (2,5) -- (1,5) -- cycle;
+&nbsp;&nbsp;\draw (1,2) -- (2,2);
+&nbsp;&nbsp;\draw[line width=0.7mm] (1,1) -- (2,1) -- (2,3) -- (1,3) -- cycle;
+&nbsp;&nbsp;\draw (1,4) -- (2,4);
+
+&nbsp;&nbsp;\draw[line width=0.7mm] (2,0) -- (3,0) -- (3,2) -- (2,2) -- cycle;
+&nbsp;&nbsp;\draw (2,1) -- (3,1);
+&nbsp;&nbsp;\draw[line width=0.7mm] (2,2) -- (3,2) -- (3,4) -- (2,4) -- cycle;
+&nbsp;&nbsp;\draw (2,3) -- (3,3);
+
+&nbsp;&nbsp;\draw[line width=0.7mm] (3,3) -- (4,3) -- (4,5) -- (3,5) -- cycle;
+&nbsp;&nbsp;\draw (3,2) -- (4,2);
+&nbsp;&nbsp;\draw[line width=0.7mm] (3,1) -- (4,1) -- (4,3) -- (3,3) -- cycle;
+&nbsp;&nbsp;\draw (3,4) -- (4,4);
+
+&nbsp;&nbsp;\draw[line width=0.7mm] (4,0) -- (5,0) -- (5,2) -- (4,2) -- cycle;
+&nbsp;&nbsp;\draw (4,1) -- (5,1);
+&nbsp;&nbsp;\draw[line width=0.7mm] (4,2) -- (5,2) -- (5,4) -- (4,4) -- cycle;
+&nbsp;&nbsp;\draw (4,3) -- (5,3);
+\end{tikzpicture}
+\end{center}
+Strategia drugiego gracza będzie następująca. Jeśli pierwszy gracz postawi swój symbol w jednym polu prostokąta, drugi gracz stawia swój symbol w drugim polu tego prostokąta. Kwadrat $2 \times 2$ zawiera pewien rozpatrywany prostokąt w całości. Jednak sytuacja, w której jeden prostokąt zawiera dwa jednakowe symbole się nie zdarzy. Stąd rozpatrywana strategia spełnia warunki zadania.
+
+

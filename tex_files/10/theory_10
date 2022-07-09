@@ -1,0 +1,10 @@
+\heading{Lemat 4}
+
+\noindent
+Dane są niezerowe liczby całkowite $a_1, a_2, ..., a_k$. Niech $m$ będzie najmniejszą z liczb postaci $v_p(a_i)$. Wówczas, jeśli dokładnie jedna spośród $a_1, \; a_2, \; ..., \; a_n$ spełnia zależność $m = v_p(a_i)$, to
+\[
+&nbsp;&nbsp;v_p(a_1 + a_2 + ... + a_k) = m.
+\]
+
+\vspace{5px}
+

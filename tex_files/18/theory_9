@@ -1,0 +1,16 @@
+\heading{Rozwiązanie}
+
+\vspace{5px}
+\noindent
+Na każdym wierzchołku połóżmy kamień. Najpierw zamieńmy miejscami kamienie, które leżą na wierzchołkach krawędzi o numerze $1$, następnie te, które leżą na wierzchołkach krawędzi o numerze $2$, ..., aż zamienimy te, które leżą na wierzchołkach krawędzi o numerze $k$.
+
+\vspace{10px}
+\noindent
+W każdym ruchu przesuwamy dwa kamienie. Więc łącznie wykonamy $2k$ przesunięć kamieni. Skoro kamieni jest $n$, to istnieje kamień przesunięty co najmniej $\frac{2k}{n}$~razy. Numery kolejnych rozpatrywanych krawędzi były coraz większe. Toteż ciąg krawędzi, przez które był on przekładany, jest poszukiwaną ścieżką. 
+
+\qed
+
+\noindent
+Powyższe zadanie pokazuje, jak ważne jest próbowanie nietypowych pomysłów w matematyce. Nawet jeśli nie doprowadzą one bezpośrednio do rozwiązania zadania, tak jak w powyższym przypadku, to bardzo często wynikają z nich przydatne obserwacje.
+
+\newpage

@@ -1,0 +1,12 @@
+
+
+\noindent
+Zauważmy, że dla $a = 10^{-8}$, $b = 10^{2}$ i  $c = 1$ lewa strona nierówności wynosi więcej niż $b^2c^3 = 10^{4}$, a każdy ze składników prawej strony jest nie większy niż $100$. Łatwo zauważyć, że postulowana nierówność nie zachodzi.
+
+\begin{remark}
+&nbsp;&nbsp;Niezwykle pomocne przy rozwiązaniu tego zadania jest zobaczenie co się dzieje, gdy jedna ze zmiennych wyniesie $0$. Podstawienie to nie jest to zgodne z treścią zadania, bo rozpatrujemy liczby dodatnie, ale nasuwa ono na pomysł, który pozwala wymyślić rozwiązanie poprawne. Jeśli $a = 0$, to nierówność przybiera postać
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;b^2c^3 \leqslant bc^4.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Jeśli $b$ jest większe niż $c$ to ta nierówność nie zajdzie. Stąd pomysł na wzięcie bardzo małego $a$ i dużej liczby $c$.
+\end{remark}

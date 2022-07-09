@@ -1,0 +1,16 @@
+
+
+\noindent
+Załóżmy, bez straty ogólności, że $a$ jest najmniejszą liczbą spośród $a$, $b$, $c$. Przyjmijmy
+\[
+&nbsp;&nbsp;b = a + x, \quad c = a + y, \; \text{dla } x, y > 0.
+\]
+Wówczas nierówność przybiera postać
+\[
+&nbsp;&nbsp;\frac{a^2}{(x - y)^2} + \frac{(a + x)^2}{y^2} + \frac{(a + y)^2}{x^2} > 2.
+\]
+Zauważmy, że
+\[
+&nbsp;&nbsp;\frac{a^2}{(x - y)^2} + \frac{(a + x)^2}{y^2} + \frac{(a + y)^2}{x^2} > \frac{x^2}{y^2} + \frac{y^2}{x^2} \geqslant 2 \cdot \frac{x}{y} \cdot \frac{y}{x} = 2.
+\]
+

@@ -1,0 +1,17 @@
+\heading{Dowód}
+
+\noindent
+Rozpatrzmy ciąg $(1,\; a^1,\; a^2,\; a^3,\; ...)$ . Zauważamy, że ma on nieskończenie wiele elementów, a reszt z dzielenia przez $p$ jest skończenie wiele. Z Zasady Szufladkowej Dirichleta mamy więc, że istnieją takie liczby $r$ oraz $s$ -- załóżmy, że $r\geqslant s $ -- że 
+\[
+    a^r\equiv a^s \pmod{p}.
+\]
+Jest to równoważne temu, że 
+\[  
+    p\mid a^s(a^{r-s}-1).
+\]
+Skoro $a$ nie jest podzielna przez $p$, to $p\mid a^{r-s}-1$, skąd zachodzi $a^{r-s}\equiv 1 \pmod{p}$.
+
+\qed
+
+
+\vspace{10 px}

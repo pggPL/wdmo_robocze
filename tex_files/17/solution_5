@@ -1,0 +1,20 @@
+
+
+\noindent
+Wykażemy, że jest to możliwe. Udowodnimy, że jeśli w pewnym momencie konik stoi na liczbie $n$, to jest w stanie stanąć po pewnej liczbie ruchów na polu o numerze $n + 1$. Niech $A$ oznacza liczbę skoków, które konik już wykonał. Przyjmijmy, że zostanie wykonanych $t$~skoków w~prawo, a~następnie jeden skok w~lewo. Wówczas konik przesunie się w~prawo~o
+\begin{gather*}
+&nbsp;&nbsp;(2^A + 1) + (2^{A + 1} + 1) + ... + (2^{A + t} + 1) - (2^{A + t + 1} + 1 ) = \\
+&nbsp;&nbsp;= 2^A \cdot (1 + 2 + 2^2 + ... + 2^{t}) + t - 2^{A + t + 1} - 1 = \\
+&nbsp;&nbsp;= 2^A \cdot (2^{t + 1} - 1) - 2^{A + t + 1} + (t - 1) = (t - 1) - 2^A
+\end{gather*}
+pól. Biorąc $t = 2^A + 2$ otrzymamy przesunięcie o jedno pole w prawo. 
+
+\vspace{10px}
+\noindent
+Analogicznie można wykazać, że zawsze istnieję ciąg ruchów, który skutkuje przesunięciem o~jedną liczbę w~lewo. Konik może więc w~skończonej liczbie ruchów przeskoczyć z~dowolnej liczby $a$ na dowolną inną. Rozpatrując ciąg liczb
+\[
+&nbsp;&nbsp;0, \; 1, \; -1, \; 2, \; -2, \; 3, \; -3, ...,
+\]
+zauważamy, że jest w nim każda liczba całkowita. Wystarczy więc, aby konik skakał po kolejnych liczbach tego ciągu, wykonując oczywiście niezbędne ruchy w międzyczasie.
+
+%Source: od Szymczyka

@@ -1,0 +1,19 @@
+
+
+\noindent
+Przemnóżmy obie strony przez $b \cdot (p - 1)!$. Mamy wtedy 
+\[
+&nbsp;&nbsp;b(p - 1)! + \frac{b(p - 1)!}{2} + \frac{b(p - 1)!}{3} + ...+\frac{b(p - 1)!}{p-1} = a(p - 1)!.
+\] 
+Zauważmy, że
+\begin{align*}
+&nbsp;&nbsp;a(p - 1)! &\equiv b(p - 1)! + \frac{b(p - 1)!}{2} + \frac{b(p - 1)!}{3} + ...+\frac{b(p - 1)!}{p-1} \equiv \\
+&nbsp;&nbsp;&\equiv b(p - 1)! + b(p - 1)! \cdot 2^{-1} + b(p - 1)! \cdot 3^{-1} + ... + b(p - 1)!  \cdot (p - 1)^{-1} \equiv \\
+&nbsp;&nbsp;&\equiv b(p - 1)!(1^{-1}+2^{-1}+...+(p-1)^{-1}) \pmod{p}.
+\end{align*}
+Funkcja, która przyporządkowuje każdej niezerowej reszcie jej odwrotność modulo $p$ jest bijekcją(przyjmuje wszystkie wartości przeciwdziedziny i jest różnowartościowa). Czyli cały zbiór $\{1,\; 2,\; 3,\; ...,\; p-1\}$ zostanie przekształcony na samego siebie.
+Zauważamy więc, że suma odwrotności wszystkich niezerowych reszt modulo $p$ to suma wszystkich możliwych reszt modulo $p$, czyli 
+\[
+&nbsp;&nbsp;1^{-1} + 2^{-1} + ... + (p-1)^{-1} = 1 + 2 + 3 + ... + (p-1) = \frac{p(p-1)}{2}.
+\] Zauważamy, że powyższa suma jest podzielna przez $p$. Jest ona równa $a(p - 1)!$. Skoro $(p - 1)!$ nie jest podzielna przez $p$, stąd to liczba $a$ jest podzielna przez $p$.
+

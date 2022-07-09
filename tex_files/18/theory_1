@@ -1,0 +1,11 @@
+\heading{Twierdzenie 1 (Halla)}
+
+\noindent
+Dana są dwa zbiory -- chłopców i dziewcząt. Niektórzy chłopcy znają się z niektórymi dziewczynami. Wówczas następujące dwa warunki są równoważne:
+\begin{enumerate}
+&nbsp;&nbsp;\item istnieje skojarzenie, które każdej dziewczynie przyporządkowuje chłopca;
+&nbsp;&nbsp;\item każdy podzbiór dziewczyn liczący $k$ osób zna co najmniej $k$ chłopców.
+\end{enumerate}
+% tutaj jakiś rysunek z przykładem o co cho
+
+

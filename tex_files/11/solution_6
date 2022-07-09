@@ -1,0 +1,20 @@
+
+
+\noindent
+Załóżmy nie wprost, że gra może trwać w nieskończoność.
+Ponumerujmy dziewczyny liczbami od $1$ do $20$.
+Przyjmijmy, że na każdym kamieniu są miejsca na zapisanie dwóch liczb. Jeśli pewna dziewczyna $a$ przekaże dziewczynie $b$ kamień po raz pierwszy, to o ile na kamieniu nie jest nic zapisane, to zapisuje się tam numery $a$ i $b$. 
+Jeśli pewna dziewczyna musi przekazać kamień swojej sąsiadce, to jeśli dysponuje kamieniem z zapisanymi numerami swoimi i sąsiadki, to przekaże jej właśnie go.
+
+\vspace{10px}
+\noindent
+Należy zauważyć, że jeśli kamień jest podpisany numerami $a$ oraz $b$, to od momentu podpisania będzie posiadała go albo dziewczyna o numerze $a$, albo dziewczyna o numerze~$b$. W momencie podpisania tak istotnie jest. Jeśli jedna z tych dziewczyn ma przekazać kamienie sąsiadkom, to rozpatrywany kamień będzie przekazany do drugiej dziewczyny ze zbioru $\{a, b\}$.
+
+\vspace{10px}
+\noindent
+Skoro jest $N < 19$ kamieni oraz $20$ kolejnych par dziewczyn, to będzie istnieć para kolejnych dziewczyn, która nie będzie miała kamienia podpisanego swoimi numerami. Załóżmy, że jedna z tych dziewczyn ma numer $a$. Wówczas ani razu nie przekaże ona swoich kamieni nikomu, bo w przeciwnym wypadku przekazałaby go drugiej z rozpatrywanych dziewczyn.
+
+
+\vspace{10px}
+\noindent
+Załóżmy, że dziewczyna o numerze $k$ przekazała kamienie sąsiadkom skończenie wiele razy. Wówczas jeśli dziewczyna o numerze $k - 1$ (oczywiście rozpatrujemy numery modulo~$20$) robiłaby to bez końca, to w pewnym momencie dziewczyna o numerze $k$ miałaby więcej niż $19$ kamieni. Stąd jeśli $k$ wykonała skończenie wiele ruchów, to $k - 1$ też. Wiemy, że dziewczyna o numerze $a$ wykonała zero, czyli skończenie wiele ruchów. Rozumując indukcyjnie dowodzimy, że każda dziewczyn mogła wykonać skończenie wiele ruchów, co kończy dowód.

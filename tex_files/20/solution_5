@@ -1,0 +1,13 @@
+
+
+\noindent
+Przyjmijmy, że $np + 1 = a^2$. Stąd mamy, że $a^2 \equiv 1 \pmod{p}$, czyli $a \equiv \pm 1 \pmod{p}$. Niech
+\begin{align*}
+&nbsp;&nbsp;a &= kp \pm 1, \\
+&nbsp;&nbsp;np + 1 &= (kp \pm 1)^2 = k^2p^2 \pm 2kp + 1, \\
+&nbsp;&nbsp;n &= k^2p \pm 2k, \\
+&nbsp;&nbsp;n + 1 &= (p - 1) \cdot k^2 + (k \pm 1)^2.
+\end{align*}
+Stąd też liczbę $n + 1$ da się przedstawić w postaci sumy $p - 1$ kwadratów liczby $k$ oraz kwadratu jednej z liczb $k - 1$, $k + 1$.
+\vspace{5px}
+

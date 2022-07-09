@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Niech $S(\mathcal{X})$ oznacza sumę elementów zbioru $\mathcal{X}$, zaś $S_2(\mathcal{X})$ sumę kwadratów elementów zbioru $\mathcal{X}$. Rozstrzygnąć, czy istnieją takie rozłączne zbiory liczb całkowitych $A$ oraz $B$, które zawierają po $2020$ elementów, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;S(A) = S(B) \quad \text{oraz} \quad S_2(A) = S_2(B).
+&nbsp;&nbsp;\]

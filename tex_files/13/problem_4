@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Niech $f(n)$ będzie funkcją z dodatnich liczb całkowitych w dodatnie liczby całkowite. Wiadomo, że dla każdej dodatniej liczby całkowitej $n$ liczba  $f(f(n))$ jest liczbą dodatnich dzielników $n$. Wykazać, że jeśli $p$ jest liczbą pierwszą, wówczas $f(p)$ również jest liczbą pierwszą.

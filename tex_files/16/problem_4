@@ -1,0 +1,9 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie liczby rzeczywiste $x$, że ciąg dany wzorem
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a_0 = x, \quad a_n = 2^n - 3a_n,
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;dla dowolnej liczby naturalnej n spełnia zależność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a_{n} > a_{n - 1}.
+&nbsp;&nbsp;\]

@@ -1,0 +1,41 @@
+\heading{Rozwiązanie}
+
+\noindent
+Najpierw wykażemy, że ciąg reszt z dzielenia liczb $F_n$ przez $M$ jest okresowy. Reszt z~dzielenia przez $M$ jest skończenie wiele. Również liczba wartości jakie może przyjąć para $(F_i \pmod{M},\; F_{i + 1}\pmod{M})$ jest skończona. Toteż istnieją takie liczby $i < j$, dla których
+\[
+&nbsp;&nbsp;F_i \equiv F_j \pmod{M} \quad \text{oraz} \quad F_{i + 1} = F_{j + 1} \pmod{M}.
+\]
+Możemy zauważyć, że
+\[
+&nbsp;&nbsp;F_{j + 2} \equiv F_{j + 1} + F_j \equiv F_{i + 1} + F_i \equiv F_{i + 2} \pmod{M}.
+\]
+Kontynuując to rozumowanie można wykazać, że $F_{i + k} \equiv F_{j + k} \pmod{M}$ dla dowolnej liczby całkowitej dodatniej $k$.
+Możemy się również ,,cofać'', to jest
+\[
+&nbsp;&nbsp;F_{j - 1} \equiv F_{j + 1} - F_j \equiv F_{i + 1} - F_i \equiv F_{i - 1} \pmod{M}.
+\]
+i w ten sposób wykazać, że $F_{i + k} \equiv F_{j + k} \pmod{M}$ również zachodzi dla dowolnej liczby całkowitej ujemnej $k$. Otrzymaliśmy więc, że
+\begin{align*}
+&nbsp;&nbsp;F_{i + k} \equiv F_{j + k} &\pmod{M}\\
+&nbsp;&nbsp;F_{k} \equiv F_{k + (j - i)} &\pmod{M} \\
+&nbsp;&nbsp;F_{k} \equiv F_{k + t} &\pmod{M},
+\end{align*}
+dla pewnej dodatniej liczby całkowitej $t$.
+
+\vspace{10px}
+
+\noindent
+Zauważmy, że $F_0 \equiv 0 \pmod{M}$. Wówczas
+\[
+&nbsp;&nbsp;0 \equiv F_0 \equiv F_t \equiv F_{2t} \equiv F_{3t} \equiv ... \pmod{M},
+\]
+co kończy dowód.
+
+\qed
+
+\noindent
+Przykładowo dla $M = 4$ ciąg reszt $F_n$ z dzielenia przez $M$ wygląda następująco
+\[
+&nbsp;&nbsp;0,\; 1,\; 1,\; 2,\; 3,\; 1,\; 0,\; 1,\; 1,\; 2,\; ...
+\]
+

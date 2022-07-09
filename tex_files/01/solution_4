@@ -1,0 +1,53 @@
+
+
+\noindent
+Dla $n = 3$ mamy trójkąt. Wybierając kolor, na który pomalowano co najmniej dwa odcinki, postulowana własność będzie spełniona.
+\vspace{10px}
+
+\noindent
+Załóżmy, że dla teza zachodzi dla $n$ punktów. Rozpatrzmy zbiór $n + 1$ punktów. Wyróżnijmy pewien punkt $P$. Punktów poza $P$ jest dokładnie $n$, więc na mocy założenia istnieje kolor -- bez straty ogólności czerwony -- że pomiędzy każdymi dwoma punktami poza $P$ istnieje łamana tego koloru. 
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\begin{tikzpicture}
+\tkzDefPoint(3,3){P}
+\tkzDefPoint(0,2){v_1}
+\tkzDefPoint(1.5,0){v_2}
+\tkzDefPoint(3,0){v_3}
+\tkzDefPoint(5,1){v_4}
+\tkzDrawPoints(P, v_1,v_2,v_3,v_4)
+\tkzDrawSegments[dashed](v_1,v_2 v_2,v_3 v_3,v_4 v_1,v_4)
+\tkzDrawSegments(v_1,v_3 v_2,v_4)
+\tkzDrawSegments(P,v_2 P,v_3 P,v_4 v_1,P)
+\tkzLabelPoints[above](P)
+\end{tikzpicture}\\
+
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\begin{tikzpicture}
+\tkzDefPoint(3,3){P}
+\tkzDefPoint(0,2){v_1}
+\tkzDefPoint(1.5,0){v_2}
+\tkzDefPoint(3,0){v_3}
+\tkzDefPoint(5,1){v_4}
+\tkzDrawPoints(P, v_1,v_2,v_3,v_4)
+\tkzDrawSegments[dashed](v_1,v_2 v_2,v_3 v_3,v_4 v_1,v_4 P,v_4)
+\tkzDrawSegments(v_1,v_3 v_2,v_4)
+\tkzDrawSegments(P,v_2 P,v_3  v_1,P)
+\tkzLabelPoints[above](P)
+\end{tikzpicture}\\
+\end{center}
+\end{minipage}
+\begin{center}
+Na rysunku zamiast kolorów użyto podziału na linię ciągłą i przerywaną.
+\end{center}
+
+Rozpatrzmy dwa przypadki:
+\begin{enumerate}
+&nbsp;&nbsp;\item Punkt $P$ jest połączony czerwoną krawędzią z pewnym innym punktem $Q$. Wówczas, wybierając dowolny punkt $X$, na mocy założenia wiemy, że istnieje czerwona ścieżka między $X$ i $Q$. Dokładając do niej odcinek między $P$ i $Q$ otrzymujemy ścieżkę między $P$ oraz $X$.
+&nbsp;&nbsp;Wykazaliśmy, że istnieje ścieżka między punktem $P$ i każdym innym punktem. Łącząc to z faktem, że na mocy założenia indukcyjnego taka ścieżka istnieje między każdą inną parą punktów, otrzymujemy, że dla koloru czerwonego teza jest spełniona.
+&nbsp;&nbsp;\item Punkt $P$ jest połączony z każdym innym punktem niebieskim odcinkiem. Wówczas łatwo zauważyć, że pomiędzy każda parą punktów możemy przejść jednym albo dwoma niebieskimi odcinkami przechodzącymi przez punkt $P$.
+\end{enumerate}
+

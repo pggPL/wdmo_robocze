@@ -1,0 +1,54 @@
+
+
+\noindent
+Rozpatrzmy takie przyporządkowanie w pary, dla których suma długości rozpatrywanych odcinków jest minimalna. Wykażemy, że spełnia ono warunki zadania.
+
+\vspace{10px}
+\noindent
+Załóżmy nie wprost, że to przyporządkowanie nie spełnia warunków zadania. Czyli istnieją takie punkty $X$ i $Y$ i proste $k$ i $l$, że odcinki łączące rzuty $X$ i $Y$ na $k$ i $l$ odpowiednio się przecinają w pewnym punkcie $P$. Oznaczmy te rzuty jako $X'$ i $Y'$ odpowiednio. Rzut $X$ na $k$ oznaczmy jako $X_1$, a rzut $Y$ na $l$ jako $Y_1$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(1,0){X}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){Y}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(-4,-0.1){k_1}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0.5,2){k_2}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0.5,2){l_1}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(4,0){l_2}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointBy[projection=onto k_1--k_2](X)\tkzGetPoint{X'}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointBy[projection=onto l_1--l_2](Y)\tkzGetPoint{Y'}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointBy[projection=onto l_1--l_2](X)\tkzGetPoint{X_1}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointBy[projection=onto k_1--k_2](Y)\tkzGetPoint{Y_1}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzInterLL(X,X')(Y,Y')\tkzGetPoint{P}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(X, Y, X', Y', X_1, Y_1,P)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above right](Y'){$Y'$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above right](X_1){$X_1$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above left](Y_1){$Y_1$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above left](X'){$X'$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[below](X){$X$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[below](Y){$Y$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[left](P){$P$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above left](k_1){$k$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above right](l_2){$l$}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(k_1,k_2 l_1,l_2 X,X' Y,Y')
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments[dashed](X,X_1 Y,Y_1)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzMarkRightAngles[german](X,X',k_2 l_1,Y',Y)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzMarkRightAngles[german](l_1,X_1,X Y,Y_1,k_2)
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Zauważmy, że zachodzą nierówności
+\[
+&nbsp;&nbsp;XP + PY' > XY' > XX_1 \quad \text{oraz} \quad YP + PX' > YX' > YY_1.
+\]
+Dodając te nierówności stronami otrzymujemy, że
+\[
+&nbsp;&nbsp;XX' + YY' = (XP + PX') + (YP + PY') = (XP + PY') + (YP + PX') > XX_1 + YY_1.
+\]
+Przyporządkowując prostą $k$ do punktu $Y$ i prostą $l$ do punktu $X$ otrzymamy przyporządkowanie o mniejszej sumie rozpatrywanych odcinków. Przeczyłoby to jednak minimalności, którą założyliśmy na początku. Zatem żadne dwa rozpatrywane odcinki się nie przecinają.
+
+\vspace{5px}
+

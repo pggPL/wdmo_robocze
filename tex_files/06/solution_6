@@ -1,0 +1,12 @@
+
+
+\noindent
+Załóżmy, że dla pewnej liczb całkowitych $a$ zapisano liczby
+\[
+&nbsp;&nbsp;a,\; a + 1,\; a + 2,\; ...,\; a + 1999 \quad \text{oraz} \quad
+&nbsp;&nbsp;a,\; a + 1,\; a + 2,\; ..., \; a + 99.
+\]
+Zauważmy, że wykonując ruch zamieniający dwie liczby $a$ na liczby $a + 100$ i $a + 2000$, otrzymujemy analogiczną konfigurację dla $a + 1$. Wypisując na starcie taką konfigurację chociażby dla $a = 0$, Jaś będzie w stanie wykonywać ruchy w nieskończoność.
+
+
+

@@ -1,0 +1,17 @@
+
+
+\vspace{5px}
+
+\noindent
+Spośród $n$ osób będziemy chcieli wybrać drużynę i mianować jednego jej członka kapitanem. Wykażemy, że wyrażenia po obu stronach równości są liczbą możliwości takiego wyboru.
+
+\vspace{10px}
+\noindent
+Wybierając najpierw kapitana -- możemy go wybrać na $n$ sposobów -- a następnie dobierając mu zawodników -- których można wybrać na $2^{n - 1}$ sposobów, gdyż wybieramy dowolny podzbiór $n - 1$ osób -- otrzymamy $n \cdot 2^{n - 1}$ osób.
+
+\vspace{10px}
+\noindent
+Przyjmijmy, że w drużynie wraz z kapitanem jest $k$ osób. Możliwości wyboru $k$ osób spośród $n$ jest ${n}\choose{k}$, a opcji wyboru kapitana spośród tych $k$ osób jest dokładnie $k$. Stąd też dla dowolnego $k$ liczba wariantów wynosi $k \cdot {{n}\choose{k}} $. Sumując po wszystkich możliwych $k$ otrzymujemy, że łączna liczba możliwości wynosi $\sum^{n}_{k=0} k \cdot {{n}\choose{k}}$.
+
+\vspace{5px}
+

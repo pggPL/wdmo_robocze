@@ -1,0 +1,11 @@
+\heading{Twierdzenie 1}
+
+\noindent
+Dane są wielomiany o współczynnikach rzeczywistych $W(x)$ i $P(x)$. Wówczas istnieją takie wielomiany o współczynnikach rzeczywistych $G(x)$ i $R(x)$, że
+\[
+    W(x) = G(x) \cdot P(x) + R(x),
+\]
+oraz $deg \; R < deg\; P$. 
+
+\vspace{10px}
+

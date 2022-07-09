@@ -1,0 +1,19 @@
+\heading{Wzory Viete'a dla wielomianu stopnia trzeciego}
+
+\noindent
+Dany jest wielomian
+\[
+     W(x) = a_3(x - \alpha_1)(x - \alpha_2)(x - \alpha_3) = a_3x^3 + a_2x^2 + a_1x + a_0.
+\]
+Wówczas 
+\begin{align*}
+-a_3(x_1 + x_2 + x_3) = a_2, \\
+a_3(x_1x_2 + x_1x_3 + x_2x_3) = a_1, \\
+-a_3x_1x_2x_3 = a_0,
+\end{align*}
+lub równoważnie
+\begin{align*}
+x_1 + x_2 + x_3 = -\frac{a_2}{a_3}, \\
+x_1x_2 + x_1x_3 + x_2x_3 = \frac{a_1}{a_3}, \\
+x_1x_2x_3 = -\frac{a_0}{a_3}.
+\end{align*}

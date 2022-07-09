@@ -1,0 +1,20 @@
+% Rozdział 11 – gry
+
+\theory{Gry}
+
+\noindent
+Zajmiemy się teraz analizą gier. Większość gier, które będziemy rozważać, ma pewne cechy wspólne:
+\begin{itemize}
+&nbsp;&nbsp;\item dwóch graczy wykonuje ruchy na przemian,
+&nbsp;&nbsp;\item obaj gracze mają wszystkie informacje na temat stanu gry -- nie ma żadnych elementów tajnych,
+&nbsp;&nbsp;\item gra musi się skończyć -- nie można grać w nieskończoność.
+\end{itemize}
+Oczywiście niektóre zadania wyłamią się z tych zasad.
+
+\vspace{10px}
+\noindent
+Powiemy, że jeden z graczy ma \textit{strategię wygrywającą}, gdy może tak wykonywać ruchy, aby wygrać, niezależnie od tego jak gra przeciwnik. Przykład takiej strategii ilustruje następujące zadanie.
+
+\vspace{10px}
+
+

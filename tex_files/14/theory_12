@@ -1,0 +1,32 @@
+\heading{Rozwiązanie}
+
+\noindent
+Rozpatrzmy generator $g$ modulo $p$. Wówczas reszty z dzielenia przez $p$ liczb
+\[
+&nbsp;&nbsp;g,\; g^2,\; g^3,\; ...,\; g^{p - 1}
+\]
+są pewną permutacją reszt
+\[
+&nbsp;&nbsp;1,\; 2,\; 3,\; ...,\;  p - 1.
+\]
+Stąd reszty z dzielenia przez $p$ liczb
+\[
+&nbsp;&nbsp;g^k,\; g^{2k},\; g^{3k},\; ...,\; g^{k(p - 1)}
+\]
+to pewna permutacja liczb
+\[
+&nbsp;&nbsp;1^k,\; 2^k,\; 3^k,\; ...,\;  (p - 1)^k.
+\]
+Skoro to są te same reszty, tylko w innej kolejności, to ich sumy muszą być sobie równe
+\[
+&nbsp;&nbsp;1^k + 2^k + 3^k + ... + p^k \equiv g^k + g^{2k} + g^{3k} +  ... + g^{k(p - 1)} \equiv g^k \cdot \frac{g^{k(p - 1)} - 1}{g^k - 1} \pmod{p}.
+\]
+Z Małego Twierdzenie Fermata mamy
+\[
+&nbsp;&nbsp;g^{k(p - 1)} - 1 \equiv \left(g^{k}\right)^{p - 1} - 1 \equiv 0 \pmod{p}. 
+\]
+Skoro $p - 1 \nmid k$, to $g^k \not\equiv 1 \pmod{p}$. Mamy więc, że
+\[
+&nbsp;&nbsp;g^k \cdot \frac{g^{k(p - 1)} - 1}{g^k - 1} \equiv 0 \pmod{p}.
+\]
+\qed

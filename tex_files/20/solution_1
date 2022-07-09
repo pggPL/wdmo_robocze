@@ -1,0 +1,15 @@
+
+
+\noindent
+Zauważmy, że
+\[
+&nbsp;&nbsp;(k + 1)^2 - k^2 = 2k + 1 \quad \text{oraz} \quad (k + 2)^2 - k^2 = 4(k + 1).
+\]
+Stąd wynika, że każda liczba nieparzysta, jak i każda liczba podzielna przez $4$, mogą być przedstawione w postaci różnicy dwóch kwadratów.
+
+\vspace{10px}
+\noindent
+Gdy jedna z liczb $a$, $b$ będzie nieparzysta, to możemy przedstawić ją w postaci różnicy dwóch kwadratów. Zauważmy, że jeśli obie liczby $a$ i $b$ są parzyste, to liczba $ab$ jest podzielna przez $4$, więc również szukane przestawienie jest możliwe. W obu przypadkach da się dobrać takie $x$ i $y$, aby liczba $x^2 - y^2$ była równa jednej z liczb $a$, $b$, $ab$, a to chcieliśmy wykazać.
+
+\vspace{5px}
+

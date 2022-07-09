@@ -1,0 +1,49 @@
+
+
+\noindent
+Sprawdzając wszystkie możliwe reszty $x$ z dzielenia przez $8$ mamy, że $x^2$ może dawać następujące reszty z dzielenia przez 8
+\[
+&nbsp;&nbsp;x^2 \equiv 0, \; 1, \; 4 \pmod{8},
+\]
+przy czym reszta $1$ jest przyjmowana dla wszystkich liczb nieparzystych, a reszty $0$ i $4$ dla liczb parzystych. Jeśli jakakolwiek liczba spośród $x^2$, $y^2$, $z^2$ i $t^2$ dawałaby resztę $1$ z dzielenia przez $8$, to ich suma nie byłaby podzielna przez $8$. Istotnie -- mamy następujące przypadki możliwości wystąpienia reszt wśród tych kwadratów
+\begin{align*}
+&nbsp;&nbsp;1 + 1 + 1 + 1 & \equiv 4, \quad
+&nbsp;&nbsp;0 + 1 + 1 + 1  \equiv 3, \\
+&nbsp;&nbsp;4 + 1 + 1 + 1 & \equiv 7, \quad
+&nbsp;&nbsp;0 + 0 + 1 + 1  \equiv 2, \\
+&nbsp;&nbsp;4 + 0 + 1 + 1 & \equiv 6, \quad
+&nbsp;&nbsp;4 + 4 + 1 + 1  \equiv 2, \\
+&nbsp;&nbsp;0 + 0 + 0 + 1 & \equiv 1, \quad
+&nbsp;&nbsp;4 + 0 + 0 + 1  \equiv 5, \\
+&nbsp;&nbsp;4 + 4 + 0 + 1 & \equiv 1, \quad
+&nbsp;&nbsp;4 + 4 + 4 + 1  \equiv 5. 
+\end{align*}
+Stąd też jeśli liczba $x^2 + y^2 + z^2 + t^2$ jest podzielna przez $8$, to każda z liczb $x$, $y$, $z$, $t$ musi być parzysta.
+
+\vspace{10px}
+\noindent
+Niech
+\[
+&nbsp;&nbsp;x^2 + y^2 + z^2 + t^2 = 2000! = 2^M \cdot t
+\]
+dla pewnej liczby całkowitej $M$ oraz pewnej nieparzystej liczby całkowitej $t$. Zauważmy, że ze wzoru Legendre'a mamy
+\[
+&nbsp;&nbsp;M = \left\lfloor \frac{2000}{2} \right\rfloor + \left\lfloor \frac{2000}{4} \right\rfloor + \left\lfloor \frac{2000}{8} \right\rfloor + ... > 1000 + 500 + 250 = 1750.
+\]
+Niech $2^k$ będzie największą potęgą liczby $2$, która dzieli każdą z liczb $x$, $y$, $z$ i $t$. Załóżmy, bez straty ogólności
+\begin{gather*}
+&nbsp;&nbsp;x = 2^{k}x_1, \;\; y = 2^{k}y_1, \;\; z = 2^{k}z_1, \;\; t = 2^{l}t_1, \\
+&nbsp;&nbsp;x^2 + y^2 + z^2 + t^2 = 2^{2k} \left(x_1^2 + y_1^2 + z_1^2 + t_1^2\right) = 2^M \cdot t, \\
+&nbsp;&nbsp;x_1^2 + y_1^2 + z_1^2 + t_1^2 = 2^{M - 2k} \cdot t.
+\end{gather*}
+Na mocy maksymalności liczby $k$, pewna liczba spośród $x_1$, $y_1$, $z_1$, $t_1$ jest nieparzysta. Toteż suma ich kwadratów, na mocy tego co pokazaliśmy wcześniej, nie może się dzielić przez $8$. Czyli
+\[
+ M - 2k < 3 \implies k > \frac{M - 3}{2} > \frac{1750 - 3}{2} > 800.
+\]
+Każda z liczb $x$, $y$, $z$ i $t$ jest podzielna przez $2^{k}$, a skoro
+\[
+&nbsp;&nbsp;2^k > 2^{800} > \left(2^{8}\right)^{100} > \left(10^{2}\right)^{100} > 10^{200},
+\]
+to każda z nich będzie większa niż $10^{200}$.
+\vspace{5px}
+

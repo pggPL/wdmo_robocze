@@ -1,0 +1,91 @@
+\heading{Turnieje}
+
+\noindent
+Zdarza się, że w zadaniu są rozpatrywane pewne zawody, w których wzięła udział pewna liczba graczy, każda para rozegrała mecz, który zakończył się zwycięstwem jednej ze stron. Możemy wówczas rozpatrzyć graf skierowany, w którym wierzchołki będą odpowiadały graczom. Pomiędzy każdą dwójką graczy będzie występowałą dokładnie jedna krawędź i będzie ona skierowana w stronę zwycięzcy. Taki graf nazywamy $\textit{turniejem}$ -- przykład znajduje się na rysunku.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (1,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (-2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (-1,3) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_5) to (A_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_5) to (A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_5) to (A_3);
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Turniej nazwiemy \textit{redukowalnym}, gdy możemy podzielić jego uczestników na dwa niepuste zbiory $A$ oraz $B$, takie, że każdy uczestnik z $A$ wygrał z każdym uczestnikiem z $B$. Przykład takiego turnieju narysowano poniżej po lewej stronie.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (2,2.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (3,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (1.5,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (2.5,0) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_3);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (B_2);
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B_2) to (B_1);
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (0.5,2.3) {A};
+&nbsp;&nbsp;&nbsp;&nbsp;\node (x) at (0.5,0) {B};
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\hspace{80px}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (2.5,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (2,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (0.5,2) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (A_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (A_2);
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Turniej nazwiemy \textit{cyklicznym}, gdy istnieje w nim cykl, który przechodzi przez każdy wierzchołek dokładnie raz. Przykład takiego turnieju znajduje się po prawej stronie powyższego rysunku.
+
+\vspace{10px}
+\noindent
+Zachęcamy do samodzielnego zmierzenia się z poniższymi Lematami.
+
+\vspace{10px}
+

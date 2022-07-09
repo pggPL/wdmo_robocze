@@ -1,0 +1,16 @@
+\heading{Dowód}
+
+\noindent
+Jeśli $\left(\frac{a}{p}\right) = 0$, to liczba $a$ jest podzielna przez $p$. Wówczas liczba $ab$ też będzie podzielna przez $p$, czyli $\left(\frac{ab}{p}\right) = 0$. W dalszej części rozwiązania zakładam, że żadna z liczb $a$, $b$, nie jest podzielna przez $p$.
+
+\noindent
+Zapiszmy
+\[
+&nbsp;&nbsp;a \equiv g^k \pmod{p} \quad b \equiv g^l \pmod{p} \quad ab \equiv g^k \cdot g^l = g^{k + l} \pmod{p}
+\]
+dla pewnego generatora $g$. Wówczas, na mocy Lematu 2, teza sprowadza się do tego, że liczba $k + l$ będzie nieparzysta wtedy i tylko wtedy, gdy dokładnie jedna spośród liczb~$k$,~$l$ będzie nieparzysta. A to jest oczywiście prawda.
+
+\qed
+
+\vspace{10px}
+

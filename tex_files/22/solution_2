@@ -1,0 +1,24 @@
+
+
+\noindent
+Wykażemy, że wielomian
+\[
+&nbsp;&nbsp;W(x) = x^{100} - x + 1
+\]
+spełnia warunki zadania. Wynikną one z dwóch własności
+\begin{enumerate}
+&nbsp;&nbsp;\item Jeśli pewna liczba pierwsza $p$ dzieli pewne $n$, to
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;W(n) = n^{100} - n + 1 \equiv 1 \pmod{p}.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;\item Jeśli $n \equiv 1 \pmod{p}$, to wówczas
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;W(n) = n^{100} - n + 1 \equiv 1 - 1 + 1 \equiv 1 \pmod{p}.
+&nbsp;&nbsp;\]
+\end{enumerate}
+Stąd też jeśli pewna liczba pierwsza $p$ dzieli jeden z wyrazów ciągu
+\[
+&nbsp;&nbsp;n,\;\; W(n),\;\; W(W(n)),\;\; W(W(W(n))), ...,
+\]
+to każdy kolejny daje resztę $1$ z dzielenia przez $p$. Stąd też nie mogą istnieć dwa elementy tego ciągu, które mają wspólny dzielnik pierwszy, z czego wynika teza.
+

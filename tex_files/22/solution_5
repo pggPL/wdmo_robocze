@@ -1,0 +1,43 @@
+
+
+\answer{Warunek zadania spełniają jedynie wielomiany postaci $W(x) = ax + b$ dla liczb wymiernych $a$ i $b$.}
+
+\noindent
+Podstawmy $y = 2q - x$ dla pewnej liczby wymiernej $q$. Wówczas dla każdej liczby wymiernej $x$ suma $x + y = 2q$ jest liczbą wymierną. Toteż wielomian
+\[
+&nbsp;&nbsp;W(x) + W(2q - x)
+\]
+jest liczbą wymierną. Zauważmy, że jeśli ten wielomian przyjmowałby dwie różne wartości $a < b$, to przyjmowałby wszystkie wartości w przedziale $[a, b]$. Każdy taki przedział zawiera pewną liczbę niewymierną. Stąd też wielomian
+\[
+&nbsp;&nbsp;W(x) + W(2q - x)
+\]
+musi być wielomianem stałym. Dla $x = q$ przyjmuje on wartość $2W(q)$, czyli dla dowolnego $x$ mamy
+\[
+&nbsp;&nbsp;W(x) + W(2q - x) = 2W(q).
+\]
+Podstawiając $q = n \in \mathbb{Z}$ oraz $x = n - 1$ otrzymamy
+\[
+&nbsp;&nbsp;W(n - 1) + W(n + 1) = 2W(n) \implies W(n + 1) - W(n) = W(n) - W(n - 1).
+\]
+Zdefiniujmy wielomian $P(x) = W(x + 1) - W(x)$. Na mocy powyższego warunku mamy, że $P(n) = P(n - 1)$ dla dowolnej liczby całkowitej $n$. Stąd ten wielomian przyjmuje pewną wartość nieskończenie wiele razy, czyli jest to wielomian stały. Mamy więc, że
+\[
+&nbsp;&nbsp;W(n) - W(n - 1) = c \quad \text{dla pewnej liczby rzeczywistej } c.
+\]
+Można wykazać za pomocą indukcji, że 
+\[
+&nbsp;&nbsp;W(n) = c \cdot n + W(0)
+\]
+dla dowolnej liczby naturalnej $n$. Jeśli wielomiany $W(x)$ i $c \cdot x + W(0)$ są równe dla nieskończenie wielu liczb -- w tym przypadku wszystkich liczb całkowitych, to te wielomiany są sobie równe. 
+
+\vspace{10px}
+\noindent
+Rozpatrzmy wszystkie wielomiany liniowe tj. te postaci
+\[
+&nbsp;&nbsp;W(x) = ax + b.
+\]
+Podstawiając $x = y = 0$ do danego warunku, otrzymamy, że $2W(0)$ jest liczbą wymierną. Wynika stąd, że $b$ jest liczbą wymierną. Jeśli podstawimy $x = 1$ i $y = 0$ otrzymamy, że $W(1) = a + b$ jest liczbą wymierną, skąd $a$ jest wymierne. Wówczas mamy
+\[
+&nbsp;&nbsp;W(x) + W(y) = ax + b + ay + b = a(x + y) + 2b,
+\]
+co jest wymierne, gdy liczba $x + y$ jest wymierna.
+

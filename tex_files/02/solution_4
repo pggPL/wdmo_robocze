@@ -1,0 +1,13 @@
+
+
+\answer{Jedyną funkcją spełniającą warunki zadania jest $f(x) = \frac{2x^2 - (1-x)^2}{3}$.}
+
+\noindent
+Podstawmy $1-x$ za x. Otrzymamy 
+\[ 
+&nbsp;&nbsp;2f(1 - x) + f(x) = 2(1 - x)^{2}.
+\] 
+Z równaniem z zadania tworzy to układ równań ze zmiennymi $f(x)$ i $f(1 - x)$. Wyliczamy $f(x) = \frac{2x^{2}-(1-x)^{2}} {3} $. Wystarczy teraz tylko sprawdzić, że ta funkcja spełnia warunki zadania. 
+
+\vspace{5px}
+

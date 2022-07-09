@@ -1,0 +1,132 @@
+\heading{Definicje}
+
+\noindent
+\begin{itemize}
+    \item \textit{Ścieżka} to ciąg, niekoniecznie parami różnych, wierzchołków $v_1, \; v_2, \; v_3, \; ..., \; v_t$, że każde dwa kolejne są połączone krawędzią.
+    \item \textit{Cykl} to ciąg, niekoniecznie parami różnych, wierzchołków $v_1, \; v_2, \; v_3, \; ..., \; v_t$, że zarówno każde dwa kolejne wierzchołki, jak i $v_1$ oraz $v_t$ są połączone krawędzią. 
+    \item \textit{Stopniem} wierzchołka nazywamy liczbę krawędzi z niego wychodzących.
+    \item Graf nazywamy \textit{spójnym}, jeśli dla dowolnych dwóch wierzchołków istnieje ścieżka, która zaczyna się w pierwszym i kończy w drugim. Kolokwialnie mówiąc, graf jest jedną całością, a nie składa się z kilku rozłącznych części.
+    \item Zbiór $n$ wierzchołków, spośród których każde dwa wierzchołki są połączone krawędzią nazywamy \textit{kliką} i oznaczamy go jako $K_n$.
+    \item Graf składający się z dwóch grup zawierających kolejno $a$ i $b$ wierzchołków, tak, że dwa wierzchołki są ze sobą połączone wtedy i tylko wtedy, gdy są w innych grupach, nazywamy \textit{grafem dwudzielnym} i oznaczamy jako $K_{a, b}$.
+\end{itemize}
+
+\begin{remark}
+    Często można spotkać się z innymi definicjami cyklu i ścieżki -- niekiedy przyjmuje się, że zawierają każdy z wierzchołków co najwyżej raz. Niemniej jednak zawsze będzie to doprecyzowane w zadaniu.
+\end{remark}
+
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(1,0){v_2}
+    \tkzDefPoint(2,1){v_3}
+    \tkzDefPoint(3,1.5){v_4}
+    \tkzDefPoint(3.5,2){v_5}
+    \tkzDrawPoints(v_1,v_2,v_3,v_4,v_5)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_3,v_4 v_4,v_5)
+    \end{tikzpicture}\\
+    ścieżka
+\end{center}
+\end{minipage}
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(2,0){v_2}
+    \tkzDefPoint(2,2){v_3}
+    \tkzDefPoint(0,2){v_4}
+    \tkzDefPoint(-1,1){v_5}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_3,v_4 v_4,v_5 v_1,v_5)
+    \end{tikzpicture}\\
+    cykl
+\end{center}
+\end{minipage}
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(2,2){v_1}
+    \tkzDefPoint(0,1){v_2}
+    \tkzDefPoint(3,3){v_3}
+    \tkzDefPoint(1,2.4){v_4}
+    \tkzDrawPoints[size=10,shape=cross](v_1)
+    \tkzDrawPoints(v_1)
+    \tkzDrawPoints( v_2, v_3, v_4)
+    \tkzDrawSegments(v_1,v_2 v_1,v_3 v_1,v_4)
+    \end{tikzpicture}\\
+    wierzchołek o stopniu $3$
+\end{center}
+\end{minipage}
+
+\vspace{10px}
+
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(1,1.4){v_2}
+    \tkzDefPoint(2,1){v_3}
+    \tkzDefPoint(2.7,1.5){v_4}
+    \tkzDefPoint(3.2,1){v_5}
+    \tkzDefPoint(3.7,1.7){v_6}
+    \tkzDrawPoints(v_1,v_2,v_3,v_4,v_5,v_6)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3  v_4,v_5 v_5,v_6 v_6,v_4)
+    \end{tikzpicture}\\
+    graf niespójny
+\end{center}
+\end{minipage}
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(1.7,0){v_2}
+    \tkzDefPoint(2,2){v_3}
+    \tkzDefPoint(0,1.8){v_4}
+    \tkzDefPoint(2.2,1){v_5}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_3,v_4 v_4,v_5 v_1,v_5 v_1,v_3 v_3,v_5 v_2,v_4 v_1,v_4 v_2,v_5)
+    \end{tikzpicture}\\
+    klika $K_5$
+\end{center}
+\end{minipage}
+\begin{minipage}{0.33\textwidth}
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,2){v_1}
+    \tkzDefPoint(0,0){v_2}
+
+    \tkzDefPoint(3,0){v_3}
+    \tkzDefPoint(3,1){v_4}
+    \tkzDefPoint(3,2){v_5}
+    \tkzDrawPoints(v_1, v_2, v_3, v_4, v_5)
+    \tkzDrawSegments(v_1,v_4 v_1,v_5 v_2,v_4 v_2,v_5 v_1,v_3 v_2,v_3)
+    \end{tikzpicture}\\
+    graf dwudzielny $K_{2,3}$
+\end{center}
+\end{minipage}
+
+\vspace{10px}
+
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(1,1){v_1}
+
+    \tkzDefPoint(0,0.5){v_2}
+    \tkzDefPoint(2,0.5){v_3}
+
+    \tkzDefPoint(0,0){v_4}
+    \tkzDefPoint(1,0){v_5}
+    \tkzDefPoint(2,0){v_6}
+    \tkzDrawPoints(v_1, v_2, v_3, v_4, v_5, v_6)
+    \tkzDrawSegments(v_1,v_2 v_1,v_3 v_2,v_4 v_2,v_5 v_3,v_6)
+    \end{tikzpicture}\\
+    drzewo
+\end{center}
+
+\vspace{10px}
+
+\noindent
+Grafy, które są spójne i nie zawierają żadnego cyklu nazywamy \textit{drzewami}. Mają one kilka równoważnych definicji, o czym mówi poniższe twierdzenie.
+
+\vspace{5px}
+

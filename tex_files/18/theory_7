@@ -1,0 +1,85 @@
+\heading{Dowód}
+
+\vspace{5px}
+\noindent
+Tezę wykażemy indukując się po liczbie krawędzi. Jeśli krawędzi jest $0$, to jest jedna ściana będąca całą płaszczyzną, a liczba spójnych składowych jest równa liczbie wierzchołków. Toteż
+\[
+&nbsp;&nbsp;v - e + f - c = v - 0 + 1 - v = 1.
+\]
+
+
+
+\noindent
+Załóżmy teraz, że rozpatrywany graf ma niezerową liczbę krawędzi. Usuńmy jedną z nich i zobaczmy co się stanie. Liczba krawędzi zmniejszy się o 1, liczba wierzchołków nie ulegnie zmianie. Rozpatrzmy dwa przypadki
+
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (1,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (2,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (4,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_6) at (3,2.5) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_4)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[bend right, dashed] (A_3) to (A_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[bend left] (A_2) to (A_4);
+
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\hspace{40px}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (1,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (2,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (4,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_6) at (3,2.5) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_4)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[bend right] (A_3) to (A_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[bend left] (A_2) to (A_4);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\begin{itemize}
+&nbsp;&nbsp;\item Jeśli po każdej ze stron rozpatrywanej krawędzi była inna ściana, to po usunięciu krawędzi dwie ściany scalą się w jedną.
+&nbsp;&nbsp;\item Gdy zaś po każdej ze stron tej krawędzi była ta sama ściana, to oznacza, że jej usunięcie rozspójni składową, do której ona należy, na dwie części.
+\end{itemize}
+
+\noindent
+W pierwszym przypadku $f$ maleje o 1, a w drugim $c$ rośnie o $1$. W obu przypadkach z założenia indukcyjnego wyniknie teza.
+
+\qed
+
+\noindent
+W powyższym rozumowaniu pominięto szczegóły formalne, zachęcamy uważną czytelniczkę/czytelnika, aby spróbował zrozumieć dokładnie, dlaczego powyższe rozumowanie jest poprawne.
+
+\vspace{5px}
+
+% Teraz dwa przykłady
+
+
+% Przykład z pajączkami
+% source:

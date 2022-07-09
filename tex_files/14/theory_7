@@ -1,0 +1,11 @@
+\heading{Lemat 2}
+
+\noindent
+Niech $g$ będzie generatorem dla pewnej nieparzystej liczby pierwszej $p$ oraz dla pewnych liczb naturalnych $n$, $k$ zachodzi przystawanie
+\[
+&nbsp;&nbsp;n \equiv g^k \pmod{p}
+\] 
+Wówczas $n$ jest resztą kwadratową modulo $p$ wtedy i tylko wtedy, gdy $2 \mid k$.
+
+\vspace{5px}
+

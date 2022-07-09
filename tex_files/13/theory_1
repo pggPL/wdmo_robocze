@@ -1,0 +1,8 @@
+\heading{Przykład 1}
+
+\noindent
+Wyznaczyć wszystkie funkcje $f:\mathbb{Q}\longrightarrow\mathbb{Q}$, które dla dowolnych $x, y \in \mathbb{Q}$ spełniają warunek
+\[
+&nbsp;&nbsp;f(x) + f(y) = f(x + y).
+\]
+

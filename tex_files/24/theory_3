@@ -1,0 +1,98 @@
+\heading{Przykład 2}
+
+\noindent
+Dany jest graf. W każdym ruchu na aktualnym grafie $G$ można wykonać jedną z dwóch operacji
+
+\begin{itemize}
+
+\item Jeśli pewien wierzchołek ma nieparzysty stopień, to usunąć wszystkie krawędzie, które z niego wychodzą.
+
+
+\item Można dodać do grafu $G$ graf $G'$ będący kopią grafu $G$. Następnie łączymy odpowiadające sobie wierzchołki z $G$ oraz $G'$. 
+\end{itemize}
+
+\noindent
+Wykazać, że niezależnie od grafu początkowego, można wykonać pewną liczbę operacji, aby otrzymać graf bez żadnej krawędzi.
+
+\vspace{5px}
+
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (1,-1) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$X$] (A_3) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (1,-1) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_3);
+
+&nbsp;&nbsp;&nbsp;&nbsp;%arrows
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (-1,0.5) -- (-2,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (-1.7,0.2) -- (-2,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (-1.7,0.7) -- (-2,0.5);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2,0.5) -- (3,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2.7,0.2) -- (3,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2.7,0.7) -- (3,0.5);
+
+&nbsp;&nbsp;\end{tikzpicture}&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$X$] (A_3) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (1,-1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (4,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (3,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=right:$X'$] (B_3) at (3,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_4) at (4,-1) {};
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_3);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_3);
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_4)--(B_4);
+
+&nbsp;&nbsp;\end{tikzpicture}\\
+&nbsp;&nbsp;\noindent
+&nbsp;&nbsp;W powyższym przykładzie możemy chociażby usunąć wierzchołek $X$, albo wykonać dodać do grafu jego kopię.
+\end{center}
+

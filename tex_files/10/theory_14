@@ -1,0 +1,11 @@
+\heading{Przykład 3}
+
+\noindent
+Wykazać, że dla żadnej dodatniej liczby całkowitej $n$ większej od $1$ liczba
+\[
+&nbsp;&nbsp;1 + \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n}
+\]
+nie jest liczbą całkowitą.
+
+\vspace{5px}
+

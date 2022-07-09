@@ -1,0 +1,31 @@
+
+
+\answer{Małgosia zawsze jest w stanie wygrać w $2$ ruchach.}
+
+\noindent
+Zauważmy, że jeśli po pierwszym ruchu Małgosia podała liczbę $a$, to jeśli Jaś trzyma jeden z wielomianów
+\[
+&nbsp;&nbsp;f(x) = a + 1 \quad \text{lub} \quad f(x) = x + 1,
+\]
+Małgosia nie będzie w stanie stwierdzić który, bo w obu przypadkach otrzymałaby tę samą odpowiedź.
+
+\vspace{10px}
+\noindent
+Teraz pokażemy strategię, która pozwala Małgosi wygrać w $2$ ruchach. W pierwszym ruchu dowiaduje się o wartości $f(1)$. W drugim o pyta się o wartość $f(A)$ dla dowolnego~${A > f(1)}$. Wówczas otrzyma liczbę
+\[
+&nbsp;&nbsp;f(N) = a_nA^n + a_{n-1}A^{n-1} + \dots + a_1A + a_0.
+\] 
+Zauważmy, że $A > a_i$ dla dowolnego $0 \leqslant i \leqslant n$. Stąd też powyższe wyrażenie jest liczbą $\overline{a_na_{n-1}...a_1a_0} $ w systemie o podstawie $A$. Małgosia może więc przekonwertować liczbę~$f(A)$ z systemu dziesiętnego na system o podstawie $A$, wówczas cyfry otrzymanej liczby będą równe $a_0$, $a_1$, $\dots$, $a_{n-1}$, $a_n$.
+
+\vspace{10px}
+\begin{remark}
+&nbsp;&nbsp;Aby lepiej zobrazować ideę rozwiązania, niech
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(x) = 3x^2 + 7x + 1.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wówczas mamy $f(1) = 11$. W drugim kroku można rozpatrzyć chociażby
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(100) = 30701.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Łatwo z tego zapisu odczytać kolejne współczynniki danego wielomianu. W ogólności biorąc $f(10^k)$ dla odpowiednio dużego $k$ będzie to możliwe. W pierwszym ruchu ustalamy jak duże $k$ wystarczy, a w drugim je bierzemy i odczytujemy współczynniki wielomianu.
+\end{remark}

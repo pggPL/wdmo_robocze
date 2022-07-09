@@ -1,0 +1,41 @@
+
+
+
+\noindent
+Kluczowe w rozwiązaniu zadania jest następujące umocnienie tezy.
+
+\vspace{5px}
+
+\noindent
+Jeśli dla pewnej liczby całkowitej~$n$ zachodzi nierówność $\mathrm{NWD}(n, a_{n - 1}) > 1$, to $a_n = 3n$ oraz $\mathrm{NWD}(a_{n − 1}, n)$ jest liczbą pierwszą. 
+
+\vspace{10px}
+\noindent
+Wyjściowo ciąg przyjmuje wartości
+\[
+&nbsp;&nbsp;a_1 = 7, \; a_2 = 8, \; a_3 = 9, \; a_4 = 10, \; a_5 = 15.
+\] 
+Możemy więc zauważyć, że dla $n = 5$ mamy 
+\[
+&nbsp;&nbsp;\mathrm{NWD}(a_{n − 1}, n) = 5 \;\; \text{oraz} \;\; a_5 = 3 \cdot 5.
+\]
+ Wykażemy tezę indukcyjnie -- zakładamy, że zachodzi ona dla wszystkich liczb mniejszych od $n$. Jeśli $NWD(n, a_n - 1) = 1$, to nic nie trzeba wykazywać. Załóżmy więc, że $NWD(n, a_n - 1) > 1$.  Weźmy największą liczbę $t$, mniejszą niż $n$, że $\mathrm{NWD}(t, a_t − 1) > 1$. Na mocy założenia indukcyjnego mamy $a_t = 3t.$
+ Wówczas 
+ \[
+ &nbsp;&nbsp;\mathrm{NWD}(i, a_i − 1) = 1 \text{ dla wszystkich liczb } i \in \{t + 1, t + 2, t + 3, ..., n - 1\},
+ \] 
+czyli $a_{i} = a_{i - 1} + 1$. Stąd
+\[
+&nbsp;&nbsp;a_n − 1 = a_t + (n − t) − 1 = 3t + (n - t) - 1 =  2t + n − 1.
+\]
+Zatem 
+\[
+&nbsp;&nbsp;\mathrm{NWD}(a_n − 1,\; n) = \mathrm{NWD}(2t + n - 1,\; n) = \mathrm{NWD}(2t - 1,\; n) = \mathrm{NWD}(2t - 1,\; 2n - (2t - 1)).
+\] 
+Liczba $n$ jest najmniejszą liczbą większą od $t$, dla której wartość powyższego wyrażenia jest większa od $1$. Nietrudno zauważyć, że pierwszą liczbą większą od $t$, dla której jest to prawda, jest takie $n$, że liczba $2n - (2t - 1)$ jest najmniejszym nieparzystym dzielnikiem pierwszym liczby $2t - 1$. Wówczas oczywiście $2n - (2t - 1)$ jest liczbą pierwszą oraz
+\begin{align*}
+&nbsp;&nbsp;\mathrm{NWD}(n, a_n − 1) &= 2n - (2t - 1), \\
+&nbsp;&nbsp;a_n &= a_{n - 1} + \mathrm{NWD}(n, a_n − 1) = (2t + n − 1 ) + 2n - (2t - 1) = 3n,
+\end{align*}
+co kończy dowód indukcyjny.
+

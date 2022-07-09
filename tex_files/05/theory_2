@@ -1,0 +1,82 @@
+\heading{Dowód nierówności między średnimi arytmetyczną a geometryczną}
+
+\noindent
+\underline{Część 1.} Dowód $n = 2$.
+
+\vspace{10px}
+
+\noindent
+Chcemy wykazać, że zachodzi nierówność
+\[
+    \frac{a_1 + a_2}{2} \geqslant \sqrt{a_1a_2}.
+\]
+Jest ona równoważna prawdziwej nierówności
+\[
+    a_1 - 2\sqrt{a_1a_2} + a_2 = (\sqrt{a_1} - \sqrt{a_2})^2 \geqslant 0.
+\]
+
+\noindent
+\underline{Część 2.} Dowód dla $n$ postaci $n = 2^k$, $k \in \mathbb{Z}_{\geqslant 0}$.
+
+\vspace{10px}
+
+\noindent
+Będziemy indukować się po $k$. Dla $k = 0$ nierówność jest oczywista. Załóżmy, że zachodzi dla $k$, wykażemy, że zachodzi dla $k + 1$.
+
+\noindent
+Zauważmy, że
+\[
+    \frac{a_1 + a_2 + ... + a_{2^{k + 1}}}{2^{k + 1}} = \frac{1}{2}\left( \frac{a_1 + a_2 + ... + a_{2^{k}}}{2^{k}} + \frac{a_{2^k + 1} + a_{2^k + 2} + ... + a_{2^{k + 1}}}{2^{k}}\right)
+\]
+
+\noindent
+Korzystając z założenia indukcyjnego -- to jest nierówności dla $n = 2^{k}$ mamy
+\begin{align*}
+    \frac{a_1 + a_2 + ... + a_{2^{k}}}{2^{k}} &\geqslant \sqrt[2^k]{a_1a_2...a_{2^k}} \\
+   \frac{a_{2^k + 1} + a_{2^k + 2} + ... + a_{2^{k + 1}}}{2^{k}} &\geqslant \sqrt[2^k]{a_{2^k + 1}a_{2^k + 2}...a_{2^{k + 1}}}
+\end{align*}
+
+\noindent
+Zauważmy teraz, że na mocy znanej nierówności $a + b \geqslant 2\sqrt{ab}$ mamy
+\[
+    \frac{1}{2}\left(\sqrt[2^k]{a_1a_2...a_{2^k}} + \sqrt[2^k]{a_{2^k + 1}a_{2^k + 2}...a_{2^{k + 1}}}\right) \geqslant \sqrt[2^{k + 1}]{a_1a_2...a_{2^{k + 1}}}
+\]
+Łącząc powyższe nierówności, otrzymujemy dowód nierówności dla $n$ będącej potęgą liczby $2$.
+
+\vspace{10px}
+
+\noindent
+\underline{Część 3.} Z faktu, że nierówność zachodzi dla $n \geqslant 2$ wynika, że zachodzi dla $n - 1$.
+
+\vspace{10px}
+
+\noindent
+Oznaczmy 
+\[
+    AM = \frac{a_1 + a_2 + ... + a_{n - 1}}{n - 1} \quad \text{oraz} \quad GM = \sqrt[n - 1]{a_1a_2...a_{n - 1}}.
+\]
+
+\noindent
+Skoro nierówność zachodzi dla liczby $n$ to mamy
+\[
+    AM = \frac{(n-1)AM + AM}{n} = \frac{a_1 + a_2 + ... + a_{n - 1} + AM}{n} \geqslant \sqrt[n]{a_1a_2...a_{n - 1}\cdot AM}.
+\]
+Podnosząc powyższą równość do $n$ potęgi stronami otrzymujemy
+\begin{align*}
+    &(AM)^n \geqslant a_1a_2...a_{n-1}AM, \\
+    &(AM)^{n - 1} \geqslant a_1a_2...a_{n-1}, \\
+    &AM \geqslant \sqrt[n - 1]{a_1a_2...a_{n-1}} = GM,
+\end{align*}
+co należało wykazać.
+
+\vspace{10px}
+
+\noindent
+Pozostaje zauważyć, że z części 3 i 4 wynika nierówność dla dowolnego $n$. Możemy bowiem rozpatrzyć takie $k$, że $2^k > n$ i zastosować $2^k - n$ razy implikację z części czwartej.
+
+\qed
+
+\vspace{10px}
+
+% przykład zwykły
+% Source: ,,Wędrówki po Krainie Nierówności'' 3.3.2

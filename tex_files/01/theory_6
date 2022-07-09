@@ -1,0 +1,28 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że teza jest prawdziwa dla każdego $n \geqslant 1$. Co więcej wykażemy, że ścieżka Hamiltona może zaczynać się w każdym z wierzchołków $G_n$.
+Zauważmy, że dla $n = 1$ teza jest oczywista -- ścieżka złożona z jednej krawędzi spełnia warunki zadania.
+
+\vspace{10px}
+
+\noindent
+Załóżmy, że dla $G_n$ istnieje ścieżka Hamiltona. Wykażemy, że istnieje ona dla $G_{n + 1}$. Graf $G_{n+1}$ składa się z dwóch połączonych ze sobą części izomorficznych z grafem $G_n$ -- nazwijmy je $A$ oraz $B$. Oznaczmy wierzchołki $G_{n + 1}$ kolejno jako
+$a_1, a_2, ..., a_{2^n}$ -- cześć $A$ oraz $b_1, b_2, ..., b_{2^n}$ -- część $B$, przy czym $a_i$ jest połączone właśnie z $b_i$. 
+
+\vspace{10px}
+
+\noindent
+Ścieżka Hamiltonowska w grafie $G_{n + 1}$ będzie się składać z 3 części:
+\begin{itemize}
+&nbsp;&nbsp;\item Na mocy założenia istnieje ścieżka zaczynająca się w $a_1$ przechodząca przez wszystkie wierzchołki $A$. Możemy ją przejść od tyłu. Wówczas przejdziemy wszystkie wierzchołki części $A$ kończąc w $a_1$.
+&nbsp;&nbsp;\item Następnie przejdziemy krawędzią między $a_1$ i $b_1$ do części $B$.
+&nbsp;&nbsp;\item Na mocy założenia z punktu $b_1$ da się poprowadzić ścieżkę, która przejdzie przez każdy z wierzchołków części $B$ dokładnie raz.
+\end{itemize}
+
+\noindent
+Łatwo zauważyć, że podany sposób przejścia grafu $G_{n + 1}$ tworzy ścieżkę Hamiltonowską.
+
+\qed
+
+\newpage

@@ -1,0 +1,28 @@
+
+
+\noindent
+Zauważmy, że skoro $p \mid ab + 1$ oraz $p \mid bc + 1$, to
+\[
+&nbsp;&nbsp;p \mid (ab + 1) - (bc + 1) = b(a - c).
+\]
+Skoro $p$ jest liczbą pierwszą, to dzieli ona $b$ lub dzieli ona $a - c$. Gdyby dzieliła liczbę $b$, to wówczas nie mogła by dzielić liczby $bc + 1 \equiv 1 \pmod{p}$. Stąd $p \mid a - c$, czyli 
+\[
+&nbsp;&nbsp;a \equiv c \pmod{p}.
+\] 
+Rozumując analogicznie dla podzielności $p \mid bc + 1$ i $p \mid ca + 1$, otrzymamy $a \equiv b \pmod{p}$. Stąd
+\[
+&nbsp;&nbsp;a \equiv b \equiv c \pmod{p}.
+\]
+Pozostaje zauważyć, że $a \not\equiv 1 \pmod{p}$, bo w przeciwnym wypadku 
+\[
+&nbsp;&nbsp;ab + 1 \equiv a^2 + 1 \equiv 2 \pmod{p}.
+\]
+Przyjmijmy, że $2 \leqslant a < b < c$. Skoro dają one tę samą resztę z dzielenia przez $p$, to różnią się o wielokrotność liczby $p$, czyli co najmniej o $p$. Stąd
+\[
+&nbsp;&nbsp;b \geqslant a + p \quad \text{oraz} \quad c \geqslant b + p \geqslant a + 2p,
+\]
+czyli
+\[
+&nbsp;&nbsp;\frac{a + b + c}{3} \geqslant \frac{a + a + p + a + 2p}{3} = p + a \geqslant p + 2.
+\]
+

@@ -1,0 +1,20 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że nie jest to możliwe. Zauważmy, że w każdym ruchu liczba monet na stole zmniejsza się o $1$, a liczba stosów zwiększa się o $1$. Toteż suma tych dwóch liczb się nie zmienia. Skoro początku wynosi ona $999 + 1 = 1000$, to zawsze będzie tyle wynosić.
+
+\vspace{10px}
+\noindent
+Jeśli po wykonaniu pewnej liczby ruchów na stole będzie $n$ stosów po $5$ monet w każdym z nich, to suma liczby monet na stole i liczby stosów wyniesie $5n + n = 6n$. Z tego co wykazaliśmy musiałaby zajść równość
+\[
+&nbsp;&nbsp;1000 = 6n,
+\]
+co daje sprzeczność, bo liczba $1000$ nie jest podzielna przez $6$.
+
+\qed
+
+\noindent
+Sumę liczby monet na stole i liczby stosów nazwiemy \textit{niezmiennikiem}. Jest to taka własność, która nie zmienia się wskutek wykonywanych ruchów. W zadaniach, w których mowa o pewnych procesach, warto zawsze takowych poszukać. Teraz pokażemy, jak bardzo przydatne może być analizowanie pewnego elementu maksymalnego.
+
+\vspace{10px}
+

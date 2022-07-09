@@ -1,0 +1,30 @@
+\heading{Dowód}
+
+\noindent
+Załóżmy, że zbiór liczb pierwszych, dla których istnieje pewna wartość $W$ przez nią podzielna, jest skończony. Oznaczmy te liczby jako $p_1$, $p_2$, ..., $p_k$.  Niech 
+\[
+&nbsp;&nbsp;a = \text{max}(v_{p_1}(P(0)),\; v_{p_2}(P(0)),\; ...,\; v_{p_k}(P(0))) \quad \text{oraz} \quad M = (p_1 \cdot p_2 \cdot ... \cdot p_k)^{a + 1}.
+\]
+
+\vspace{10px}
+\noindent
+Wykażemy, że dla dowolnej liczby całkowitej $t$ oraz liczby całkowitej $1 \leqslant i \leqslant k$ zachodzi nierówność
+\[
+&nbsp;&nbsp;v_{p_i}(W(t \cdot M)) < v_{p_i}(M).
+\]
+Zauważmy, że dla dowolnej liczby całkowitej $t$ na mocy Twierdzenia 1 mamy
+\begin{align*}
+&nbsp;&nbsp;M \mid t \cdot M \mid W(t \cdot M) - W(0).
+\end{align*}
+Jeśli liczba $W(t \cdot M)$ byłaby podzielna przez $p_i^{a + 1}$, to skoro liczba $W(0)$ nie jest podzielna przez $p_i^{a + 1}$, to ich suma rónwież by nie była. Zaś ich dzielnik -- liczba $M$ -- jest podzielna przez $p_i^{a + 1}$. Stąd liczba $W(t \cdot M)$ nie może być podzielna przez $p_i^{a + 1}$. Stąd
+\[
+&nbsp;&nbsp;v_{p_i}(W(t\cdot M)) < a + 1 = v_{p_i}(M).
+\] 
+Skoro $W(t\cdot M)$ na mocy założeń nie ma innych dzielników pierwszych niż liczby $p_i$, to $W(t\cdot M)$ jest dzielnikiem liczby $M$. Liczba dzielników liczby $M$ jest skończona, a liczb postaci $t\cdot M$ jest nieskończenie wiele. Toteż pewien dzielnik $M$ jest przyjmowany nieskończenie wiele razy przez wielomian $W$. Nie jest to możliwe, gdy wielomian $W$ nie jest stały.
+
+\qed
+
+\noindent
+Następnego twierdzenia nie będziemy dowodzić, gdyż jest ono bardzo intuicyjne, a dowód jest trudny i bardzo formalny.
+
+\vspace{5px}

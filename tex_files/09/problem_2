@@ -1,0 +1,23 @@
+\noindent
+&nbsp;&nbsp;Dana jest liczba naturalna $n$. Niech $\mathcal{S}$ będzie zbiorem wszystkich punktów postaci $(a, b)$, gdzie $a$ i $b$ są liczbami ze zbioru $\{0, 1, 2, ..., n\}$ oraz $a + b \leqslant n$. 
+
+&nbsp;&nbsp;\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale = 0.5]
+&nbsp;&nbsp;    \tkzDefPoint(0,0){v_1}
+&nbsp;&nbsp;    \tkzDefPoint(1,0){v_2}
+&nbsp;&nbsp;    \tkzDefPoint(2,0){v_3}
+&nbsp;&nbsp;    \tkzDefPoint(3,0){v_4}
+&nbsp;&nbsp;    \tkzDefPoint(0,1){v_5}
+&nbsp;&nbsp;    \tkzDefPoint(1,1){v_6}
+&nbsp;&nbsp;    \tkzDefPoint(2,1){v_7}
+&nbsp;&nbsp;    \tkzDefPoint(0,2){v_8}
+&nbsp;&nbsp;    \tkzDefPoint(1,2){v_9}
+&nbsp;&nbsp;    \tkzDefPoint(0,3){v_{10}}
+&nbsp;&nbsp;    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_{10})
+&nbsp;&nbsp;\end{tikzpicture}\\
+&nbsp;&nbsp;\vspace{5px}
+&nbsp;&nbsp;Przykład dla $n = 3$.
+&nbsp;&nbsp;\end{center}
+
+&nbsp;&nbsp;\noindent
+&nbsp;&nbsp;Wykazać, że jeśli pewien zbiór prostych zawiera każdy z tych punktów, to zawiera on co najmniej $n + 1$ prostych. 

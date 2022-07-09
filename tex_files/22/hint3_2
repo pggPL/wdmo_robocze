@@ -1,0 +1,3 @@
+\noindent 
+ Zauważ, że jeśli $p \mid n$, to $ W(n) \equiv 1 \pmod{p}$. Jeśli zaś $n \equiv 1 \pmod{p}$,  to również $ W(n) \equiv 1 \pmod{p}$.
+&nbsp;&nbsp;

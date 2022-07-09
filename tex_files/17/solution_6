@@ -1,0 +1,22 @@
+
+
+\noindent
+Wykażemy, że szukany zbiór prostych istnieje.
+Rozpatrzmy proste dane wzorami
+\[
+&nbsp;&nbsp;y = i \cdot x + i^2,
+\]
+dla wszystkich liczb całkowitych dodatnich $i$. Wykażemy, że proste
+\[
+&nbsp;&nbsp;y = i \cdot x + i^2 \quad \text{oraz} \quad y = j \cdot x + j^2
+\]
+przecinają się w punkcie o współrzędnych całkowitych. Rozwiążmy równianie
+\begin{align*}
+&nbsp;&nbsp;i \cdot x + i^2 &= j \cdot x + j^2, \\
+&nbsp;&nbsp;(i - j) \cdot x &= j^2 - i^2, \\
+&nbsp;&nbsp;x &= - i - j.
+&nbsp;&nbsp;, \\
+&nbsp;&nbsp;y = i \cdot x + i^2 = -ij.
+\end{align*} 
+Stąd te proste przecinają się w punkcie $(-i - j, -ij)$, który spełnia warunki zadania.
+

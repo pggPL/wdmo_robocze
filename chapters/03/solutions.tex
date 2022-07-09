@@ -1,0 +1,165 @@
+\newpage
+\solutions{Bijekcje i bajki kombinatoryczne}
+
+
+\begin{problem}{1} 
+	Dane są liczby całkowite $n$ i $k$. Wykaż, że
+	\[
+		\sum^{n}_{k=0} k \cdot {{n}\choose{k}} = n \cdot 2^{n - 1}.
+	\]
+\end{problem}
+
+\vspace{5px}
+
+\noindent
+Spośród $n$ osób będziemy chcieli wybrać drużynę i mianować jednego jej członka kapitanem. Wykażemy, że wyrażenia po obu stronach równości są liczbą możliwości takiego wyboru.
+
+\vspace{10px}
+\noindent
+Wybierając najpierw kapitana -- możemy go wybrać na $n$ sposobów -- a następnie dobierając mu zawodników -- których można wybrać na $2^{n - 1}$ sposobów, gdyż wybieramy dowolny podzbiór $n - 1$ osób -- otrzymamy $n \cdot 2^{n - 1}$ osób.
+
+\vspace{10px}
+\noindent
+Przyjmijmy, że w drużynie wraz z kapitanem jest $k$ osób. Możliwości wyboru $k$ osób spośród $n$ jest ${n}\choose{k}$, a opcji wyboru kapitana spośród tych $k$ osób jest dokładnie $k$. Stąd też dla dowolnego $k$ liczba wariantów wynosi $k \cdot {{n}\choose{k}} $. Sumując po wszystkich możliwych $k$ otrzymujemy, że łączna liczba możliwości wynosi $\sum^{n}_{k=0} k \cdot {{n}\choose{k}}$.
+
+\vspace{5px}
+
+\begin{problem}{2}
+	Wyznacz liczbę podzbiorów zbioru $\{1, 2, 3, ..., 10\}$, których suma wynosi co najmniej $28$.
+\end{problem}
+
+\vspace{5px}
+
+\answer{Szukana liczba podzbiorów wynosi $2^9 = 512$.}
+
+\noindent
+Zauważmy, że suma wszystkich elementów tego zbioru wynosi $55$. Dla każdego podzbioru $A$ zdefiniujmy jego dopełnienie jako podzbiór $\{1, 2, 3, ..., 10\} - A$. Składa się on z wszystkich elementów nie występujących w $A$. Dla przykładu dopełnieniem zbioru $\{1, 2, 4, 7, 8, 9\}$ będzie zbiór $\{3, 5, 6, 10\}$.
+\vspace{10px}
+
+\noindent
+Zauważmy, że suma elementów dowolnego podzbioru i jego dopełnienia wynosi $55$. Więc dokładnie jeden z tych zbiorów ma sumę elementów większą lub równą $28$. Podzielmy wszystkie rozpatrywane podzbiory na pary zawierające dwa zbiory będące swoim dopełnieniem. Z powyższej obserwacji wynika, że dokładnie połowa podzbiorów -- po jednym z każdej pary -- będzie spełniać warunki zadania. Jest więc ich $\frac{1}{2} \cdot 2^{10} = 2^9 = 512$.
+
+
+\newpage
+
+\begin{problem}{3} 
+	Udowodnić, że dla wszystkich dodatnich liczb całkowitych $n$ zachodzi równość
+	\[
+	    \sum^{n}_{k=0} {{n}\choose{k}}^2 = {{2n}\choose{n}}.
+	\]
+\end{problem}
+
+\vspace{5px}
+
+\noindent
+Prawa strona równości jest równa liczbie sposobów wyboru $n$ spośród $2n$ osób.
+\vspace{10px}
+
+\noindent
+Podzielmy te $2n$ osób na dwie grupy po $n$ osób. Załóżmy, że z pierwszej grupy wybieramy $k$ osób. Możemy tego dokonać na ${n}\choose{k}$ sposobów. Z drugiej grupy wybieramy $n - k$ osób -- mamy ${{n}\choose{n - k}} = {{n}\choose{k}}$ możliwości. Dla ustalonego $k$ możemy dokonać wyboru na ${{n}\choose{k}}^2$ sposobów. Sumując po wszystkich $k$ otrzymujemy lewą stronę równości.
+
+\begin{problem}{4}
+	Dana jest liczba pierwsza $p \geqslant 3$. Niech $A_k$ oznacza zbiór permutacji $(a_1, a_2, ..., a_p)$ zbioru $\{1, 2, 3,..., p\}$, dla których liczba
+	\[
+		a_1 + 2a_2 + 3a_3 + ... + pa_p - k
+	\]
+	jest podzielna przez $p$. Wykazać, że zbiory $A_1$ oraz $A_2$ mają tyle samo elementów.
+\end{problem}
+
+\vspace{5px}
+
+\noindent
+Ideą poniższego rozwiązania jest fakt, że jak mamy pewną permutację z $A_1$, pomnożymy każdy jej z elementów przez 2, to otrzymamy permutację z $A_2$. Jako, że mnożąc liczbę większą od $\frac{1}{2}p$ przez $2$ wylecimy ze zbioru $\{1, 2, 3,..., p\}$ to zamiast mnożenia przez $2$ użyjemy funkcji danej wzorem
+\[
+	f(x) = 
+	\begin{cases}
+	2x \;\;\; \quad\quad\text{dla} \;\; x < \frac{1}{2}p\\
+	2x - p \quad \text{dla} \;\; x > \frac{1}{2}p.
+	\end{cases}
+\]
+Zauważmy, że $f(x) \equiv 2x \pmod{p}$.
+\vspace{10px}
+
+\noindent
+W ten sposób przyporządkujemy każdemu elementowi ze zbioru $A_1$ dokładnie 1 element ze zbioru $A_2$. Czy może się jednak tak zdarzyć, że pewien element z $A_2$ zostanie w ten sposób przyporządkowany nie do jednego, a do innej liczby elementów z $A_1$? Wykażemy, że nie.
+\vspace{10px}
+
+\noindent
+Mianowicie pokażemy, że z dowolnego elementu $A_2$ możemy odzyskać dokładnie jedną przyporządkowaną mu permutację z $A_1$. Zdefiniujmy ,,dzielenie przez $2$ modulo $p$'' wzorem
+\[
+	g(x) = 
+	\begin{cases}
+	\frac{1}{2}x \;\; \quad\quad\quad\text{dla x parzystych}\\
+	\frac{1}{2}(x - p) \quad \text{dla x nieparzystych}.
+	\end{cases}
+\]
+Mamy $2g(x) \equiv x \pmod{p}$.
+Zauważmy, że jest to funkcja odwrotna do $f$ -- tj. $f(g(x)) = x$.
+\vspace{10px}
+
+\noindent
+Zauważmy, że
+\[
+	(a_1, a_2, ..., a_p) \in A_2 \iff (g(a_1), g(a_2), ..., g(a_p)) \in A_1.
+\] 
+Pozostaje zauważyć, że to permutacja $(a_i)$ była przyporządkowana do permutacji~$(g(a_i))$. Jest tak, bo $f(g(a_i)) = a_i$. Stąd podane parowanie było poprawne, czyli istotnie zbiory $A_1$ i $A_2$ są równoliczne.
+\vspace{10px}
+
+\remark{Kluczowym faktem w powyższym rozumowaniu było istnienie funkcji odwrotnej do funkcji $f$ zdefiniowanej dla każdego elementu zbioru $\{1, 2, ..., p\}$.} 
+
+\vspace{5px}
+
+\begin{problem}{5}
+	Wykaż, że dla dowolnych dodatnich liczb całkowitych $n$, $k$ liczba	(kn)!
+	jest podzielna przez liczbę $(n!)^k \cdot k!$.
+\end{problem}
+
+\vspace{5px}
+
+\noindent
+Rozpatrzmy liczbę podziałów $kn$ osób na $k$ grup po $n$ osób. Nie bierzemy pod uwagę żadnej kolejności grup, ani kolejności osób w grupie. 
+
+\vspace{10px}
+\noindent
+Możemy ustawić $kn$ osób w kolejce na $(kn)!$ sposobów, a następnie pierwsze $n$ osób dać do jednej grupy, drugie $n$ osób do drugiej, itd. 
+
+\vspace{10px}
+\noindent
+Każdą z $k$ grup możemy ustawić w kolejności na $n!$ sposobów. Te grupy możemy ustawić w kolejności na $k!$ sposobów. W ten sposób z jednego podziału na grupy możemy uzyskać dokładnie $(n!)^k \cdot k!$ kolejek. 
+
+\vspace{10px}
+\noindent
+Więc liczba podziałów na grupy wynosi $\frac{(kn)!}{(n!)^k \cdot k!}$. Skoro jest ona całkowita, to musi zachodzić rozpatrywana podzielność.
+
+\vspace{5px}
+
+
+
+\begin{problem}{6}
+	Dana jest liczba całkowita $n$. Niech $T_n$ oznacza liczbę takich podzbiorów zbioru $\{1, 2, 3, ..., n\}$, że ich średnia arytmetyczna jest liczbą całkowitą. Wykazać, że liczba $T_n - n$ jest parzysta.
+\end{problem}
+
+\vspace{5px}
+
+\noindent
+Zauważmy, że zbiory, których średnia arytmetyczna jest liczbą całkowitą, zawierające więcej niż $1$ element da się podzielić na pary. Mianowicie zbiory $S$ i $S'$ o średniej arytmetycznej elementów równej $a$ będą w jednej parze jeśli jeden z tych zbiorów zawiera $a$, drugi nie zawiera, a poza tym mają te same elementy.
+
+$T_n$ będzie takiej parzystości jak liczba niesparowanych zbiorów. Są to wszystkie zbiory jednoelementowe -- jest ich $n$.  Stąd $T_n - n$ jest liczba parzystą.
+
+\vspace{5px}
+
+\begin{problem}{7}
+	Niech $n$, $k$, $r$ będą dodatnimi liczbami całkowitymi. Wykaż, że
+	\[
+		\sum^{r}_{k=0} {{n + k}\choose{k}} = {{n + r + 1}\choose{r}} .
+	\]
+\end{problem}
+
+\vspace{5px}
+
+\noindent
+Wykażemy, że obie strony równości to liczba słów, które składają się z $n + 1$ liter $A$ oraz $r$ liter $B$. Z jednej strony możemy wybrać na $r$ sposobów pozycje liter $B$, a na pozostałych miejscach ustawić litery $A$. Stąd tych słów jest ${{n + r + 1}\choose{r}}$.
+
+Przyjmijmy, że na miejscu $n + k + 1$ znajduje się ostatnia litera $A$. Na $n + k$ poprzednich miejsc znajdzie się $n$ liter $A$ i $k$ liter $B$. Możemy je więc ustawić na ${{n + k}\choose{k}}$ sposobów. Po ostatniej literze $A$ będą same litery $B$, więc nie mamy wyboru. Stąd dla ustalonego $k$ jest ${{n + k}\choose{k}}$ sposobów. Sumując po wszystkich możliwych $k$ otrzymujemy lewą stronę równości.
+
+

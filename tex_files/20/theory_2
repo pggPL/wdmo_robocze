@@ -1,0 +1,32 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że dla każdej liczby całkowitej $n$ zachodzi przystawanie
+\[
+&nbsp;&nbsp;S(n) \equiv n \pmod{9}.
+\]
+Niech
+\[
+&nbsp;&nbsp;n = a_k \cdot 10^k + a_{k - 1} \cdot 10^{k - 1} + ... + 10 \cdot a_1 + a_0,
+\]
+gdzie liczby $a_i$ są cyframi liczby $n$. Zauważmy, że
+\begin{gather*}
+&nbsp;&nbsp;10^t \equiv 1^t \equiv 1 \pmod{9} \\
+&nbsp;&nbsp;n = a_k \cdot 10^k + a_{k - 1} \cdot 10^{k - 1} + ... + 10 \cdot a_1 + a_0 \equiv \\
+&nbsp;&nbsp;\equiv a_k + a_{k - 1} + ... + a_1 + a_0 = S(n) \pmod{9}.
+\end{gather*}
+
+\vspace{10px}
+\noindent
+Mamy więc
+\begin{align*}
+&nbsp;&nbsp;2^{n + 1} \equiv S(2^{n + 1}) = S(2^n)  \equiv 2^n \pmod{9}\\
+&nbsp;&nbsp;2^{n + 1} - 2^n = 2^n \equiv 0 \pmod{9}.
+\end{align*}
+Stąd liczba $2^n$ musiałaby być podzielna przez $9$, co daje sprzeczność.
+
+\qed
+
+
+\vspace{10px}
+

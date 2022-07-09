@@ -1,0 +1,24 @@
+
+
+\noindent
+Sprawdzamy, że dla $n = 1$ postulowana równość zachodzi.
+Załóżmy, że równość
+\[
+&nbsp;&nbsp;1^2 + 2^2 + 3^2 + ... + n^2 = \frac{n(n + 1)(2n + 1)}{6}
+\]
+zachodzi dla pewnej liczby $n$. Chcemy wykazać tezę dla $n + 1$, czyli
+\[
+&nbsp;&nbsp;1^2 + 2^2 + 3^2 + ... + n^2 + (n + 1)^2 = \frac{(n + 1)(n + 2)(2n + 3)}{6}.
+\]
+Zauważmy, że sprowadza się ona do wykazania tożsamości
+\[
+&nbsp;&nbsp;\frac{n(n + 1)(2n + 1)}{6} + (n + 1)^2 = \frac{(n + 1)(n + 2)(2n + 3)}{6}.
+\]
+Przekształcając powyższą równość równoważnie otrzymujemy kolejno
+\begin{align*}
+&nbsp;&nbsp;n(n + 1)(2n + 1) + 6(n + 1)^2 &= (n + 1)(n + 2)(2n + 3), \\
+&nbsp;&nbsp;2n^3 + 3n^2 + n + 6(n + 1)^2 &= 2n^3 + 9n^2 + 13n + 6, \\
+&nbsp;&nbsp;6(n + 1)^2 &= 6n^2 + 12n + 6, \\
+&nbsp;&nbsp;(n + 1)^2 &= n^2 + 2n + 1.
+\end{align*}
+

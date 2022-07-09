@@ -1,0 +1,19 @@
+
+
+\noindent
+Przyjmijmy, że $a_{n + t} = a_{t}$ oraz $b_{n + t} = b_{t}$.
+Zauważmy, że dla dowolnej liczby całkowitej $k$ z twierdzenie o ciągach jednomonotonicznych zachodzi nierówność
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 + ... + a_nb_n \geqslant a_1b_{1 + k} + a_2b_{2 + k} + ... + a_nb_{n + k}.
+\]
+Sumując te nierówności dla wszystkich $k \in \{0, 1, ..., n\}$ otrzymujemy
+\begin{align*}
+&nbsp;&nbsp;n(a_1b_1 + a_2b_2 + ... + a_nb_n) \geqslant 
+&nbsp;&nbsp;\sum^{n}_{k = 1} \sum^{n}_{i=1} a_ib_{i + k} 
+&nbsp;&nbsp;= \sum^{n}_{i = 1} \sum^{n}_{k=1} a_ib_{i + k} = \\
+&nbsp;&nbsp;= \sum^{n}_{i = 1} \left( a_i \left(\sum^{n}_{k=1} b_{i + k}\right) \right) 
+&nbsp;&nbsp;= \sum^{n}_{i = 1} \left( a_i \left(\sum^{n}_{k=1} b_{i}\right) \right) 
+&nbsp;&nbsp;= \left(\sum^{n}_{i = 1} a_i\right)\left(\sum^{n}_{i = 1} b_i\right),
+\end{align*}
+czego należało dowieść.
+

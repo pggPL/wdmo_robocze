@@ -1,0 +1,27 @@
+\heading{Dowód}
+
+\noindent
+Zauważmy, że dla dowolnej liczby naturalnej $k$ prawdziwa jest podzielność
+\[
+&nbsp;&nbsp;a - b \mid a^k - b^k.
+\]
+Powyższe twierdzenie wprost z niej wynika, gdyż jeśli przyjmiemy, że $P(x) = \sum^{n}_{i = 0} c_ix^i$, to
+\[
+&nbsp;&nbsp;P(a) - P(b) = \sum^{n}_{i = 0} c_ia^i - \sum^{n}_{i = 0} c_ib^i = \sum^{n}_{i = 0} c_i(a^i - b^i).
+\]
+Skoro każdy ze składników jest podzielny przez $a - b$, to w szczególności cała suma jest podzielna.
+
+\qed
+
+\noindent
+Powyższe twierdzenie można przedstawić w następującej formie. Jeśli mamy pewien wielomian $P$ o współczynnikach całkowitych oraz liczby całkowite $a$, $b$ i $n > 0$, przy czym
+\[
+&nbsp;&nbsp;a \equiv b \pmod{n},
+\]
+to wówczas
+\[
+&nbsp;&nbsp;P(a) \equiv P(b) \pmod{n}.
+\]
+
+
+

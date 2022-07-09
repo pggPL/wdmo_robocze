@@ -1,0 +1,8 @@
+\noindent
+&nbsp;&nbsp;Niech $a_1, ..., a_n$ oraz $b_1, ..., b_n$ będą dodatnimi liczbami całkowitymi, że dla każdej liczby całkowitej $n - 1\geqslant i \geqslant 0$ zachodzi nierówność $b_{i + 1} \geqslant 2b_{i}$. Wykazać, że istnieje nieskończenie wiele liczb całkowitych $k$, że nie zachodzi żadne z przystawań
+&nbsp;&nbsp;\begin{gather*}
+&nbsp;&nbsp;&nbsp;&nbsp;k \equiv a_1 \pmod{b_1}, \\
+&nbsp;&nbsp;&nbsp;&nbsp;k \equiv a_2 \pmod{b_2}, \\
+&nbsp;&nbsp;&nbsp;&nbsp;.., \\
+&nbsp;&nbsp;&nbsp;&nbsp;k \equiv a_n \pmod{b_n}.
+&nbsp;&nbsp;\end{gather*}

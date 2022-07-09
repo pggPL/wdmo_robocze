@@ -1,0 +1,26 @@
+\heading{Twierdzenie 3}
+
+\noindent
+Niech $W(x)$ będzie wielomianem o współczynnikach rzeczywistych. Jeśli $a < b$ są liczbami rzeczywistymi, przy czym $W(a) < 0$ i $W(b) > 0$, to istnieje takie $x \in (x, y)$, że $W(x) = 0$.
+\begin{center}
+&nbsp;&nbsp;
+\begin{tikzpicture}
+\begin{axis}[axis lines=middle,axis equal,restrict y to domain=-10:10,yticklabels={}, xticklabels={}]
+\addplot[samples=100] {-(x+1.3)^3 + 2*(x+1.3)};
+\node[label={90:{$a$}},circle,fill,inner sep=1pt] at (axis cs:-0.6,1.05) {};
+\node[label={270:{$b$}},circle,fill,inner sep=1pt] at (axis cs:-2,-1.05) {};
+\node[label={110:{$x$}},circle,fill,inner sep=1pt] at (axis cs:-1.3,0) {};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\vspace{20px}
+\noindent
+Powyższe twierdzenie nazywane jest \textit{własnością Darboux}. Mówi ono tyle, że jeśli w pewnym momencie wartość wielomianu jest poniżej zera, a w innym powyżej, to wielomian musi przeciąć oś OX. Powyższe twierdzenie jest prawdziwe dla wszystkich funkcji ciągłych.
+\vspace{5px}
+
+
+\noindent
+Teraz pokażemy zadanie, w którym trzeba udowodnić, że pewien wielomian jest nierozkładalny na wielomiany o współczynnikach całkowitych. Ten motyw powtarza się w zadaniach olimpijskich.
+\vspace{5px}
+

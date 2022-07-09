@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Niech $x$, $y$, $z$, $t$ będą dodatnimi liczbami całkowitymi, takimi, że zachodzi równość
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;x^2 + y^2 + z^2 + t^2 = 2000!.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wykazać, że każda z liczb $x$, $y$, $z$, $t$ jest większa niż $10^{200}$.

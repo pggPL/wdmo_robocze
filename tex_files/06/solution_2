@@ -1,0 +1,79 @@
+
+
+\noindent
+Podzielmy płaszczyznę na kratkę, tak że przekątna każdej kratki ma długość $1$. Kolorujemy wszystkie punkty wewnątrz kratki, jej dolną krawędź bez prawego wierzchołka i jej lewą krawędź bez górnego wierzchołka na kolor przypisany według sposobu zademonstrowanego na lewym rysunku. 
+
+\begin{center}
+    \begin{tikzpicture}[x=1cm, scale=0.4]
+    \foreach \y in {0,...,4}{
+        \foreach \x in {0,...,4}{
+            \draw[black!50] (\x,\y) rectangle (1+\x,1+\y) rectangle (2+\x,2+\y);}}
+
+    \draw[black!50] (0,0)--(6,0)--(6,6)--(0,6)--cycle;
+    \draw[line width=1] (0,0)--(3,0)--(3,3)--(0,3)--cycle;
+    \draw[line width=1] (0,3)--(3,3)--(3,6)--(0,6)--cycle;
+    \draw[line width=1] (3,0)--(6,0)--(6,3)--(3,3)--cycle;
+    \draw[line width=1] (3,3)--(6,3)--(6,6)--(3,6)--cycle;
+    \node at (0.5,0.5) {1};
+    \node at (1.5,0.5) {2};
+    \node at (2.5,0.5) {3};
+    \node at (3.5,0.5) {1};
+    \node at (4.5,0.5) {2};
+    \node at (5.5,0.5) {3};
+
+
+    \node at (0.5,1.5) {4};
+    \node at (1.5,1.5) {5};
+    \node at (2.5,1.5) {6};
+    \node at (3.5,1.5) {4};
+    \node at (4.5,1.5) {5};
+    \node at (5.5,1.5) {6};
+
+
+
+    \node at (0.5,2.5) {7};
+    \node at (1.5,2.5) {8};
+    \node at (2.5,2.5) {9};
+    \node at (3.5,2.5) {7};
+    \node at (4.5,2.5) {8};
+    \node at (5.5,2.5) {9};
+
+    \node at (0.5,3.5) {1};
+    \node at (1.5,3.5) {2};
+    \node at (2.5,3.5) {3};
+    \node at (3.5,3.5) {1};
+    \node at (4.5,3.5) {2};
+    \node at (5.5,3.5) {3};
+
+
+    \node at (0.5,4.5) {4};
+    \node at (1.5,4.5) {5};
+    \node at (2.5,4.5) {6};
+    \node at (3.5,4.5) {4};
+    \node at (4.5,4.5) {5};
+    \node at (5.5,4.5) {6};
+
+
+
+    \node at (0.5,5.5) {7};
+    \node at (1.5,5.5) {8};
+    \node at (2.5,5.5) {9};
+    \node at (3.5,5.5) {7};
+    \node at (4.5,5.5) {8};
+    \node at (5.5,5.5) {9};
+
+    \end{tikzpicture}
+    \hspace{30px}
+    \begin{tikzpicture}[x=1cm, scale=0.4]
+    \draw[line width=1] (0,0)--(4,0);
+    \draw[line width=1] (0,0)--(0,4);
+    \node at (0,0)[circle,fill,inner sep=1.5pt]{};
+    %\node at (0,4)[circle,fill=white,draw,outer sep=0pt,inner sep=1.5pt]{};
+    %\node at (4,0)[circle,fill=white,draw,outer sep=0pt,inner sep=1.5pt]{};
+    \fill[pattern=north west lines] (0,0) rectangle (4,4);
+    \end{tikzpicture}
+\end{center}
+
+\noindent
+Łatwo zauważyć, że takie kolorowanie spełnia warunki zadania.
+

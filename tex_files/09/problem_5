@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie funkcje $f$ z dodatnich liczb całkowitych w dodatnie liczby całkowite, które dla każdej liczby dodatniej całkowitej $n$ spełniają nierówności
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;(n - 1)^2 < f(n)f(f(n)) < n^2 + n.
+&nbsp;&nbsp;\]

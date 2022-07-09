@@ -1,0 +1,101 @@
+\heading{Rozwiązanie}
+
+\noindent
+Pokolorujmy każdy z wierzchołków grafu $G$, tak, aby żadne dwa wierzchołki połączone krawędzią nie były tego samego koloru.
+Niech $\chi(G)$ oznacza minimalną liczbę kolorów, dla których takie kolorowanie istnieje. Liczbę $\chi(G)$ będziemy nazywać \textit{liczbą chromatyczną} grafu $G$.
+
+\vspace{10px}
+\noindent
+Wykażemy, że jeśli graf $G$ zawiera pewną krawędź, to zawsze istnieje ciąg ruchów, który zmniejszy liczbę chromatyczną danego grafu $G$. Jeśli ta liczba wyniesie $1$, to będzie oznaczało, że nie $G$ nie zawiera już żadnej krawędzi. Stąd też wyniknie teza.
+
+\vspace{10px}
+\noindent
+Najpierw usuniemy wszyskie wierzchołki, które możemy usunąć. Oczywiście ta operacja nie zwiększy liczby chromatycznej. Otrzymamy w ten sposób graf $G$, w którym nie da się usunąć żadnego wierzchołka -- wszystkie one mają parzysty stopień.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$0$] (A_1) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$1$] (A_2) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$0$] (A_3) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$1$] (A_4) at (1,-1) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2,0.5) -- (3,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2.7,0.2) -- (3,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2.7,0.7) -- (3,0.5);
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_4);
+
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$0$] (A_1) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$1$] (A_2) at (0,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$0$] (A_3) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$1$] (A_4) at (1,-1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(A_4);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$1$] (B_1) at (3,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$0$] (B_2) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=right:$1$] (B_3) at (2,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$0$] (B_4) at (3,-1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_4);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_1)--(B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_2)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_3)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (A_4)--(B_4);
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (4,0.5) -- (5,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (4.7,0.2) -- (5,0.5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (4.7,0.7) -- (5,0.5);
+
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$0$] (A_1) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:$0$] (A_3) at (0,0) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$0$] (B_2) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$0$] (B_4) at (3,-1) {};
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Następnie użyjmy operacji drugiego typu -- połączmy graf $G$ z jego kopią. Najpierw wykażemy, że liczba chromatyczna otrzymanego grafu jest nie większa niż liczba chromatyczna grafu $G$. Załóżmy, że wierzchołki grafu $G$ da się pokolorować kolorami o numerach od $0$ do $\chi(G) - 1$, gdzie $\chi(G) \geqslant 2$ (w przeciwnym wypadku łatwo uzyskujemy tezę). Pokolorujmy $G'$ w następujący sposób: 
+Jeśli wierzchołek $X \in G$ ma kolor $k$, to odpowiadający mu wierzchołek $X' \in G'$ ma pokolorujemy na kolor o numerze $k + 1 \text{ mod } \chi(G)$. Łatwo sprawdzić, że takie kolorowanie spełnia warunki zadania.
+
+\vspace{10px}
+\noindent
+Przed poprzednią operacją każdy wierzchołek miał stopień parzysty, a więc po jej wykonaniu każdy z wierzchołków będzie miał stopień nieparzysty. Wybierzmy jeden z kolorów -- możemy za pomocą pierwszej operacji usunąć wszystkie wierzchołki tego koloru. Istotnie, żadne dwa nie sąsiadują ze sobą, więc usunięcie jednego z nich nie wywrze wpływu na stopień innego wierzchołka tego samego koloru. Po usunięciu wszystkich wierzchołków jednego koloru otrzymamy graf, który jest pokolorowany co najwyżej $\chi(G) - 1$ kolorami. Ma więc on mniejszą liczbę chromatyczną niż graf $G$, czego należało dowieść.
+
+\qed
+
+\noindent
+Powyższe rozwiązanie jest bardzo pomysłowe. Czytelniczkę/czytelnika może zastanawiać jak na nie wpaść. Nie ma tutaj sposobu ze $100\%$ skutecznością, ale pewne rzeczy mogą pomóc. Przede wszystkim warto próbować jak największej liczby pomysłów. Nawet tych, które na pierwszy rzut oka nie mają wielkiego sensu. Równie ważna jest umiejętność szybkiego rozpoznania, że dany pomysł nie może doprowadzić do rozwiązania. Poza tym niektóre pomysły po prostu trzeba znać, a taka znajomość może zostać wyrobiona jedynie przez rozwiązywanie zadań.
+
+\vspace{10px}
+\begin{remark}
+W każdym z poniższych zadań zakładamy, że klocki, którymi wypełniamy szachownice można obracać.
+\end{remark}
+\vspace{5px}

@@ -1,0 +1,8 @@
+\heading{Przykład 2}
+
+\noindent
+Wykazać, że dla dowolnych dodatnich liczb rzeczywistych $a$, $b$, $c$ i $d$, dla których zachodzi równość ${a + b + c + d = 4}$ prawdziwa jest nierówność
+\[
+    \frac{a}{a^3 + 4} + \frac{b}{b^3 + 4} + \frac{c}{c^3 + 4} + \frac{d}{d^3 + 4} \leqslant \frac{4}{5}. 
+\]
+

@@ -1,0 +1,53 @@
+
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){A}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(2,0){B}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefTriangle[equilateral](A,B) \tkzGetPoint{C}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefMidPoint(A,B) \tkzGetPoint{M}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefMidPoint(B,C) \tkzGetPoint{K}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefMidPoint(A,C) \tkzGetPoint{L}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzCentroid(A,B,C) \tkzGetPoint{O}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzCentroid(A,L,M) \tkzGetPoint{O_1}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzCentroid(B,K,M) \tkzGetPoint{O_2}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzCentroid(C,K,L) \tkzGetPoint{O_3}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(A,B,C,K,L,M,O,O_1,O_2,O_3)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(A,B B,C C,A K,L L,M M,K)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[below](A,M,B)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[right](K)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[above](C)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[left](L)
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Rozpatrzmy dowolny trójkąt równoboczny $ABC$. Niech $K$, $L$ i $M$ to będą środki odpowiednio $BC$, $AC$ i $AB$. Niech $O$ będzie środkiem ciężkości trójkąta $ABC$, a punkty $O_1$, $O_2$ i $O_3$ środkami ciężkości trójkątów $ALM$, $BKM$ i $CKL$ odpowiednio. Z założeń zadania mamy
+\begin{align*}
+&nbsp;&nbsp;f(O_1) &= f(A) + f(L) + f(M), \\
+&nbsp;&nbsp;f(O_2) &= f(B) + f(M) + f(K), \\
+&nbsp;&nbsp;f(O_3) &= f(C) + f(K) + f(L).
+\end{align*}
+Dodając powyższe równości stronami otrzymujemy
+\[
+&nbsp;&nbsp;f(O_1) + f(O_2) + f(O_3) = (f(A) + f(B) + f(C)) + 2(f(K) + f(L) + f(M)). \quad (*)
+\]
+Zauważmy, że punkt $O$ jest środkiem ciężkości trójkątów $ABC$ i $O_1O_2O_3$, stąd
+\begin{align*}
+&nbsp;&nbsp;f(O) &= f(A) + f(B) + f(C), \\
+&nbsp;&nbsp;f(O) &= f(O_1) + f(O_2) + f(O_3),
+\end{align*}
+czyli
+\[
+&nbsp;&nbsp;f(O_1) + f(O_2) + f(O_3) = f(A) + f(B) + f(C). \quad (**)
+\]
+Łącząc równości $(*)$ i $(**)$ otrzymujemy, że
+\[
+&nbsp;&nbsp;f(K) + f(L) + f(M) = 0,
+\]
+co skoro te liczby są nieujemne oznacza, że są wszystkie równe $0$.
+Zauważmy, że dla dowolnego punktu na płaszczyźnie można wybrać taki trójkąt równoboczny, aby ten punkt był środkiem jego boku. Toteż dla każdego punktu $X$ mamy $f(X) = 0$.
+
+

@@ -1,0 +1,46 @@
+\heading{Rozwiązanie}
+
+\noindent
+Zacznijmy od najprostszego podstawienia. Weźmy $x = y = 0$. Wówczas otrzymamy
+\[
+&nbsp;&nbsp;f(f(0)^2 + f(0)) = 0.
+\]
+Oznacza to, że istnieje  liczba rzeczywista $a = f(0)^2 + f(0)$, że $f(a) = 0$. Wstawmy $x = a$
+\begin{align*}
+&nbsp;&nbsp;f(f(a)^2 + f(y)) &= af(a) + y, \\
+&nbsp;&nbsp;f(f(y)) &= y.
+\end{align*}
+Następnie zastąpmy $x$ przez $f(x)$ w wyjściowym równaniu
+\begin{align*}
+&nbsp;&nbsp;f(f(f(x))^2 + f(y)) &= f(x)f(f(x)) + y, \\
+&nbsp;&nbsp;f(x^2 + f(y)) &= xf(x) + y.
+\end{align*}
+W wyjściowym równaniu mieliśmy
+\[
+&nbsp;&nbsp;f(f(x)^2 + f(y)) = xf(x) + y.
+\]
+Łącząc oba powyższe równania otrzymujemy
+\[
+&nbsp;&nbsp;f(f(x)^2 + f(y)) = f(x^2 + f(y)).
+\]
+Wykażemy, że funkcja $f$ jest różnowartościowa. Zakładamy w tym celu, że dla pewnych liczb rzeczywistych $a$, $b$ zachodzi $f(a) = f(b)$. Wtedy
+\[
+&nbsp;&nbsp;a = f(f(a)) = f(f(b)) = b.
+\]
+Z różnowartościowości $f$ mamy
+\begin{align*}
+&nbsp;&nbsp;f(f(x)^2 + f(y)) &= f(x^2 + f(y)) \\
+&nbsp;&nbsp;f(x)^2 + f(y) &= x^2 + f(y) \\
+&nbsp;&nbsp;f(x)^2 &= x^2.
+\end{align*}
+Mamy więc, że dla każdej liczby rzeczywistej $x$ zachodzi $f(x) = x$ lub $f(x) = -x$. Załóżmy więc, że dla pewnych niezerowych liczb rzeczywistych zachodzi $f(a) = -a$ i $f(b) = b$. Biorąc $x = a$ i $y = b$ otrzymujemy
+\[
+&nbsp;&nbsp;f(a^2 - b) = -a^2 + b.
+\]
+W zależności od tego, czy $f(a^2 - b)$ jest równe $a^2 - b$ czy $-a^2 + b$ otrzymujemy sprzeczność z niezerowością obu liczb $a$, $b$. Stąd albo $f(x) = x$ dla wszystkich liczb rzeczywistych~$x$ albo $f(x) = -x$ dla wszystkich liczb rzeczywistych. Sprawdzając otrzymujemy, że obie te funkcje spełniają warunki zadania.
+
+\qed
+
+\vspace{10px}
+\noindent
+Należy zauważyć, że z faktu $f(x)^2 = x^2$ nie wynika jeszcze to, że $f(x) = x$ dla wszystkich~$x$ lub $f(x) = -x$ dla wszystkich~$x$. Może się bowiem zdarzyć na przykład, że $f(1) = 1$ i~$f(2) = -2$. Jest to dość znana pułapka i~warto zwrócić na nią uwagę.

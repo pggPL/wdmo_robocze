@@ -1,0 +1,23 @@
+\heading{Dowód}
+
+\noindent
+Korzystając z poprzedniego lematu mamy, że ciąg
+\[
+    (a \text{ (mod } p),\;\; 2a \text{ (mod } p),\;\;  3a \text{ (mod } p), ...,\;\;  (p - 1) \cdot a \text{ (mod } p))
+\]
+jest permutacją ciągu
+\[
+ (1,\; 2,\; 3,\; ...,\; p - 1).
+\]
+Skoro te ciągi zawierają te same elementy modulo $p$, tylko, że w innej kolejności, to iloczyny tych elementów będą dawały taką samą resztę z dzielenie przez $p$. Więc
+\[
+    1 \cdot 2 \cdot 3 \cdot ... \cdot (p - 1) = a \cdot 2a \cdot 3a \cdot ... \cdot (p - 1)a \pmod{p},
+\]
+\[
+    (p - 1)! \equiv a^{p - 1}(p - 1)! \pmod{p}.
+\]
+Zauważmy, że $(p - 1)! \not\equiv 0 \pmod{p}$. Mnożać przystawanie stronami przez odwrotność liczby~$(p - 1)!$ otrzymujemy tezę.
+
+\qed
+
+\vspace{10px}

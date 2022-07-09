@@ -1,0 +1,21 @@
+
+
+\noindent
+Załóżmy, że zbiór $S$ zawiera liczby
+\[
+&nbsp;&nbsp;x_n > x_{n - 1} > ... > x_2 > x_1.
+\]
+Zauważmy, że
+\[
+&nbsp;&nbsp;x_1 + x_2 < x_1 + x_3 <  ... <  x_1 + x_n <  x_2 + x_n <  x_3 + x_n < ... < x_{n - 1} + x_n.
+\]
+W powyższym ciągu nierówności znajdują się $2n - 3$ liczby, z których każda należy do~$T$. Oczywiście żadne dwie z nich nie moga być sobie równe, czyli $T$ zawiera co najmniej $2n - 3$ elementów.
+
+\vspace{10px}
+
+\begin{remark}
+&nbsp;&nbsp;Jeśli $x_i = i$ dla każdej liczby całkowitej $n \geqslant i \geqslant 1$, to wówczas zbiór $T$ zawiera liczby całkowite od $3$ do $2n - 1$ -- jest ich dokładnie $2n - 3$. Czyli oszacowania tego nie da się poprawić.
+\end{remark}
+
+\vspace{5px}
+

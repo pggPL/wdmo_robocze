@@ -1,0 +1,5 @@
+\noindent 
+ Wykazać, że dla każdej dodatniej liczby całkowitej $n$ zachodzi tożsamość
+\[
+&nbsp;&nbsp;1^2 + 2^2 + 3^2 + ... + n^2 = \frac{n(n + 1)(2n + 1)}{6}.
+\]

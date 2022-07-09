@@ -1,0 +1,12 @@
+\heading{Dowód}
+
+\noindent
+Rozpiszmy równość $W\left(\frac{p}{q}\right) = 0$ i pomnóżmy ją przez $q^n$ stronami
+\begin{align*}
+&nbsp;&nbsp;a_n \cdot \frac{p^n}{q^n} + a_{n - 1} \cdot \frac{p^{n - 1}}{q^{n - 1}} + ... + a_1 \cdot \frac{p}{q} + a_0 = 0, \\
+&nbsp;&nbsp;a_n \cdot p^n + a_{n - 1} \cdot p^{n-1}q + ... + a_1 \cdot p^1q^{n - 1} + a_0 \cdot q^n = 0.
+\end{align*}
+Zauważmy, że po lewej stronie wszystkie jednomiany poza $a_n \cdot p^n$ dzielą się przez $q$. Skoro sumują się do zera, czyli do liczby podzielnej przez $q$, to liczba $a_n \cdot p^n$ musi się dzielić przez $q$. Skoro $p$ i $q$ są względnie pierwsze, to $p^n$ i $q$ będą względnie pierwsze, czyli $q$ musi dzielić $a_n$. Dowód, że $p$ dzieli $a_0$ jest analogiczny i wynika z faktu, że wszystkie wielomiany poza $a_0 \cdot q^n$ dzielą się przez $p$.
+
+\qed
+

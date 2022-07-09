@@ -1,0 +1,40 @@
+
+
+\noindent
+Najpierw wykażemy, że jeśli istnieje kolorowanie, to istnieje nie szukana ścieżka. Ponumerujmy kolory od $1$ do $k$. Jeśli krawędź występuje pomiędzy wierzchołkami $i$ oraz $j$, to skierujemy ją w stronę $i$ jeśli $i > j$, zaś skierujemy ją w stronę przeciwną, gdy $i < j$. Wówczas na każdej ścieżce kolejny wierzchołek ma zapisaną większą liczbę od poprzedniego. Skoro największa liczba zapisana na wierzchołku wynosi nie więcej niż $k$, to ścieżka o długości $k + 1$ nie istnieje.
+
+\vspace{10px}
+\noindent
+Załóżmy, że graf skierowany nie zawiera ścieżki, która składa się z $k + 1$ wierzchołków. Usuńmy niektóre z jego krawędzi, aby otrzymać spójny graf, który nie zawiera żadnego cyklu, przy czym liczba krawędzi otrzymanego grafu jest największa z możliwych. Każdemu wierzchołkowi przypiszmy kolor o numerze równym długości najdłuższej ścieżki zaczynającej się w danym wierzchołku. Łatwo zauważyć, że jeśli z pewnego wierzchołka $x$ prowadzi krawędź do wierzchołka $y$, to do ścieżki zaczynającej się w wierzchołku $y$ można dołożyć na początek wierzchołek $x$. Toteż w wierzchołku $x$ jest zapisana liczba większa niż liczba w wierzchołku $y$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:6] (x_1) at (0,0.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:5] (x_2) at (-1,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:4] (x_3) at (-1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:3] (x_4) at (-1,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:2] (x_5) at (0,4) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=right:1] (x_6) at (1,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=right:4] (x_7) at (1,2) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x_1) to (x_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x_2) to (x_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x_3) to (x_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x_4) to (x_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x_5) to (x_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x_7) to (x_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (x_1) to (x_7);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge, dashed] (x_3) to (x_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge, dashed] (x_6) to (x_4);
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Wykażemy, że jeśli pomiędzy wierzchołkami $x$ i $y$ usunięto krawędź, to również mają zapisaną inną liczbę. Z założonej wcześniej maksymalności grafu bez cyklu, po dołożeniu krawędzi między $x$ i $y$ ten cykl powstanie. Wynika z tego to, że po jej usunięciu istnieje ścieżka z $x$ do $y$, albo z $y$ do $x$. Analogicznie jak poprzednio, wierzchołek w którym ta ścieżka się zaczyna, będzie miał zapisaną większą liczbę, niż ten, w którym się ona kończy. Z powyższych wniosków wynika teza.

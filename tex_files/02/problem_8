@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie funkcje $\mathbb{Z} \rightarrow \mathbb{Z} $ spełniające dla wszystkich $x \in \mathbb{Z} $ równanie
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp; f(f(x)) =x+1.
+&nbsp;&nbsp;\] 

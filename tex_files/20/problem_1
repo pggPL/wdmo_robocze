@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Wykazać, że dla dowolnych liczb całkowitych $a$, $b$, równanie
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;(x^2 - y^2 - a)(x^2 - y^2 - b)(x^2 - y^2 - ab) = 0
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;ma przynajmniej jedno rozwiązanie w liczbach całkowitych $x$, $y$.

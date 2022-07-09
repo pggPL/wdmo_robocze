@@ -1,0 +1,37 @@
+
+
+\noindent
+\textit{Sposób 1}
+
+\vspace{10px}
+
+\noindent
+Rozpatrzmy dowolną liczbę pierwszą $p$. Wykażemy, że $k \mid v_p(a)$, z czego wyniknie teza. Załóżmy nie wprost, że $v_p(a) = x \cdot k + r$, gdzie $x$ i $0 < r < k$ są dodatnimi liczbami całkowitymi. Weźmy $n = p^{xk + k}$. Wówczas istnieje takie $b$, że
+\[
+&nbsp;&nbsp;p^{xk + k} \mid a - b^k.
+\]
+Zauważmy, że skoro $v_p(b^k)$ jest podzielne przez $k$, to może być albo nie mniejsze niż $xk + k$, albo nie większe niż $xk$. W obu przypadkach liczby $b^k$ i $a$ mają różne $v_p$, przy czym mniejsze z nich jest ściśle mniejsze niż $xk + k$. Na mocy Lematu 4 otrzymujemy 
+\[
+&nbsp;&nbsp;v_p(a - b^k) = min(v_p(a), v_p(b^k)) < xk + k.
+\]
+Jest to sprzeczność z wyżej opisaną podzielnością.
+
+\vspace{10px}
+
+\noindent
+\textit{Sposób 2}
+
+\vspace{10px}
+
+\noindent
+Weźmy $n = a^2$. Wówczas na mocy założenia istnieją takie liczby całkowite $b$ oraz $d$, że
+\[
+&nbsp;&nbsp;a - b^k = da^2,
+\]
+\[
+&nbsp;&nbsp;a(ad + 1) = b^k.
+\]
+Skoro $\mathrm{NWD}(a, ad + 1) = 1$, a iloczyn tych liczb jest $k$-tą potęgą liczby całkowitej, to każda z tych liczb jest $k$-tą potęgą liczby całkowitej.
+
+\vspace{10px}
+

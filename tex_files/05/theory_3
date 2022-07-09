@@ -1,0 +1,10 @@
+\heading{Przykład 1}
+
+\noindent
+Udowodnić, że dla dowolnych liczb dodatnich $a$, $b$ i $c$, dla których $a + b + c = 1$ zachodzi nierówność
+\[
+    \sqrt{2a + 1} + \sqrt{2b + 1} + \sqrt{2c + 1} \leqslant \sqrt{15}.
+\]
+
+\newpage
+

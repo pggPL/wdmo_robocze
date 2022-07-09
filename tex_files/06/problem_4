@@ -1,0 +1,6 @@
+\noindent 
+&nbsp;&nbsp;Wykazać, że można pokolorować każdą dodatnią liczbę całkowitą na jeden z $1000$ kolorów, tak aby
+&nbsp;&nbsp;\begin{itemize}
+&nbsp;&nbsp;&nbsp;&nbsp;\item każdy z kolorów był użyty nieskończenie wiele razy;
+&nbsp;&nbsp;&nbsp;&nbsp;\item dla dowolnych takich liczb całkowitych $a$, $b$, $c$, że $ab = c$, pewne dwie spośród nich są jednakowego koloru.
+&nbsp;&nbsp;\end{itemize} 

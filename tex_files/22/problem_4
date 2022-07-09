@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Niech $P$, $Q$ będą wielomianami o współczynnikach rzeczywistych, dla których zachodzi równość 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;P(Q(x)) = Q(P(x)).
+&nbsp;&nbsp;\] 
+&nbsp;&nbsp;Wykazać, że jeśli nie istnieje taka liczba rzeczywista $x$ dla której $P(x) = Q(x)$, wówczas również nie istnieje taka liczba rzeczywista $x$, dla której prawdą jest, że $P(P(x)) = Q(Q(x))$.

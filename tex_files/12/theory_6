@@ -1,0 +1,19 @@
+\heading{Dowód}
+
+\noindent
+Zauważmy, że
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 \geqslant a_1b_2 + a_2b_1 \iff (a_1 - a_2)(b_1 - b_2) \geqslant 0,
+\]
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 \leqslant a_1b_2 + a_2b_1 \iff (a_1 - a_2)(b_1 - b_2) \leqslant 0,
+\]
+Teza lematu wynika wprost z założeń.
+
+\qed
+
+\vspace{10px}
+
+% tutaj opis przekształceń, sortowania bąbelkowego
+% ,,z tego algorytmu wynika następujące twierdzenie
+

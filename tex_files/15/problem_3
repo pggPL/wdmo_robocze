@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Niech $G$ będzie grafem skierowanym, w którym stopnie: wejściowy i wyjściowy każdego z wierzchołków są równe $2$. Wykazać, że możemy podzielić wierzchołki na trzy, być może puste, zbiory, aby żaden wierzchołek $v$ wraz z dwoma wierzchołkami, będącymi końcami wychodzącymi z $v$ krawędzi, nie znajdowały się wszystkie w jednym ze zbiorów.

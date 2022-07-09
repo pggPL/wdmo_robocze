@@ -1,0 +1,13 @@
+
+
+\noindent
+Weźmy $n = k(p - 1)$. Wówczas 
+\[
+&nbsp;&nbsp;2^{k(p-1)}\equiv (2^{p-1})^k \equiv 1^k \equiv 1 \pmod{p},
+\]
+zaś
+\[
+&nbsp;&nbsp;n \equiv k(p - 1) \equiv -k \pmod{p}.
+\]
+Wystarczy wziąć $k = p - 1$, aby teza zachodziła.\\
+

@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Niech $a$ i $k$ będą pewnymi dodatnimi liczbami całkowitymi o tej własności, że dla dowolnej dodatniej liczby całkowitej $n$ istnieje liczba całkowita $b$, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;n \mid a - b^k.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wykazać, że $a = c^k$ dla pewnej liczby całkowitej $c$.

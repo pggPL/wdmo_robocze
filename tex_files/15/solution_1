@@ -1,0 +1,9 @@
+
+
+\noindent
+Ponumerujmy wierzchołki od $1$ do $n$. Krawędź prowadzącą z wierzchołka $i$ do wierzchołka~$j$ nazwiemy \textit{rosnącą}, jeśli zachodzi $j > i$. W przeciwnym wypadku powiemy, że ta krawędź jest \textit{malejąca}. Jeśli krawędzi rosnących jest nie więcej niż malejących, to usuńmy wszystkie krawędzie malejące. W przeciwnym wypadku usuńmy wszystkie krawędzie rosnące. Łatwo zauważyć, że usuniemy w ten sposób nie więcej niż połowę krawędzi.
+
+\vspace{10px}
+\noindent
+Załóżmy, że usunęliśmy wszystkie krawędzie malejące oraz nie usunęliśmy pewnego cyklu. Idąc po kolejnych wierzchołkach danego cyklu, numer wierzchołka na którym jesteśmy ściśle rośnie. Przeczy to temu, że wrócimy kiedyś do punktu wyjścia.
+

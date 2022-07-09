@@ -1,0 +1,18 @@
+\noindent 
+Dana jest następująca gra, zwana \textit{wieżami Hanoi}. Na początku ułożono $n$ dysków na jednej igle tak jak na rysunku. W każdym ruchu gracz może przemieścić dysk na inną igłę, przy czym dysk ten nie może zostać położony na dysk o mniejszej średnicy. Wykazać, że gracz jest w stanie przenieść wszystkie dyski na trzecią igłę.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+&nbsp;&nbsp;\draw[gray, thin] (0,0) -- (26,0);
+&nbsp;&nbsp;\draw[gray, thin] (4,0) -- (4,5) -- (5,5) -- (5,0);
+&nbsp;&nbsp;\draw[gray, thin] (12,0) -- (12,5) -- (13,5) -- (13,0);
+&nbsp;&nbsp;\draw[gray, thin] (20,0) -- (20,5) -- (21,5) -- (21,0);
+
+&nbsp;&nbsp;\draw[gray, thin, fill=black!50] (1.5,0) -- (7.5,0) -- (7.5,1) -- (1.5,1) -- cycle;&nbsp;&nbsp;
+&nbsp;&nbsp;\draw[gray, thin, fill=black!50] (2,1.1) -- (7,1.1) -- (7,2.1) -- (2,2.1) -- cycle;&nbsp;&nbsp;
+&nbsp;&nbsp;\draw[gray, thin, fill=black!50] (2.5,2.2) -- (6.5,2.2) -- (6.5,3.2) -- (2.5,3.2) -- cycle;&nbsp;&nbsp;
+&nbsp;&nbsp;\draw[gray, thin, fill=black!50] (3,3.3) -- (6,3.3) -- (6,4.3) -- (3,4.3) -- cycle;
+\end{tikzpicture}
+
+\end{center}
+

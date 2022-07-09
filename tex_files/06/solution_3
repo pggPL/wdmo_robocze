@@ -1,0 +1,58 @@
+
+
+\noindent
+Na początku wykażemy, że każdy trójkąt można podzielić na $3$ takie czworokąty. Rozpatrzmy dowolny trójkąt $ABC$. Niech $I$ to będzie środek okręgu weń wpisanego, a punkty $D$, $E$ i $F$ to będą rzuty $I$ odpowiednio na boki $BC$, $CA$ i $AB$. Zauważmy, że $IE = IF$(promienie okręgu) oraz $AF = AE$(odcinki styczne). Stąd $AF + IE = AE + IF$, czyli czworokąt $AFIE$ da się opisać na okręgu. Mamy też, że kąty $\an AFI$ i $\an AEI$ są proste, czyli czworokąt $AFIE$ da się wpisać w okrąg. Analogicznie rozumujemy dla czworokątów $BDIF$ oraz $CEID$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){A}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(5,0){B}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(3,2){C}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefTriangleCenter[in](A,B,C)\tkzGetPoint{I}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[projection=onto B--C](I){D}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[projection=onto C--A](I){E}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[projection=onto A--B](I){F}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(A,B,C, I, D,E,F)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(A,B B,C C,A I,D I,E I,F)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawCircle[dashed](I,F)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[below](A,B, F)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[above](C)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[left](I)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[above left](E)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[above right](D)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzMarkRightAngle[german](I,F,A)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzMarkRightAngle[german](A,E,I)
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\hspace{10px}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){A}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(5,0){B}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(3,2){C}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(1,0){X_1}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(2,0){X_2}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(4,0){X_{999}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(3,0){T}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefTriangleCenter[in](A,B,C)\tkzGetPoint{I}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[projection=onto B--C](I){D}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[projection=onto C--A](I){E}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPointsBy[projection=onto A--B](I){F}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(A,B,C, X_1, X_2, X_{999})
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(C,X_1 C,X_2 C,X_{999})
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(A,B B,C C,A)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[below](A,B,X_1, X_2, X_{999})
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoints[above](C)
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[below](T){$\dots$}
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Wystarczy więc podzielić wyjściowy trójkąt na $1000$ trójkątów jak na rysunku $1$, a następnie każdy z tych trójkątów podzielić na $3$ szukane czworokąty.
+
+\vspace{10px}
+

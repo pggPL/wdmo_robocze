@@ -1,0 +1,22 @@
+\heading{Symbol Legendre'a}
+
+\noindent
+Dla pewnej liczby pierwszej $p$ oraz liczby całkowitej $n$ przyjmiemy
+\[
+&nbsp;&nbsp;\left(\frac{n}{p}\right) = 
+&nbsp;&nbsp;\begin{cases}
+&nbsp;&nbsp;&nbsp;&nbsp;\phantom{-}1 \text{, gdy istnieje taka liczba całkowita } a \not\equiv 0 \text{, że } n \equiv a^2 \pmod{p}\\
+&nbsp;&nbsp;&nbsp;&nbsp;-1\text{, gdy nie istnieje taka liczba całkowita } a \not\equiv 0 \text{, że } n \equiv a^2 \pmod{p} \\
+&nbsp;&nbsp;&nbsp;&nbsp;\phantom{-}0 \text{, gdy } n \equiv 0 \pmod{p}\\
+&nbsp;&nbsp;\end{cases}
+\]
+
+\noindent
+W pierwszym przypadku powiemy, że $n$ jest \textit{resztą kwadratową}, a w drugim, że $n$ jest \textit{nieresztą kwadratową}.
+
+\vspace{10px}
+\noindent
+Znanym faktem jest, że $\left(\frac{1}{3}\right) = 1$ oraz $\left(\frac{2}{3}\right) = -1$.
+
+\vspace{10px}
+

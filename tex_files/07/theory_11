@@ -1,0 +1,11 @@
+\heading{Dowód}
+
+\noindent
+Rozpatrzmy wielomian 
+\[
+    W(x) = P(x) - Q(x).
+\]
+Liczby $\alpha_1, \alpha_2, ..., \alpha_{n + 1}$ są jego pierwiastkami. Ma więc on co najmniej $n + 1$ pierwiastków i stopień $n$. Z wyżej przestawionego wniosku wynika więc, że jest to wielomian zerowy. Stąd $P(x) - Q(x) = 0$ dla każdego $x$, a to trzeba było wykazać.
+
+\qed
+

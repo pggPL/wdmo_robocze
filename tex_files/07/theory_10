@@ -1,0 +1,11 @@
+\heading{Twierdzenie 4}
+
+\noindent
+Dane są wielomiany o współczynnikach rzeczywistych $P(x)$ i $Q(x)$ stopnia co najwyżej $n$. Istnieje $n + 1$ liczb rzeczywistych $\alpha_1, \alpha_2, ..., \alpha_{n + 1}$, takich, że dla każdego $i \in \{1, 2, 3, ..., n\}$ zachodzi równość 
+\[
+    P(\alpha_i) = Q(\alpha_i).
+\]
+Wówczas $P(x) = Q(x)$ dla dowolnej liczby rzeczywistej $x$.
+
+\vspace{5px}
+

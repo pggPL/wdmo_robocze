@@ -1,0 +1,54 @@
+
+
+\noindent
+Wykażemy tezę indukcyjnie. Dla $n = 1$ teza jest trywialna. Załóżmy, że dla dowolnego turnieju z liczbą graczy mniejszą niż $n$ szukane uporządkowanie istnieje. 
+Zauważmy, że jeśli istnieje cykl
+\[
+&nbsp;&nbsp;v_1, \; v_2, \; ..., \; v_n
+\]
+to dla każdego $i$ gracz $v_{i}$ wygrał z graczem $v_{i + 1}$. Stąd biorąc uporządkowanie $v_1, \; v_2, \; ..., \; v_n$ otrzymujemy tezę.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0.5,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (1.5,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (1.5,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (0.75,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_3) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[label=left:A] (a) at (0,2.25) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[label=left:B] (b) at (0,0) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_4) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_4) to (B_1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B_1) to (B_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B_2) to (B_3) {};
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Załóżmy, że dany turniej nie jest cykliczny, na mocy Lematu 2 jest on redukowalny. Rozpatrzmy więc dwa zbiory $A$ i $B$, takie, że każdy gracz z $A$ wygrał z dowolnym graczem z $B$. Wówczas oba te zbiory zawierają ściśle mniej niż $n$ elementów, a więc na mocy założenia indukcyjnego istnieją takie uporządkowania
+\[
+&nbsp;&nbsp;a_1, \; a_2, \; ..., \; a_t \; \text{graczy z } A 
+&nbsp;&nbsp;\quad
+&nbsp;&nbsp;\text{oraz}
+&nbsp;&nbsp;\quad
+&nbsp;&nbsp;b_1, \; b_2, \; ..., \; b_{n - t} \; \text{graczy z } B, 
+\]
+że każdy gracz wygrał z kolejnym. Na mocy definicji zbiorów $A$ i $B$ gracz $a_t$ wygrał z graczem $b_1$, czyli uporządkowanie
+\[
+&nbsp;&nbsp;a_1, \; a_2, \; ..., \; a_t , \; b_1, \; b_2, \; ..., \; b_{n - t}
+\]
+spełnia warunki zadania.
+

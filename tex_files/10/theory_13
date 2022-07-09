@@ -1,0 +1,70 @@
+\heading{Rozwiązanie}
+
+\noindent
+Niech $p$ będzie dowolną liczbą pierwszą. Wówczas, skoro liczba
+\[
+&nbsp;&nbsp;\frac{a}{b} + \frac{b}{c} + \frac{c}{a} = \frac{a^2c + b^2a + c^2b}{abc}
+\]
+jest całkowita, to
+\[
+&nbsp;&nbsp;v_p(a^2c + b^2a + c^2b) \geqslant v_p(abc).
+\]
+Zauważmy, że
+\[
+&nbsp;&nbsp;v_p(a^2c) = 2v_p(a) + v_p(c), \quad v_p(b^2a) = 2v_p(b) + v_p(a), \quad v_p(c^2b) = 2v_p(c) + v_p(b).
+\]
+
+\vspace{10px}
+
+
+\noindent
+\underline{Lemat.} Rozpatrzmy liczby
+\[
+&nbsp;&nbsp;2v_p(a) + v_p(c),\; 2v_p(b) + v_p(a),\; 2v_p(c) + v_p(b).
+\] 
+Niech $m$ to będzie najmniejsza z nich. Wówczas co najmniej dwie z nich są równe $m$.
+
+
+\vspace{5px}
+
+\noindent
+\underline{Dowód.}
+
+\noindent
+Załóżmy nie wprost, że dokładnie jedna z nich jest równa $m$, a dwie pozostałe są nie mniejsze niż $m + 1$. Wyrażenie
+\[
+&nbsp;&nbsp;a^2c + b^2a + c^2b
+\]
+jest sumą dwóch składników podzielnych przez $p^{m + 1}$ i jednego składnika podzielnego przez $p^m$. Toteż dzieli wykładnik peadyczny tej sumy wynosi dokładnie $m$.
+\[
+&nbsp;&nbsp;m = v_p(a^2c + b^2a + c^2b) \geqslant v_p(abc) = v_p(a) + v_p(b) + v_p(c),
+\]
+\[
+&nbsp;&nbsp;3m \geqslant (v_p(a) + v_p(b)) + (v_p(b) + v_p(c)) + (v_p(a)  + v_p(c)).
+\]
+co przeczy temu, że $m$ jest najmniejszą z tych trzech liczb, różną od pozostałych dwóch.
+
+\vspace{15px}
+
+\noindent
+Przyjmijmy bez straty ogólności, że
+\[
+&nbsp;&nbsp;v_p(a) + 2v_p(c) = v_p(b) + 2v_p(a),
+\]
+wówczas
+\[
+&nbsp;&nbsp;2v_p(c) = v_p(b) + v_p(a),
+\]
+\[
+&nbsp;&nbsp;v_p(a) + v_p(b) + v_p(c) = 3v_p(c),
+\]
+co dowodzi tego, że liczba
+\[
+&nbsp;&nbsp;v_p(abc) = v_p(a) + v_p(b) + v_p(c) = 3v_p(c)
+\]
+jest podzielna przez $3$. Przeprowadzając analogiczne rozumowanie dla dowolnej liczby pierwszej $p$ mamy, że $v_p(abc)$ zawsze jest podzielne przez $3$. Z Lematu $3$ wynika więc teza. 
+
+\qed
+
+\vspace{10px}
+

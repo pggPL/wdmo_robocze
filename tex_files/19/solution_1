@@ -1,0 +1,18 @@
+
+
+\noindent
+Podstawmy $a = b = 1$. Otrzymamy
+\[
+&nbsp;&nbsp;|(a + a)^2| = (a + b)^2 \leqslant 2.
+\]
+Teraz weźmy $a = 1$ i $b = -1$. Mamy
+\[
+&nbsp;&nbsp;|(a - b)(b - a)| = (a - b)^2 \leqslant 2.
+\]
+Dodając dwie powyższe nierówności stronami otrzymujemy
+\begin{align*}
+&nbsp;&nbsp;(a + b)^2 + (a - b)^2 &\leqslant 4, \\
+&nbsp;&nbsp;a^2 + 2ab + b^2 + a^2 - 2ab + b^2 &\leqslant 4, \\
+&nbsp;&nbsp;a^2 + b^2 &\leqslant 2.
+\end{align*}
+

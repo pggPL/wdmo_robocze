@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;$P_1,P_2,\ldots,P_{100}$ są $100$ punktami na płaszczyźnie, z których żadne 3 nie leżą na jednej prostej. Dla każdych trzech punktów, nazwijmy trójkąt przez nie tworzony \textit{zegarowym}, jeśli numery wierzchołków są uporządkowane rosnąco zgodnie z ruchem wskazówek zegara. Czy liczba trójkątów zegarowych może wynosić dokładnie $1111$?

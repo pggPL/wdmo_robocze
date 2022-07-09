@@ -1,0 +1,9 @@
+\heading{Lemat 1}
+
+\noindent
+Udowodnić, że jeśli $x^2\equiv 1 \pmod{p}$ dla pewnej liczby pierwszej $p$, to \[   
+    x\equiv 1 \pmod{p} \quad \text{lub} \quad x\equiv -1 \pmod{p}.
+\]
+
+\rotatehint{Zapisz założenia i tezę zadania bez użycia modulo.}
+

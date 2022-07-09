@@ -1,0 +1,13 @@
+
+
+\noindent
+Podstawmy $x = f(y)$. Otrzymamy 
+\begin{gather*}
+&nbsp;&nbsp;f(0) = 1 - f(y) - y, \\
+&nbsp;&nbsp;f(y) = - y + (1 - f(0)).
+\end{gather*} 
+Podstawmy $y = 0$ do powyższej zależności. Wówczas łatwo obliczyć, że $f(0)=\frac{1}{2}$. Czyli $f(x) = - x + \frac{1}{2} $. Ta funkcja istotnie spełnia warunki zadania, gdyż
+\[
+&nbsp;&nbsp;f(x - f(y)) = f(y) - x + \frac{1}{2} = 1 - y - x .
+\]
+

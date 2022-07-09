@@ -1,0 +1,27 @@
+\heading{Definicje}
+
+\noindent
+Wyrażenie algebraiczne postaci
+\[
+    W(x) = a_nx^n + a_{n - 1}x^{n - 1} + ... + a_1x + a_0
+\]
+dla pewnych liczb rzeczywistych $a_n \neq 0$, $a_1$, $a_2$, ..., $a_{n - 1}$ nazywamy \textit{wielomianem}.
+\begin{itemize}
+    \item Liczbę $n$ nazywamy stopniem tego wielomianu i oznaczamy jako $deg \; W = n$.
+
+    \item \textit{Współczynnikami} nazywamy liczby $a_0$, $a_1$, ..., $a_n$.
+
+    \item Współczynnik przy najwyższej potędze $x$ -- w tym przypadku $a_n$ nazywamy \textit{współczynnikiem wiodącym}.
+
+    \item Gdy współczynnik wiodący jest równy $1$ to powiemy, że wielomian jest \textit{unormowany}.
+
+    \item Liczbę $\alpha$, dla której zachodzi równość $W(\alpha) = 0$ nazywamy \textit{pierwiastkiem} wielomianu $W$.
+\end{itemize}
+
+\vspace{5px}
+
+\noindent 
+Na początku zachęcamy do samodzielnego zmierzenia się z poniższym zadaniem. Jego rozwiązanie wyrobi intuicję co do działania dzielenia wielomianów.
+
+\vspace{5px}
+

@@ -1,0 +1,57 @@
+\heading{Dowód}
+
+\noindent
+Załóżmy nie wprost, że istnieją takie niestałe wielomiany o współczynnikach całkowitych $A$ i $B$, że
+\[
+&nbsp;&nbsp;P(x) = A(x)B(x).
+\]
+Wówczas dla każdego $1 \leqslant i \leqslant n$ zachodzi
+\[
+&nbsp;&nbsp;A(a_i)B(a_i) = P(a_i) = 1.
+\]
+Więc $A(a_i) = B(a_i) = \pm 1$. 
+
+\vspace{10px}
+\noindent
+Jeśli $A$ byłoby równe $1$ dla pewnego $a_i$, zaś równe $-1$ dla pewnego $a_j$, to wówczas na mocy własności Darboux ma pierwiastek. Jeśli istnieje takie $\alpha$, że $A(\alpha) = 0$, to
+\[
+&nbsp;&nbsp;P(\alpha) = A(\alpha)B(\alpha) = 0.
+\]
+Łatwo zauważyć, że
+\[
+&nbsp;&nbsp;P(\alpha) = ((\alpha − a_1)(\alpha − a_2)\cdot ...\cdot (\alpha − a_n))^2 + 1 \geqslant 1 > 0,
+\]
+co daje sprzeczność.
+
+\noindent
+Stąd albo
+\[
+&nbsp;&nbsp;A(a_i) = B(b_i) = 1
+\]
+dla wszystkich $i$, albo
+\[
+&nbsp;&nbsp;A(a_i) = B(b_i) = -1
+\]
+dla wszystkich $i$.
+Rozpatrzmy pierwszy przypadek, drugi będzie analogiczny.
+Jeśli $A$ dla $n$ liczb przyjmuje wartość $1$ oraz jest niestały, to jego stopień wynosi co najmniej $n$. Suma ich stopnie wynosi tyle, ile wynosi stopień ich iloczynu $A(x)B(x) = P(x)$, czyli $2n$. Stąd też oba te wielomiany mają stopień $n$. Zauważmy również, że skoro wielomian $P(x) = A(x)B(x)$ jest unormowany, to współczynniki wiodące $A$ i $B$ są albo oba równe~$1$, albo oba równe $-1$.
+
+\vspace{10px}
+\noindent
+Rozpatrzmy wielomian $A(x) - B(x)$. Dla każdego $x = a_i$, których jest łącznie $n$, przyjmuje wartość $0$. Skoro wielomiany $A$ i $B$ mają stopień $n$ i równy współczynnik wiodący, to ich różnica będzie miała współczynnik wiodący nie większy niż $n - 1$. Łącząc powyższe wnioski, na mocy jednego z twierdzeń wykazanych w rozdziale Wielomiany, mamy 
+\[
+&nbsp;&nbsp;A(x) = B(x).
+\]
+Stąd
+\begin{gather*}
+&nbsp;&nbsp;A(x)^2 = A(x)B(x) = P(x) = ((x − a_1)(x − a_2)\cdot ...\cdot (x − a_n))^2 + 1 \\
+&nbsp;&nbsp;A(x)^2 = ((x − a_1)(x − a_2)\cdot ...\cdot (x − a_n))^2 + 1, \\
+&nbsp;&nbsp;\left(A(x) - (x − a_1)(x − a_2)\cdot ...\cdot (x − a_n)\right)\left(A(x) + (x − a_1)(x − a_2)\cdot ...\cdot (x − a_n)\right) = 1.
+\end{gather*}
+Po lewej stronie mamy iloczyn dwóch niezerowych wielomianów, z których co najmniej jeden ma stopień $n$. Toteż ich iloczyn ma stopień co najmniej $n$, co oczywiście jest sprzeczne z powyższą równością.
+
+\qed
+
+\noindent
+Z powyższego rozwiązania warto zapamiętać użycie własności Darboux do wykazania, że wielomian ma pierwiastek. Warto też patrzyć na współczynniki wiodące wielomianów -- w powyższym rozwiązaniu odegrało to ważną rolę.
+\vspace{5px}

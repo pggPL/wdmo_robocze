@@ -1,0 +1,11 @@
+\heading{Lemat 1}
+
+\noindent
+W grafie skierowanym, w którym dla każdego wierzchołka $v$ zachodzi 
+\[
+&nbsp;&nbsp;out(v) \geqslant 1
+\] 
+istnieje cykl.
+
+\vspace{5px}
+

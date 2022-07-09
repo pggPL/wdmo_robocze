@@ -1,0 +1,21 @@
+
+
+\noindent
+Jeśli istniałyby liczby $a$, $b$, dla których 
+\[
+&nbsp;&nbsp;P(a) > Q(a) \;\; \text{i} \;\; P(b) < Q(b),
+\] 
+to rozpatrując wielomian $W(x) = P(x) - Q(x)$ mielibyśmy $W(a) < 0$ i $W(b) > 0$. Z własności Darboux ten wielomian miałby pierwiastek, czyli równanie $P(x) = Q(x)$ miałoby rozwiązanie. Ale z założeń tak nie jest, czyli albo 
+\[
+&nbsp;&nbsp;P(x) > Q(x) \text{ dla wszystkich liczb rzeczywistych } x,
+\] 
+albo $Q(x) > P(x)$ dla wszystkich liczb rzeczywistych~$x$. Bez straty ogólności załóżmy, że prawdziwa jest pierwsza nierówność.
+
+\vspace{10px}
+\noindent
+Mamy 
+\[
+&nbsp;&nbsp;P(P(x)) > Q(P(x)) = P(Q(x)) > Q(Q(x)),
+\]
+z czego wprost wynika teza.
+

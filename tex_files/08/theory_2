@@ -1,0 +1,10 @@
+\heading{Twierdzenie 1}
+
+\noindent
+Dany jest graf spójny $G$, który ma $n$ wierzchołków. Następujące warunki są sobie równoważnie
+\begin{itemize}
+    \item $G$ nie zawiera żadnego cyklu,
+    \item w grafie jest dokładnie $n - 1$ krawędzi,
+    \item pomiędzy dowolnymi dwoma wierzchołkami istnieje dokładnie jedna ścieżka, która nie przechodzi przez żaden wierzchołek więcej niż raz.
+\end{itemize}
+

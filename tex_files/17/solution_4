@@ -1,0 +1,43 @@
+
+
+\noindent
+Wykażemy, że jest to możliwe. Rozpatrzmy dwie konfiguracje. W jednej punkty są ułożone na okręgu zgodnie z ruchem wskazówek zegara, a w drugiej przeciwnie do niego.
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=above:$X_k$] (a) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=above right:$X_{k+1}$] (b) at (0.7,1.88) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=right:$X_{k+2}$] (c) at (1.74,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=right:$X_{k+3}$] (d) at (2,0) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,0) circle (2);
+
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\hspace{50px}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=above:$X_{k + 3}$] (a) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=above right:$X_{k+2}$] (b) at (0.7,1.88) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=right:$X_{k+1}$] (c) at (1.74,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex,label=right:$X_{k}$] (d) at (2,0) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,0) circle (2);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+W pierwszej konfiguracji jest ${{{100}\choose{3}} > 1111}$ trójkątów zegarowych, a w drugiej jest ich zero. Wychodząc od pierwszej konfiguracji, zacznijmy przesuwać płynnie punkty tak, aby dojść do konfiguracji drugiej. Najpierw bardzo nieznacznie przesuńmy każdy z punktów, tak, aby zwolnić miejsca, które zajmują. To przekształcenie nie powinno wpłynąć na liczbę trójkątów zegarowych. Następnie przesuńmy punkt $X_1$ na miejsce, które zajmuje on w drugiej konfiguracji. Róbmy to tak, aby nie przejść przez żaden z punktów przecięcia prostych $X_aX_b$ z $X_cX_d$ dla dowolnych liczb naturalnych $1 \leqslant a, b, c, d \leqslant 100$. Analogicznie potem przesuwamy punkt $X_2$, potem $X_3$, ..., aż do $X_{100}$.
+
+\vspace{10px}
+\noindent
+Zaobserwujmy, że trójkąt $X_aX_bX_c$ zmieni status bycia zegarowym wtedy i tylko wtedy, gdy ruszamy jeden z wierzchołków i przejdziemy nim przez prostą zawierającą pozostały bok. Skoro więc nie założyliśmy, że ruszany punkt przechodzi przez co najwyżej jedną prostą w jednym momencie, to w jednej chwili co najwyżej jeden trójkąt może zmienić swoją zegarowość. Skoro w~wyjściowej konfiguracji było więcej niż $1111$~trójkątów zegarowych, a w końcowej jest ich mniej, to w pewnym momencie musiało ich być dokładnie~$1111$.
+ 
+%Source: https://artofproblemsolving.com/community/c6h1172747p5641811

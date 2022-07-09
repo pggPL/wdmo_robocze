@@ -1,0 +1,10 @@
+\noindent
+&nbsp;&nbsp;Dana jest liczba $n \geqslant 3$ oraz pewne $n$ par liczb rzeczywistych  $(x_1,\; y_1)$, $(x_2,\; y_2)$, ..., $(x_n, \; y_n)$, że dla każdej liczby całkowitej $1 \leqslant i \leqslant n$ zachodzi
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;x_i^2 + y_i^2 = 1.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wykazać, że istnieją takie liczby $i$ oraz $j$, że zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;(x_i - x_{j})^2 + (y_i - y_{j})^2 \leqslant \frac{4\pi^2}{n^2},
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;przy czym $x_{n + 1} = x_1$ oraz $y_{n + 1} = y_1$.

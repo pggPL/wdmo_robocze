@@ -1,0 +1,6 @@
+\noindent 
+ Zauważ, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\mathrm{NWD}(a_n − 1,\; n) = \mathrm{NWD}(2t + n - 1,\; n) = \mathrm{NWD}(2t - 1,\; n) = \mathrm{NWD}(2t - 1,\; 2n - (2t - 1)).
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Jaka jest najmniejsza liczba $n$, większa niż $t$, że powyższe wyrażenie jest większe od $1$?

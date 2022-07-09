@@ -1,0 +1,12 @@
+\heading{Lemat 1}
+
+\noindent
+Dane są liczby rzeczywiste $a_1 \geqslant a_2$ oraz $b_1 \geqslant b_2$. Wówczas zachodzi nierówność
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 \geqslant a_1b_2 + a_2b_1.
+\] 
+Jeśli zaś $a_1 \geqslant a_2$ oraz $b_1 \leqslant b_2$, to zachodzi
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 \leqslant a_1b_2 + a_2b_1.
+\] 
+

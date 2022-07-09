@@ -1,0 +1,23 @@
+
+
+\vspace{5px}
+
+\noindent
+Rozpatrzmy liczbę podziałów $kn$ osób na $k$ grup po $n$ osób. Nie bierzemy pod uwagę żadnej kolejności grup, ani kolejności osób w grupie. 
+
+\vspace{10px}
+\noindent
+Możemy ustawić $kn$ osób w kolejce na $(kn)!$ sposobów, a następnie pierwsze $n$ osób dać do jednej grupy, drugie $n$ osób do drugiej, itd. 
+
+\vspace{10px}
+\noindent
+Każdą z $k$ grup możemy ustawić w kolejności na $n!$ sposobów. Te grupy możemy ustawić w kolejności na $k!$ sposobów. W ten sposób z jednego podziału na grupy możemy uzyskać dokładnie $(n!)^k \cdot k!$ kolejek. 
+
+\vspace{10px}
+\noindent
+Więc liczba podziałów na grupy wynosi $\frac{(kn)!}{(n!)^k \cdot k!}$. Skoro jest ona całkowita, to musi zachodzić rozpatrywana podzielność.
+
+\vspace{5px}
+
+
+

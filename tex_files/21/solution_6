@@ -1,0 +1,17 @@
+
+
+\noindent
+Ponumerujmy kamienie liczbami od $1$ do $n$. Jeśli na polu jest kilka kamieni, przyjmiemy, że Syzyf użyje kamienia o największym numerze. Zauważmy, że to ponumerowanie nie zmienia istoty tego procesu, gdyż tak właściwie liczy się jedynie liczba kamieni na każdym z pól.
+
+\vspace{10px}
+\noindent
+Zauważmy, że kamień o numerze $k$ może zostać użyty wtedy i tylko wtedy, gdy na rozpatrywanym polu jest nie więcej niż $k$ kamieni. Gdyby tych kamieni było co najmniej $k + 1$, to musiałby na tym polu leżeć kamień o numerze nie mniejszym niż $k + 1$. Wówczas on miałby numer większy niż $k$, więc Syzyf przełożyłby właśnie go.
+
+
+\vspace{10px}
+\noindent
+Z powyższego akapitu wynika, że kamień o numerze $k$ może zostać przesunięty w jednym ruchu o nie więcej niż $k$ pól w prawo. Aby ten kamień znalazł się na polu o numerze $n$ potrzeba więc ruszyć go co najmniej $\left \lceil \frac{n}{k} \right \rceil$ razy. Przeprowadzając analogiczne rozumowania dla każdego $k$ od $1$ do $n$ otrzymujemy tezę.
+
+
+
+

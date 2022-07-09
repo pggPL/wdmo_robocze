@@ -1,0 +1,17 @@
+% Rozdział 14 – twierdzenia z teorii liczb
+
+\theory{Twierdzenia z teorii liczb}
+
+\noindent
+Na potrzeby następujących: lematu i twierdzenia, dla liczby całkowitej $n$ oraz parami względnie pierwszych liczb $m_1$, ..., $m_k$ przyjmiemy
+\[
+&nbsp;&nbsp;G(n) = (n \;(\text{mod } m_1),\; n \;(\text{mod } m_2),\; ...,\; n \;(\text{mod } m_k)).
+\]
+Chociażby dla $n = 25$ i $m_1 = 2$, $m_2 = 3$ i $m_3 = 7$ mamy
+\[
+&nbsp;&nbsp;G(25) = (25 \;(\text{mod } 2),\; 25 \;(\text{mod } 3),\; 25 \;(\text{mod } 7)) = (1, 1, 4).
+\]
+Zauważmy, że $G(n)$ na $i$-tej pozycji może przyjąć $m_i$ wartości. A więc łącznie $G(n)$ może przyjąć $m_1m_2\cdot...\cdot m_k$ wartości.
+
+\vspace{10px}
+

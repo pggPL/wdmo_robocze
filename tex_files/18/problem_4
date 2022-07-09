@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Dany jest graf planarny, w którym $e$ to liczba krawędzi, a $v \geqslant 3$ to liczba wierzchołków. Wykazać, że zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;e \leqslant 3v - 6.
+&nbsp;&nbsp;\]

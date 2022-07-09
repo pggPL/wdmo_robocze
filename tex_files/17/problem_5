@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Nieśmiertelny konik polny skacze po osi liczbowej, zaczynając od $0$. Długość $k$-tego skoku wynosi $2^k + 1$. Konik sam decyduje, czy skoczy w prawo czy w lewo. Czy jest możliwe, aby każda liczba całkowita została w pewnym momencie odwiedzona przez konika polnego? Konik polny może odwiedzić pewną liczbę więcej niż raz.

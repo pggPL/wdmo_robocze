@@ -1,0 +1,10 @@
+
+
+\vspace{5px}
+
+\noindent
+Wykażemy, że obie strony równości to liczba słów, które składają się z $n + 1$ liter $A$ oraz $r$ liter $B$. Z jednej strony możemy wybrać na $r$ sposobów pozycje liter $B$, a na pozostałych miejscach ustawić litery $A$. Stąd tych słów jest ${{n + r + 1}\choose{r}}$.
+
+Przyjmijmy, że na miejscu $n + k + 1$ znajduje się ostatnia litera $A$. Na $n + k$ poprzednich miejsc znajdzie się $n$ liter $A$ i $k$ liter $B$. Możemy je więc ustawić na ${{n + k}\choose{k}}$ sposobów. Po ostatniej literze $A$ będą same litery $B$, więc nie mamy wyboru. Stąd dla ustalonego $k$ jest ${{n + k}\choose{k}}$ sposobów. Sumując po wszystkich możliwych $k$ otrzymujemy lewą stronę równości.
+
+

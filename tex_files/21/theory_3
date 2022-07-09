@@ -1,0 +1,7 @@
+\heading{Przykład 2}
+% tw. Sylvestera-Gallai
+
+\noindent
+Danych jest $n \geqslant 3$ punktów na płaszczyźnie, przy czym nie istnieje prosta, która zawiera je wszystkie. Wykazać, że istnieje prosta, która zawiera dokładnie dwa spośród tych $n$~punktów.
+
+\vspace{5px}

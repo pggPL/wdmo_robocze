@@ -1,0 +1,20 @@
+
+
+\noindent
+Podstawmy $x = 0$
+\[ 
+&nbsp;&nbsp;f(y) \geqslant f(0). 
+\] 
+Podstawmy $y = 0$ 
+\[ 
+&nbsp;&nbsp;f(x^2) + f(0) \geqslant f(x^2) + f(x), 
+\] 
+czyli $f(0) \geqslant f(x) $. 
+Łącząc oba wnioski otrzymujemy
+\[ 
+&nbsp;&nbsp;f(0) \geqslant f(x) \geqslant f(0), 
+\] 
+czyli $f(x) = f(0)$. Innymi słowy $f$ jest funkcją stałą. Łatwo zauważyć, że taka funkcja spełnia warunki zadania. 
+
+\vspace{5px}
+

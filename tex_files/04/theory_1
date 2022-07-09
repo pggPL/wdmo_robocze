@@ -1,0 +1,15 @@
+\heading{Twierdzenie 1}
+
+\noindent
+Jeśli liczba $ab$ jest podzielna przez $p$, to wówczas co najmniej jedna z liczb $a$, $b$ jest podzielna przez $p$.
+
+\vspace{15px}
+
+\noindent
+Zauważmy, że założenie o pierwszości liczby $p$ jest konieczne. Chociażby liczba $4 \cdot 9 = 36$ dzieli się przez $6$, ale żadna z liczb $4$, $9$ nie jest podzielna przez $6$.
+
+\vspace{5px}
+\noindent
+Zachęcamy do samodzielnej próby wykazania poniższych lematów. Poniżej, czcionką odwróconą, zapisano wskazówki.
+
+\vspace{5px}

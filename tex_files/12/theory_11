@@ -1,0 +1,42 @@
+\heading{Cykliczność a symetryczność}
+
+\noindent
+Bardzo często przy rozwiązywaniu nierówności zdarzają się stwierdzenia typu ,,bez straty ogólności załóżmy, że''. Zazwyczaj chodzi o to, że rozpatrywany jest jeden przypadek, a inne są do niego analogiczne. Nie zawsze jednak są one analogiczne. Chociażby w Przykładzie 2 nie można założyć bez straty ogólności, że
+\[
+&nbsp;&nbsp;a_1 \geqslant a_2  \geqslant ... \geqslant a_n,
+\]
+gdyż przypadek, gdy $n = 4$ i $a_1 \geqslant a_3 \geqslant a_2 \geqslant a_4$ nie daje się łatwo sprowadzić do przypadku powyższego.
+\vspace{10px}
+
+\noindent
+Zdefiniujmy wyrażenie algebraiczne jako \textit{symetryczne}, gdy wyrażenie dla liczb $(a_1, a_2, ..., a_n)$ nie zmieni się, gdy rozpatrzymy dowolną ich permutację. Chociażby wyrażenie
+\[
+&nbsp;&nbsp;abc + a + b + c
+\]
+jest symetryczne. Chociażby rozpatrując permutację $(b, a, c)$ krotki $(a, b, c)$ otrzymamy
+\[
+&nbsp;&nbsp;bac + b + a + c = abc + a + b + c.
+\]
+
+\noindent
+Wyrażenie algebraiczne nazwiemy \textit{cyklicznym}, gdy wyrażenie dla liczb $(a_1, a_2, ..., a_n)$ nie zmieni się, gdy rozpatrzymy dowolne ich przestawienie cykliczne -- $(a_k, a_{k + 1}, ..., a_n, a_1,  a_{k - 1})$. Wyrażenie
+\[
+&nbsp;&nbsp;ab^2 + bc^2 + ca^2
+\]
+jest cykliczne. Dla przykładu rozpatrując przestawienie cykliczne $(c, a, b)$ krotki $(a, b, c)$ otrzymamy
+\[
+&nbsp;&nbsp;ca^2 + ab^2 + bc^2 = ab^2 + bc^2 + ca^2.
+\]
+Nie jest ono symetryczne, gdyż dla permutacji $(b, a, c)$ krotki $(a, b, c)$ mamy
+\[
+&nbsp;&nbsp;ba^2 + ac^2 + cb^2 \neq ab^2 + bc^2 + ca^2
+\]
+
+\noindent
+Nierówność nazwiemy symetryczną albo cykliczną, gdy rozpatrując odpowiednio permutację lub przestawienie cykliczne zmiennych, w oczywisty sposób otrzymana nierówność jest równoważna nierówności wyjściowej.
+\begin{itemize}
+&nbsp;&nbsp;\item Gdy nierówność jest symetryczna, to można założyć ustalony porządek liczb. 
+&nbsp;&nbsp;\item Jeśli zaś nierówność jest jedynie cykliczna, to można chociażby założyć, że pewna zmienna jest największa lub najmniejsza spośród wszystkich. Nie można jednak ustalać sobie ich porządku!
+\end{itemize}
+
+

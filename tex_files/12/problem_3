@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Udowodnić, że dla dowolnych liczb rzeczywistych $\alpha_1, \; \alpha_2, \; ..., \; \alpha_n$, gdzie $n \geqslant 2$ zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\sin{\alpha_1}\cdot ... \cdot \sin{\alpha_n} + \cos{\alpha_1}\cdot ... \cdot \cos{\alpha_n} \leqslant 1.
+&nbsp;&nbsp;\]

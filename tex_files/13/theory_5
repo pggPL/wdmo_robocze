@@ -1,0 +1,10 @@
+\heading{Przykład 2}
+
+\noindent
+Znajdź wszystkie funkcje $f$ ze zbioru liczb rzeczywistych w zbiór liczb rzeczywistych, że dla dowolnych liczb rzeczywistych $x$, $y$ zachodzą równości
+\[ 
+&nbsp;&nbsp;f(x) + f(y) = f(x + y) \quad \text{oraz} \quad f(x)f(y) = f(xy).
+\]
+
+\vspace{5px}
+

@@ -1,0 +1,33 @@
+
+
+\answer{Pierwszy gracz ma strategię wygrywającą wtedy i tylko wtedy, gdy $m \neq n$.}
+
+\noindent
+Analiza przykładowej planszy $7 \times 5$ została zobrazowana na poniższej tabelce. Litera $P$ oznacza, że jeśli pionek znajduje się na danym polu, to jest to stan przegrywający. Analogicznie $W$ oznacza stan wygrywający. Pole w prawym górnym rogu jest oczywiście stanem przegrywającym, gdyż jeśli przed ruchem tam znajduje się pionek, to gracz, którego jest kolej przegrał. Rozumując analogicznie jak w Przykładzie 2 otrzymamy poniższą tabelkę.
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|} 
+ \hline
+ W & W & W & W & W & W & P \\ 
+ \hline
+ W & W & W & W & W & P & W \\ 
+ \hline
+ W & W & W & W & P & W & W \\ 
+ \hline
+ W & W & W & P & W & W & W \\ 
+ \hline
+ W & W & P & W & W & W & W \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\noindent
+Przejdźmy do rozwiązania zadania. Przyjmijmy, że pole w prawym górnym rogu ma współrzędne $(1, 1)$. Wówczas twierdzimy, że pole postaci $(a, b)$ jest przegrywające wtedy i tylko wtedy, gdy $a = b$. Wykażemy to indukcyjnie. Pole $(1, 1)$ jest przegrywające z~definicji gry. Będziemy indukować się po sumie współrzędnych.
+
+\vspace{10px}
+\noindent
+Jeśli gracz znajduje się na polu $(a, b)$, przy czym $a \neq b$, to może on przesunąć pionek na pole $(min(a, b), min(a, b))$, które jest stanem przegrywającym na mocy założenia indukcyjnego. Jeśli zaś gracz stoi na polu $(a, a)$, to jakiekolwiek pole, na które zostanie przesunięty pionek, nie będzie miało równych współrzędnych. Będzie więc stanem wygrywającym. Skoro więc każdy ruch doprowadza do stanu wygrywającego, to stan $(a, a)$ jest przegrywający.
+
+\vspace{10px}
+\noindent
+Pozostaje tylko zauważyć, że dla $m \neq n$ wyjściowy stan jest wygrywający, a dla $m = n$ jest przegrywający. Toteż pierwszy gracz ma strategię wygrywającą jedynie dla $m \neq n$.
+

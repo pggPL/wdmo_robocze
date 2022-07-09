@@ -1,0 +1,19 @@
+\heading{Dowód}
+
+\noindent
+Załóżmy, że $v_p(b) > v_p(a)$ dla pewnej liczby pierwszej $p$. Przyjmijmy $a = p^{v_p(a)} \cdot x$ oraz $b = p^{v_p(b)} \cdot y$, dla pewnych liczb całkowitych $x$, $y$. Wówczas
+\[
+&nbsp;&nbsp;\frac{a}{b} = \frac{p^{v_p(a)} \cdot x}{p^{v_p(b)} \cdot y}= \frac{x}{p^{v_p(b) - v_p(a)} \cdot y}.
+\]
+Mianownik powyższego ułamka jest podzielny przez $p$, a licznik nie. Stąd też nie może być on liczbą całkowitą.
+
+\vspace{5px}
+
+\noindent
+Jeśli zaś $a = bk$ dla pewnej liczby całkowitej $k$, to wówczas dla dowolnej liczby pierwszej~$p$
+\[
+&nbsp;&nbsp;v_p(a) = v_p(bk) = v_p(b) + v_p(k) \geqslant v_p(b).
+\]
+
+\qed
+

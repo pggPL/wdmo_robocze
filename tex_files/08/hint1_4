@@ -1,0 +1,3 @@
+\noindent 
+ Wykaż, że mając pewien graf z pewnym kolorowaniem, to wybierając dwa dowolne wierzchołki $u$ oraz $v$ jesteśmy w stanie zmienić parzystość liczby kolorowych krawędzi wychodzących z nich, nie naruszając tej liczby dla innych wierzchołków.
+&nbsp;&nbsp;

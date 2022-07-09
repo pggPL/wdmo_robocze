@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Na tablicy zapisano liczbę $10000000$. W każdym ruchu, o ile przed nim była zapisana liczba $n$, gracz zastępuje ją liczbą $n - 1$ lub $\left\lfloor\frac{n + 1}{2}\right\rfloor$. Gracz, który zapisze liczbę $1$ wygrywa. Który z graczy – pierwszy czy drugi – ma strategię wygrywającą?

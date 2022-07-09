@@ -1,0 +1,60 @@
+\heading{Dowód}
+
+\noindent
+Rozpatrzmy pewną permutację $b_1', b_2', ..., b_n'$ liczb $b_1, b_2, ..., b_n$.  Zamieńmy liczby $b'_i$ oraz~$b'_{i + 1}$ miejscami i zobaczmy co stanie się z wartością wyrażenia, nazwijmy go $W$:
+\[
+&nbsp;&nbsp;a_1b_1' + a_2b_2' + ... + a_nb_n'.
+\]
+Składnik $a_ib_i'$ zostanie zastąpiony przez $a_ib_{i + 1}'$, zaś $a_{i + 1}b_{i + 1}'$ zostanie zastąpiony przez $a_{i + 1}b_i'$. Inne składniki pozostaną bez zmian. Skoro $a_i \geqslant a_{i + 1}$, to z Lematu~1 wynika, że
+\[
+&nbsp;&nbsp;a_ib_{i + 1}' + a_{i + 1}b_i' \leqslant a_ib_i' + a_{i + 1}b_{i + 1}', \quad \text{gdy} \; b_i \geqslant b_{i + 1},
+\]
+\[
+&nbsp;&nbsp;a_ib_{i + 1}' + a_{i + 1}b_i' \geqslant a_ib_i' + a_{i + 1}b_{i + 1}', \quad \text{gdy} \; b_i \leqslant b_{i + 1}.
+\]
+
+\vspace{10px}
+
+\noindent
+Jeśli więc liczby $b'_i$ oraz $b'_{i + 1}$ są posortowane odwrotnie do ciągu $\{a_i\}$, to zmieniając ich kolejności możemy zwiększyć wartość wyrażenia $W$.
+Wykonując wiele takich zamian, za każdym razem wartość $W$ wzrośnie. Również liczba par postaci $(b_i', b_j')$, gdzie $i > j$ oraz $b_i' < b_j'$ maleje o $1$ przy każdym przestawieniu. Stąd w pewnym momencie otrzymamy permutację, w którym nie możemy wykonać rozpatrywanej operacji. Znaczy to tyle, że $b'_i \geqslant b'_{i + 1}$ dla wszystkich możliwych wartości liczby $i$, czyli po prostu $b'_i = b_i$. Finalnie, wartość rozpatrywanego wyrażenia $W$ jest równa
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 + ... + a_nb_n.
+\]
+Skoro przy każdym ruchu wartość tego wyrażenia rosła, to jego finalna wartość jest większa od wartości początkowej.
+
+\vspace{10px}
+
+\noindent
+Dowodzi to jednej z dwóch postulowanych nierówności. Dowód drugiej z nich jest analogiczny, tylko zamieniamy miejscami $b_i'$ posortowane jednakowo jak ciąg $\{a_i\}$.
+
+\qed
+
+\vspace{10px}
+
+\noindent
+Przyjmijmy, że ciągi $(a_1, a_2, ..., a_n)$ oraz $(b_1, b_2, ..., b_n)$ są \textit{jednakowo monotoniczne}, gdy dla dowolnych indeksów $i$ oraz $j$ zachodzi
+\[
+&nbsp;&nbsp;a_i > a_j \quad \iff \quad b_i > b_j,
+\]
+zaś \textit{odwrotnie monotoniczne}, gdy
+\[
+&nbsp;&nbsp;a_i > a_j \quad \iff \quad b_i < b_j.
+\]
+
+\vspace{10px}
+
+\noindent
+Przykładowo ciągi $(2, 1, 3)$ oraz $(101, 100, 102)$ są jednakowo monotoniczne, zaś ciągi $(1, 2, 3)$ oraz $(10, 9, 8)$ są odwrotnie monotoniczne. Możemy teraz inaczej sformułować wykazaną wcześniej nierówność.
+
+\vspace{10px}
+
+\noindent
+Jeśli mamy dwa ciągi $(a_1, a_2, ..., a_n)$ oraz $(b_1, b_2, ..., b_n)$ i rozpatrzymy wszystkie ich możliwe permutacje, to wartość wyrażenia
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 + ... a_nb_n
+\]
+będzie największa, gdy ciągi $\{a_i\}$ oraz $\{b_i\}$ są jednakowo monotoniczne, zaś najmniejsza, gdy $\{a_i\}$ oraz $\{b_i\}$ są odwrotnie monotoniczne.
+
+\vspace{10px}
+

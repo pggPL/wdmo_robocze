@@ -1,0 +1,8 @@
+\noindent 
+ Wykaż, że
+\begin{gather*}
+&nbsp;&nbsp;\left(\sin{\alpha_1}\cdot ... \cdot \sin{\alpha_n}  + \cos{\alpha_1}\cdot ... \cdot \cos{\alpha_n}\right)^2  \leqslant \\
+&nbsp;&nbsp;\leqslant
+&nbsp;&nbsp; \left((\sin{\alpha_1}\cdot ... \cdot \sin{\alpha_{n - 1}})^2+ (\cos{\alpha_1}\cdot ... \cdot \cos{\alpha_{n - 1}})^2\right) (\sin{\alpha_n}^2 + \cos{\alpha_n}^2)
+\end{gather*}
+&nbsp;&nbsp;

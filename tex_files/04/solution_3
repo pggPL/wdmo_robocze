@@ -1,0 +1,8 @@
+
+
+\noindent
+Weźmy $n = p-2$. Wówczas mamy
+\[ 
+&nbsp;&nbsp;2^{p-2} + 3^{p-2} + 6^{p-2} \equiv \frac{2^{p-1}}{2} + \frac{3^{p-1}}{3} + \frac{6^{p-1}}{6} \equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{6} \equiv 1 \pmod{p}.
+\]
+

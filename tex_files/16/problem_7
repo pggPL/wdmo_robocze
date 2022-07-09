@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Dany jest ciąg
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a_0 = 6, \quad a_n = a_{n - 1} + NWD(n, a_{n - 1}).
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wykazać, że $NWD(n, a_{n - 1})$ jest liczbą pierwszą lub jest równe 1.

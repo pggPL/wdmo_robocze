@@ -1,0 +1,64 @@
+
+
+\noindent
+Rozpatrzmy kolorowanie takie jak na rysunku - pola, w które wpisano literę są pomalowane.
+
+\begin{center}
+    \begin{tikzpicture}[x=1cm, scale=0.25]
+    \foreach \y in {-1,0,...,12}{
+        \foreach \x in {-1,0,...,12}{
+            \draw[black!50] (\x,\y) rectangle (1+\x,1+\y) rectangle (2+\x,2+\y);}}
+
+    \draw[black!50] (-1,-1)--(14,-1)--(14,14)--(-1,14)--cycle;
+    \node at (1.5,1.5) {o};
+    \node at (2.5,1.5) {x};
+    \node at (3.5,1.5) {x};
+    \node at (4.5,1.5) {x};
+    \node at (5.5,1.5) {x};
+    \node at (6.5,1.5) {x};
+    \node at (7.5,1.5) {x};
+    \node at (8.5,1.5) {x};
+    \node at (9.5,1.5) {x};
+    \node at (10.5,1.5) {x};
+    \node at (11.5,1.5) {o};
+
+    \node at (1.5,11.5) {o};
+    \node at (2.5,11.5) {x};
+    \node at (3.5,11.5) {x};
+    \node at (4.5,11.5) {x};
+    \node at (5.5,11.5) {x};
+    \node at (6.5,11.5) {x};
+    \node at (7.5,11.5) {x};
+    \node at (8.5,11.5) {x};
+    \node at (9.5,11.5) {x};
+    \node at (10.5,11.5) {x};
+    \node at (11.5,11.5) {o};
+
+    \node at (11.5,2.5) {x};
+    \node at (11.5,3.5) {x};
+    \node at (11.5,4.5) {x};
+    \node at (11.5,5.5) {x};
+    \node at (11.5,6.5) {x};
+    \node at (11.5,7.5) {x};
+    \node at (11.5,8.5) {x};
+    \node at (11.5,9.5) {x};
+    \node at (11.5,10.5) {x};
+
+    \node at (1.5,2.5) {x};
+    \node at (1.5,3.5) {x};
+    \node at (1.5,4.5) {x};
+    \node at (1.5,5.5) {x};
+    \node at (1.5,6.5) {x};
+    \node at (1.5,7.5) {x};
+    \node at (1.5,8.5) {x};
+    \node at (1.5,9.5) {x};
+    \node at (1.5,10.5) {x};
+
+    \end{tikzpicture}
+\end{center}
+
+\noindent
+Zauważmy, że jeśli pewien prostokąt nie przykrywa żadnego pola z literą o, to może zawierać co najwyżej $18$ pokolorowanych pól. Jeśli zawiera tylko jedną, to może zawierać ich co najwyżej $19$. Jeśli zaś zawiera on w całości pewną ,,krawędź'' pokolorowanego prostokąta, to albo zawiera nieparzystą liczbę pól, albo zawiera je wszystkie. Więc szukany prostokąt nie istnieje.
+
+\vspace{10px}
+

@@ -1,0 +1,18 @@
+
+
+\noindent
+Niech $g$ będzie generatorem modulo $p$. Oznaczmy
+\[
+&nbsp;&nbsp;a \equiv g^x \pmod{p} \quad \text{oraz} \quad b \equiv g^y \pmod{p}.
+\]
+Przekształćmy założenie
+\begin{gather*}
+&nbsp;&nbsp;a^3 \equiv b^3 \pmod{p} \\
+&nbsp;&nbsp;g^{3x} \equiv g^{3y} \pmod{p} \\
+&nbsp;&nbsp;g^{3x - 3y} \equiv 1 \pmod{p}.
+\end{gather*}
+Generator podniesiony do potęgi $3x - 3y$ jest równy $1$ wtedy i tylko wtedy, gdy zachodzi podzielność ${p - 1 \mid 3x - 3y}$. Na mocy założeń liczba $p - 1$ daje resztę $1$ z dzielenia przez~$3$, toteż nie jest ona podzielna przez~$3$. Stąd $p - 1 \mid x - y$, czyli
+\[
+&nbsp;&nbsp;a \equiv g^x \equiv g^y \equiv b \pmod{p}.
+\]
+

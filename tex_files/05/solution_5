@@ -1,0 +1,21 @@
+
+
+\vspace{5px}
+
+\noindent
+Zauważmy, że z nierówności między średnią arytmetyczną i geometryczną dla liczb $\frac{a^2}{a + b}$ oraz $\frac{a + b}{4}$ otrzymujemy
+\[
+&nbsp;&nbsp;\frac{a^2}{a + b} + \frac{a + b}{4} \geqslant a.
+\]
+Analogicznie mamy
+\[
+&nbsp;&nbsp;\frac{b^2}{b + c} + \frac{b + c}{4} \geqslant b.
+\]
+Dodając te dwie równości stronami otrzymujemy
+\[
+&nbsp;&nbsp;\frac{a^2}{a + b} + \frac{b^2}{b + c} + \frac{a + b}{4} + \frac{b + c}{4} \geqslant a + b,
+\]
+\[
+&nbsp;&nbsp;\frac{a^2}{a + b} + \frac{b^2}{b + c} \geqslant \frac{3a + 2b - c}{4},
+\]
+co było do wykazania.

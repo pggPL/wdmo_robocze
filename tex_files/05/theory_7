@@ -1,0 +1,9 @@
+\heading{Przykład 3}
+
+\noindent
+Dane są dodatnie liczby rzeczywiste $a_1, a_2, a_3, ..., a_n$, że ich suma wynosi $1$. Wyznaczyć największą możliwą wartość wyrażenia
+\[
+    a_1^2 + a_2^2 + a_3^2 + ... + a_n^2.
+\]
+
+\newpage

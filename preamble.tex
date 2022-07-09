@@ -1,0 +1,162 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath} 
+\usepackage{enumitem}
+\usepackage{pgf,tikz}
+\usepackage{tkz-euclide}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usetikzlibrary{arrows}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{polski}
+\usepackage{pgfplots}
+\usepgfplotslibrary{external}
+\usepackage{gensymb}
+\usepackage[many]{tcolorbox}
+\usepackage{mathtools}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{xurl}
+\usetikzlibrary{patterns}
+
+\pagestyle{empty}
+
+% definicja koloru
+\definecolor{kolor}{RGB}{8, 97, 138}
+
+\DeclareUnicodeCharacter{2212}{-}
+
+% definicja kąta
+\def\an{\hbox{\lower-.2ex\hbox{$<\kern-.53em)$}$\,$}}
+
+\usepackage[b5paper, left=0.8in, right=0.8 in, top=0.8 in, bottom=0.8 in]{geometry}
+
+\usetikzlibrary{arrows, calc,intersections, decorations.pathmorphing}
+\tikzset{
+arrowMe/.style={postaction=decorate,
+    decoration={markings, mark=at position .5 with {\arrow[thick]{#1}}
+    } }}
+
+
+\newcommand{\heading}[1]{
+  \noindent
+  \textbf{\textcolor{kolor}{#1}}
+  \vspace{5px}
+}
+
+\newcommand{\remark}{
+  \noindent\textit{Uwaga}\\
+}
+
+\newcommand{\theory}[1]{
+  \addcontentsline{toc}{subsection}{#1}
+	\begin{center}
+    \fontsize{26}{20}\selectfont
+	\textbf{\textcolor{kolor}{#1}}
+	\end{center}
+	\vspace{20px}
+}
+
+\tcbset{mystyle/.style={
+  breakable,
+  enhanced,
+  outer arc=0pt,
+  arc=0pt,
+  colframe=kolor,
+    coltitle=kolor,
+  colback=white,
+  attach boxed title to top left={yshift=-2mm},
+  boxed title style={
+    coltitle=kolor,
+    colback=white,
+    outer arc=0pt,
+    arc=0pt,
+    top=3pt,
+    bottom=3pt,
+    },
+  fonttitle=\sffamily
+  }
+}
+
+\newtcolorbox[auto counter]{problem_box}[1][1]{
+  mystyle,
+  title=Zadanie~{#1},
+}
+
+
+\newlist{hints_list}{enumerate}{3}
+
+\setlist[hints_list]{label=\textbf{\textcolor{kolor}{\arabic*}}.}
+
+\newcommand{\hints}[1]{
+  \addcontentsline{toc}{subsection}{#1}
+  \vspace{10px}
+  \begin{center}
+    \fontsize{20}{20}\selectfont
+  \textbf{\textcolor{kolor}{#1}}
+  \end{center}
+}
+
+\newcommand{\sources}[1]{
+  \vspace{20px}
+  \addcontentsline{toc}{subsection}{#1}
+  \vspace{10px}
+  \begin{center}
+    \fontsize{20}{20}\selectfont
+  \textbf{\textcolor{kolor}{#1}}
+  \end{center}
+  \vspace{10px}
+}
+
+\newcommand{\source}[1]{
+\noindent
+  \textbf{\textcolor{kolor}{#1}} \; 
+  \noindent
+}
+
+\newcommand{\solutions}[1]{
+  \addcontentsline{toc}{subsection}{#1}
+	\begin{center}
+    \fontsize{26}{20}\selectfont
+	\textbf{\textcolor{kolor}{#1}}
+	\end{center}
+	\vspace{20px}
+}
+
+
+\newenvironment{problem}[1]
+{
+    \begin{samepage}
+    \begin{problem_box}[{#1}]
+}
+{ 
+    \end{problem_box}
+    \end{samepage}
+}
+
+\newcommand{\answer}[1]{
+  \noindent\textit{Odpowiedź.} #1
+  \vspace{5px}
+}
+
+\newcommand{\headingpage}[1]{
+\newpage
+  \vspace*{\fill}
+  \begin{center}
+    \fontsize{30}{30}\selectfont
+    \textcolor{kolor}{#1}
+  \end{center}
+\vspace*{\fill}
+\newpage
+}
+
+
+
+\newcommand{\rotatehint}[1]{
+\vspace{1 px}\noindent\scriptsize{\rotatebox{180}{Podpowiedź: #1}}\normalsize
+\vspace{5px}}
+
+\newcommand{\qed}{\hfill $\blacksquare$}

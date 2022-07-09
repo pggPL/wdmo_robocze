@@ -1,0 +1,35 @@
+
+
+\noindent
+Niech $d(n)$ oznacza liczbę dzielników $n$. Wówczas
+\begin{align*}
+&nbsp;&nbsp;f(f(n)) &= d(n), \\
+&nbsp;&nbsp;f(f(f(n))) &= f(d(n)), \\
+&nbsp;&nbsp;d(f(n)) &= f(d(n)).
+\end{align*}
+Dla $n = 2$ mamy
+\[
+&nbsp;&nbsp;f(2) = f(d(2)) = d(f(2)).
+\]
+Zauważmy, że jeśli $f(2) > 2$, to $f(2) - 1$ nie byłoby dzielnikiem $f(2)$, stad $f(2)$ musiało by mieć mniej niż $f(2)$ dzielników. Rozpatrzmy dwa przypadki
+\begin{itemize}
+&nbsp;&nbsp;\item Jeśli $f(2) = 1$, to gdy $p$ jest liczbą pierwszą, to 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;d(f(p)) = f(d(p)) = f(2) = 1,
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;czyli $f(p)$ ma jeden dzielnik, czyli $f(p) = 1$. Mamy wówczas
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;1 = f(3) = f(d(p^2)) = f(f(f(p^2))) = d(f(p^2)).
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Skoro $f(p^2)$ ma jeden dzielnik, to również jest równe $1$. Czyli
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;2 = d(p) = f(f(p)) = f(1) = f(f(p^2)) = d(p^2) = 3,
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;co daje nam sprzeczność.
+&nbsp;&nbsp;\item Gdy zaś $f(2) = 2$, to jeśli $p$ jest liczbą pierwszą, to 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;d(f(p)) = f(d(p)) = f(2) = 2.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Skoro $f(p)$ ma dwa dzielniki, to jest liczbą pierwszą, czego należało dowieść.
+\end{itemize}
+

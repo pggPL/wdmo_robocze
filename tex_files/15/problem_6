@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Wykazać, że wierzchołki grafu można pokolorować na jeden z $k$ kolorów, tak, by żadne dwa wierzchołki tego samego koloru nie były połączone krawędzią wtedy i tylko wtedy, gdy krawędzie tego grafu da się tak skierować, by nie istniała ścieżka składająca się z $k + 1$ różnych wierzchołków.

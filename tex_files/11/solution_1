@@ -1,0 +1,15 @@
+
+
+\answer{Jest to możliwe.}
+
+\noindent
+Wykażemy, że jeśli na tablicy znajduje się liczba $n \geqslant 2$, to zawsze jesteśmy w stanie sprawić, aby pojawiła się na tablicy dodatnia liczba całkowitej mniejsza od $n$. Rozpatrzmy dwa przypadki
+\begin{itemize}
+&nbsp;&nbsp;\item Jeśli $n$ jest liczbą parzystą, to wystarczy zapisać liczbę $\frac{1}{2}n < n$.
+&nbsp;&nbsp;\item Gdy $n$ jest nieparzysta, to obie z liczb $3n + 1$ i $3n - 1$ są parzyste. Skoro różnią się o 2, to jedna z nich będzie liczbą podzielną przez $4$. Zapisujemy ją na tablicy, a następnie w dwóch kolejnych ruchach zapisujemy liczbę dwa razy mniejszą. Otrzymana liczba wyniesie co najwyżej
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\frac{3n + 1}{4} < \frac{4n}{4} = n.
+&nbsp;&nbsp;\]
+\end{itemize}
+Jako, że nie można ciągle zapisywać liczby mniejszej, gdyż zapisać można tylko liczby dodatnie całkowite, toteż kiedyś musimy zapisać liczbę $1$.
+

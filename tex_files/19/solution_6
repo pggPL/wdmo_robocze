@@ -1,0 +1,31 @@
+
+
+\noindent
+Przyjmijmy, że $k = a_1$.
+Niech $x_i = \left\lfloor a_i \right\rfloor$. Wówczas wiadomo, że $a_i < (x_i + 1)^2$, gdyż w przeciwynym ta podłoga byłaby równa co najmniej $x_i + 1$. Mamy więc, że $a_i \leqslant x_i^2 + 2x_i$. Wykażemy, że zachodzi nierówność
+\[
+&nbsp;&nbsp;x_1 + x_2 + ... + x_{25} + 1 > \sqrt{a_1 + ... + a_{25} + 200a_1},
+\]
+z czego wyniknie teza.
+Mamy
+\[
+&nbsp;&nbsp;a_1 + ... + a_{25} + 200k \leqslant x_1^2 + ... + x_{25}^2 + 2(x_1 + ... + x_{25}) + 200(x_1^2 + 2x_1).
+\]
+Chcemy pokazać, że
+\[
+&nbsp;&nbsp;x_1^2 + ... + x_{25}^2 + 2(x_1 + ... + x_{25}) + 200(x_1^2 + 2x_1) < (x_1 + ... + x_{25} + 1)^2.
+\]
+Czyli pozostaje wykazać, że
+\begin{align*}
+&nbsp;&nbsp;200(x_1^2 + 2x_1)  &\leqslant  2\sum_{1 \leqslant i < j \leqslant 25} x_ix_j, \\
+&nbsp;&nbsp;100(x_1^2 + 2x_1)  &\leqslant  \sum_{1 \leqslant i < j \leqslant 25} x_ix_j. \quad (*)
+\end{align*}
+Zauważmy, że dla każdych $i$, $j$ mamy
+\[
+&nbsp;&nbsp;x_ix_j \geqslant x_1^2 \geqslant x_1.
+\]
+Po prawej stronie nierówności $(*)$ jest dokładnie ${{25}\choose{2}} = 300$ wyrazów, więc $100$ z~nich możemy przeszacować przez $x_{1}^2$, a pozostałe $200$ przez $x_i$.
+
+
+
+

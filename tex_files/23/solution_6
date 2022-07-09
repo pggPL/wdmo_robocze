@@ -1,0 +1,50 @@
+
+
+\answer{Wykażemy, że jednie wierzchołki równoległoboków spełniają warunki zadania.}
+
+
+\noindent
+Zauważmy, że jeśli mamy $4$ punkty, to biorąc trzy z nich otrzymujemy, że czwarty tworzy z nimi równoległobok. Załóżmy teraz, że danych punktów jest co najmniej $5$. Rozpatrzmy trójkąt $ABC$, gdzie $A$, $B$, $C \in \mathcal{S}$ o największym możliwym polu. Wówczas istnieje taki punkt $D$, że czworokąt $ABCD$ jest równoległobokiem.
+
+\vspace{10px}
+\noindent
+Jeśli istnieje pewien punkt $X \in \mathcal{S}$, który leży poza czworokątem $ABCD$, to wówczas jeden z trójkątów
+\[
+&nbsp;&nbsp;XAB, \; ABC, \; XCD, \; XDA
+\]
+miałby większe pole niż trójkąt $ABC$. Czyli zbiór $\mathcal{S}$ nie zawiera żadnych punktów na zewnątrz równoległoboku $ABCD$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(0,0){A};
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(4,0){B};
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(5,2){C};
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(1,2){D};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(1,1){X'};
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDefPoint(6,1){X};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawPoints(A,B,C,D,X,X')
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzDrawSegments(A,B B,C C,D D,A X,A X,D)
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[pattern=north west lines, pattern color=kolor] (A) -- (D) -- (X) -- (A);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[below](A){$A$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[below](B){$B$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above](C){$C$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above](D){$D$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above](X){$X$}
+&nbsp;&nbsp;&nbsp;&nbsp;\tkzLabelPoint[above](X'){$X'$}
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\vspace{10px}
+\noindent
+Załóżmy, że pewien punkt $X'$ należy do wnętrza równoległoboku $ABCD$. Weźmy taki punkt $X$, że czworokąt $ABXX'$ jest równoległobokiem. Wówczas punkt $X$ leży poza równoległobokiem $ABCD$ -- sprzeczność.
+
+\vspace{10px}
+\noindent
+Punktów w $\mathcal{S}$ jest co najmniej $5$, cztery to wierzchołki równoległoboku $ABCD$, żaden punkt nie leży w jego wnętrzu i poza nim. Stąd istnieje pewien punkt $E$ na obwodzie równoległoboku $ABCD$ -- załóżmy, że leży on na prostej $CD$. Ale wówczas czworokąt~$ABED$ nie może być równoległobokiem -- sprzeczność.

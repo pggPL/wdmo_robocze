@@ -1,0 +1,8 @@
+\heading{Lemat 2}
+
+\noindent
+Niech $a$, $b$ będą niezerowymi liczbami całkowitymi. Wówczas 
+\[
+&nbsp;&nbsp;b \mid a \iff v_p(a) \geqslant v_p(b) \text{ dla każdej liczby pierwszej $p$.}
+\]
+

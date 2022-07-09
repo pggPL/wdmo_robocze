@@ -1,0 +1,12 @@
+\heading{Twierdzenie 1}
+
+\noindent
+Jeśli pewna funkcja $f:\mathbb{R}\longrightarrow\mathbb{R}$ dla dowolnych liczb rzeczywistych $x, y$ spełnia warunek
+
+\[
+&nbsp;&nbsp;f(x) + f(y) = f(x + y).
+\]
+oraz jest funkcja niemalejącą, to wówczas $f(x) = ax$.
+
+\vspace{10px}
+

@@ -1,0 +1,19 @@
+\heading{Rozwiązanie}
+
+\noindent
+Rozpatrzmy dowolną liczbę pierwszą $p$. Wówczas na mocy Lematu $3$ mamy
+\[
+&nbsp;&nbsp;2 \mid v_p(a^bb^a) = v_p(a^b) + v_p(b^a) = av_p(b) + bv_p(a).
+\]
+Skoro liczby $a$ i $b$ są nieparzyste, to
+\[
+&nbsp;&nbsp;0 \equiv av_p(b) + bv_p(a) \equiv v_p(a) + v_p(b) \pmod{2},
+\]
+czyli
+\[
+&nbsp;&nbsp;v_p(ab) = v_p(a) + v_p(b) \equiv 0 \pmod{2}.
+\]
+Skoro $v_p(ab)$ dla każdej liczby pierwszej $ab$ jest liczbą parzystą, to liczba $ab$ jest kwadratem liczby całkowitej.
+
+\qed
+

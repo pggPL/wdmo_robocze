@@ -1,0 +1,20 @@
+\heading{Rozwiązanie}
+
+\noindent
+Dla $n = 1$ mamy $2^n = 2 = n + 1,$ a więc postulowana nierówność istotnie zachodzi.
+Załóżmy, że dla pewnej liczby dodatniej całkowitej $k$ zachodzi nierówność ${2^k \geqslant k + 1}$. Zauważmy, że wówczas
+\[
+&nbsp;&nbsp;2^{k + 1} = 2 \cdot 2^k \geqslant 2 \cdot (k + 1) = 2k + 2 \geqslant k + 2.
+\]
+
+\noindent
+Wykazaliśmy, że jeśli postulowana nierówność zachodzi dla pewnej dodatniej liczby całkowitej $k$, to zachodzi również dla liczby $k + 1$. Skoro zachodzi ona dla $n = 1$, to zachodzi również dla $1 + 1 = 2,\; 2 + 1 = 3,\; 3 + 1 = 4, ...$ -- wszystkich liczb naturalnych.
+
+\qed
+
+\vspace{10px}
+
+\noindent
+Alternatywnym, ale równoważnym, sposobem zakończenia rozwiązania powyższego przykładu jest rozpatrzenie najmniejszego naturalnego $n$, dla którego teza nie zachodzi. A więc dla $n - 1$ nierówność musi zachodzić, chyba że $n = 1$. Ale w tym przypadku sprawdzamy, że teza zachodzi. Skoro dla $n - 1$ teza jest prawdziwa, a dla $n$ już nie, to otrzymujemy sprzeczność z wcześniej poczynioną obserwacją.
+
+\vspace{10px}

@@ -1,0 +1,37 @@
+
+
+\noindent
+Wykażemy nieco ogólniejszą i mocniejszą wersję tezy.
+
+\vspace{10px}
+
+\noindent
+Niech $\mathcal{R}$ będzie rodziną zbiorów $n$-elementowych. Moc $\mathcal{R}$ jest większa niż $n! \cdot k^{n}$ Wówczas istnieje $k+1$-elementowa rodzina $\mathcal{G}$, będąca podrodziną $\mathcal{R}$, oraz taki zbiór $X$, że dla dowolnych zbiorów $A, B \in \mathcal{R}$ zachodzi $A \cap B = X$.
+
+\vspace{10px}
+
+\noindent
+Będziemy przeprowadzać indukcję po liczbie $n$. Dla $n = 1$ moc $\mathcal{R}$ to co najmniej $k + 1$. Każdy ze zbiorów zawiera jeden element, więc każde dwa mają puste przecięcie. Stąd biorąc całą rodzinę $\mathcal{R}$ oraz $X = \emptyset$ otrzymujemy tezę.
+
+\vspace{10px}
+
+\noindent
+Rozpatrzmy największą podrodzinę $\mathcal{H}$ rodziny $R$, że dowolne dwa jej podzbiory mają puste przecięcie. Moc $\mathcal{H}$ jest nie większa niż $k$, gdyż w przeciwnym przypadku biorąc rodzinę $\mathcal{H}$ i $X = \emptyset$ otrzymamy tezę. Stąd każdy zbiór $A \in \mathcal{R}$ ma niepuste przecięcie z pewnym ze zbiorów z rodziny $\mathcal{H}$.
+
+\vspace{10px}
+
+\noindent
+Łącznie zbiory należące do rodziny $\mathcal{H}$ zawierają co najwyżej $k \cdot n$ elementów -- jest co najwyżej $k$ zbiorów $n$-elementowych. Skoro wszystkich zbiorów należących do $\mathcal{R}$ jest więcej niż $n! \cdot k^{n}$, to istnieje element $a$, który należy do
+\[
+&nbsp;&nbsp;\frac{n! \cdot k^{n}}{n \cdot k} = (n - 1)! \cdot k^{n - 1}
+\]
+zbiorów.
+
+\vspace{10px}
+
+\noindent
+Rozpatrując zbiory zawierające element $a$, następnie usuwając go z każdego z nich, otrzymamy więcej niż $(n - 1)! \cdot k^{n - 1}$ zbiorów, które zawierają po $n - 1$ elementów. Można więc skorzystać z założenia indukcyjnego. Istnieje więc pewien zbiór $X$ oraz pewna podrodzina rozpatrywanej rodziny zbiorów, że $X$ jest przecięciem dowolnych zbiorów należących do danej podrodziny. Dokładając ponownie do każdego z tych zbiorów element $a$ otrzymujemy tezę.
+
+
+
+

@@ -1,0 +1,5 @@
+\noindent 
+&nbsp;&nbsp;Dane są takie dodatnie liczby rzeczywiste $a_1, \;a_2,\; a_3,\; ...,\; a_n$, że $a_1a_2a_3...a_n = 1$. Wykazać, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;(a_1 + a_2)(a_2 + a_3)\cdot ... \cdot (a_{n-1} + a_n)(a_n + a_1) \geqslant 2^n.
+&nbsp;&nbsp;\]

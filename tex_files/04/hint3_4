@@ -1,0 +1,6 @@
+\noindent 
+ Skoro wspomniane parowanie istnieje, to 
+&nbsp;&nbsp;$
+&nbsp;&nbsp;&nbsp;&nbsp;2 \cdot 3 \cdot ... \cdot (p - 2) \equiv 1 \pmod{p}
+&nbsp;&nbsp;$,
+&nbsp;&nbsp;bo możemy podzielić te liczby na pary, z których każda zredukuje się do liczby $1$.

@@ -1,0 +1,3 @@
+\noindent 
+ Rozpatrz wszystkie kolorowania powstające w następujący sposób. Kolorujemy dowolna pola w najniższym i drugim najniższym wierszu. Załóżmy, że są to pola $a$-te i $a + k$-te(być może $k < 0$). Wówczas w trzeciej kolumnie pokolorujemy pole $a + 2k \pmod{7}$, w czwartej $a + 3k \pmod{7}$ itd. 
+&nbsp;&nbsp;

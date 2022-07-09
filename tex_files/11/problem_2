@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;W lewym dolnym rogu planszy $m \times n$ stoi pionek. W każdym ruchu może zostać on przesunięty o dowolną liczbę pól w górę lub o dowolną liczbę pól w prawo. Wygrywa gracz, który postawi figurę w prawym górnym rogu. Rozstrzygnąć dla jakich wartości $(m, n)$ pierwszy gracz ma strategię wygrywającą.

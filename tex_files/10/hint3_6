@@ -1,0 +1,2 @@
+\noindent 
+ Jeśli $v_p(a) = x \cdot k + r$, gdzie $r$ jest resztą z dzielenia przez $k$, to weź $n = p^{xk + k}$.

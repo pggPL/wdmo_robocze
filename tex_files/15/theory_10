@@ -1,0 +1,58 @@
+\heading{Dowód}
+
+\noindent
+Usuńmy pewien wierzchołek $x$. Otrzymany graf zawiera $n - 1$ wierzchołków, więc jeśli jest cykliczny, to wynika z tego teza. Załóżmy więc, że tak nie jest -- na mocy Lematu~$2$ jest on redukowalny. Niech więc rozpatrywany graf składa się z wierzchołka $x$ oraz niepustych zbiorów wierzchołków $A$ oraz $B$, przy czym każdy wierzchołek z $A$ wygrał z każdym wierzchołkiem z $B$.
+
+\vspace{10px}
+\noindent
+Skoro rozpatrywany graf jest cykliczny, to istnieje cykl
+\[
+&nbsp;&nbsp;x, \; v_1, \;, v_2, \; ...,\; v_{n - 1}.
+\]
+Zauważmy, że jeśli $v_{i + 1}$ należy do $A$, to jako, że $v_{i}$ wygrało z $v_{i + 1}$, to nie może należeć ono do $B$. Stąd również należy do $A$. Stąd też istnieje takie $t$, że
+\[
+&nbsp;&nbsp;v_1, \;, v_2, \; ...,\; v_{t} \in A, \quad v_t, \;, v_{t + 1}, \; ...,\; v_{n - 1} \in B.
+\]
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=left:x] (X) at (-1,1) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0.5,2.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_3) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (1,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_2) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[label=left:A] (a) at (0,2.25) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[label=left:B] (b) at (0,0) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (X) to (A_1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_1) to (A_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_2) to (A_3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (B_1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B_1) to (B_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B_2) to (X) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge, dashed] (A_3) to (B_2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge, dashed] (A_2) to (B_1) {};
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Jeśli $t \geqslant 2$, to oznacza, że istnieje $v_{t - 1}$. Skoro $v_{t - 1} \in A$ oraz $v_{t + 1} \in B$, to $v_{t - 1}$ wygrał~z~$v_{t + 1}$. Czyli
+\[
+&nbsp;&nbsp;x, \; v_1, \;, v_2, \; ..., \;, v_{t - 1}, \; v_{t + 1}, \; ..., \; v_{n - 1}
+\]
+jest cyklem o długości $n - 1$. Jeśli zaś $t = 1$, to $t + 2 = 3 \leqslant n - 1$. Analogicznie jak powyżej wykazujemy, że $v_{t}$ wygrał z $v_{t + 2}$, czyli
+\[
+&nbsp;&nbsp;x, \; v_1, \;, v_2, \; ..., \;, v_{t}, \; v_{t + 2}, \; ..., \; v_{n - 1}
+\]
+jest cyklem o długości $n - 1$.
+
+\qed

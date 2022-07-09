@@ -1,0 +1,19 @@
+\heading{Dowód}
+
+\noindent
+Przyjmijmy, że funkcja $f$ jest dana wzorem
+\[
+&nbsp;&nbsp;f(x) = \sum^{n}_{i=1} (a_ix - b_i)^2 = \left(\sum^{n}_{i=1} a_i^2\right) x^2 - 2\left(\sum^{n}_{i=1} a_ib_i\right) x + \sum^{n}_{i=1} b_i^2.
+\]
+Zauważmy, że jest to suma funkcji przyjmujących wartości nieujemne, a więc sama przyjmuje tylko wartości nieujemne. Stąd też jej wyróżnik $\Delta$ będzie niedodatni
+\[
+&nbsp;&nbsp;\Delta = 4\left(\sum^{n}_{i=1} a_ib_i\right)^2 - 4  \left(\sum^{n}_{i=1} a_i^2\right)  \left(\sum^{n}_{i=1} b_i^2\right) \leqslant 0,
+\]
+co jest równoważnie tezie.
+
+\qed
+
+\vspace{10px}
+
+% ta sama w formie Engela
+

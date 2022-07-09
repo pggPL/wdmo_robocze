@@ -1,0 +1,12 @@
+
+
+\noindent
+Wykażemy, że taka liczba istnieje. Rozpatrzmy warunki
+\begin{align*}
+&nbsp;&nbsp;n &\equiv -k \pmod{p_{k, 1}}, \\
+&nbsp;&nbsp;n &\equiv -k \pmod{p_{k, 2}}, \\
+&nbsp;&nbsp;... \\
+&nbsp;&nbsp;n &\equiv -k \pmod{p_{k, 1000}}
+\end{align*}
+dla każdej liczby całkowitej $0 \leqslant k \leqslant 1000$, przy czym $p_{i, j}$ są parami różnymi liczbami pierwszymi. Na mocy Chińskiego Twierdzenia o Resztach szukana liczba $n$ istnieje. Łatwo zauważyć, że dla każdego $k$ liczba $n + k$ ma co najmniej $1000$ dzielników pierwszych -- $p_{k, 1}$, $p_{k, 2}$, ..., $p_{k, 1000}$.
+

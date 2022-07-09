@@ -1,0 +1,27 @@
+
+
+\answer{Szukane funkcje nie istnieją.}
+
+\noindent
+Zauważmy, że zachodzą równości 
+\begin{gather*} 
+f(f(f(x))) = f(x + 1) \\
+f(f(f(x))) = f(x) +1 
+\end{gather*} 
+Z tego otrzymujemy równość: 
+\[
+&nbsp;&nbsp;f(x) =f(x-1)+1 
+\] 
+Skoro działamy w liczbach całkowitych to możemy wywnioskować, że
+\[
+&nbsp;&nbsp;f(x) = f(x - 1) + 1 = f(x - 2) +  2 =  ... = x + f(0).
+\] 
+Podstawmy równość $f(x) = x + f(0)$ do 
+$f(f(x)) = x + 1$:
+\[
+&nbsp;&nbsp;x + 1 = f(f(x))= x + 2f(0), 
+\]
+czyli $f(0) = \frac{1}{2}$. Sprzeczność. Takie funkcje nie istnieją.
+
+\vspace{5px} 
+

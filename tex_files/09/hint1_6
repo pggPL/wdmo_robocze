@@ -1,0 +1,3 @@
+\noindent 
+ Wykaż ogólniejszą tezę:
+&nbsp;&nbsp;Niech $\mathcal{R}$ będzie rodziną zbiorów $n$-elementowych. Moc $\mathcal{R}$ jest większa niż $n! \cdot k^{n}$ Wówczas istnieje $k+1$-elementowa rodzina $\mathcal{G}$, będąca podrodziną $\mathcal{R}$, oraz taki zbiór $X$, że dla dowolnych zbiorów $A, B \in \mathcal{R}$ zachodzi $A \cap B = X$.

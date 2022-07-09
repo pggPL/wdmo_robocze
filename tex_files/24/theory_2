@@ -1,0 +1,168 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wpiszmy w pola planszy liczby, tak jak to zrobiono na rysunku. W pierwszym wierszu są liczby $1$, w drugim liczby $2$, ..., w piątym liczby $5$, w szóstym znowu $1$, w siódmym dwa itd. Innymi słowy w każde pole wpisujemy resztę z dzielenia numeru wiersza przez $5$.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,0) -- (10,0) -- (10,10) -- (0,10) -- cycle;
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,1) -- (10,1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,2) -- (10,2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,3) -- (10,3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,4) -- (10,4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,5) -- (10,5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,6) -- (10,6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,7) -- (10,7);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,8) -- (10,8);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,9) -- (10,9);
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (1,0) -- (1,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2,0) -- (2,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (3,0) -- (3,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (4,0) -- (4,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (5,0) -- (5,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (6,0) -- (6,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (7,0) -- (7,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (8,0) -- (8,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (9,0) -- (9,10);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (10,0) -- (10,10);
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,9.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,9.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,9.5) {1};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,8.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,8.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,8.5) {2};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,7.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,7.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,7.5) {3};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,6.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,6.5) {4};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,6.5) {4};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,5.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,5.5) {5};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,5.5) {5};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,4.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,4.5) {1};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,4.5) {1};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,3.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,3.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,3.5) {2};
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,2.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,2.5) {...};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,1.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,1.5) {2};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,1.5) {2};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (0.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (1.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (2.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (3.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (5.5,0.5) {...};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (6.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (7.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (8.5,0.5) {3};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (9.5,0.5) {3};
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Zauważmy, że suma liczb pokrytych klocek $1 \times 5$ zawsze będzie podzielna przez $5$. W tablicy jest po $403$ rzędów zawierających same czwórki lub same piątki oraz $404$ rzędów zawierających same jedynki, same dwójki lub same trójki. Suma wszystkich liczb zapisanych w tablicy wynosi więc
+\[
+&nbsp;&nbsp;2018( 1 \cdot 404 + 2\cdot 404 + 3 \cdot 404 + 4 \cdot 403 + 5 \cdot 403) \equiv 3 \pmod{5}.
+\] 
+Stąd płytka $2\times2$ musi pokrywać liczby o sumie dającej resztę $3$ z dzielenia przez $5$. Jeśli leżałaby przy górnej krawędzi planszy, to dawałaby resztę
+\[
+&nbsp;&nbsp;1 + 1 + 2 + 2 \equiv 1 \pmod{5},
+\]
+czyli nie może tam się znajdować. Analogicznie pokazujemy, że płytka $2 \times 2$ nie leży przy żadnej z pozostałych krawędzi.
+
+\qed
+
+\noindent
+Rozwiązując zadania podobne do powyższego zawsze warto rozważyć jak najwięcej możliwych kolorowań/wpisań liczb i zobaczyć, czy z któregoś z nich coś wynika. Nie ma tutaj przepisu, który zawsze działa -- trzeba robić to metodą prób i błędów. Warto zwrócić szczególną uwagę na takie kolorowania, że rozpatrywana płytka zawsze pokrywa tę samą liczbę pokolorowanych pól lub suma liczb pokrytych przez klocek zawsze ma pewną właściwość.
+
+\vspace{10px}
+\noindent
+Teraz kolej na przykład pięknego, choć trudnego, zadania z teorii grafów z bardzo ciekawym zastosowaniem kolorowań.
+
+\vspace{10px}
+

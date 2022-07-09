@@ -1,0 +1,43 @@
+
+
+\noindent
+Rozpatrzmy graf, w którym goście są wierzchołkami, a znajomości krawędziami.
+Weźmy ścieżkę o maksymalnej długości w rozpatrywanym grafie. Niech $a$ będzie jednym z jej skrajnych wierzchołków, a kolejne wierzchołki oznaczmy jako $a_1,\; a_2,\; ...,\; a_t$. Jeśli $a$ byłby połączony z pewnym wierzchołkiem spoza analizowanej ścieżki, to można by ten wierzchołek do tej ścieżki dołożyć, wydłużając ją. Przeczyłoby to jednak jej maksymalności.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.7]
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A) at (0,4) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$a$] (B_1) at (1,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$a_1$] (B_2) at (2,2.2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$...$] (B_3) at (3,1.9) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$a_i$] (B_4) at (4,1.7) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$...$] (B_5) at (5,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$a_t$] (B_6) at (6,1.4) {};
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[dashed] (A)--(B_1);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_1)--(B_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(B_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(B_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_4)--(B_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_5)--(B_6);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Z $a$ wychodzi co najmniej $k$ krawędzi, każda z nich łączy go z jednym wierzchołkiem spośród $a_1,\; a_2,\; ...,\; a_t$. Niech $a_i$ będzie wierzchołkiem połączonym z $a$, dla którego $i$ jest maksymalne. Wiemy, że spośród $a_1,\; a_2,\; ...,\; a_{i - 1}$ co najmniej $k - 1$ jest połączonych z $a$, stąd
+\begin{align*}
+&nbsp;&nbsp;i - 1 \geqslant k - 1, \\
+&nbsp;&nbsp;i + 1 \geqslant k + 1.
+\end{align*}
+Usadzając przy stole osoby 
+\[
+&nbsp;&nbsp;a, a_1,\; a_2,\; ...,\; a_{i - 1}, \; a_i
+\]
+otrzymujemy tezę.
+

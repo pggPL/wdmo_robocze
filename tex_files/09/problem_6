@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Niech $\mathcal{R}$ będzie rodziną zbiorów $1000$-elementowych. Moc $\mathcal{R}$ jest większa niż $1000 \cdot 999^{1000}$ Wykazać, że istnieje $1000$-elementowa rodzina $\mathcal{G}$, będąca podrodziną $\mathcal{R}$, oraz taki zbiór $X$, że dla dowolnych zbiorów $A, B \in \mathcal{R}$ zachodzi $A \cap B = X$.

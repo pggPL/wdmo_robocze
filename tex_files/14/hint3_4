@@ -1,0 +1,13 @@
+\noindent 
+ Zauważ, że 
+\[
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{1}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{2}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;... +
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{p - 1}{p}\right) =
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{g}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{g^2}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;... +
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{g^{p - 1}}{p}\right)
+\]
+&nbsp;&nbsp;

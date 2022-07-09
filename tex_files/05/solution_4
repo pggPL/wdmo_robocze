@@ -1,0 +1,25 @@
+
+
+\vspace{5px}
+
+\noindent
+Zauważmy, że zachodzą nierówności
+\[
+&nbsp;&nbsp;(a - 1)^2 + (b - 1)^2 + (c - 1)^2 \geqslant 0,
+\]
+\[
+&nbsp;&nbsp;a^2 + b^2 + c^2 + 3 \geqslant 2a + 2b + 2c.
+\]
+Z nierówności między średnią arytmetyczną i geometryczną mamy
+\[
+&nbsp;&nbsp;\frac{a + b + c}{3} \geqslant \sqrt[3]{abc} = 1,
+\]
+\[
+&nbsp;&nbsp;a + b + c \geqslant 3.
+\]
+
+\noindent
+Dodając dwie otrzymane nierówności stronami udowadniamy tezę.
+
+\vspace{5px}
+

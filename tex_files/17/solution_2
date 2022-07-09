@@ -1,0 +1,15 @@
+
+
+\noindent
+Wykażemy, że szukane zbiory istnieją.
+Rozpatrzmy dowolny zbiór $999$ dodatnich liczb całkowitych~$a_1$, $a_2$, ..., $a_{999}$. Dokładając do niego liczbę
+\[
+&nbsp;&nbsp;a_{1000} = - (a_1 + a_2 + ... + a_{999}) 
+\]
+otrzymamy zbiór liczb niezerowych, których suma wynosi $0$. Rozpatrując zbiór liczb danych jako $b_i = -a_i$ dla wszystkich liczb całkowitych $1 \leqslant i \leqslant 1000$ otrzymamy również zbiór o sumie elementów równej zeru. Wystarczy tylko zauważyć, że
+\[
+&nbsp;&nbsp;a_i^2 = (-a_i)^2 = b_i^2,
+\]
+aby stwierdzić, że sumy kwadratów elementów obu zbiorów są sobie równe. Łatwo też zauważyć, że zbiory te będą rozłączne.
+
+%Source: https://om.mimuw.edu.pl/static/app_main/camps/oboz2019.pdf

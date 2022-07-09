@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Dana jest funkcja spełniająca dla dowolnej liczby rzeczywistej $x$ równość
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(f(x)) - f(x) = x.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Znaleźć liczbę liczb rzeczywistych $a$, takich, że $f(f(a)) = 0$.

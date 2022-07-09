@@ -1,0 +1,26 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykazaliśmy, że warunek zadania jest równoważny temu, że istnieją takie dodatnie liczby $x$, $y$, $z$, dla których
+\[
+&nbsp;&nbsp;a = x + y, \quad b = x + z, \quad c = y + x.
+\]
+Przepisując postulowaną nierówność za pomocą powyższych podstawień otrzymujemy
+\begin{align*}
+&nbsp;&nbsp;\frac{1}{-(x + y) + (x + z) + (y + z)} &= \frac{1}{2z}, \\
+&nbsp;&nbsp;\frac{1}{(x + y) - (x + z) + (y + z)} &= \frac{1}{2y}, \\
+&nbsp;&nbsp;\frac{1}{(x + y) + (x + z) - (y + z)} &= \frac{1}{2x}. \\
+\end{align*}
+Trzeba więc wykazać, że
+\begin{align*}
+&nbsp;&nbsp;\frac{1}{2z} + \frac{1}{2y} + \frac{1}{2x} \geqslant \frac{1}{x + y} + \frac{1}{x + z} + \frac{1}{y + z} \\
+&nbsp;&nbsp;\left(\frac{1}{x} + \frac{1}{y}\right) + \left(\frac{1}{x} + \frac{1}{z}\right) + \left(\frac{1}{y} + \frac{1}{z}\right) \geqslant \frac{4}{x + y} + \frac{4}{x + z} + \frac{4}{y + z}.
+\end{align*}
+Zauważmy, że nierówność
+\[
+&nbsp;&nbsp;\frac{1}{x} + \frac{1}{y} \geqslant \frac{4}{x + y}
+\]
+wynika wprost z nierówności między średnią arytmetyczną i harmoniczną. Dodając analogicznie nierówności stronami otrzymujemy tezę.
+
+\qed
+

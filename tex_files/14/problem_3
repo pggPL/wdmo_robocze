@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Niech $d(n)$ oznacza liczbę dodatnich dzielników liczby $n$ -- włączając liczby $1$ i $n$. Wykazać, że istnieje nieskończenie wiele dodatnich liczb całkowitych $n$, dla których liczba $\frac{n}{d(n)}$ również jest całkowita.

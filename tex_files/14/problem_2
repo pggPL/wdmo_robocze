@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Liczbę nazwiemy \textit{wielodzielną}, jeśli ma co najmniej $1000$ dzielników. Rozstrzygnąć, czy istnieje taka liczba całkowita $n$, że liczby
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;n,\; n + 1,\; n + 2,\; ...,\; n + 1000
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;są wielodzielne.

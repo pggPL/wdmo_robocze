@@ -1,0 +1,32 @@
+
+
+\noindent
+\underline{Lemat 1} Funkcja $f$ jest różnowartościowa
+
+\vspace{10px}
+\noindent
+Załóżmy, że $f(a) = f(b)$. Podstawmy, $x=a$ oraz $x = b$
+\[
+&nbsp;&nbsp;f(f(a) + 2f(y)) = a + y \quad \text{oraz} \quad f(f(b) + 2f(y)) = b + y.
+\] 
+Skoro $f(a)=f(b)$, to 
+\[
+&nbsp;&nbsp;f(f(a) + 2f(y)) = f(f(b) + 2f(y)),
+\] 
+a więc $a + y = b + y$, czyli $a = b$. A więc $f$ istotnie jest różnowartościowa.
+\vspace{10px}
+
+\noindent
+Zauważamy, że zachodzą równości
+\[
+&nbsp;&nbsp;f(f(x) + 2f(y)) = x + y \quad \text{oraz} \quad f(f(y)+2f(x))=x+y.
+\]
+Czyli 
+\[
+&nbsp;&nbsp;f(f(x) + 2f(y)) = f(f(y) + 2f(x)).
+\] 
+Skoro $f$ jest różnowartościowa, to 
+\[
+&nbsp;&nbsp;f(x)+2f(y)=f(y)+2f(x),
+\]
+więc $f(x)=f(y)$ dla wszystkich liczb $x$, $y$. Czyli $f$ musiałaby być funkcją stałą, a to jest oczywista sprzeczność z danym równaniem.

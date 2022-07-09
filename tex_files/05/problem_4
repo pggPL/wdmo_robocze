@@ -1,0 +1,5 @@
+\noindent 
+&nbsp;&nbsp;Dane są takie dodatnie liczby rzeczywiste $a$, $b$, $c$, że $abc = 1$. Wykazać, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a^2 + b^2 + c^2 \geqslant a + b + c.
+&nbsp;&nbsp;\]

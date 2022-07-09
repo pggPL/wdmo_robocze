@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Dane są liczby rzeczywiste $a_1 \geqslant a_2 \geqslant ... \geqslant a_n$ oraz $b_1 \geqslant b_2 \geqslant ... \geqslant b_n$. Wykazać, że zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;n(a_1b_1 + a_2b_2 + ... + a_nb_n) \geqslant (a_1 + a_2 + ... + a_n)(b_1 + b_2 + ... + b_n).
+&nbsp;&nbsp;\]

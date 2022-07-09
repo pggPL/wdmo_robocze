@@ -1,0 +1,19 @@
+
+
+\noindent
+Załóżmy nie wprost, że istnieje pewna liczba niecałkowita $\alpha$, dla której zachodzi równość $W(\alpha) = 1$. Wstawiając $x = \alpha$ do wyjściowego równania otrzymujemy
+\begin{align*}
+    (\alpha + 1)W(\alpha) = (\alpha - 2)W(\alpha + 1), \\
+    0 = (\alpha - 2)W(\alpha + 1).
+\end{align*}
+Skoro liczba $\alpha$ nie była całkowita, to $\alpha - 2 \neq 0$. Stąd $W(\alpha + 1) = 0$.
+
+\vspace{10 px}
+\noindent
+Wykazaliśmy, że jeśli $\alpha$ jest niecałkowitym pierwiastkiem, to również $\alpha + 1$ jest niecałkowitym pierwiastkiem. Więc liczby
+\[
+    \alpha, \; \alpha + 1, \; \alpha + 2, \; \alpha + 3, \; ...
+\]
+są pierwiastkami $W(x)$. Zaś każdy niezerowy wielomian może mieć skończenie wiele pierwiastków -- co najwyżej tyle, ile wynosi jego stopień -- co daje sprzeczność.
+
+

@@ -1,0 +1,7 @@
+\heading{Przykład 1}
+
+\noindent
+Dany jest prostokąt $m \times n$. Pokolorowano w nim $m + n$ pól. Wykazać, że da się wybrać pewne z pokolorowanych pól, tak, aby w każdej kolumnie i w każdym wierszu liczba wybranych pól była parzysta.
+
+\vspace{5px}
+

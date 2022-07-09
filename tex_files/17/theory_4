@@ -1,0 +1,44 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że postulowana implikacja nie zachodzi. Rozpatrzmy liczby
+\[
+&nbsp;&nbsp;a = b = 3, \; c = d = -1.
+\]
+Udowodnimy, że jeśli zachodzi równość
+\[
+&nbsp;&nbsp;3x^2 + 3y^2 = z^2 + t^2,
+\]
+to wówczas $x = y = z = t = 0$. Rozumując nie wprost, załóżmy, że istnieje niezerowe rozwiązanie powyższego równania. Rozpatrzmy takie rozwiązanie, dla którego suma~${|x| + |y| + |z| + |t|}$ jest najmniejsza możliwa. Wiemy, że
+\[
+&nbsp;&nbsp;z^2 + t^2 = 3x^2 + 3y^2 \equiv 0 \pmod{3}
+\]
+Znanym faktem jest, że dla dowolnej liczby całkowitej $n$ mamy
+\[
+&nbsp;&nbsp;n^2 \equiv 0 \pmod{3},\; \text{gdy } n \equiv 0 \pmod{3} \quad \text{oraz} \quad n^2 \equiv 1 \pmod{3},\; \text{gdy } n \equiv 1, 2 \pmod{3}.
+\]
+Rozpatrując wszystkie możliwe przypadki, w zależności od reszt z dzielenia przez $3$ jakie dają liczby $z$ i $t$, łatwo otrzymać, że
+\[
+&nbsp;&nbsp;z^2 + t^2  \equiv 0 \pmod{3} \iff z \equiv t \equiv 0 \pmod{3}.
+\]
+Mamy więc $z = 3z_0$ oraz $t = 3t_0$ dla pewnych liczb całkowitych $z_0$,\; $t_0$. Wówczas
+\begin{align*}
+&nbsp;&nbsp;3x^2 + 3y^2 &= z^2 + t^2 = 9z_0^2 + 9t_0^2, \\
+&nbsp;&nbsp;3z_0^2 + 3t_0^2 &= x^2 + y^2.
+\end{align*}
+Stąd czwórka $(z_0, t_0, x, y)$ również jest niezerowym rozwiązaniem danego równania. Jeśli obie z liczb $z_0$, $t_0$ są równe zeru, to łatwo zauważyć, że pozostałe dwie również, co przeczy niezerowości danego rozwiązania. W przeciwnym wypadku
+\[
+&nbsp;&nbsp;|z_0| + |t_0| + |x| + |y| < |x| + |y| + |z| + |t|
+\]
+co przeczy minimalności $|x| + |y| + |z| + |t|$.
+
+\qed
+
+\noindent
+Metodę zastosowaną powyżej nazywa się \textit{nieskończonym schodzeniem}. Z pewnego rozwiązania równania uzyskujemy rozwiązanie mniejsze. Nie można jednak schodzić w nieskończoność. Skoro działamy w liczbach całkowitych, to wartość wyrażenia ${|x| + |y| + |z| + |t|}$ nie może przyjmować dowolnie małych wartości.
+
+\vspace{10px}
+\noindent
+Ciężko w powyższym zadaniu wpaść na rozwiązanie obserwując jak teza zachowuje się dla małych liczb $a$, $b$, $c$, $d$. Nie w każdym zadaniu analiza szczególnych przypadków jest pomocna. Ważna była obserwacja, że na mocy założeń liczby $x$, $y$, $z$ i $t$ są całkowite. Trzeba jakoś skorzystać z tej własności -- tutaj nasuwa się modulo.
+
+\vspace{10px}

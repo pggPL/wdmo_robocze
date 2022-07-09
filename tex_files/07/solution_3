@@ -1,0 +1,14 @@
+
+
+\noindent
+Wykażemy indukcyjnie, że dla każdej dodatniej liczby całkowitej $n$ wielomian $x^{3n - 1} + x + 1$ jest podzielny przez wielomian $x^2 + x + 1$. Dla $n = 1$ te wielomiany są sobie równe, więc podzielność zachodzi.
+ 
+\vspace{10 px}
+\noindent
+Zauważmy, że
+\[
+    (x^{3(n + 1) - 1} + x + 1) - (x^{3n - 1} + x + 1) = x^{3n - 1}(x^3 - 1) =   x^{3n - 1}(x - 1)(x^2 + x + 1).
+\]
+Prawa strona równości jest podzielna przez wielomian $x^2 + x + 1$. Stąd jeśli $x^{3n - 1} + x + 1$ jest podzielne przez $x^2 + x + 1$ to $x^{3(n + 1) - 1} + x + 1$ również. Więc z zasady indukcji matematycznej wynika postulowana własność. Wstawiając $n = 334$ otrzymujemy tezę.
+
+

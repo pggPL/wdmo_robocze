@@ -1,0 +1,13 @@
+
+
+\noindent
+Wykażemy, że szukane liczby nie istnieją. Przeprowadźmy rozumowanie nie wprost -- weźmy parę~$(x,\; y)$ spełniającą warunki zadania. Skoro zachodzi równość, to w szczególności musi zachodzić przystawanie modulo 3, czyli
+\begin{align*}
+&nbsp;&nbsp;x^2 - 999y^2 \equiv 1001 &\pmod{3}, \\
+&nbsp;&nbsp;x^2 \equiv 1001 \equiv 2 &\pmod{3}.
+\end{align*}
+Jednak kwadrat liczby całkowitej może dawać jedynie reszty $0$ i $1$ z dzielenia przez $3$, co jest sprzeczne z otrzymanym przystawaniem.
+
+\vspace{5px}
+
+% Source: https://dominik-burek.u.matinf.uj.edu.pl/Rabka2017.pdf

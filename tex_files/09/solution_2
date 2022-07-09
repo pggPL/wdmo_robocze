@@ -1,0 +1,49 @@
+
+
+\noindent
+Zauważmy, że dla $n = 0$ teza jest trywialna -- zbiór $\mathcal{S}$ zawiera jedynie punkt $(0, 0)$ i do jego pokrycia jest potrzebna jedna prosta. Rozumując indukcyjnie, załóżmy, że teza zachodzi dla pewnej liczby naturalnej $n$. Wykażmy, że jest prawdziwa również dla $n + 1$.
+
+\vspace{5px}
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale = 0.5]
+&nbsp;&nbsp;    \tkzDefPoint(0,0){v_1}
+&nbsp;&nbsp;    \tkzDefPoint(1,0){v_2}
+&nbsp;&nbsp;    \tkzDefPoint(2,0){v_3}
+&nbsp;&nbsp;    \tkzDefPoint(3,0){v_4}
+&nbsp;&nbsp;    \tkzDefPoint(0,1){v_5}
+&nbsp;&nbsp;    \tkzDefPoint(1,1){v_6}
+&nbsp;&nbsp;    \tkzDefPoint(2,1){v_7}
+&nbsp;&nbsp;    \tkzDefPoint(0,2){v_8}
+&nbsp;&nbsp;    \tkzDefPoint(1,2){v_9}
+&nbsp;&nbsp;    \tkzDefPoint(0,3){v_{10}}
+&nbsp;&nbsp;    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_{10})
+&nbsp;&nbsp;    \tkzDrawSegment(v_4,v_{10})
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\hspace{40px}
+&nbsp;&nbsp;\begin{tikzpicture}[scale = 0.5]
+&nbsp;&nbsp;    \tkzDefPoint(0,0){v_1}
+&nbsp;&nbsp;    \tkzDefPoint(1,0){v_2}
+&nbsp;&nbsp;    \tkzDefPoint(2,0){v_3}
+&nbsp;&nbsp;    \tkzDefPoint(3,0){v_4}
+&nbsp;&nbsp;    \tkzDefPoint(0,1){v_5}
+&nbsp;&nbsp;    \tkzDefPoint(1,1){v_6}
+&nbsp;&nbsp;    \tkzDefPoint(2,1){v_7}
+&nbsp;&nbsp;    \tkzDefPoint(0,2){v_8}
+&nbsp;&nbsp;    \tkzDefPoint(1,2){v_9}
+&nbsp;&nbsp;    \tkzDefPoint(0,3){v_{10}}
+&nbsp;&nbsp;    \tkzDefPoint(3,-0.5){a}
+&nbsp;&nbsp;    \tkzDefPoint(3,0.5){b}
+&nbsp;&nbsp;    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5, v_6, v_7, v_8, v_9, v_{10})
+&nbsp;&nbsp;    \tkzDrawSegments(v_1,v_{10} v_2,v_9 v_3,v_7 a,b)
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Weźmy dowolny zbiór prostych, które przykrywają każdy z punktów zbioru $\mathcal{S}$ dla $n + 1$. Wyróżnijmy punkty $(a, b)$, dla których zachodzi równość $a + b = n + 1$. Zauważmy, że wszystkie te punkty leżą na jednej prostej. Rozpatrzmy dwa przypadki
+\begin{enumerate}
+&nbsp;&nbsp;\item Istnieje prosta $l$, która przykrywa pewne dwa wyróżnione punkty. Wówczas przykrywa ona wszystkie wyróżnione punkty i żadnego innego punktu ze zbioru $\mathcal{S}$. Zauważmy, że dla zbioru $\mathcal{S}$ z usuniętymi wyróżnionymi punktami, możemy zaaplikować założenie indukcyjne. Wynika z niego, że do pokrycia rozpatrywanych punktów potrzeba co najmniej $n$ prostych. Dokładając prostą $l$ otrzymujemy, że łącznie prostych jest co najmniej $n + 1$.
+&nbsp;&nbsp;\item Żadne dwa wyróżnione punkty nie są przykryte przez jedną prostą. Skoro jest $n + 1$ punktów, to do ich przykrycia będzie potrzebnych $n + 1$ prostych. W szczególności do pokrycia zbioru $\mathcal{S}$ potrzeba $n + 1$ prostych.
+\end{enumerate}
+
+

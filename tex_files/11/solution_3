@@ -1,0 +1,23 @@
+
+
+\noindent
+Wykażemy, że liczby parzyste są stanami wygrywającymi. Zauważmy, że liczba $2$ jest stanem wygrywającym, bo można ją zastąpić liczbą $2 - 1 = 1$. Załóżmy, że wszystkie liczby parzyste mniejsze niż $2a$ są stanami wygrywającymi.
+
+\vspace{10px}
+\noindent
+Wykażemy, że liczba $2a + 2$ zapisana na tablicy również jest stanem wygrywającym. Rozpatrzmy dwa przypadki
+\begin{itemize}
+&nbsp;&nbsp;\item Jeśli liczba $a + 1$ jest przegrywająca, to gracz wykonujący ruch może zastąpić liczbę $2a + 2$ przez liczbę $\left\lfloor\frac{2a + 3}{2}\right\rfloor = a + 1$ i w ten sposób umieścić przeciwnika w stanie przegrywającym.
+&nbsp;&nbsp;\item Załóżmy teraz, że liczba $a + 1$ jest wygrywająca. Wówczas gracz zastępuje liczbę $2a + 2$ liczbą $2a + 1$. Drugi gracz może zapisać albo liczbę $2a$ albo liczbę $a + 1$. Pierwsza z nich jest wygrywająca na mocy założenia indukcyjnego, a druga na mocy założenia z rozpatrywanego przypadku. W obu przypadkach gracz wykonujący ruch przy liczbie $2a + 2$ znów znajdzie się w stanie wygrywającym.
+\end{itemize}
+
+\vspace{10px}
+\noindent
+Wykazaliśmy, że liczby parzyste odpowiadają stanowi wygrywającemu, toteż skoro liczba $10000000$ jest parzysta, to pierwszy gracz ma strategię wygrywającą.
+
+\begin{remark}
+&nbsp;&nbsp;Zauważmy, że nie wykazaliśmy nic o stanach, gdy na tablicy jest liczba nieparzysta. Nie było to jednak konieczne do rozwiązania powyższego zadania.
+\end{remark}
+
+\newpage
+

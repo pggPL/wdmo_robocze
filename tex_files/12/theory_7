@@ -1,0 +1,8 @@
+\heading{Twierdzenie o ciągach jednomonotonicznych}
+
+\noindent
+Liczby $a_1 \geqslant a_2 \geqslant ... \geqslant a_n$ oraz $b_1 \geqslant b_2 \geqslant ... \geqslant b_n$ są rzeczywiste. Niech $b_1', b_2', ..., b_n'$ będzie permutacją liczb $b_1, b_2, ..., b_n$. Wówczas zachodzą nierówności
+\[
+&nbsp;&nbsp;a_1b_1 + a_2b_2 + ... + a_nb_n \geqslant a_1b_1' + a_2b_2' + ... + a_nb_n' \geqslant a_1b_n + a_2b_{n - 1} + ... + a_nb_1.
+\]
+

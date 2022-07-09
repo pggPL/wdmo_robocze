@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Wyznaczyć wszystkie dodatnie liczby rzeczywiste $\alpha$, dla których istnieje ciąg dodatnich liczb rzeczywistych $x_1$, $x_2$, $x_3$, $\dots$ o tej własności, że dla wszystkich $n\geqslant 1$:
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;x_{n+2} = \sqrt{\alpha x_{n+1} - x_n}.
+&nbsp;&nbsp;\]

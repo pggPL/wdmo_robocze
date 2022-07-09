@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Dany jest graf, w którym każdy wierzchołek ma stopień co najwyżej $100$. Zbiór krawędzi nazwiemy \textit{idealnym}, jeśli żadne dwie krawędzie należące do niego nie mają wspólnego końca oraz nie da się dołożyć żadnej krawędzi, aby ta własność była zachowana. W każdym ruchu usunięto dowolny  idealny zbiór krawędzi, które przed wykonaniem tego ruchu należały do rozpatrywanego grafu. Wykazać, że po wykonaniu dowolnych $199$ ruchów, graf nie będzie zawierał żadnej krawędzi.

@@ -1,0 +1,31 @@
+
+
+\answer{Jest jedna taka liczba i jest ona równa 0.}
+
+\noindent
+Podstawmy $x = 0$, aby otrzymać
+\[
+&nbsp;&nbsp;f(f(0)) = f(0).
+\]
+Wstawiając $x = f(0)$ otrzymujemy
+\[
+&nbsp;&nbsp;f(0) = f(f(f(0))) - f(f(0)) = f(f(0)) - f(f(0)) = 0.
+\]
+Czyli $a = 0$ jest rozwiązaniem.
+
+\vspace{10px}
+
+\noindent
+Załóżmy, że $f(f(a)) = 0$. Z wyjściowego równania, wstawiając $f(a)$ za $x$, wynika wówczas, że
+\begin{align*}
+&nbsp;&nbsp;f(f(f(a))) - f(f(a)) &= f(a), \\
+&nbsp;&nbsp;f(0) - 0 &= f(a), \\
+&nbsp;&nbsp;0 = f(a).
+\end{align*}
+Podstawiając zaś $x = a$ do danego równania mamy
+Stąd
+\[
+&nbsp;&nbsp;0 = f(f(a)) - f(a) = a.
+\]
+Oznacza to, że żadna liczba różna od $0$ nie może być rozwiązaniem danego równania.
+

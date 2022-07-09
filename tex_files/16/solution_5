@@ -1,0 +1,18 @@
+
+
+\answer{Zachodzi nierówność $a_{5000} > 100$.}
+
+\noindent
+Przekształćmy równanie rekurencyjne ciągu
+\begin{align*}
+&nbsp;&nbsp;a_{n + 1} &= a_n + \frac{1}{a_n}, \\
+&nbsp;&nbsp;a_{n + 1}^2 &= \left(a_n + \frac{1}{a_n}\right)^2 = a_n^2 + 2 a_n \cdot \frac{1}{a_n} + \frac{1}{a_n^2}  > a_n^2 + 2.
+\end{align*}
+Z powyższej nierówności wynika, że
+\[
+&nbsp;&nbsp;a_{5000}^2 > a_{4999}^2 + 2 > a_{4998}^2 + 4 > ... > a_0^2 + 10000 > 10000, 
+\]
+z~czego wynika, że $a_{5000}^2 > 100$.
+
+\vspace{5px}
+

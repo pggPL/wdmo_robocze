@@ -1,0 +1,16 @@
+
+
+\answer{Jedynymi liczbami spełniającymi warunki zadania są liczby postaci $k^2$, $k^2 + k$ oraz $k^2 + 2k$ dla pewnej liczby całkowitej $k$.}
+
+\noindent
+Rozpatrzmy taką dodatnią liczbę całkowitą $k$, że
+\[
+&nbsp;&nbsp;(k + 1)^2 > n \geqslant k^2.
+\]
+Innymi słowy $k$ jest największą liczbą całkowitą, taką, że $k^2$ jest nie większe niż $n$. Wówczas
+\[
+&nbsp;&nbsp;k + 1 > \sqrt{n} \geqslant k,
+\]
+czyli $\left\lfloor \sqrt{n} \right\rfloor = k$. Jedynymi liczbami w przedziale $[k^2, (k + 1)^2)$, które są podzielne przez $k$ są $k^2$, $k^k + k$ i $k^2 + 2k$.
+
+

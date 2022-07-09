@@ -1,0 +1,15 @@
+\heading{Krotność pierwiastków}
+
+\noindent
+Jeśli wielomian $W$ da się zapisać w formie
+\[
+    W(x) = (x - \alpha_1)^{k_1}(x - \alpha_2)^{k_2} \cdot ... \cdot (a - \alpha_n)^{k_n},
+\]
+gdzie $\alpha_1, \alpha_2, ..., \alpha_{n}$ są parami różne to powiemy, że pierwiastek $\alpha_i$ ma \textit{krotność} równą $k_i$. 
+
+\vspace{10px}
+\noindent
+Mówienie o zbiorze pierwiastków nie ma większego sensu, gdyż struktura zbioru nie przewiduje czegoś takiego jak element występujący kilkukrotnie. Stąd zdefiniujmy \textit{multizbiór} analogicznie do zbioru, z tym, że jeden element może należeć do niego kilka razy. Będziemy mówić o multizbiorach pierwiastków.
+
+\vspace{5px}
+

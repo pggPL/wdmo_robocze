@@ -1,0 +1,8 @@
+\heading{Przykład 1}
+
+\noindent
+Dany jest trójkąt o bokach długości $a$, $b$ i $c$. Wykazać, że zachodzi nierówność
+\[
+&nbsp;&nbsp;\frac{1}{-a + b + c} + \frac{1}{a - b + c} + \frac{1}{a + b - c} \geqslant \frac{1}{a} + \frac{1}{b} + \frac{1}{c}.
+\]
+

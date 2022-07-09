@@ -1,0 +1,12 @@
+
+
+\noindent 
+Rozpatrzmy ciąg $x_i=ip!$.
+Wówczas
+\[
+&nbsp;&nbsp;\prod_{i=1}^p x_i=\prod_{i=1}^p ip!=(p!)^{p}\cdot p! = (p!)^{p}\cdot p!=(p!)^{p+1}.
+\]
+co oczywiście jest kwadratem liczby całkowitej.
+\\
+
+

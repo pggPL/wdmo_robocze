@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Danych jest 100 czerwonych punktów na płaszczyźnie, przy czym żadne trzy nie leżą na jednej prostej. Prostą \textit{dzielącą} będziemy nazywać każdą prostą, która przechodzi przez dwa czerwone punkty oraz po obu jej stronach jest po 49 czerwonych punktów. Wykaż, że istnieje przynajmniej 50 prostych \textit{dzielących}.

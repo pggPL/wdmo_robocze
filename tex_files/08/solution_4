@@ -1,0 +1,7 @@
+
+
+\noindent
+Rozpatrzmy dwa wierzchołki $u$ i $v$. Skoro graf jest spójny, to istnieje różnowierzchołkowa ścieżka między tymi wierzchołkami. Zmieńmy stan -- z pokolorowanej na niepokolorowaną i na odwrót --  każdej z krawędzi na tej ścieżce. Zauważmy, że parzystość liczby kolorowych krawędzi wychodzących z każdego wierzchołka wewnątrz ścieżki nie ulegnie zmianie. Natomiast parzystość liczby kolorowych krawędzi wychodzących z $u$ i z $v$ się zmieni. Czyli jesteśmy w stanie zmienić parzystość liczby kolorowych krawędzi wychodzących z dowolnych dwóch wierzchołków. Skoro liczba wierzchołków w grafie jest liczbą parzystą, to możemy podzielić je w dowolny sposób na pary i zastosować wskazany wyżej algorytm dla każdej z nich. W ten sposób uzyskamy szukane kolorowanie.
+
+\vspace{5px}
+

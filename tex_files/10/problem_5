@@ -1,0 +1,9 @@
+\noindent
+&nbsp;&nbsp;Dane są parami różne dodatnie liczby całkowite $a$, $b$, $c$ oraz nieparzysta liczba pierwsza $p$, że liczby
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;ab + 1, \; bc + 1, \; ca + 1
+&nbsp;&nbsp;\] 
+&nbsp;&nbsp;są podzielne przez $p$. Wykazać, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\frac{a + b + c}{3} \geqslant p + 2.
+&nbsp;&nbsp;\]

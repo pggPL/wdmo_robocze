@@ -1,0 +1,35 @@
+
+
+\noindent
+Zinterpretujmy te $49$ osób jako planszę 7 na 7, gdzie każdemu polu przyporządkowana jest jedna osoba. Rozpatrzmy wszystkie kolorowania powstające w następujący sposób. Kolorujemy dowolna pola w najniższym i drugim najniższym wierszu. Załóżmy, że są to pola $a$-te i $a + k$-te(być może $k < 0$). Wówczas w trzeciej kolumnie pokolorujemy pole $a + 2k \pmod{7}$, w czwartej $a + 3k \pmod{7}$ itd. Przykładowe kolorowanie dla $a = 2$ i~$k = 2$ jest na rysunku.
+
+
+\begin{center}
+    \begin{tikzpicture}[x=1cm, scale=0.4]
+    \foreach \y in {0,...,5}{
+        \foreach \x in {0,...,5}{
+            \draw[black!50] (\x,\y) rectangle (1+\x,1+\y) rectangle (2+\x,2+\y);}}
+
+    \draw[black!50] (0,0)--(7,0)--(7,7)--(0,7)--cycle;
+    
+    \fill[pattern=north west lines] (1,0) rectangle (2,1);
+    \fill[pattern=north west lines] (3,1) rectangle (4,2);
+    \fill[pattern=north west lines] (5,2) rectangle (6,3);
+    \fill[pattern=north west lines] (0,3) rectangle (1,4);
+    \fill[pattern=north west lines] (2,4) rectangle (3,5);
+    \fill[pattern=north west lines] (4,5) rectangle (5,6);
+    \fill[pattern=north west lines] (6,6) rectangle (7,7);
+
+    \end{tikzpicture}
+\end{center}
+
+\noindent
+Rozpatrzmy wszystkie takie kolorowania i dla każdego weźmy osoby przyporządkowane pokolorowanym polom na rejs. Wykażemy, że dowolne dwa pola są jednocześnie pokolorowane w dokładnie jednym kolorowaniu. Przyjmijmy, że te dwa pola są oddalone o $y \neq 0$ wierszy w pionie i $x$ kolumn w poziomie. Zauważmy, że wówczas musi zajść ${x \equiv yk \pmod{7}}$, co jest prawdą dla dokładnie jednego $k$. Skoro $k$ jest jednoznacznie wyznaczone i znamy położenie jednego pola z kolorowania, to możemy odtworzyć położenie wszystkich. Skoro z dwóch pól możemy jednoznacznie odtworzyć kolorowanie, do którego oba należą, to teza jest prawdziwa.
+
+
+\vspace{10px}
+\noindent
+Dla każdego kolorowania weźmy osoby odpowiadające pomalowanym polom na rejs. Wówczas każde dwie osoby będą razem na rejsie dokładnie raz, co było do wykazania.
+
+\vspace{10px}
+

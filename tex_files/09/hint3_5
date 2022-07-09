@@ -1,0 +1,3 @@
+\noindent 
+ Gdy $f(n) \geqslant n + 1$, to $f(f(n)) \leqslant n - 1$. Wstaw $f(n)$ zamiast $n$ do wyjściowej nierówności.
+&nbsp;&nbsp;

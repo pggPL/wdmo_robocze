@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Dany jest niezerowy wielomian $W(x)$ o współczynnikach rzeczywistych, dla którego zachodzi równość
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;(x + 1)W(x) = (x - 2)W(x + 1).
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;Wykazać, że każdy pierwiastek rzeczywisty $W(x)$ jest liczbą całkowitą.

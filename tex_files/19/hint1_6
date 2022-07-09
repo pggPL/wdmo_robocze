@@ -1,0 +1,2 @@
+\noindent 
+ Podstaw $x_i = \left\lfloor a_i \right\rfloor$. Zauważ, że $a_i \leqslant x_i^2 + 2x_i$.

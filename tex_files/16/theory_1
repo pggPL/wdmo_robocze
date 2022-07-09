@@ -1,0 +1,41 @@
+\heading{Wzór ogólny na wyrazy ciągu Fibonacciego}
+
+\noindent
+Zapomnijmy na chwilę o warunkach $F_0 = 0, \; F_1 = 1$ i spróbujmy znaleźć jakieś ciągi, dla których również zachodzi równanie rekurencyjne $a_{n + 2} = a_{n + 1} + a_n$, ale mają one prosty do wyprowadzenie wzór ogólny. Zobaczmy na ciągi dane wzorem $a_n = x^n$ dla pewnej liczby rzeczywistej $x$ -- być może dla pewnej liczby rzeczywistej $x$ będą one spełniały postulowane równanie rekurencyjne. Przyjmuje ono postać
+\begin{align*}
+&nbsp;&nbsp;x^{n + 2} &= x^{n + 1} + x^n, \\
+&nbsp;&nbsp;x^2 &= x + 1.
+\end{align*}
+Rozwiązując powyższe równanie kwadratowe możemy dojść do wniosku, że ciągi 
+\[
+&nbsp;&nbsp;a_n = \alpha^n, \text{ gdzie } \alpha = \frac{1 + \sqrt{5}}{2} \quad \text{i} \quad a_n = \beta^n,  \text{ gdzie } \beta = \frac{1 - \sqrt{5}}{2} 
+\] 
+spełniają daną rekurencję.
+
+\vspace{10px}
+\noindent
+Zauważmy, że dla dowolnych liczb rzeczywistych $A$ oraz $B$ ciąg
+\[
+&nbsp;&nbsp;c_n = Aa_n + Bb_n
+\]
+również będzie spełniał rekurencję $c_{n + 2} = c_{n + 1} + c_n$. Istotnie
+\begin{align*}
+&nbsp;&nbsp;c_{n + 2} &= Aa_{n + 2} + Bb_{n + 2} = A(a_{n + 1} + a_n) + B(b_{n + 1} + b_n) = \\
+&nbsp;&nbsp;&= (Aa_{n + 1}  + Bb_{n + 1}) + (Aa_n + Bb_n) = c_{n + 1} + c_n.
+\end{align*}
+Postaramy się poruszać liczbami $A$ oraz $B$, tak, by ciąg $c_n$ spełniał równości
+\[
+&nbsp;&nbsp;c_{0} = F_0 = 0, \; c_{1} = F_1 = 1.
+\]
+Wówczas, co nietrudno zauważyć, ciągi $F$ i $c$ będą sobie równe. W tym celu wystarczy rozwiązać układ równań
+\[
+&nbsp;&nbsp;\begin{cases}
+&nbsp;&nbsp;&nbsp;&nbsp;Aa_0 + Bb_0 = A + B = 0 \\
+&nbsp;&nbsp;&nbsp;&nbsp;Aa_1 + Bb_1 = \alpha \cdot A + \beta \cdot B = 1.
+&nbsp;&nbsp;\end{cases}
+\]
+Powyższe równości zachodzą dla $A = \frac{1}{\sqrt{5}}$ i $B = -\frac{1}{\sqrt{5}}$. Toteż otrzymujemy zależność
+\[
+&nbsp;&nbsp;F_n = c_n = \frac{1}{\sqrt{5}} \cdot a_n - \frac{1}{\sqrt{5}} \cdot b_n = \frac{\alpha^n - \beta^n}{\sqrt{5}}.
+\]
+

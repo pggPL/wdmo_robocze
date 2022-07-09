@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Dane są liczby dodatnie $a$, $b$, $c$. Wykaż, że zachodzi nierówność
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\frac{a}{2b + c} + \frac{b}{2c + a} + \frac{c}{2a + b} \geqslant 1. 
+&nbsp;&nbsp;\]

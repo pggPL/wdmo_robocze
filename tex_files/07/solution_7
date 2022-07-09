@@ -1,0 +1,23 @@
+
+
+\noindent
+Wykażemy, że szukany wielomian nie istnieje. Przyjmijmy, że ma on pierwiastki $a_1$, $a_2$, ..., $a_{1000}$. Wówczas jest on postaci
+\[
+    W(x) = a(x - a_1)(x - a_2)\cdot ... \cdot (x - a_{1000}).
+\]
+Wymnażając te nawiasy możemy zauważyć, że wyraz wolny wynosi $a_1a_2 \cdot ... \cdot a_{1000}$, współczynnik przy $x$ będzie równy $\sum_{1 \leqslant i \leqslant 1000} a_i$, zaś współczynnik przy $x^2$ wyniesie $\sum_{1 \leqslant i < j \leqslant 1000} a_ia_j$. Na mocy założeń są one równe $\pm 1$. Mamy
+\begin{align*}
+    \sum_{1 \leqslant i \leqslant 1000} a_i = \pm 1, \\
+    \left(\sum_{1 \leqslant i \leqslant 1000} a_i\right)^2 = 1, \\
+   \sum_{1 \leqslant i \leqslant 1000} a_i^2 + 2\sum_{1 \leqslant i < j \leqslant 1000} a_ia_j = 1. \\
+\end{align*}
+Jeśli $\sum_{1 \leqslant i < j \leqslant 1000} a_ia_j = 1$, to na mocy powyższej równości mielibyśmy, że suma kwadratów jest ujemna. Stąd $\sum_{1 \leqslant i < j \leqslant 1000} a_ia_j = -1$, czyli
+\[
+    \sum_{1 \leqslant i \leqslant 1000} a_i^2 = 1 - 2\sum_{1 \leqslant i < j \leqslant 1000} a_ia_j = 3.
+\]
+Na mocy nierówności między średnią arytmetyczną i geometryczną mamy
+\[
+   \frac{3}{1000} =  \frac{\sum_{1 \leqslant i \leqslant 1000} a_i^2}{1000} \geqslant \sqrt[1000]{|a_1a_2\cdot ... \cdot a_{1000}|^2} = 1,
+\]
+co daje nam sprzeczność.
+

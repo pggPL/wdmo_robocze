@@ -1,0 +1,10 @@
+\heading{Przykład 2}
+
+\noindent
+Wykazać, że dla wszystkich dodatnich liczb całkowitych $n$, $k$ zachodzi równość
+\[
+    \sum^{n}_{k=0} {{n}\choose{k}} 2^k = 3^n.
+\]
+
+\vspace{5px}
+

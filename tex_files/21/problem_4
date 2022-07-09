@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Dana jest plansza będąca kratką $1000\times 1000$. W każdą kratkę wpisano strzałkę, która wskazuje jeden z boków kratki. W jednej z tych kratek stoi mrówka. Co sekundę wykonuje ona ruch -- rusza się na pole wskazane przez strzałkę w polu, na którym stoi, a następnie obraca tę strzałkę o $90\degree$ zgodnie z ruchem wskazówek zegara. Wykazać, że mrówka wyjdzie kiedyś z wyjściowej planszy.

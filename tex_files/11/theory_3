@@ -1,0 +1,7 @@
+\heading{Przykład 2}
+
+\noindent
+Na stole leży $10000$ kamieni. Ruch polega na zabraniu ze stołu $2$ lub $5$ kamieni. Dwaj gracze wykonują ruch na przemian, gdy gracz nie może wykonać ruchu przegrywa. Rozstrzygnąć, który z graczy – pierwszy czy drugi – ma strategię wygrywającą.
+
+\vspace{5px}
+

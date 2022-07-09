@@ -1,0 +1,17 @@
+
+
+\answer{Jedyną funkcją spełniającą warunki zadania jest $f(x) = x + 1$.}
+
+\noindent
+Podstawmy $y = -x$. Otrzymamy 
+\[ 
+&nbsp;&nbsp;f(f(x) - x) = f(0) + 1.
+\] 
+Zauważmy, że prawa strona równości jest stała. Z różnowartościowości f wynika, że wartość $f(x) - x$ jest stała. Czyli $f(x) - x = a$ dla pewnego $a$. Wstawiamy $f(x) = x + a$ do wyjściowego równania 
+\[
+&nbsp;&nbsp;x + y + 2a = x + y + a + 1,
+\]
+więc $a = 1$. Skąd $f(x) = x + 1 $ -- możemy sprawdzić, że ta funkcja spełnia warunki zadania.
+
+\newpage
+

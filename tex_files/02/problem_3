@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie funkcje $\mathbb{R} \rightarrow \mathbb{R} $ spełniające dla wszystkich $x, y \in \mathbb{R} $ równanie 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(x^{2}y) = f(xy) + yf(f(x) + y).
+&nbsp;&nbsp;\]

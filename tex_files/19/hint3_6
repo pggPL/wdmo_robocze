@@ -1,0 +1,6 @@
+\noindent 
+ Niech $k = a_1$. Zauważ, że każdy z $300$ składników
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\sum_{1 \leqslant i < j \leqslant 25} x_ix_j.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;jest nie większy niż $x_1^2$ oraz nie większy niż $x_1$.

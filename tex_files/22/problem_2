@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Udowodnić, że istnieje taki wielomian $W$ stopnia $100$ o współczynnikach całkowitych, że dla każdej liczby całkowitej $n$ liczby
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;n,\;\; W(n),\;\; W(W(n)),\;\; W(W(W(n))), ...
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;są parami względnie pierwsze.

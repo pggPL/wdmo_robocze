@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie funkcje $\mathbb{R} \rightarrow \mathbb{R} $ spełniające dla wszystkich $x, y \in \mathbb{R} $ równanie
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp; f(x-f(y)) = 1 - x - y.
+&nbsp;&nbsp;\]

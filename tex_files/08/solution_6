@@ -1,0 +1,15 @@
+
+
+\noindent
+Wykażemy, że $N = 10$. Oczywiście rozpatrujemy dany problem w języku teorii grafów. Rozpatrzmy dwa przypadki.
+
+\vspace{10px}
+\noindent
+Jeśli istnieje wierzchołek o stopnie nie większym niż $10$, to Herkules może odciąć każdego z jego sąsiadów i wówczas ten wierzchołek nie będzie miał już żadnych sąsiadów. W ten sposób może osiągnąć swój cel.
+
+\vspace{10px}
+\noindent
+Załóżmy teraz, że każdy wierzchołek ma stopień co najmniej $11$. Oznaczmy liczbę wierzchołków jako $K$. Wówczas liczba krawędzi wynosi co najmniej $\frac{11K}{2}$. Skoro jest ona równa $100$, to otrzymujemy $K \leqslant 18$. Zauważmy, że po wykonaniu odcięcia wierzchołka o stopniu co najmniej $11$, będzie on miał stopień co najwyżej $18 - 11 - 1 = 6$. Wówczas stosując procedurę analogiczną do poprzedniego przypadku otrzymamy $6 + 1 = 7$ łącznych cięć.
+
+
+Pozostaje wskazać przykład grafu, którego nie da rozciąć się w mniej niż $10$ ruchach. Zauważmy, że graf $K_{a,b}$ może zostać przekształcony na jeden z grafów $K_{a - 1,b + 1}$ lub $K_{a + 1,b - 1}$. Rozpatrując graf $K_{10,10}$ otrzymujemy szukany przykład.

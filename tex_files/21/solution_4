@@ -1,0 +1,10 @@
+
+
+\noindent
+Zauważmy, że jeśli na pewnym polu mrówka stanie co najmniej $4n$ razy, to stanie na nim co najmniej $n$ razy, gdy strzałka jest skierowana w górę. Toteż co najmniej $n$ razy przejdzie w górę. Czyli na polu powyżej rozpatrywanego pola mrówka stanie co najmniej $n$ razy.
+
+\vspace{10px}
+\noindent
+Wykażemy, że po co najwyżej $4^{1000} \cdot 1000^2$ ruchach mrówka opuści planszę. Załóżmy nie wprost, że tak się nie stało -- mrówka po tylu ruchach wciąż stoi na planszy. Skoro jest $1000^2$ pól, to istnieje pole, na którym mrówka stanęła co najmniej $4^{1000}$ razy. Wówczas na polu powyżej niego stanęła co najmniej $4^{999}$ razy, na polu dwa pola powyżej stanęła co najmniej $4^{998}$ razy, ..., na polu $k$ pól powyżej rozpatrywanego pola stanęła $4^{1000 - k}$ razy. Skoro plansza ma $1000$ wierszy to dojdziemy w pewnym momencie do pola brzegowego i~otrzymamy, że staniemy na nim co najmniej $4$ razy. Toteż co najmniej raz stanie, gdy strzałka jest skierowana w górę i opuści planszę.
+\vspace{5px}
+

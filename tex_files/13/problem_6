@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Wykazać, że istnieje taka funkcja $f:\mathbb{R}\longrightarrow\mathbb{R}$, że nie istnieje taka funkcja $g:\mathbb{R}\longrightarrow\mathbb{R}$, że zachodzi równość $f(x) = g(g(x))$.

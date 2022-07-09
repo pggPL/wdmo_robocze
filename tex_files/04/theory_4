@@ -1,0 +1,10 @@
+\heading{Lemat 2}
+
+\noindent
+Liczba $a$ nie jest podzielna przez $p$. Udowodnić, że istnieje taka dodatnia liczba całkowita~$k$, że 
+\[
+   a^k\equiv 1 \pmod{p}.
+\]
+
+\rotatehint{Udowodnij, że istnieją takie $r$ i $s$, że $a^r\equiv a^s \pmod{p}$.}
+

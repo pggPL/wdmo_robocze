@@ -1,0 +1,7 @@
+\heading{Twierdzenie 2 (Bézout)}
+
+\noindent
+Dany jest wielomian $W(x)$ oraz taka liczba rzeczywista $\alpha$, dla której zachodzi równość $W(\alpha) = 0$. Wówczas $W(x)$ jest podzielny przez $x - \alpha$.
+
+\newpage
+

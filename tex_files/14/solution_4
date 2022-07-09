@@ -1,0 +1,20 @@
+
+
+\answer{
+&nbsp;&nbsp;Wartość danego wyrażenia wynosi $0$, niezależnie od wartości $p$.
+}
+
+\noindent
+Niech $g$ będzie generatorem modulo $p$. Wiemy, że multizbiory $\{1, 2, 3, ..., p - 1\}$ oraz $\{g, g^2, ..., g^{p - 1}\}$ są sobie równe. Czyli
+\[
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{1}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{2}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;... +
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{p - 1}{p}\right) =
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{g}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{g^2}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;... +
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{g^{p - 1}}{p}\right)
+\]
+Wiemy, na mocy Lematu 2, że $\left(\frac{g^k}{p}\right)$ jest równe $1$ jeśli $k$ jest parzyste i $-1$, gdy $k$ jest nieparzyste. Łatwo więc zauważyć, że skoro liczba $p - 1$ jest parzysta, to dana suma wyniesie $0$.
+

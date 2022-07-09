@@ -1,0 +1,7 @@
+\heading{Przykład 1}
+
+\noindent
+Dany jest niestały wielomian $W(x)$ o współczynnikach całkowitych. Wykazać, że istnieje nieskończenie wiele liczb pierwszych $p_i$, dla których istnieje taka liczba całkowita $n$, że $p_i \mid W(n)$.
+
+\vspace{5px}
+

@@ -1,0 +1,19 @@
+\heading{Rozwiązanie}
+
+\noindent
+Rozpatrzmy ciągi:
+\[
+&nbsp;&nbsp;(a_1^2, a_2^2, ..., a_n^2) \quad \text{oraz} \quad (a_1, a_2, ..., a_n).
+\]
+Zauważmy, że są one jednakowo monotoniczne, gdyż
+\[
+&nbsp;&nbsp;a_i^2 > a_j^2 \iff a_i > a_j.
+\]
+Na mocy nierówności o ciągach jednomonotonicznych prawdą jest, że
+\[
+&nbsp;&nbsp;a_1^2 \cdot a_1 + a_2^2 \cdot a_2 + ... + a_n^2 \cdot a_n \geqslant a_1^2 \cdot a_2 + a_2^2 \cdot a_3 + ... + a_n^2 \cdot a_1,
+\]
+co jest równoważne tezie.
+
+\newpage
+

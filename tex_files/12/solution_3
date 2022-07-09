@@ -1,0 +1,26 @@
+
+
+\noindent
+Zauważmy, że na mocy nierówności Cauchego-Schwarza zachodzi
+\begin{gather*}
+&nbsp;&nbsp;\left(\sin{\alpha_1}\cdot ... \cdot \sin{\alpha_n} + \cos{\alpha_1}\cdot ... \cdot \cos{\alpha_n}\right)^2 = \\
+&nbsp;&nbsp;= \left((\sin{\alpha_1}\cdot ... \cdot \sin{\alpha_{n - 1}}) \cdot \sin{\alpha_n} + (\cos{\alpha_1}\cdot ... \cdot \cos{\alpha_{n - 1}}) \cdot \cos{\alpha_n}\right)^2 \leqslant \\
+&nbsp;&nbsp;\leqslant
+&nbsp;&nbsp; \left((\sin{\alpha_1}\cdot ... \cdot \sin{\alpha_{n - 1}})^2+ (\cos{\alpha_1}\cdot ... \cdot \cos{\alpha_{n - 1}})^2\right) (\sin{\alpha_n}^2 + \cos{\alpha_n}^2)
+\end{gather*}
+Z jedynki trygonometrycznej
+\[
+&nbsp;&nbsp;\sin{\alpha_n}^2 + \cos{\alpha_n}^2 = 1.
+\]
+Skoro funkcja $\sin^2{x}$ przyjmuje wartości od 0 do 1, to
+\[
+&nbsp;&nbsp;\sin^2{\alpha_1} \cdot ... \cdot \sin^2{\alpha_{n - 1}} \leqslant \sin^2{\alpha_1}
+&nbsp;&nbsp;\quad \text{oraz} \quad
+&nbsp;&nbsp;\cos^2{\alpha_1} \cdot ... \cdot \cos^2{\alpha_{n - 1}} \leqslant \cos^2{\alpha_1}
+\]
+Stąd
+\[
+&nbsp;&nbsp;\left((\sin{\alpha_1}\cdot ... \cdot \sin{\alpha_{n - 1}})^2+ (\cos{\alpha_1}\cdot ... \cdot \cos{\alpha_{n - 1}})^2\right) (\sin{\alpha_n}^2 + \cos{\alpha_n}^2) \leqslant \sin^2{\alpha_1} + \cos^2{\alpha_1} = 1,
+\]
+co kończy dowód.
+

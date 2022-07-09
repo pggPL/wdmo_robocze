@@ -1,0 +1,8 @@
+\heading{Lemat 1}
+
+\noindent
+Dane są parami względnie pierwsze liczby $m_1$, ..., $m_k$ oraz dodatnie liczby całkowite~$x$,~$y$ spełniające $m_1m_2\cdot ... \cdot m_k > x > y \geqslant 0$. Wykazać, że wówczas
+\[
+&nbsp;&nbsp;G(x) \neq G(y).
+\]
+

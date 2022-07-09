@@ -1,0 +1,10 @@
+% Rozdział 9 – Indukcja matematyczna 2
+
+\theory{Indukcja matematyczna 2}
+
+
+\noindent
+Indukcja, o której pisaliśmy wcześniej, korzystała z faktu, że jeśli teza zachodzi dla pewnej liczby $k$, to zachodzi również dla liczby $k + 1$. W następującym przykładzie pokażemy nieco ogólniejszą metodę, zwaną indukcją zupełną.
+
+\vspace{10px}
+

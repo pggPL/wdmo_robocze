@@ -1,0 +1,11 @@
+
+
+\vspace{5px}
+
+\noindent
+Zauważmy, że zbiory, których średnia arytmetyczna jest liczbą całkowitą, zawierające więcej niż $1$ element da się podzielić na pary. Mianowicie zbiory $S$ i $S'$ o średniej arytmetycznej elementów równej $a$ będą w jednej parze jeśli jeden z tych zbiorów zawiera $a$, drugi nie zawiera, a poza tym mają te same elementy.
+
+$T_n$ będzie takiej parzystości jak liczba niesparowanych zbiorów. Są to wszystkie zbiory jednoelementowe -- jest ich $n$.  Stąd $T_n - n$ jest liczba parzystą.
+
+\vspace{5px}
+

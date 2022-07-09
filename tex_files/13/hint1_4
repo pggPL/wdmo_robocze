@@ -1,0 +1,3 @@
+\noindent 
+ Niech $d(n)$ oznacza liczbę dzielników. Wykaż, że $d(f(n)) = f(d(n))$.
+&nbsp;&nbsp;

@@ -1,0 +1,25 @@
+
+
+\noindent
+Rozpatrzmy najdłuższą ścieżkę w tym grafie i załóżmy nie wprost, że jest ona długości nie większej niż $100$. Wierzchołek początkowy tej ścieżki $V$ jest połączony z co najmniej $100$ wierzchołkami. Co najwyżej $99$ z nich leży na rozpatrywanej ścieżce -- co najwyżej $100$ wierzchołków z wyłączeniem $V$. Stąd $V$ jest połączony z pewnym wierzchołkiem spoza ścieżki – możemy więc wydłużyć tę ścieżkę o tego sąsiada. Przeczy to maksymalności długości tej ścieżki.
+
+\begin{center}
+    \begin{tikzpicture}
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(1,0){v_2}
+    \tkzDefPoint(2,0.6){v_3}
+    \tkzDefPoint(3,1.2){v_4}
+    \tkzDefPoint(-0.5,1){v_5}
+    \tkzDrawPoints(v_1,v_2, v_3, v_4, v_5)
+    \tkzDrawSegments(v_1,v_2 v_3,v_4  v_2,v_3 v_1,v_4 v_1,v_3)
+    \tkzDrawSegments[dashed](v_1,v_5)
+    \tkzLabelPoint[below](v_1){$V$}
+    \tkzLabelPoint[below](v_2){1}
+    \tkzLabelPoint[below](v_3){2}
+    \tkzLabelPoint[below](v_4){3}
+    \tkzLabelPoint[left](v_5){$X$}
+    \end{tikzpicture}\\
+    Wydłużamy ścieżkę $V$-1-2-3 o $X$.\\
+\end{center}
+
+

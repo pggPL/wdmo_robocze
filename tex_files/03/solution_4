@@ -1,0 +1,45 @@
+
+
+\vspace{5px}
+
+\noindent
+Ideą poniższego rozwiązania jest fakt, że jak mamy pewną permutację z $A_1$, pomnożymy każdy jej z elementów przez 2, to otrzymamy permutację z $A_2$. Jako, że mnożąc liczbę większą od $\frac{1}{2}p$ przez $2$ wylecimy ze zbioru $\{1, 2, 3,..., p\}$ to zamiast mnożenia przez $2$ użyjemy funkcji danej wzorem
+\[
+&nbsp;&nbsp;f(x) = 
+&nbsp;&nbsp;\begin{cases}
+&nbsp;&nbsp;2x \;\;\; \quad\quad\text{dla} \;\; x < \frac{1}{2}p\\
+&nbsp;&nbsp;2x - p \quad \text{dla} \;\; x > \frac{1}{2}p.
+&nbsp;&nbsp;\end{cases}
+\]
+Zauważmy, że $f(x) \equiv 2x \pmod{p}$.
+\vspace{10px}
+
+\noindent
+W ten sposób przyporządkujemy każdemu elementowi ze zbioru $A_1$ dokładnie 1 element ze zbioru $A_2$. Czy może się jednak tak zdarzyć, że pewien element z $A_2$ zostanie w ten sposób przyporządkowany nie do jednego, a do innej liczby elementów z $A_1$? Wykażemy, że nie.
+\vspace{10px}
+
+\noindent
+Mianowicie pokażemy, że z dowolnego elementu $A_2$ możemy odzyskać dokładnie jedną przyporządkowaną mu permutację z $A_1$. Zdefiniujmy ,,dzielenie przez $2$ modulo $p$'' wzorem
+\[
+&nbsp;&nbsp;g(x) = 
+&nbsp;&nbsp;\begin{cases}
+&nbsp;&nbsp;\frac{1}{2}x \;\; \quad\quad\quad\text{dla x parzystych}\\
+&nbsp;&nbsp;\frac{1}{2}(x - p) \quad \text{dla x nieparzystych}.
+&nbsp;&nbsp;\end{cases}
+\]
+Mamy $2g(x) \equiv x \pmod{p}$.
+Zauważmy, że jest to funkcja odwrotna do $f$ -- tj. $f(g(x)) = x$.
+\vspace{10px}
+
+\noindent
+Zauważmy, że
+\[
+&nbsp;&nbsp;(a_1, a_2, ..., a_p) \in A_2 \iff (g(a_1), g(a_2), ..., g(a_p)) \in A_1.
+\] 
+Pozostaje zauważyć, że to permutacja $(a_i)$ była przyporządkowana do permutacji~$(g(a_i))$. Jest tak, bo $f(g(a_i)) = a_i$. Stąd podane parowanie było poprawne, czyli istotnie zbiory $A_1$ i $A_2$ są równoliczne.
+\vspace{10px}
+
+\remark{Kluczowym faktem w powyższym rozumowaniu było istnienie funkcji odwrotnej do funkcji $f$ zdefiniowanej dla każdego elementu zbioru $\{1, 2, ..., p\}$.} 
+
+\vspace{5px}
+

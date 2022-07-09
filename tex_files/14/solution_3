@@ -1,0 +1,7 @@
+
+
+\noindent
+Rozpatrzmy liczbę $p^{k}$. Ma ona $k + 1$ dzielników. Chcemy, aby liczba $\frac{p^k}{k + 1}$ była całkowita. Wystarczy w tym celu wziąć $k = p - 1$. Jako że liczb pierwszych jest nieskończenie wiele, toteż jesteśmy w ten sposób w stanie uzyskać nieskończenie wiele liczb spełniających warunki zadania.
+
+\vspace{10px}
+

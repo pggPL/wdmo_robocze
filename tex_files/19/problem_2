@@ -1,0 +1,5 @@
+\noindent
+Wykazać, że dla dowolnych liczb $x$, $y$, $z$, $t$ z przedziału $(0, 1)$ zachodzi nierówność
+\[
+&nbsp;&nbsp;xyzt + (1 - x)(1 - y)(1 - z)(1 - t) < 1.
+\]

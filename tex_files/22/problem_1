@@ -1,0 +1,5 @@
+\noindent
+&nbsp;&nbsp;Niech $a,b,c$ będą trzema parami różnymi liczbami całkowitymi. Wykazać, że nie istnieje taki wielomian $P(x)$ o współczynnikach całkowitych, że zachodzą równości
+    \[
+        P(a) = b,\; P(b) = c,\; P(c) = a.
+    \]

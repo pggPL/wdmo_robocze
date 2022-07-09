@@ -1,0 +1,57 @@
+\heading{Definicje}
+
+\noindent
+\textit{Grafem skierowanym} nazywamy taki graf, w którym każda z krawędzi jest skierowana jedną ze stron. Może zdarzyć się, że pomiędzy wierzchołkami są dwie krawędzie, każda skierowana w inną stronę. Przykład takiego grafu znajduje się na poniższym rysunku.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A) at (-2,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B) at (-1,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:x] (C) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (D) at (2,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (E) at (1,4) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B) to (A);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B) to (C);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A) to (C);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (C) to (D);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (E) to (D);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (E) to[bend left] (C);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (C) to[bend left] (E);
+
+
+&nbsp;&nbsp;\end{tikzpicture}
+&nbsp;&nbsp;\hspace{40px}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B) at (3,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (C) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (D) at (-1,0.5) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A) to (B);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B) to (C);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (C) to (D);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (D) to (A);
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+\textit{Cyklem} w grafie skierowanym nazywamy taki ciąg krawędzi $e_1$, ..., $e_k$, że wierzchołek końcowy krawędzi $e_i$ jest wierzchołkiem początkowym krawędzi $e_{i + 1}$ dla każdego ${1 \leqslant i \leqslant n}$ -- przyjmujemy $e_{k + 1} = e_1$. Przykład cyklu znajduje się na drugim rysunku powyżej.
+
+\vspace{5px}
+
+\noindent
+Dla każdego wierzchołka definiujemy \text{stopień wejściowy} jako liczbę krawędzi, które ,,wchodzą'' do danego wierzchołka i oznaczamy go symbolem $indeg(v)$. Analogicznie definiujemy \text{stopień wyjściowy} jako liczbę krawędzi, które ,,wychodzą'' z danego wierzchołka -- oznaczamy go jako $outdeg(v)$. Dla przykładowego grafu na rysunku powyżej i jego wierzchołka~$x$ mamy
+\[
+&nbsp;&nbsp;indeg(x) = 3,  \quad outdeg(x) = 2.
+\]
+
+
+\vspace{10px}
+

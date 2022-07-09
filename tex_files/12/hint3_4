@@ -1,0 +1,6 @@
+\noindent 
+ Zauważ, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a_1b_1 + a_2b_2 + ... + a_nb_n \geqslant a_1b_{1 + k} + a_2b_{2 + k} + ... + a_nb_{n + k}.
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;

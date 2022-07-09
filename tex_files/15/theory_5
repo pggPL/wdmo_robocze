@@ -1,0 +1,16 @@
+\heading{Rozwiązanie}
+
+\noindent
+Zadanie w treści nie zawiera słowa ,,graf''. Jednak czasami warto sobie taki graf stworzyć. Rozpatrzmy więc graf skierowany, który ma $n$ wierzchołków -- ponumerujmy je liczbami od $1$ do $n$. Jeśli osoba, której przyporządkowano pokój $i$ ma na najwyższym miejscy swojej listy preferencji pokój $j$, to graf będzie zawierał krawędź z $i$ do $j$. 
+
+\vspace{5px}
+
+\noindent
+Załóżmy nie wprost, że szukana osoba nie istnieje -- tj. z każdego wierzchołka wychodzi dokładnie jedna krawędź. Wówczas na mocy Lematu $1$ w rozpatrywanym grafie istnieje cykl -- powiedzmy, że przechodzi przez wierzchołki
+\[
+&nbsp;&nbsp;a_1, \; a_2, \; a_3, \; ..., \; a_k.
+\]
+Wówczas przydzielając osobie z pokoju $a_i$ pokój $a_{i + 1}$ dla każdego $1 \leqslant i \leqslant k$, gdzie $a_{k + 1} = a_1$, otrzymamy przyporządkowanie, w którym każda osoba otrzyma subiektywnie lepszy pokój niż wcześniej. Jest to jednak sprzeczne z założeniami.
+
+\qed
+

@@ -1,0 +1,5 @@
+\noindent
+Wyznaczyć wszystkie liczby rzeczywiste $k$, takie, że dla dowolnych liczb rzeczywistych $a$, $b$, $c$, $d \geqslant -1$ zachodzi nierówność
+\[
+&nbsp;&nbsp;a^3 + b^3 + c^3 + d^3 + 1 \geqslant k(a + b + c + d).
+\]

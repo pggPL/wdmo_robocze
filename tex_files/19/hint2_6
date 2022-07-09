@@ -1,0 +1,5 @@
+\noindent 
+ Wykaż, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;x_1 + x_2 + ... + x_{25} + 1 > \sqrt{a_1 + ... + a_{25} + 200a_1},
+&nbsp;&nbsp;\]

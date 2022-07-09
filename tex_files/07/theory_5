@@ -1,0 +1,40 @@
+\heading{Dowód}
+
+\noindent
+Rozpatrzmy takie przedstawienie $W(x)$ w postaci
+\[
+    W(x) = G(x) \cdot P(x) + R(x),
+\]
+gdzie $deg \; R$ jest najmniejsze możliwe. Jeżeli $deg \; R < deg\; P$ to zachodzi teza. Rozpatrzmy przypadek, gdy $deg \; R \geqslant deg\; P$. Niech $deg \; P = n$ oraz $deg \; R = n + k$. Przyjmijmy
+\[
+    P(x) =  a_nx^n + a_{n - 1}x^{n - 1} + ... + a_1x + a_0,
+\]
+\[  
+    R(x) = b_{n + k}x^{n + k} + b_{n + k - 1}x^{n + k - 1} + ... + b_1x + b_0.
+\]
+Zauważmy, że wielomiany $R(x)$ oraz $\frac{b_{n + k}}{a_n}x^kP(x)$ mają równy stopień i współczynnik wiodący. Odejmując je od siebie skróci się on, stąd wielomian $R(x) - \frac{b_{n + k}}{a_n}x^kP(x)$ ma mniejszy stopień niż wielomian $R(x)$. Możemy zapisać
+\[
+    W(x) = \left(G(x) + \frac{b_{n + k}}{a_n}x^k\right) \cdot  P(x) + \left(R(x) - \frac{b_{n + k}}{a_n}x^kP(x)\right),
+\]
+co przeczy temu, że stopień $R$ był minimalny.
+
+\qed
+
+
+\vspace{10px}
+
+
+
+\noindent
+Wielomian $R$ nazywamy resztą z dzielenia wielomianu $W$ przez $P$.
+
+\vspace{10px}
+
+\noindent
+Powiemy, że wielomian $W$ jest \textit{podzielny} przez wielomian $P$, jeśli reszta z rozpatrywanego dzielenia wynosi $0$. Równoważnie istnieje wielomian $G$, że
+\[
+    W(x) = P(x) \cdot G(x).
+\]
+
+\vspace{10px}
+

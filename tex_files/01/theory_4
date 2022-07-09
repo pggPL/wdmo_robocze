@@ -1,0 +1,43 @@
+\heading{Grafy i ścieżki Hamiltona}
+
+\vspace{5px}
+
+\noindent
+\textit{Grafem} nazywamy pewien zbiór \textit{wierzchołków} na płaszczyźnie, które są połączone \textit{krawędziami}. \textit{Ścieżką} nazywamy ciąg parami różnych krawędzi pewnego grafu, z których dwie kolejne mają wspólny wierzchołek. \textit{Ścieżką Hamiltona} nazywamy ścieżkę, która przechodzi przez każdy wierzchołek dokładnie raz. 
+
+\vspace{20px}
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.5]
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(1,2){v_2}
+    \tkzDefPoint(2,1){v_3}
+    \tkzDefPoint(4,4){v_4}
+    \tkzDefPoint(2,3){v_5}
+    \tkzDrawPoints(v_1,v_2,v_3,v_4,v_5)
+    \tkzDrawSegments[arrowMe=stealth](v_1,v_2 v_2,v_3 v_3,v_4 v_4,v_5)
+    \tkzDrawSegments(v_1,v_3 v_3,v_5)
+&nbsp;&nbsp;\end{tikzpicture}\\
+&nbsp;&nbsp;Graf posiada ścieżkę Hamiltona -- zaznaczono ją strzałkami
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.5]
+    \tkzDefPoint(0,0){v_1}
+    \tkzDefPoint(1,2){v_2}
+    \tkzDefPoint(2,1){v_3}
+    \tkzDefPoint(4,4){v_4}
+    \tkzDefPoint(2,3){v_5}
+    \tkzDrawPoints(v_1,v_2,v_3,v_4,v_5)
+    \tkzDrawSegments(v_1,v_2 v_2,v_3 v_3,v_4)
+    \tkzDrawSegments(v_1,v_3 v_3,v_5)
+&nbsp;&nbsp;\end{tikzpicture}\\
+&nbsp;&nbsp;Graf nie posiada ścieżki Hamiltona
+\end{center}
+\end{minipage}
+
+
+\vspace{20px}
+

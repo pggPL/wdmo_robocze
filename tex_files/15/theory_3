@@ -1,0 +1,13 @@
+\heading{Dowód}
+
+\noindent
+Rozpatrzmy dowolny wierzchołek $v_1$. Z warunków zadania istnieje krawędź wychodząca z niego. Przejdźmy nią do pewnego wierzchołka $v_2$. Kontynuujmy takie przechodzenie -- oznaczmy jako $v_i$ wierzchołek, który odwiedzimy jako $i$-ty. Jako, że wierzchołków jest skończenie wiele, to w pewnym momencie trafimy do wierzchołka, w którym już byliśmy. Załóżmy, że wierzchołek $v_{b + 1}$ jest tym samym wierzchołkiem co wierzchołek $v_a$. Wówczas wierzchołki
+\[
+&nbsp;&nbsp;v_a, \; v_{a + 1}, \; v_{a + 2}, \; ..., \; v_{b - 1}, \; v_b
+\]
+tworzą cykl.
+
+\qed
+
+\newpage
+

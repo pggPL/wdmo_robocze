@@ -1,0 +1,8 @@
+\heading{Przykład 2}
+
+\noindent
+Liczby $a$, $b$, $c$ i $d$ spełniają równość $abcd = 1$. Wykazać, że
+\[
+&nbsp;&nbsp;\frac{1}{(1 + a)^2} + \frac{1}{(1 + b)^2} + \frac{1}{(1 + c)^2} + \frac{1}{(1 + d)^2} \geqslant 1.
+\]
+

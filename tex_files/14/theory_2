@@ -1,0 +1,17 @@
+\heading{Dowód}
+
+\noindent
+Załóżmy nie wprost, że $G(x) = G(y)$. Znaczy to tyle, że dla każdej liczby $i \in \{1, 2, ..., k\}$ zachodzi przystawanie
+\[
+&nbsp;&nbsp;x \equiv y \pmod{m_i},
+\]
+czyli równoważnie liczba $x - y$ jest podzielna przez $m_i$. Skoro $m_i$ są parami względnie pierwsze, to liczba $x - y$ jest podzielna przez $m_1m_2 \cdot ... \cdot m_k$. Z założeń zadania mamy zaś, że
+\[
+&nbsp;&nbsp;m_1m_2 \cdot ... \cdot m_k > x - y > 0,
+\]
+co daje sprzeczność z wyżej otrzymaną podzielnością.
+
+\qed
+
+\vspace{10px}
+

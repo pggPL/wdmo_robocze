@@ -1,0 +1,16 @@
+\heading{Równość wielomianów}
+
+\noindent
+Następujące warunki równości wielomianów są sobie równoważne, tj. gdy zachodzi jeden, to zachodzą wszystkie:
+\begin{itemize}
+    \item wielomiany przyjmują równe wartości dla każdej liczby rzeczywistej,
+    \item współczynniki obu wielomianów przy tych samych potęgach są równe.
+\end{itemize}
+Jeśli wielomiany są sobie równe, to wówczas mają one te same multizbiory pierwiastków rzeczywistych.
+
+\vspace{5px}
+\noindent
+Wykazanie, że powyższe warunki są równoważne pozostawiamy czytelnikowi, jeśli ma taką chęć. Po zapoznaniu się z powyższą teorią powinno być to dość łatwe. Przejdźmy teraz do pierwszego nietrywialnego zastosowania wielomianów.
+
+\vspace{5px}
+

@@ -1,0 +1,14 @@
+\heading{Rozwiązanie}
+
+\vspace{5px}
+\noindent
+Rozpatrzmy graf, w którym mamy $2m - 1$ wierzchołków, z których każdy odpowiada jednemu z dni, oraz $2m$ wierzchołków, z których każdy odpowiada pewnej drużynie. Wierzchołek odpowiadający drużynie połączymy z wierzchołkiem odpowiadającemu dniowi wtedy i tylko wtedy, gdy dana drużyna wygrała w danym dniu.
+
+\vspace{10px}
+\noindent
+Chcemy znaleźć skojarzenie przyporządkowujące każdemu dniowi jedną drużynę. Na mocy twierdzenia Halla wystarczy pokazać, że dla dowolnych $k$ dni istnieje co najmniej $k$ drużyn, że każda z nich wygrała podczas jednego z nich. Jeśli każda drużyna wygrała pewien mecz podczas tych $k$ dni, to oczywiście ten warunek jest spełniony. Jeśli istnieje drużyna, która podczas każdego z tych $k$ dni przegrała, to codziennie przegrała z inną drużyną. Toteż jest co najmniej $k$ drużyn, które ją pokonały, czyli w szczególności wygrały co najmniej jeden mecz w rozpatrywanych dniach.
+
+\qed
+
+\vspace{10px}
+

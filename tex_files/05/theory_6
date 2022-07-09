@@ -1,0 +1,27 @@
+\heading{Rozwiązanie}
+
+\noindent
+Wykażemy, że dla dowolnej liczby $x$ zachodzi nierówność
+\[
+    \frac{x}{x^3 + 4} \leqslant \frac{2x + 3}{25}.
+\]
+Istotnie mamy bowiem
+\begin{align*}
+    25x \leqslant (2x + 3)(x^3 + 4) = 2x^4 + 3x^3 + 8x + 12, \\
+    17x \leqslant 2x^4 + 3x^3 + 12,\\
+    x = \sqrt[17]{\left(x^4\right)^2\cdot\left(x^3\right)^3\cdot1^{12}} \leqslant \frac{2x^4 + 3x^3 + 12}{17}.
+\end{align*}
+Ostatnia zależność jest prawdziwa na mocy nierówności miedzy średnią arytmetyczną i~geometryczną.
+
+
+\noindent 
+Korzystając z powyższej nierówności otrzymujemy
+\[
+    \frac{a}{a^3 + 4} + \frac{b}{b^3 + 4} + \frac{c}{c^3 + 4} + \frac{d}{d^3 + 4} \leqslant \frac{2a + 3}{25} + \frac{2b + 3}{25} + \frac{2c + 3}{25} + \frac{2d + 3}{25} = \frac{4}{5}.
+\]
+
+\qed
+
+\vspace{5px}
+
+% przykład na pilnowanie równości

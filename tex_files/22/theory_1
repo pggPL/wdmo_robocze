@@ -1,0 +1,8 @@
+\heading{Twierdzenie 1}
+
+\noindent
+Dany jest wielomian $P(x)$ o współczynnikach całkowitych oraz dwie różne liczby całkowite~$a$, $b$. Wówczas zachodzi podzielność
+\[
+&nbsp;&nbsp;a - b \mid P(a) - P(b).
+\]
+

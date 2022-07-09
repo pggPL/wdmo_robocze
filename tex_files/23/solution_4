@@ -1,0 +1,37 @@
+
+
+\noindent
+Wykażemy, że przez każdy punkt przechodzi co najmniej jedna prosta dzieląca. Wówczas prostych dzielących będzie co najmniej $\frac{100}{2}=50$, ponieważ każda prosta dzieląca przechodzi przez dokładnie 2 czerwone punkty. 
+
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:$X$] (X) at (0,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:$Y$] (Y) at (3,3) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (k) at (2,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (k) at (2.3,0.2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (k) at (0.5,2.1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (k) at (1,1.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (k) at (1.3,1.8) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (4,2) {$b = 2$};
+&nbsp;&nbsp;&nbsp;&nbsp;\node at (-1,2) {$a = 3$};
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (X) to (Y);
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+
+\vspace{10px}
+\noindent
+Niech $l$ będzie prostą przechodzącą pewne dwa dowolne czerwone punkty $X$ i $Y$. Nadajmy prostej $l$ zwrot (dowolny). Niech $a$ oznacza liczbę czerwonych punktów po lewej stronie prostej $l$, zaś $b$ po prawej stronie. Obracajmy prostą $l$ wokół $X$, aż wykona ona obrót o $180\degree$. Wówczas prosta wróci do swojego początkowego kierunku, ale ze zmienionym zwrotem. Zatem po lewej stronie jest teraz będzie $b$ czerwonych punktów, zaś po prawej~$a$. 
+
+\vspace{10px}
+\noindent
+Wiemy, że $a+b=98$, zatem jedna z liczb $a$ lub $b$ jest nie mniejsza niż 49, wtedy druga jest nie większa niż 49. Początkowo po lewej stronie było $a$ punktów, a~po wykonaniu całego obrotu jest tam $b$ punktów. Liczba punktów po lewej stronie nie zmieniała się naraz o więcej niż 1, gdyż prosta $l$ (przechodząca przez czerwony punkt $X$) może przechodzić przez co najwyżej jeden czerwony punkt różny od $X$. Zatem w~pewnym momencie podczas obrotu był taki moment, że po lewej stronie tej prostej było 49 punktów (gdyż jedna z liczb $a, b$ jest większa od 49, zaś druga mniejsza). Wtedy po prawej też musiało być $98-49=49$ punktów. Czyli istnieje prosta ,,dzieląca'' przechodząca przez $X$, co kończy rozwiązanie zadania.
+
+ \vspace{5px}
+
+ 

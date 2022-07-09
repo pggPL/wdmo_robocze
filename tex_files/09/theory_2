@@ -1,0 +1,24 @@
+\heading{Rozwiązanie}
+
+\noindent
+Zauważmy najpierw, że liczba $1$ może być przedstawiona we wspomnianej postaci.
+Załóżmy, że dla pewnej liczby $k$, każdą z liczb 1, 2, ..., k da się przedstawić w postaci sumy parami różnych liczb Fibonacciego. Wykażemy, że wówczas liczbę $k + 1$ również.
+
+\vspace{10px}
+
+\noindent
+Niech $F_i$ będzie największą liczbą Fibonacciego mniejszą lub równą $k + 1$, równoważnie
+\[
+&nbsp;&nbsp;F_i \leqslant k + 1 < F_{i + 1}.
+\]
+Wówczas
+\[
+&nbsp;&nbsp;k + 1 - F_i < F_{i + 1} -  F_{i} = F_{i - 1} \leqslant F_{i}.
+\]
+Korzystając z założenia liczbę $k + 1 - F_i \leqslant k$ da się przedstawić w postaci sumy parami różnych liczb Fibonacciego. Żadna z tych liczb nie może być równa $F_{i}$, gdyż ich suma -- liczba $k + 1 - F_i$ jest mniejsza niż $F_i$. Stąd dorzucając do danego przedstawienia liczby~$k + 1 - F_i$  liczbę $F_{i}$ otrzymamy szukane przedstawienie liczby $k + 1$.
+
+\qed
+
+\noindent
+
+

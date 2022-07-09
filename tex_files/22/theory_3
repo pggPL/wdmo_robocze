@@ -1,0 +1,12 @@
+\heading{Twierdzenie 2}
+
+\noindent
+Dane są liczby całkowite $a_0$, $a_1$, ..., $a_n$, liczba wymierna $\frac{p}{q}$, $NWD(p, q) = 1$, oraz wielomian 
+\[
+&nbsp;&nbsp;W(x) = a_nx^n + a_{n - 1}x^{n - 1} + ... + a_1x + a_0, \; \text{ przy czym } \; W\left(\frac{p}{q}\right) = 0.
+\] 
+ Wtedy
+\[
+&nbsp;&nbsp;p \mid a_o \quad \text{oraz} \quad q \mid a_{n}.
+\]
+

@@ -1,0 +1,7 @@
+\heading{Przykład 1}
+
+\noindent
+Niech $F_0 = 0$, $F_1 = 1$, $F_{n + 1} = F_n + F_{n - 1}$ dla $n \geqslant 1$ będą kolejnymi liczbami Fibonacciego. Wykazać, że każda dodatnia liczba całkowita może być przedstawiona w postaci sumy parami różnych liczb Fibonacciego.
+
+\vspace{10px}
+

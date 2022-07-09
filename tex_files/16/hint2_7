@@ -1,0 +1,5 @@
+\noindent 
+ Wykaż tezę indukcyjnie. Weź największą liczbę $t$, mniejszą niż $n$, że $\mathrm{NWD}(t, a_t − 1) > 1$. Wykaż, że
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;a_n − 1 = a_t + (n − t) − 1 = 3t + (n - t) - 1 =  2t + n − 1.
+&nbsp;&nbsp;\]

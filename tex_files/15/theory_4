@@ -1,0 +1,7 @@
+\heading{Przykład 1}
+
+\noindent
+Pewne $n \geqslant 2$ osób zostało przydzielonych do $n$ pokoi, przy czym w każdym pokoju znajduje się dokładnie jedna osoba. Każda z osób ustaliła listę preferencji posortowała pokoje w pewnej kolejności. Wiadomo, że jeśli przyporządkowano by pokoje w inny sposób, to znalazła by się osoba, dla której nowy pokój był niżej na jej liście niż pierwotnie przyporządkowany jej pokój. Wykazać, że istnieje osoba, która ma na najwyższym miejscu swojej listy pokój, który został jej przyporządkowany.
+
+\vspace{5px}
+

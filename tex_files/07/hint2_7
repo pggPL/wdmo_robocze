@@ -1,0 +1,2 @@
+\noindent 
+ Wykaż, że $a_1a_2 \cdot ... \cdot a_{1000}$, $\sum_{1 \leqslant i \leqslant 1000} a_i$ oraz $\sum_{1 \leqslant i < j \leqslant 1000} a_ia_j$ są równe $-1$ lub $1$.

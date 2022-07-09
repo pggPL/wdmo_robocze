@@ -1,0 +1,5 @@
+\noindent
+Dany jest trójkąt o bokach długości $a$, $b$ i $c$. Wykazać, że zachodzi nierówność
+\[
+&nbsp;&nbsp;\frac{a}{b + c} + \frac{b}{c + a} + \frac{c}{a + b} < 2.
+\]

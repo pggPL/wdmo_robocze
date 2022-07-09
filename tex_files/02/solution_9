@@ -1,0 +1,36 @@
+
+
+\answer{Daną zależność spełniają funkcje $f(x) = 1$ i $f(x) = 0$.}
+
+\noindent
+Podstawmy $x = y = 0$. Wtedy otrzymujemy 
+\[
+&nbsp;&nbsp;f(0)^{2} = f(0) \implies f(0) \in \{0, 1\}.
+\]
+Podstawmy $x = y$
+\[
+&nbsp;&nbsp;f(x)^{2} = f(0).
+\] 
+Jeśli $f(0)=0$, to $f(x) =0$. Łatwo sprawdzić, że funkcja zerowa spełnia warunki zadania.
+Zobaczmy, co jeśli $x = y$ oraz $f(0) = 1$:
+\[
+&nbsp;&nbsp;f(x)^{2} = f(0) = 1 
+\] 
+Czyli $f(x)$ jest równe $-1$ lub 1 dla każdego $x$.
+Podstawmy $x=0$
+\[
+&nbsp;&nbsp;f(y) =f(-y).
+\] 
+Zauważmy, że 
+\[
+&nbsp;&nbsp;f(x - y) = f(x)f(y) = f(x)f(-y) = f(x+y). 
+\] 
+Weźmy 2 dowolne liczby a i b. Biorąc $x=\frac{a+b}{2}$ oraz 
+$y=\frac{a-b}{2}$ otrzymamy
+\[
+&nbsp;&nbsp;f(x+y) = f(x-y) \implies f(a) = f(b).
+\] 
+Skoro $a$ i $b$ były dowolne to $f$ jest funkcją stałą, czyli $f(x) = 1$. Łatwo sprawdzić, że ta funkcja również spełnia warunki zadania. Czyli tę zależność spełniają funkcje $f(x) = 1 $ i $f(x) = 0$. Sprawdzamy, że istotnie one działają.
+
+\vspace{5px}
+

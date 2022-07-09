@@ -1,0 +1,3 @@
+\noindent 
+ Z założenia indukcyjnego istnieje cykl o długości $n - 1$, który spełnia warunki zadania. Wykaż, że można do niego dołożyć usunięty w celu indukcji wierzchołek, aby cykl dalej spełniał warunki zadania.
+&nbsp;&nbsp;

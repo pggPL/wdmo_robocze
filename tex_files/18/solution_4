@@ -1,0 +1,14 @@
+
+
+\noindent
+Skoro każda ściana ma co najmniej $3$ boki, to dodając liczbę boków każdej ze ścian otrzymamy liczbę nie mniejszą niż $3f$. Jest to dwukrotność liczby boków, bo każdy bok należy do dwóch ścian. Stąd ta liczba jest równa $2e$. Mamy więc
+\[
+&nbsp;&nbsp;2e \geqslant 3f.
+\]
+Na mocy twierdzenia Eulera mamy
+\begin{align*}
+&nbsp;&nbsp;v - e + f &= 1 + c \geqslant 2, \\
+&nbsp;&nbsp;v - 2 &\geqslant e - f, \\
+&nbsp;&nbsp;3v  - 6 &\geqslant 3e - 3f \geqslant e.
+\end{align*}
+

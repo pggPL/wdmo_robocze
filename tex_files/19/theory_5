@@ -1,0 +1,26 @@
+\heading{Rozwiązanie}
+
+\noindent
+Pomysłem, który należy rozważyć przy tego typu zadaniach są szacowania pomocnicze. Wykażemy, że
+\[
+&nbsp;&nbsp;\frac{1}{(1 + a)^2} + \frac{1}{(1 + b)^2} \geqslant \frac{1}{1 + ab},
+\]
+dla dowolnych liczb rzeczywistych $a$, $b$. Mamy
+\begin{align*}
+&nbsp;&nbsp;\frac{1}{(1 + a)^2} + \frac{1}{(1 + b)^2} &\geqslant \frac{1}{1 + ab}, \\
+&nbsp;&nbsp;(ab + 1)\left( (1 + a)^2 + (1 + b)^2\right) &\geqslant (a + 1)^2(b + 1)^2, 
+\end{align*}
+co po wymnożeniu i redukcji wyrazów podobnych skróci się do postaci
+\begin{align*}
+&nbsp;&nbsp;1 + a^3b + ab^3 &\geqslant 2ab + a^2b^2 \\
+&nbsp;&nbsp;ab(a - b)^2 + (ab - 1)^2 &\geqslant 0.
+\end{align*}
+
+\noindent
+Korzystając z wykazanego szacowania mamy
+\[
+&nbsp;&nbsp;\frac{1}{(1 + a)^2} + \frac{1}{(1 + b)^2} + \frac{1}{(1 + c)^2} + \frac{1}{(1 + d)^2} \geqslant \frac{1}{1 + ab} + \frac{1}{1 + cd} = \frac1{1 + ab} + \frac{ab}{ab + abcd} = 1.
+\]
+\qed
+
+% może jakaś nierówność z podstawieniem

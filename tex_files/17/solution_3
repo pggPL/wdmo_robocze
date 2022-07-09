@@ -1,0 +1,16 @@
+
+
+\noindent
+Wykażemy, że żadna funkcja nie spełnia warunków zadania. Załóżmy nie wprost, że $f$ jest takową. Wówczas dla dowolnych dodatnich liczb całkowitych $a$, $k$ mamy
+\[
+&nbsp;&nbsp;f(a^k) = f(a) + f(a^{k - 1}) = 2f(a) + f(a^{k - 2}) = ... = k\cdot f(a).
+\]
+Zauważmy, że
+\[
+&nbsp;&nbsp;f(2^{f(3)}) = f(3) \cdot f(2) = f(2)\cdot f(3) = f(3^{f(2)}).
+\]
+Liczby $2^{f(3)}$ oraz $3^{f(2)}$ mogą być sobie równe wtedy i tylko wtedy, gdy $f(2) = f(3) = 0$. Stąd $f$ przyjmuję tę samą wartość dla dwóch różnych argumentów, co jest sprzeczne z~założeniami zadania.
+
+\vspace{5px}
+
+%Source: https://artofproblemsolving.com/community/c6h1513472p8997062 4 IGO P4 Junior

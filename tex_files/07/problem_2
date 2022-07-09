@@ -1,0 +1,9 @@
+\noindent
+&nbsp;&nbsp;Wykazać, że jeśli liczby rzeczywiste $a, b, c$ spełniają
+    \[
+    \begin{cases}
+        abc = 1 \\
+        \frac{1}{a} + \frac{1}{b} + \frac{1}{c} = a + b + c.
+    \end{cases}
+    \]
+    to co najmniej jedna liczba spośród $a, b, c$ jest równa 1.

@@ -1,0 +1,12 @@
+\noindent
+&nbsp;&nbsp;Prostokąt $\mathcal{P}$ o wymiarach $1001 \times 1001$, podzielono na pewną liczbę prostokątów, z których każdy ma boki długości całkowitej (przykład na rysunku). Wykazać, że z tych prostokątów można wybrać taki jeden, że odległości jego czterech boków od odpowiadających mu boków $\mathcal{P}$ albo są wszystkie liczbami parzystymi, albo są wszystkie liczbami nieparzystymi.
+
+&nbsp;&nbsp;\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.5]
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,0) -- (3,0) -- (3,2) -- (0,2) -- cycle;
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (0,0) -- (1,0) -- (1,2) -- (0,2) -- cycle;
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (1,0) -- (3,0) -- (3,0.5) -- (1,0.5) -- cycle;
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (1,1.5) -- (3,1.5) -- (3,2) -- (1,2) -- cycle;
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (2,0.5) -- (3,0.5) -- (3,1.5) -- (2,1.5) -- cycle;
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}

@@ -1,0 +1,23 @@
+
+
+\noindent
+Załóżmy, że teza nie zachodzi -- wtedy musi zachodzić następujący fakt:
+\begin{center} 
+&nbsp;&nbsp;Jeśli $d$ oraz $d + 2$ są dzielnikami liczby $4n$, to liczba $d + 1$ również. (*)
+\end{center}
+Wykażemy, że istnieje nieskończenie wiele takich liczb naturalnych $k$, że $2k$, $2k + 1$ oraz $2k + 2$ są dzielnikami liczby $n$. Na początku zauważmy, że $2$ i $4$ są dzielnikami $4n$. Z (*) liczba $3$ również nim będzie. 
+
+\vspace{10px}
+
+\noindent
+Załóżmy więc, że dla pewnej liczby naturalnej $k$ liczby $2k$, $2k + 1$ oraz $2k + 2$ są dzielnikami liczby $4n$. Wówczas jedna z liczb $2k$, $2k + 2$ nie jest podzielna przez $4$. Bez straty ogólności przyjmijmy, że jest to $2k$. Skoro $2k$ nie dzieli się przez $4$ i jest dzielnikiem liczby $4n$, to liczba $4k$ również będzie dzielnikiem liczby $4n$. 
+
+Analogicznie postępując z liczbą $2n + 1$, która jest nieparzysta, otrzymamy, że również liczba $4k + 2$ jest dzielnikiem liczby $4n$. Z (*) mamy, że $4k + 1$ musi być dzielnikiem $4n$. Otrzymaliśmy większą trójkę $(4k, 4k + 1, 4k + 2)$ kolejnych dzielników liczby $4n$.
+
+\vspace{10px}
+
+\noindent
+Możemy w ten sposób uzyskać dowolnie duże trójki kolejnych dzielników $4n$, co jest oczywistą sprzecznością, gdyż dzielniki te są nie większe niż $4n$.
+
+\vspace{10px}
+

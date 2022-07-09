@@ -1,0 +1,36 @@
+
+
+\noindent
+Zauważmy, że plansza $2\times2$ z usuniętym rogiem jest w istocie L-klockiem, więc da się ją pokryć.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}[scale=0.3]
+    \tkzDefPoint(0,0){A}
+    \tkzDefPoint(0,10){B}
+    \tkzDefPoint(10,10){C}
+    \tkzDefPoint(10,0){D}
+    \tkzDefPoint(9,0){P1}
+    \tkzDefPoint(9,1){P2}
+    \tkzDefPoint(10,1){P3}
+    \tkzDrawSegments(A,B B,C C,D D,A)
+    \tkzDrawSegments(P2,P1 P3,P2)
+
+
+    \tkzDefPoint(5,0){G1}
+    \tkzDefPoint(5,10){G2}
+    \tkzDefPoint(0,5){G3}
+    \tkzDefPoint(10,5){G4}
+    \tkzDrawSegments(G1,G2 G3,G4)
+
+    \tkzDefPoint(4,4){T1}
+    \tkzDefPoint(4,6){T2}
+    \tkzDefPoint(6,6){T3}
+    \tkzDefPoint(6,5){T4}
+    \tkzDefPoint(5,4){T5}
+    \tkzDrawSegments(T1,T2 T2,T3 T3,T4 T1,T5) 
+&nbsp;&nbsp;\end{tikzpicture}\\
+\end{center}
+
+\noindent
+Załóżmy, że dla planszy $2^{n - 1} \times 2^{n - 1}$ istnieje szukane pokrycie. Pokrycie dla planszy $2^{n} \times 2^{n}$ konstruujemy następująco. Dzielimy planszę dwiema prostymi na trzy jednakowe części i czwartą taką samą, tylko bez rogu. Kładziemy jeden klocek na środku, tak jak na rysunku. Wówczas plansza jest podzielona na cztery jednakowe puste części, które na mocy założenia indukcyjnego można pokryć.
+

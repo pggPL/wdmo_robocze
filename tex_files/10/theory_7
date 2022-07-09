@@ -1,0 +1,35 @@
+\heading{Dowód}
+
+\noindent
+Przyjmijmy 
+$ n = p_1^{v_{p_1}(n)} \cdot p_2^{v_{p_2}(n)} \cdot ... \cdot p_s^{v_{p_1}(n)}. $
+Wówczas
+\[
+&nbsp;&nbsp;n = p_1^{v_{p_1}(n)} \cdot p_2^{v_{p_1}(n)} \cdot ... \cdot p_s^{v_{p_1}(n)} = \left( p_1^{\frac{v_{p_1}(n)}{k}} \cdot p_2^{^{\frac{v_{p_2}(n)}{k}}} \cdot ... \cdot p_s^{^{\frac{v_{p_s}(n)}{k}}}\right)^k,
+\]
+więc jeśli każdy z wykładników jest podzielny przez $k$, to liczba w nawiasie będzie liczbą całkowitą. Toteż $n$ jest $k$-tą potęgą liczby całkowitej.
+
+\vspace{10px}
+
+\noindent
+Dowodząc w drugą stronę, przyjmijmy $n = a^k$ dla pewnej liczby całkowitej $a$. Dla dowolnej liczby pierwszej $p$ mamy wtedy
+\[
+&nbsp;&nbsp;v_p(n) = v_p(a^k) = v_p(a) + v_p(a^{k - 1}) = 2v_p(a) + v_p(a^{k - 2}) = ... =  k \cdot v_p(a),
+\]
+co dowodzi postulowanej podzielności.
+
+\qed
+
+\vspace{10px}
+
+\noindent
+Z powyższego rozumowania warto zrozumieć i zapamiętać zależność
+\[
+&nbsp;&nbsp;v_p(a^k) =  k \cdot v_p(a).
+\]
+
+\noindent
+Warto zwrócić uwagę na fakt, że Lemat 2 i Lemat 3 działają w dwie strony. Możemy ich użyć, aby uzyskać pewną własność $v_p$ z założenia o podzielności lub byciu potęgą. Jednak także są przydatne, gdy mamy wykazać, że jakaś podzielność zachodzi lub jakaś liczba jest kwadratem, sześcianem, ... liczby całkowitej.
+
+\vspace{10px}
+

@@ -1,0 +1,14 @@
+\heading{Lemat 3}
+
+\noindent
+Dla dowolnej liczby $a$, która nie jest podzielna przez $p$ ciąg
+\[
+    (a \text{ (mod } p),\;\; 2a \text{ (mod } p),\;\;  3a \text{ (mod } p), ...,\;\;  (p - 1) \cdot a \text{ (mod } p))
+\]
+jest permutacją ciągu
+\[
+ (1,\; 2,\; 3,\; ...,\; p - 1).
+\]
+
+\rotatehint{Wykaż, że $ai \not\equiv aj \pmod{p}$, jeśli $i \not\equiv j \pmod{p}$.}
+

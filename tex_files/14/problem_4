@@ -1,0 +1,8 @@
+\noindent
+&nbsp;&nbsp;Dana jest nieparzysta liczba pierwsza $p$. Obliczyć wartość wyrażenia
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{0}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{1}{p}\right) + 
+&nbsp;&nbsp;&nbsp;&nbsp;... +
+&nbsp;&nbsp;&nbsp;&nbsp;\left(\frac{p - 1}{p}\right).
+&nbsp;&nbsp;\]

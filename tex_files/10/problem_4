@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie pary $(a, b)$ liczb całkowitych dodatnich, dla których obie liczby
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;\frac{a^3b - 1}{a + 1} \quad \text{oraz} \quad \frac{b^3a - 1}{b - 1}
+&nbsp;&nbsp;\]
+&nbsp;&nbsp;są całkowite

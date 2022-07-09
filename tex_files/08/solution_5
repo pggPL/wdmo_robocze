@@ -1,0 +1,15 @@
+
+
+\noindent
+Rozpatrzmy wierzchołek o najmniejszym stopniu. Wyróżnijmy go i usuńmy go wraz ze wszystkimi sąsiadującymi wierzchołkami. Bez straty ogólności $d_1 \leqslant d_2 \leqslant ... \leqslant d_{d_1 + 1}$ to będą stopnie usuniętych wierzchołków. Wówczas rozpatrywana suma ułamków zmniejszy się o sumę
+\[
+&nbsp;&nbsp;\sum^{d_1 + 1}_{i = 1} \frac{1}{d_i + 1} \leqslant \sum^{d_1 + 1}_{i = 1} \frac{1}{d_1 + 1} = 1.
+\]
+Także po usunięciu tych wierzchołków inne stopnie mogą się zmniejszyć, ale to jedynie zwiększy wartość rozpatrywanego wyrażenia.
+
+\vspace{10px}
+\noindent
+Wykazaliśmy, że usuwając pewien wierzchołek i jego sąsiadów, zmniejszamy rozpatrywaną sumę o co najwyżej $1$. Powtarzając ten algorytm, wykonamy co najmniej $\sum^{n}_{i = 1} \frac{1}{1 + d_i}$ usunięć. Biorąc pod uwagę wyróżnione wierzchołki otrzymamy zbiór spełniający warunki zadania.
+
+\vspace{5px}
+

@@ -1,0 +1,9 @@
+\heading{Przykład 2}
+
+\noindent
+Dany jest graf o $n$ wierzchołkach posiadający $k$ krawędzi o numerach
+będących różnymi liczbami całkowitymi od $1$ do $k$. Udowodnić, że istnieje w
+nim ścieżka składająca się z co najmniej $\frac{2k}{n}$ krawędzi, których numery tworzą ciąg rosnący.
+
+\vspace{5px}
+

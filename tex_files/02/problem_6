@@ -1,0 +1,6 @@
+\noindent
+&nbsp;&nbsp;Znajdź wszystkie funkcje różnowartościowe
+&nbsp;&nbsp;$\mathbb{R} \rightarrow \mathbb{R} $ spełniające dla wszystkich $x, y \in \mathbb{R} $ równość 
+&nbsp;&nbsp;\[
+&nbsp;&nbsp;&nbsp;&nbsp;f(f(x) + y) = f(x+y) + 1.
+&nbsp;&nbsp;\]

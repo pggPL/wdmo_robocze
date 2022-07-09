@@ -1,0 +1,13 @@
+
+
+\noindent
+Rozpatrzmy dowolną krawędź -- przyjmijmy, że jest ona między wierzchołkami $u$ i $v$. Wykażemy, że po wykonaniu dowolnych $198$ ruchów zostanie ona usunięta. Analogicznie rozumując dla każdej krawędzi udowodnimy tezę.
+
+\vspace{5px}
+\noindent
+Załóżmy, że pewien zbiór idealny nie zawiera krawędzi pomiędzy $u$ i $v$. Jeśli ten zbiór nie zawierałby żadnej krawędzi wychodzącej z $u$ albo $v$, to możnaby do niego dołożyć krawędź pomiędzy $u$ i $v$, co daje sprzeczność z maksymalnością tego zbioru. 
+
+\vspace{5px}
+\noindent
+Pozostałych wychodzących z jednego z~wierzchołków $u$ lub $v$ jest co najwyżej $2 \cdot 99 = 198$. W takim razie w ciągu $199$ ruchów istnieje taki ruch, w~którym nie usuniemy jednej z~nich. Z wyżej wykazanego wniosku wynika, że usuniemy wówczas krawędź pomiędzy~$u$~i~$v$.
+

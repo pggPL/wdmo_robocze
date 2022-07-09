@@ -1,0 +1,28 @@
+
+
+\answer{Szukany ciąg istnieje wtedy i tylko wtedy, gdy $\alpha > 1$.}
+
+\noindent
+Jeśli $\alpha > 1$, to łatwo sprawdzić, że ciąg dany wzorem $x_n  = \alpha - 1$ spełnia warunki zadania. Załóżmy nie wprost, że dla pewnego $\alpha \leqslant 1$ istnieje ciąg spełniający warunki zadania. Wówczas, skoro liczba pod pierwiastkiem musi być dodatnia, mamy
+\begin{align*}
+ &nbsp;&nbsp;0 &\leqslant \alpha x_{n+1} - x_n \leqslant x_{n + 1} - x_n, \\
+ &nbsp;&nbsp;x_n &\leqslant x_{n + 1},
+\end{align*}
+z czego wynika, że ciąg ten jest rosnący. Wykażemy teraz, że od pewnego momentu ciąg ten przyjmuje wartości mniejsze niż $1$. Istotnie
+\[
+&nbsp;&nbsp;x_{n + 2}^2 = \alpha x_{n + 1} - x_n < \alpha x_{n + 1} \leqslant x_{n + 1} \leqslant x_{n + 2},
+\]
+z czego wynika postulowana własność.
+Zauważmy, że
+\begin{align*}
+&nbsp;&nbsp;x_1 < x_{n + 2} = \sqrt{\alpha x_{n+1} - x_n} \leqslant \sqrt{x_{n+1} - x_n}, \\
+&nbsp;&nbsp;x_1^2 < x_{n+1} - x_n.
+\end{align*}
+Z powyższej nierówności, jak i z wykazanej wyżej własności, wynika, że
+\[
+&nbsp;&nbsp;1 > x_{n + 1} > x_n + x_{1}^2 > x_{n - 1} + 2x_{1}^2 > ... > nx_{1}^2,
+\]
+co nie może być prawdą dla wszystkich liczb naturalnych $n$.
+
+\vspace{5px}
+

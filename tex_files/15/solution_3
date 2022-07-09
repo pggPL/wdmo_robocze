@@ -1,0 +1,36 @@
+
+
+\noindent
+Rozpatrzmy taki podział wierzchołków tego grafu na trzy zbiory, aby liczba krawędzi, które mają dwa wierzchołki wewnątrz tego samego zbioru, była minimalna. Nazwijmy te trzy zbiory jako $A$, $B$ i $C$. Wykażemy, że spełnia on warunki zadania.
+
+\begin{center}
+&nbsp;&nbsp;\begin{tikzpicture}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{vertex/.style = {shape=circle,draw, inner sep = 1pt, fill=black}}
+&nbsp;&nbsp;&nbsp;&nbsp;\tikzset{edge/.style = {arrowMe=stealth}}
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_1) at (0,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_2) at (0.5,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=above:A] (A_3) at (1,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_4) at (1.5,2) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (A_5) at (2,2) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_1) at (1.5,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=below:B] (B_2) at (0.75,0) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (B_3) at (0,0) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (C_1) at (3,0.5) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex, label=right:C] (C_2) at (3,1) {};
+&nbsp;&nbsp;&nbsp;&nbsp;\node[vertex] (C_3) at (3,1.5) {};
+
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_2);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (A_3) to (A_4);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (B_3) to (A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw[edge] (C_1) to (A_3);
+
+&nbsp;&nbsp;\end{tikzpicture}
+\end{center}
+
+\noindent
+Załóżmy nie wprost, że pewien wierzchołek~$v$ oraz dwa wierzchołki~$a$,~$b$, przy czym z~$v$ wychodzą krawędzie zarówno do~$a$, jak~i do~$b$, leżą w jednym ze zbiorów. Bez straty ogólności załóżmy, że~$v$,~$a$,~$b$ należą do zbioru~$A$. Skoro do~$v$ wchodzą dwie krawędzie, to w~jednym ze zbiorów $B$, $C$ jest co najwyżej jeden wierzchołek początkowy takiej krawędzi. Przyjmijmy dla ustalenia uwagi, że jest to zbiór $B$. Jeśli przełożymy wierzchołek~$v$ do zbioru~$B$, to liczba krawędzi o końcach w tym samym zbiorze się zmniejszy, co przeczy minimalności rozpatrywanego podziału.
+

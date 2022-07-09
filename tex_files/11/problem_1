@@ -1,0 +1,2 @@
+\noindent
+&nbsp;&nbsp;Na tablicy napisano liczbę całkowitą dodatnią. W każdym ruchu zmazujemy napisaną liczbę $n$ na tablicy i piszemy nową liczbę. Jeśli $n$ była parzysta to piszemy na tablicy liczbę $\frac{1}{2}n$. Jeśli zaś liczba $n$ była nieparzysta, to zapisujemy jedną z liczb $3n - 1$ lub $3n + 1$. Czy -- niezależnie od tego, jaką liczbę zapisano na początku -- możemy, po skończenie wielu krokach, uzyskać na tablicy jedynkę?

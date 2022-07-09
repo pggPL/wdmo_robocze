@@ -1,0 +1,8 @@
+\heading{Przykład 1}
+
+\noindent
+Znajdź wszystkie funkcje $f:\mathbb{R}\rightarrow\mathbb{R}$ spełniające dla wszystkich $x, y \in \mathbb{R}$, równanie 
+\[
+    f(x + y) = f(x) − f(y).
+\]
+

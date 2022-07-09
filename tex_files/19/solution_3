@@ -1,0 +1,16 @@
+
+
+\noindent
+Wykonajmy identyczne podstawienie jak w Przykładzie 1. Weźmy takie dodatnie $x$, $y$, $z$, aby zachodziły równości
+\[
+&nbsp;&nbsp;a = x + y, \quad b = x + z, \quad c = y + z.
+\]
+Teza przyjmuje postać
+\[
+&nbsp;&nbsp;\frac{x + y}{x + y + 2z} + \frac{x + z}{x + 2y + z} + \frac{y + z}{2x + y + z} < 2.
+\]
+Zauwazmy, że
+\begin{align*}
+&nbsp;&nbsp;\frac{x + y}{x + y + 2z} + \frac{x + z}{x + 2y + z} + \frac{y + z}{2x + y + z} < \frac{x + y}{x + y + z} + \frac{x + z}{x + y + z} + \frac{y + z}{x + y + z} = 2.
+\end{align*}
+
