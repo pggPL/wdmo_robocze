@@ -13,7 +13,7 @@
 	  header("Location: contents.html");
 	} 
 
-	$sql = "SELECT * FROM IPs WHERE 1";
+	$sql = "SELECT * FROM IPs WHERE TRUE";
 	$result = pg_exec($conn, $sql);
 
 
