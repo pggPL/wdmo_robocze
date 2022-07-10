@@ -9,8 +9,8 @@ class ChapterManager:
 	def __init__(self, chapter_number):
 		self.chapter_number = chapter_number
 		self.chapter_path = "../wdmo/chapters/" + chapter_number
-		self.pictures_path = "../pictures/" + chapter_number
-		self.tex_files_path = "../wtex_files/" + self.chapter_number
+		self.pictures_path = "../public_html/pictures/" + chapter_number
+		self.tex_files_path = "../tex_files/" + self.chapter_number
 
 		os.system("mkdir ../pictures")
 		os.system("mkdir " + self.pictures_path)
@@ -27,12 +27,12 @@ class ChapterManager:
 
 
 
-		tex_file = open("../text_templates/tex_start.tex")
+		tex_file = open("../tex_templates/tex_start.tex")
 		self.tex_start = tex_file.read()
 		tex_file.close()
 
 
-		tex_file = open("../text_templates/tex_end.tex")
+		tex_file = open("../tex_templates/tex_end.tex")
 		self.tex_end = tex_file.read()
 		tex_file.close()	
 

@@ -12,7 +12,7 @@ def file_number(file):
 class HTMLManager:
 	def __init__(self, chapters):
 		self.chapters = chapters
-		self.chapters_path = "./chapters/"
+		self.chapters_path = "../wdmo/chapters/"
 		self.chapters_names = []
 		for chapter in chapters:
 			text = self.read_file(self.chapters_path + chapter + "/theory.tex")
@@ -22,8 +22,8 @@ class HTMLManager:
 
 
 	def contents(self):
-		contents_start = self.read_file("contents_start")
-		contents_end = self.read_file("contents_end")
+		contents_start = self.read_file("../html_templates/contents_start")
+		contents_end = self.read_file("../html_templates/contents_end")
 		output = contents_start
 		chapter_number = 1
 		for chapter_name in self.chapters_names:
@@ -44,11 +44,11 @@ class HTMLManager:
 			return 100 * int(numbers[0]) + int(numbers[1].split('.')[0])
 
 	def chapter(self, chapter):
-		chapter_start = self.read_file("chapter_start")
-		chapter_end = self.read_file("chapter_end")
+		chapter_start = self.read_file("../html_templates/chapter_start")
+		chapter_end = self.read_file("../html_templates/chapter_end")
 		output = chapter_start
 
-		files_in_folder = os.listdir("pictures/" + chapter)
+		files_in_folder = os.listdir("../public_html/pictures/" + chapter)
 		theory_files = []
 		problems_files = []
 		for file in files_in_folder:
@@ -90,8 +90,8 @@ class HTMLManager:
 
 
 		output += chapter_end
-		os.system("mkdir chapters_html")
-		contents_file = open("chapters_html/" + chapter + ".html", "w+")
+		os.system("mkdir ../public_html/chapters_html")
+		contents_file = open("../public_html/chapters_html/" + chapter + ".html", "w+")
 		contents_file.write(output)
 		contents_file.close()
 

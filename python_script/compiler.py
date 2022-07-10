@@ -3,7 +3,7 @@ import html_gen
 from chapter_manager import ChapterManager
 from html_manager import HTMLManager
 
-chapters = os.listdir("chapters")
+chapters = os.listdir("../wdmo/chapters")
 chapters.remove(".DS_Store")
 chapters.sort()
 
