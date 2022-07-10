@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Wstęp do matematyki olimpijskiej </title>
+		<link href="style.css" rel="stylesheet">
+		<script src = "lib.js"></script>
+	</head>
+	<body>
+		<center>
+			<h3> Paweł Gadziński </h3>
+			<h1 class = "contents_title">Wstęp do matematyki olimpijskiej &ndash; zadania niegeomteryczne</h1><br><br>
+			<div class = "contents_subtitle"> Spis treści </div><br><br>
+		</center>
+
+
+		<div class = "content">
