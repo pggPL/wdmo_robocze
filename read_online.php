@@ -7,15 +7,15 @@
 	  header("Location: contents.html");
 	} 
 
-	$sql = "INSERT INTO log (ip, time, type) VALUES ('".$_SERVER['REMOTE_ADDR']."', '".date("Y-m-d h:i:sa")."', 'online')";
+	$sql = "INSERT INTO log (ip, time, type) VALUES ('".$_SERVER['HTTP_X_REAL_IP']."', '".date("Y-m-d h:i:sa")."', 'online')";
 	pg_exec($conn, $sql);
 
 
-	$sql = "SELECT IP FROM IPs WHERE IP = '".$_SERVER['REMOTE_ADDR']."'";
+	$sql = "SELECT IP FROM IPs WHERE IP = '".$_SERVER['HTTP_X_REAL_IP']."'";
 	$result = pg_exec($conn, $sql);
 
 	if(pg_num_rows($result) == 0){
-		$sql = "INSERT INTO IPs (IP) VALUES ('".$_SERVER['REMOTE_ADDR']."')";
+		$sql = "INSERT INTO IPs (IP) VALUES ('".$_SERVER['HTTP_X_REAL_IP']."')";
 		$result = pg_exec($conn, $sql);
 	}
 
