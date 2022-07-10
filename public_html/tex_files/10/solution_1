@@ -11,6 +11,6 @@ Innymi słowy $k$ jest największą liczbą całkowitą, taką, że $k^2$ jest n
 \[
 &nbsp;&nbsp;k + 1 > \sqrt{n} \geqslant k,
 \]
-czyli $\left\lfloor \sqrt{n} \right\rfloor = k$. Jedynymi liczbami w przedziale $[k^2, (k + 1)^2)$, które są podzielne przez $k$ są $k^2$, $k^k + k$ i $k^2 + 2k$.
+czyli $\left\lfloor \sqrt{n} \right\rfloor = k$. Jedynymi liczbami w przedziale $[k^2, (k + 1)^2)$, które są podzielne przez $k$ są $k^2$, $k^2 + k$ i $k^2 + 2k$.
 
 

@@ -10,9 +10,6 @@ czyli równoważnie
 \[
 &nbsp;&nbsp;cv_p(b) \geqslant bv_p(a) \quad \text{oraz} \quad bv_p(c) \geqslant cv_p(a),
 \]
-\[
-&nbsp;&nbsp;cv_p(b) \geqslant bv_p(a) \quad \text{oraz} \quad bv_p(c) \geqslant cv_p(a).
-\]
 Mamy więc
 \[
 &nbsp;&nbsp;v_p(bc) = v_p(b) + v_p(c) = \frac{b}{c}v_p(a) +  \frac{c}{b}v_p(a) \geqslant 2\sqrt{\frac{b}{c} \cdot \frac{c}{b} \cdot v_p(a)^2} = 2v_p(a),
