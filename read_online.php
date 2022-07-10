@@ -7,7 +7,7 @@
 	  header("Location: contents.html");
 	} 
 
-	$sql = "INSERT INTO log (ip, time, type) VALUES ('".$_SERVER['REMOTE_ADDR']."', '".date("Y-m-d h:i:sa")."', 'pdf')";
+	$sql = "INSERT INTO log (ip, time, type) VALUES ('".$_SERVER['REMOTE_ADDR']."', '".date("Y-m-d h:i:sa")."', 'online')";
 	pg_exec($conn, $sql);
 
 
