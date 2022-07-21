@@ -1,7 +1,7 @@
 
 
 \noindent
-Załóżmy nie wprost, że istnieje pewna liczba niecałkowita $\alpha$, dla której zachodzi równość $W(\alpha) = 1$. Wstawiając $x = \alpha$ do wyjściowego równania otrzymujemy
+Załóżmy nie wprost, że istnieje pewna liczba niecałkowita $\alpha$, dla której zachodzi równość $W(\alpha) = 0$. Wstawiając $x = \alpha$ do wyjściowego równania otrzymujemy
 \begin{align*}
     (\alpha + 1)W(\alpha) = (\alpha - 2)W(\alpha + 1), \\
     0 = (\alpha - 2)W(\alpha + 1).
