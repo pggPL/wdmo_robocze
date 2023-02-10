@@ -110,9 +110,9 @@ Takie przyporządkowanie nazwiemy \textit{skojarzeniem}. Warto zwrócić uwagę,
 &nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_1);
 &nbsp;&nbsp;&nbsp;&nbsp;\draw (B_4)--(A_2);
 &nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(A_4);
-&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_5);
-&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_6);
-&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_3);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(A_5);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_2)--(A_6);
+&nbsp;&nbsp;&nbsp;&nbsp;\draw (B_3)--(A_2);
 
 
 

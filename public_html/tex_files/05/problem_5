@@ -1,5 +1,5 @@
 \noindent 
-&nbsp;&nbsp;Udowodnić, że dla dowolnych liczb rzeczywistych $a$, $b$, $c$ zachodzi nierówność
+&nbsp;&nbsp;Udowodnić, że dla dowolnych liczb dodatnich $a$, $b$, $c$ zachodzi nierówność
 &nbsp;&nbsp;\[
 &nbsp;&nbsp;&nbsp;&nbsp;\frac{a^2}{a + b} + \frac{b^2}{b + c} \geqslant \frac{3a + 2b - c}{4}. 
 &nbsp;&nbsp;\]
